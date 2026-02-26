@@ -8,7 +8,7 @@ const services = [
   { label: 'Commercial Window Tinting', href: '/commercial-window-tinting-brisbane' },
 ];
 
-const aeoHubs = [
+const resourceLinks = [
   { label: 'PPF Questions', href: '/ppf-questions' },
   { label: 'Ceramic Coating Questions', href: '/ceramic-coating-questions' },
   { label: 'Auto Tinting Questions', href: '/automotive-tinting-questions' },
@@ -69,11 +69,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Knowledge Hub */}
+          {/* Common Questions */}
           <div>
-            <p style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>Knowledge Hub</p>
+            <p style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>Common Questions</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              {aeoHubs.map(h => (
+              {resourceLinks.map(h => (
                 <li key={h.href}>
                   <Link to={h.href} style={{ color: 'var(--color-text-secondary)', fontSize: 14, transition: 'color 150ms' }}
                     onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent)')}

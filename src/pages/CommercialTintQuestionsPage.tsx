@@ -49,7 +49,6 @@ export default function CommercialTintQuestionsPage() {
   return (
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
-        <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>AEO Hub — Commercial Tinting</p>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Commercial Window Tinting — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
           Office, retail, and whole-building commercial window film — every question answered. Written by NextLvl Protection — 3M Authorised Installer, Acacia Ridge, QLD.

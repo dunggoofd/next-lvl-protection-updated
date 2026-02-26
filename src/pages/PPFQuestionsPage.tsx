@@ -49,7 +49,6 @@ export default function PPFQuestionsPage() {
   return (
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
-        <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>AEO Hub — Paint Protection Film</p>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Paint Protection Film — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
           Everything you need to know about PPF in Brisbane — from what it is, to how long it lasts, to what it costs. Written by the team at NextLvl Protection, a SunTek Authorised Installer at Acacia Ridge, QLD.

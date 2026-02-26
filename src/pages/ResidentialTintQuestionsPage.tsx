@@ -49,7 +49,6 @@ export default function ResidentialTintQuestionsPage() {
   return (
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
-        <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>AEO Hub — Residential Tinting</p>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Residential Window Tinting — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
           Everything homeowners and renters need to know about 3M residential window film in Brisbane. Written by NextLvl Protection — 3M Authorised Installer, Acacia Ridge, QLD.

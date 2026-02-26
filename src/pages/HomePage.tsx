@@ -115,10 +115,7 @@ export default function HomePage() {
 
         {/* Content */}
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
-          <div className="hero-anim">
-            <TrustBadges />
-          </div>
-          <h1 style={{ marginTop: 28, marginBottom: 0 }}>
+          <h1 style={{ marginTop: 0, marginBottom: 0 }}>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', letterSpacing: '-0.01em', lineHeight: 1 }}>
               Paint &amp; Glass Protection — Brisbane
             </span>
@@ -126,6 +123,9 @@ export default function HomePage() {
               SunTek. Solar Gard. 3M.
             </span>
           </h1>
+          <div className="hero-anim" style={{ marginTop: 24 }}>
+            <TrustBadges />
+          </div>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 540 }}>
             Brisbane's certified film installation specialist. One studio, four disciplines — every install precision-first.
           </p>

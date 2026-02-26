@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Award, MapPin, Clock, Phone, Mail, Shield, Star } from 'lucide-react';
-import TrustBadges from '../components/TrustBadges';
 import CTABlock from '../components/CTABlock';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +41,6 @@ export default function AboutPage() {
         <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />
         <div style={{ position: 'relative', zIndex: 2 }}>
-          <TrustBadges services={['ppf', 'tint', 'window']} />
           <h1 style={{ marginTop: 28 }}>
             <span className="font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>About NextLvl Protection</span>
             <span className="font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Acacia Ridge.</span>
@@ -102,9 +100,6 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Certifications</h2>
-          <div style={{ marginBottom: 40 }}>
-            <TrustBadges services={['ppf', 'tint', 'window']} />
-          </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {certifications.map((c, i) => (
               <div key={i} className="card" style={{ padding: '28px 24px' }}>
