@@ -17,6 +17,10 @@ const CommercialTintQuestionsPage  = lazy(() => import('./pages/CommercialTintQu
 const GalleryPage                = lazy(() => import('./pages/GalleryPage'));
 const AboutPage                  = lazy(() => import('./pages/AboutPage'));
 const GetAQuotePage              = lazy(() => import('./pages/GetAQuotePage'));
+const PPFNewCarPage              = lazy(() => import('./pages/PPFNewCarPage'));
+const PPFDarkPaintPage           = lazy(() => import('./pages/PPFDarkPaintPage'));
+const PPFStoneChipPage           = lazy(() => import('./pages/PPFStoneChipPage'));
+const PPFResalePage              = lazy(() => import('./pages/PPFResalePage'));
 
 function PageLoader() {
   return (
@@ -67,6 +71,10 @@ export default function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/get-a-quote" element={<GetAQuotePage />} />
+            <Route path="/ppf-new-car-brisbane" element={<PPFNewCarPage />} />
+            <Route path="/ppf-dark-paint-brisbane" element={<PPFDarkPaintPage />} />
+            <Route path="/ppf-stone-chip-protection-brisbane" element={<PPFStoneChipPage />} />
+            <Route path="/ppf-resale-value-brisbane" element={<PPFResalePage />} />
           </Route>
         </Routes>
       </Suspense>

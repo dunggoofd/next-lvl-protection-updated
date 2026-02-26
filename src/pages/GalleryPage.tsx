@@ -63,7 +63,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <CTABlock service="your vehicle or property" defaultService="Other" />
+      <CTABlock service="Protection Package" defaultService="Other" />
     </>
   );
 }

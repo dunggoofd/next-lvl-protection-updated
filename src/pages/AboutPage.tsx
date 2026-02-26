@@ -151,7 +151,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTABlock service="your next detail" defaultService="Paint Protection Film" />
+      <CTABlock service="Next Detail" defaultService="Paint Protection Film" />
 
       <section style={{ background: 'var(--color-bg-secondary)', padding: '40px var(--section-padding-x)' }}>
         <div className="container">
