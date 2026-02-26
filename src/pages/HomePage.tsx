@@ -6,6 +6,7 @@ import { Shield, Droplets, Eye, Building2, Car, ArrowRight } from 'lucide-react'
 import TrustBadges from '../components/TrustBadges';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import heroHome from '../assets/hero-home.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,13 +106,13 @@ export default function HomePage() {
           ref={heroBgRef}
           style={{
             position: 'absolute', inset: '-20% 0 0 0', zIndex: 0,
-            backgroundImage: `url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1920&q=80')`,
+            backgroundImage: `url(${heroHome})`,
             backgroundSize: 'cover', backgroundPosition: 'center',
           }}
           aria-hidden="true"
         />
         {/* Gradient overlay */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 25%, transparent 100%)' }} aria-hidden="true" />
 
         {/* Content */}
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>

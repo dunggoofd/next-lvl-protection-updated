@@ -132,7 +132,7 @@ export default function AboutPage() {
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Team</h2>
           <div style={{ display: 'flex', gap: 24 }}>
             {team.map((t, i) => (
-              <div key={i} className="card" style={{ padding: '36px 28px', maxWidth: 360 }}>
+              <div key={i} className="card" style={{ padding: '36px 28px', width: 'min(360px, 100%)', aspectRatio: '9 / 16' }}>
                 <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--color-surface)', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
                   <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 22, color: 'var(--color-accent)' }}>{t.name.split(' ').map(n => n[0]).join('')}</span>
                 </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTABlock service="your vehicle or property" defaultService="Paint Protection Film" />
+      <CTABlock service="your next detail" defaultService="Paint Protection Film" />
 
       <section style={{ background: 'var(--color-bg-secondary)', padding: '40px var(--section-padding-x)' }}>
         <div className="container">
