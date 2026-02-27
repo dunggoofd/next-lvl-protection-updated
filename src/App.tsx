@@ -28,6 +28,19 @@ const PPFPartialPage             = lazy(() => import('./pages/PPFPartialPage'));
 const PPFSelfHealingPage         = lazy(() => import('./pages/PPFSelfHealingPage'));
 const PPFGlossMattePage          = lazy(() => import('./pages/PPFGlossMattePage'));
 const PPFNearMePage              = lazy(() => import('./pages/PPFNearMePage'));
+const CeramicNewCarPage          = lazy(() => import('./pages/CeramicNewCarPage'));
+const CeramicCostPage            = lazy(() => import('./pages/CeramicCostPage'));
+const CeramicBrisbanePage        = lazy(() => import('./pages/CeramicBrisbanePage'));
+const CeramicCorrectionPage      = lazy(() => import('./pages/CeramicCorrectionPage'));
+const CeramicGlassPage           = lazy(() => import('./pages/CeramicGlassPage'));
+const CeramicWheelsPage          = lazy(() => import('./pages/CeramicWheelsPage'));
+const CeramicPPFComboPage        = lazy(() => import('./pages/CeramicPPFComboPage'));
+const CeramicLongevityPage       = lazy(() => import('./pages/CeramicLongevityPage'));
+const CeramicVsDealerPage        = lazy(() => import('./pages/CeramicVsDealerPage'));
+const CeramicMattePage           = lazy(() => import('./pages/CeramicMattePage'));
+const CeramicMaintenancePage     = lazy(() => import('./pages/CeramicMaintenancePage'));
+const CeramicResalePage          = lazy(() => import('./pages/CeramicResalePage'));
+const CeramicNearMePage          = lazy(() => import('./pages/CeramicNearMePage'));
 
 function PageLoader() {
   return (
@@ -89,6 +102,19 @@ export default function App() {
             <Route path="/ppf-self-healing-brisbane" element={<PPFSelfHealingPage />} />
             <Route path="/gloss-vs-matte-ppf-brisbane" element={<PPFGlossMattePage />} />
             <Route path="/ppf-near-me-brisbane" element={<PPFNearMePage />} />
+            <Route path="/ceramic-coating-new-car-brisbane" element={<CeramicNewCarPage />} />
+            <Route path="/ceramic-coating-cost-brisbane" element={<CeramicCostPage />} />
+            <Route path="/ceramic-coating-uv-brisbane" element={<CeramicBrisbanePage />} />
+            <Route path="/ceramic-coating-paint-correction-brisbane" element={<CeramicCorrectionPage />} />
+            <Route path="/ceramic-glass-coating-brisbane" element={<CeramicGlassPage />} />
+            <Route path="/ceramic-coating-wheels-brisbane" element={<CeramicWheelsPage />} />
+            <Route path="/ceramic-ppf-brisbane" element={<CeramicPPFComboPage />} />
+            <Route path="/ceramic-coating-longevity-brisbane" element={<CeramicLongevityPage />} />
+            <Route path="/ceramic-vs-dealer-paint-protection-brisbane" element={<CeramicVsDealerPage />} />
+            <Route path="/ceramic-coating-matte-paint-brisbane" element={<CeramicMattePage />} />
+            <Route path="/ceramic-coating-maintenance-brisbane" element={<CeramicMaintenancePage />} />
+            <Route path="/ceramic-coating-resale-brisbane" element={<CeramicResalePage />} />
+            <Route path="/ceramic-coating-near-me-brisbane" element={<CeramicNearMePage />} />
           </Route>
         </Routes>
       </Suspense>

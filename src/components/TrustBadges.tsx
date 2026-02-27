@@ -1,5 +1,5 @@
 interface TrustBadgesProps {
-  services?: ('ppf' | 'tint' | 'window')[];
+  services?: ('ppf' | 'tint' | 'window' | 'ceramic')[];
 }
 
 export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: TrustBadgesProps) {
@@ -8,6 +8,11 @@ export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: Tr
       id: 'ppf',
       label: 'SunTek Authorised',
       sub: 'PPF Installer',
+    },
+    {
+      id: 'ceramic',
+      label: 'Ceramic Pro Certified',
+      sub: 'Ceramic Coating',
     },
     {
       id: 'tint',
