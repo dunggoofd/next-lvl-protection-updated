@@ -21,6 +21,13 @@ const PPFNewCarPage              = lazy(() => import('./pages/PPFNewCarPage'));
 const PPFDarkPaintPage           = lazy(() => import('./pages/PPFDarkPaintPage'));
 const PPFStoneChipPage           = lazy(() => import('./pages/PPFStoneChipPage'));
 const PPFResalePage              = lazy(() => import('./pages/PPFResalePage'));
+const SunTekPPFPage              = lazy(() => import('./pages/SunTekPPFPage'));
+const PPFCostPage                = lazy(() => import('./pages/PPFCostPage'));
+const PPFWarrantyPage            = lazy(() => import('./pages/PPFWarrantyPage'));
+const PPFPartialPage             = lazy(() => import('./pages/PPFPartialPage'));
+const PPFSelfHealingPage         = lazy(() => import('./pages/PPFSelfHealingPage'));
+const PPFGlossMattePage          = lazy(() => import('./pages/PPFGlossMattePage'));
+const PPFNearMePage              = lazy(() => import('./pages/PPFNearMePage'));
 
 function PageLoader() {
   return (
@@ -75,6 +82,13 @@ export default function App() {
             <Route path="/ppf-dark-paint-brisbane" element={<PPFDarkPaintPage />} />
             <Route path="/ppf-stone-chip-protection-brisbane" element={<PPFStoneChipPage />} />
             <Route path="/ppf-resale-value-brisbane" element={<PPFResalePage />} />
+            <Route path="/suntek-ppf-brisbane" element={<SunTekPPFPage />} />
+            <Route path="/ppf-cost-brisbane" element={<PPFCostPage />} />
+            <Route path="/ppf-warranty-brisbane" element={<PPFWarrantyPage />} />
+            <Route path="/partial-ppf-brisbane" element={<PPFPartialPage />} />
+            <Route path="/ppf-self-healing-brisbane" element={<PPFSelfHealingPage />} />
+            <Route path="/gloss-vs-matte-ppf-brisbane" element={<PPFGlossMattePage />} />
+            <Route path="/ppf-near-me-brisbane" element={<PPFNearMePage />} />
           </Route>
         </Routes>
       </Suspense>
