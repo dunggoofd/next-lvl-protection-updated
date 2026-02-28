@@ -86,6 +86,7 @@ export default function Footer() {
           <div style={{ display: 'flex', gap: 20 }}>
             <Link to="/gallery" className="footer-link" style={{ fontSize: 13 }}>Gallery</Link>
             <Link to="/about" className="footer-link" style={{ fontSize: 13 }}>About</Link>
+            <Link to="/sitemap" className="footer-link" style={{ fontSize: 13 }}>Sitemap</Link>
             <Link to="/privacy-policy" className="footer-link" style={{ fontSize: 13 }}>Privacy Policy</Link>
             <Link to="/get-a-quote" className="footer-link" style={{ fontSize: 13 }}>Get a Quote</Link>
           </div>
