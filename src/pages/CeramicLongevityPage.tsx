@@ -76,8 +76,8 @@ export default function CeramicLongevityPage() {
               { package: 'Protection', duration: '3 Years', costPerYear: '$433/yr', typical: 'Full exterior. Most popular for Brisbane daily drivers parked outdoors.', recommended: true },
               { package: 'Elite', duration: '5 Years', costPerYear: '$400/yr', typical: 'With paint correction. Best value per year for cars with existing marks.' },
               { package: 'Signature', duration: '7 Years', costPerYear: 'POA/yr', typical: 'Full vehicle. Prestige and long-term ownership — lowest cost per year at scale.' },
-            ].map((row, i) => (
-              <div key={i} className="card" style={{ padding: '20px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
+            ].map((row, i, arr) => (
+              <div key={i} className="card" style={{ padding: '20px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === arr.length - 1 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {row.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}
                 <div style={{ display: 'grid', gridTemplateColumns: '160px 120px 120px 1fr', gap: 24, alignItems: 'center' }}>
                   <p style={{ fontWeight: 700, fontSize: 14 }}>{row.package}</p>

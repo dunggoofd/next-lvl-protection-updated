@@ -67,8 +67,8 @@ export default function PPFCostPage() {
               { package: 'Front End Package', coverage: 'Full bonnet + front bumper + front guards + headlights + mirrors', price: 'From $1,490', warranty: '10-year SunTek', note: 'Most popular — covers 90% of chip events on any road car', recommended: true },
               { package: 'Track Package', coverage: 'Front end + roof + A-pillars', price: 'From $2,290', warranty: '10-year SunTek', note: 'Highway drivers and open road use — additional high-exposure zones covered' },
               { package: 'Full Wrap', coverage: 'Entire exterior painted surface', price: 'POA', warranty: '10-year SunTek', note: 'Prestige and performance vehicles — quoted on application by vehicle' },
-            ].map((row, i) => (
-              <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
+            ].map((row, i, arr) => (
+              <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === arr.length - 1 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {row.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}
                 <div style={{ display: 'grid', gridTemplateColumns: '200px 1fr 120px 160px', gap: 24, alignItems: 'center' }}>
                   <div>

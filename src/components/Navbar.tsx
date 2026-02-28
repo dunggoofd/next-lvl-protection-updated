@@ -3,6 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { gsap } from 'gsap';
 
+const NAV_LINKS = [
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/get-a-quote' },
+];
+
 const services = [
   { label: 'Paint Protection Film', href: '/ppf-brisbane' },
   { label: 'Ceramic Coating', href: '/ceramic-coating-brisbane' },
@@ -132,11 +138,7 @@ export default function Navbar() {
             )}
           </div>
 
-          {[
-            { label: 'Gallery', href: '/gallery' },
-            { label: 'About', href: '/about' },
-            { label: 'Contact', href: '/get-a-quote' },
-          ].map(link => (
+          {NAV_LINKS.map(link => (
             <Link
               key={link.href}
               to={link.href}
@@ -185,7 +187,7 @@ export default function Navbar() {
             </Link>
           ))}
           <div style={{ height: 1, background: 'var(--color-border)', margin: '16px 0' }} />
-          {[{ label: 'Gallery', href: '/gallery' }, { label: 'About', href: '/about' }].map(l => (
+          {NAV_LINKS.filter(l => l.href !== '/get-a-quote').map(l => (
             <Link key={l.href} to={l.href} style={{ fontSize: 'clamp(24px, 5vw, 36px)', fontFamily: 'Bebas Neue, sans-serif', color: 'var(--color-text-secondary)', letterSpacing: '0.02em' }}>
               {l.label}
             </Link>

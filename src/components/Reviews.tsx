@@ -1,5 +1,7 @@
 import { Star } from 'lucide-react';
 
+const STARS = [0, 1, 2, 3, 4];
+
 interface Review {
   name: string;
   suburb: string;
@@ -19,7 +21,7 @@ export default function Reviews({ reviews, aggregate }: ReviewsProps) {
         {aggregate && (
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginBottom: 8 }}>
-              {Array.from({ length: 5 }).map((_, i) => (
+              {STARS.map(i => (
                 <Star key={i} size={20} fill="var(--color-accent)" color="var(--color-accent)" />
               ))}
             </div>
@@ -36,7 +38,7 @@ export default function Reviews({ reviews, aggregate }: ReviewsProps) {
           {reviews.map((r, i) => (
             <div key={i} className="card" style={{ padding: '28px 24px' }}>
               <div style={{ display: 'flex', gap: 3, marginBottom: 14 }}>
-                {Array.from({ length: 5 }).map((_, j) => (
+                {STARS.map(j => (
                   <Star key={j} size={14} fill="var(--color-accent)" color="var(--color-accent)" />
                 ))}
               </div>

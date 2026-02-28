@@ -68,8 +68,8 @@ export default function CeramicCostPage() {
               { name: 'Protection', coverage: 'Exterior paint + all glass + all wheels', warranty: '3-year', price: 'From $1,299', recommended: true, note: 'Most popular — complete exterior coverage' },
               { name: 'Elite', coverage: 'Paint + glass + wheels + stage 1 paint correction', warranty: '5-year', price: 'From $1,999', note: 'For cars with existing swirl marks or light scratches' },
               { name: 'Signature', coverage: 'Full vehicle + multi-stage correction + interior protection', warranty: '7-year', price: 'POA', note: 'Prestige and collector vehicles — quoted per car' },
-            ].map((pkg, i) => (
-              <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: pkg.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
+            ].map((pkg, i, arr) => (
+              <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === arr.length - 1 ? '0 0 4px 4px' : 0, border: pkg.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {pkg.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}
                 <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr 120px 140px', gap: 24, alignItems: 'center' }}>
                   <div>

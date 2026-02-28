@@ -10,6 +10,19 @@ const SERVICES = [
   'Commercial Window Tinting',
 ];
 
+const PPF_PACKAGES = ['Impact Shield', 'Front End Package', 'Track Package', 'Full Wrap', 'Not sure'];
+const CERAMIC_PACKAGES = ['Essential', 'Protection', 'Elite', 'Signature', 'Not sure'];
+const PAINT_CONDITIONS = ['Showroom', 'Good', 'Minor swirls', 'Needs correction'];
+const TINT_GOALS = ['Privacy', 'Heat rejection', 'UV protection', 'Appearance', 'All'];
+const TINT_PACKAGES = ['Rear Privacy', 'Full Car', 'Full Car + Windscreen', 'Not sure'];
+const RES_PROP_TYPES = ['Home', 'Apartment'];
+const COMM_PROP_TYPES = ['Office', 'Shopfront', 'Warehouse', 'Other'];
+const WINDOW_COUNTS = ['1–5', '6–10', '10–20', '20+'];
+const RES_GOALS = ['Heat reduction', 'Privacy', 'UV protection', 'Glare reduction', 'All'];
+const GLASS_AREAS = ['Under 20sqm', '20–50sqm', '50–100sqm', '100sqm+'];
+const COMM_GOALS = ['Heat', 'Privacy', 'UV', 'Security', 'Branding', 'All'];
+const REFERRAL_SOURCES = ['Google', 'Instagram', 'Referral', 'Other'];
+
 interface QuoteFormProps {
   defaultService?: string;
 }
@@ -136,7 +149,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
               <div><label htmlFor="propType">Property Type</label>
                 <select id="propType" value={propType} onChange={e => setPropType(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Home', 'Apartment'].map(o => <option key={o}>{o}</option>)}
+                  {RES_PROP_TYPES.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             )}
@@ -145,7 +158,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
               <div><label htmlFor="commPropType">Property Type</label>
                 <select id="commPropType" value={propType} onChange={e => setPropType(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Office', 'Shopfront', 'Warehouse', 'Other'].map(o => <option key={o}>{o}</option>)}
+                  {COMM_PROP_TYPES.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             )}
@@ -160,7 +173,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
                 <label htmlFor="ppfPkg">Package Preference</label>
                 <select id="ppfPkg" value={ppfPackage} onChange={e => setPpfPackage(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Impact Shield', 'Front End Package', 'Track Package', 'Full Wrap', 'Not sure'].map(o => <option key={o}>{o}</option>)}
+                  {PPF_PACKAGES.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             )}
@@ -169,14 +182,14 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
                 <label htmlFor="ceramicPkg">Package Preference</label>
                 <select id="ceramicPkg" value={ceramicPackage} onChange={e => setCeramicPackage(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Essential', 'Protection', 'Elite', 'Signature', 'Not sure'].map(o => <option key={o}>{o}</option>)}
+                  {CERAMIC_PACKAGES.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div>
                 <label htmlFor="paintCond">Paint Condition</label>
                 <select id="paintCond" value={paintCondition} onChange={e => setPaintCondition(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Showroom', 'Good', 'Minor swirls', 'Needs correction'].map(o => <option key={o}>{o}</option>)}
+                  {PAINT_CONDITIONS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             </>)}
@@ -185,14 +198,14 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
                 <label htmlFor="tintGoal">Tint Goal</label>
                 <select id="tintGoal" value={tintGoal} onChange={e => setTintGoal(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Privacy', 'Heat rejection', 'UV protection', 'Appearance', 'All'].map(o => <option key={o}>{o}</option>)}
+                  {TINT_GOALS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div>
                 <label htmlFor="tintPkg">Package Preference</label>
                 <select id="tintPkg" value={tintPackage} onChange={e => setTintPackage(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Rear Privacy', 'Full Car', 'Full Car + Windscreen', 'Not sure'].map(o => <option key={o}>{o}</option>)}
+                  {TINT_PACKAGES.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             </>)}
@@ -201,14 +214,14 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
                 <label htmlFor="winCount">Number of Windows</label>
                 <select id="winCount" value={windowCount} onChange={e => setWindowCount(e.target.value)}>
                   <option value="">Select…</option>
-                  {['1–5', '6–10', '10–20', '20+'].map(o => <option key={o}>{o}</option>)}
+                  {WINDOW_COUNTS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div>
                 <label htmlFor="resGoal">Primary Goal</label>
                 <select id="resGoal" value={resGoal} onChange={e => setResGoal(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Heat reduction', 'Privacy', 'UV protection', 'Glare reduction', 'All'].map(o => <option key={o}>{o}</option>)}
+                  {RES_GOALS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             </>)}
@@ -217,14 +230,14 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
                 <label htmlFor="sqm">Approximate Glass Area</label>
                 <select id="sqm" value={sqm} onChange={e => setSqm(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Under 20sqm', '20–50sqm', '50–100sqm', '100sqm+'].map(o => <option key={o}>{o}</option>)}
+                  {GLASS_AREAS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div>
                 <label htmlFor="commGoal">Primary Goal</label>
                 <select id="commGoal" value={commGoal} onChange={e => setCommGoal(e.target.value)}>
                   <option value="">Select…</option>
-                  {['Heat', 'Privacy', 'UV', 'Security', 'Branding', 'All'].map(o => <option key={o}>{o}</option>)}
+                  {COMM_GOALS.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
             </>)}
@@ -263,7 +276,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
               <label htmlFor="referral">How did you hear about us? (optional)</label>
               <select id="referral" value={referral} onChange={e => setReferral(e.target.value)}>
                 <option value="">Select…</option>
-                {['Google', 'Instagram', 'Referral', 'Other'].map(o => <option key={o}>{o}</option>)}
+                {REFERRAL_SOURCES.map(o => <option key={o}>{o}</option>)}
               </select>
             </div>
           </div>
