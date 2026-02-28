@@ -1,14 +1,10 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useHeroAnimation } from '../hooks/useHeroAnimation';
 import { Droplets, Shield, Clock, TrendingUp, Sun, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Droplets, title: 'Hydrophobic Glass — Real-World Benefit', desc: 'Water sheets off ceramic-coated glass instead of beading and sitting. At highway speed above 80km/h, rain effectively clears itself without wipers. Night driving in rain on coated glass is noticeably clearer than uncoated.' },
@@ -36,20 +32,7 @@ const reviews = [
 ];
 
 export default function CeramicGlassPage() {
-  const heroRef = useRef<HTMLElement>(null);
-  const heroBgRef = useRef<HTMLDivElement>(null);
-  const heroContentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const els = heroContentRef.current?.querySelectorAll('.hero-anim');
-      if (els) gsap.from(els, { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.3 });
-      if (heroBgRef.current && heroRef.current) {
-        gsap.to(heroBgRef.current, { scrollTrigger: { trigger: heroRef.current, scrub: true }, y: '20%', ease: 'none' });
-      }
-    });
-    return () => ctx.revert();
-  }, []);
+  const { heroRef, heroBgRef, heroContentRef } = useHeroAnimation();
 
   return (
     <>

@@ -1,14 +1,10 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useHeroAnimation } from '../hooks/useHeroAnimation';
 import { Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   { q: 'How much does ceramic coating cost in Brisbane?', a: 'At NextLvl Protection in Acacia Ridge: Essential (exterior paint only) from $699. Protection (paint + glass + wheels) from $1,299 with a 3-year warranty. Elite (paint + glass + wheels + stage 1 paint correction) from $1,999. Signature (full vehicle + multi-stage correction) is quoted per vehicle. All pricing is starting point for standard-size cars — SUVs and prestige vehicles may vary.' },
@@ -27,20 +23,7 @@ const reviews = [
 ];
 
 export default function CeramicCostPage() {
-  const heroRef = useRef<HTMLElement>(null);
-  const heroBgRef = useRef<HTMLDivElement>(null);
-  const heroContentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const els = heroContentRef.current?.querySelectorAll('.hero-anim');
-      if (els) gsap.from(els, { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.3 });
-      if (heroBgRef.current && heroRef.current) {
-        gsap.to(heroBgRef.current, { scrollTrigger: { trigger: heroRef.current, scrub: true }, y: '20%', ease: 'none' });
-      }
-    });
-    return () => ctx.revert();
-  }, []);
+  const { heroRef, heroBgRef, heroContentRef } = useHeroAnimation();
 
   return (
     <>

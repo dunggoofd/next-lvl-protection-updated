@@ -1,7 +1,5 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useHeroAnimation } from '../hooks/useHeroAnimation';
 import { Sun, Shield, Eye, Thermometer, Award, Zap, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import PackageVisualizer from '../components/PackageVisualizer';
@@ -10,8 +8,6 @@ import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const tiers: PackageTier[] = [
   {
@@ -62,18 +58,7 @@ const reviews = [
 ];
 
 export default function AutomotiveTintPage() {
-  const heroRef = useRef<HTMLElement>(null);
-  const heroBgRef = useRef<HTMLDivElement>(null);
-  const heroContentRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const els = heroContentRef.current?.querySelectorAll('.hero-anim');
-      if (els) gsap.from(els, { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.3 });
-      if (heroBgRef.current && heroRef.current)
-        gsap.to(heroBgRef.current, { scrollTrigger: { trigger: heroRef.current, scrub: true }, y: '20%', ease: 'none' });
-    });
-    return () => ctx.revert();
-  }, []);
+  const { heroRef, heroBgRef, heroContentRef } = useHeroAnimation();
 
   return (
     <>

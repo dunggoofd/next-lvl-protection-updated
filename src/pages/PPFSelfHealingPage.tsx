@@ -1,14 +1,10 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useHeroAnimation } from '../hooks/useHeroAnimation';
 import { Zap, Thermometer, Shield, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Zap, title: 'Light Swirls Vanish Under Heat', desc: 'SunTek Ultra\'s topcoat reflows under warmth — solar heat, warm water, or a heat gun. Light swirl marks from automatic washes or incorrect hand washing disappear without any product or polishing.' },
@@ -36,20 +32,7 @@ const reviews = [
 ];
 
 export default function PPFSelfHealingPage() {
-  const heroRef = useRef<HTMLElement>(null);
-  const heroBgRef = useRef<HTMLDivElement>(null);
-  const heroContentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const els = heroContentRef.current?.querySelectorAll('.hero-anim');
-      if (els) gsap.from(els, { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.3 });
-      if (heroBgRef.current && heroRef.current) {
-        gsap.to(heroBgRef.current, { scrollTrigger: { trigger: heroRef.current, scrub: true }, y: '20%', ease: 'none' });
-      }
-    });
-    return () => ctx.revert();
-  }, []);
+  const { heroRef, heroBgRef, heroContentRef } = useHeroAnimation();
 
   return (
     <>
