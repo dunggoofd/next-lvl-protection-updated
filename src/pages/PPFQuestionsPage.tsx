@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/FAQAccordion';
+import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What is paint protection film?', a: 'Paint protection film (PPF) is a clear, thermoplastic urethane film applied to vehicle paintwork to protect it from stone chips, road debris, bug acid, bird dropping etching, and light abrasions. Modern PPF is self-healing — minor surface scratches disappear with heat.' },
@@ -47,6 +48,12 @@ export default function PPFQuestionsPage() {
   }, []);
 
   return (
+    <>
+      <PageMeta
+        title="PPF Questions Answered | Paint Protection Film Brisbane | NextLvl Protection"
+        description="Answers to common PPF questions — cost, longevity, installation process, warranty and aftercare. NextLvl Protection, Brisbane."
+        canonical="https://www.nextlvlprotection.com.au/ppf-questions"
+      />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Paint Protection Film — Brisbane Questions</h1>
@@ -69,5 +76,6 @@ export default function PPFQuestionsPage() {
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>
     </main>
+    </>
   );
 }

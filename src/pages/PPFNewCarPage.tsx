@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Zap, TrendingUp, Clock, Award, Star, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Shield, title: 'Protect it before the first chip', desc: 'The first stone chip happens before you expect it. PPF applied on delivery means the paint never takes a hit — not at the dealership, not on the drive home.' },
@@ -53,6 +52,11 @@ export default function PPFNewCarPage() {
 
   return (
     <>
+      <PageMeta
+        title="PPF for New Cars Brisbane | Protect From Day One | NextLvl Protection"
+        description="Paint protection film for new cars in Brisbane. Protect your new car from rock chips and UV before they cause damage. SunTek Authorised installer."
+        canonical="https://www.nextlvlprotection.com.au/ppf-new-car-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -69,7 +73,7 @@ export default function PPFNewCarPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
               PPF for New Cars — Brisbane
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>

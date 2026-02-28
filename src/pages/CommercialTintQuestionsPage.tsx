@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/FAQAccordion';
+import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What is commercial window tinting?', a: 'Commercial window tinting is the application of professional window film to the glazing of offices, retail premises, warehouses, and commercial buildings. It reduces solar heat gain, glare, and UV radiation — improving occupant comfort and reducing HVAC energy consumption.' },
@@ -47,6 +48,12 @@ export default function CommercialTintQuestionsPage() {
   }, []);
 
   return (
+    <>
+      <PageMeta
+        title="Commercial Window Tinting Questions | Brisbane | NextLvl Protection"
+        description="Common questions about commercial window tinting in Brisbane — energy savings, glare control, 3M film options. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/commercial-tinting-questions"
+      />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Commercial Window Tinting — Brisbane Questions</h1>
@@ -67,5 +74,6 @@ export default function CommercialTintQuestionsPage() {
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>
     </main>
+    </>
   );
 }

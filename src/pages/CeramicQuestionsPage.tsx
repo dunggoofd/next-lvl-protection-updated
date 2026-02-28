@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/FAQAccordion';
+import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What is ceramic coating?', a: 'Ceramic coating is a liquid polymer applied to a vehicle\'s exterior that chemically bonds to the factory paint, forming a hard, hydrophobic protective layer. It repels water, resists UV, and makes the surface significantly easier to maintain.' },
@@ -47,6 +48,12 @@ export default function CeramicQuestionsPage() {
   }, []);
 
   return (
+    <>
+      <PageMeta
+        title="Ceramic Coating Questions Answered | Brisbane | NextLvl Protection"
+        description="Answers to common ceramic coating questions — cost, longevity, paint correction, aftercare. NextLvl Protection, Brisbane."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-questions"
+      />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Ceramic Coating — Brisbane Questions</h1>
@@ -67,5 +74,6 @@ export default function CeramicQuestionsPage() {
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>
     </main>
+    </>
   );
 }

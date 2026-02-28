@@ -17,6 +17,8 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const mobileLinksRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const menuItemRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const location = useLocation();
 
   useEffect(() => {
@@ -30,18 +32,52 @@ export default function Navbar() {
     setDropdownOpen(false);
   }, [location]);
 
+  // Mobile menu animation — uses CSS class now, not direct DOM style
   useEffect(() => {
     if (!mobileMenuRef.current) return;
     if (mobileOpen) {
-      mobileMenuRef.current.style.display = 'flex';
       const links = mobileLinksRef.current?.querySelectorAll('a, button');
       if (links) {
         gsap.fromTo(links, { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, stagger: 0.06, ease: 'power3.out' });
       }
-    } else {
-      mobileMenuRef.current.style.display = 'none';
     }
   }, [mobileOpen]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleDropdownKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setDropdownOpen(d => !d);
+    } else if (e.key === 'Escape') {
+      setDropdownOpen(false);
+    } else if (e.key === 'ArrowDown' && dropdownOpen) {
+      e.preventDefault();
+      menuItemRefs.current[0]?.focus();
+    }
+  };
+
+  const handleMenuItemKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>, index: number) => {
+    if (e.key === 'Escape') {
+      setDropdownOpen(false);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      menuItemRefs.current[index + 1]?.focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (index === 0) setDropdownOpen(false);
+      else menuItemRefs.current[index - 1]?.focus();
+    }
+  };
 
   return (
     <>
@@ -86,10 +122,10 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
           {/* Services Dropdown */}
-          <div style={{ position: 'relative' }}>
+          <div ref={dropdownRef} style={{ position: 'relative' }}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              onBlur={() => setTimeout(() => setDropdownOpen(false), 150)}
+              onKeyDown={handleDropdownKeyDown}
               style={{
                 background: 'transparent', border: 'none', cursor: 'pointer',
                 display: 'flex', alignItems: 'center', gap: 4,
@@ -112,18 +148,14 @@ export default function Navbar() {
                   boxShadow: '0 8px 32px rgba(0, 0, 0, 0.10), 0 1px 0 rgba(255,255,255,0.9) inset',
                 }}
               >
-                {services.map(s => (
+                {services.map((s, i) => (
                   <Link
                     key={s.href}
                     to={s.href}
                     role="menuitem"
-                    style={{
-                      display: 'block', padding: '10px 20px',
-                      color: 'var(--color-text-secondary)', fontSize: 14,
-                      transition: 'color 150ms ease, background 150ms ease',
-                    }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--color-text-primary)'; (e.currentTarget as HTMLElement).style.background = 'rgba(26,31,46,0.06)'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--color-text-secondary)'; (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
+                    className="nav-dropdown-item"
+                    ref={el => { menuItemRefs.current[i] = el; }}
+                    onKeyDown={e => handleMenuItemKeyDown(e, i)}
                   >
                     {s.label}
                   </Link>
@@ -162,6 +194,7 @@ export default function Navbar() {
           className="mobile-hamburger"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
           style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--color-text-primary)', display: 'none' }}
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -171,8 +204,10 @@ export default function Navbar() {
       {/* Mobile full-screen overlay */}
       <div
         ref={mobileMenuRef}
+        className={`mobile-menu${mobileOpen ? ' open' : ''}`}
+        aria-hidden={!mobileOpen}
         style={{
-          display: 'none', position: 'fixed', inset: 0,
+          position: 'fixed', inset: 0,
           background: 'var(--color-bg-primary)', zIndex: 190,
           flexDirection: 'column', padding: '100px 32px 32px',
         }}
@@ -214,13 +249,6 @@ export default function Navbar() {
           Directions
         </a>
       </div>
-
-      <style>{`
-        @media (max-width: 768px) {
-          .desktop-nav { display: none !important; }
-          .mobile-hamburger { display: block !important; }
-        }
-      `}</style>
     </>
   );
 }

@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   { q: 'How much does ceramic coating cost in Brisbane?', a: 'At NextLvl Protection in Acacia Ridge: Essential (exterior paint only) from $699. Protection (paint + glass + wheels) from $1,299 with a 3-year warranty. Elite (paint + glass + wheels + stage 1 paint correction) from $1,999. Signature (full vehicle + multi-stage correction) is quoted per vehicle. All pricing is starting point for standard-size cars — SUVs and prestige vehicles may vary.' },
@@ -44,6 +43,11 @@ export default function CeramicCostPage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating Cost Brisbane | Pricing Guide | NextLvl Protection"
+        description="Ceramic coating pricing in Brisbane. Essential from $699, Protection from $1,299, Elite from $1,999. NextLvl Protection, Acacia Ridge."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-cost-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -60,7 +64,7 @@ export default function CeramicCostPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Cost Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Cost Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Transparent Pricing.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 520 }}>

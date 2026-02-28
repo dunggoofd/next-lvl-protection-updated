@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MapPin, Clock, Shield, Star } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const suburbs = [
   { name: 'Sunnybank', distance: '7 min' },
@@ -70,6 +69,11 @@ export default function PPFNearMePage() {
 
   return (
     <>
+      <PageMeta
+        title="PPF Near Me Brisbane | Paint Protection Film | NextLvl Protection"
+        description="Looking for PPF near you in Brisbane? NextLvl Protection is at Acacia Ridge, servicing all Brisbane southside suburbs. SunTek Authorised."
+        canonical="https://www.nextlvlprotection.com.au/ppf-near-me-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -85,7 +89,7 @@ export default function PPFNearMePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>PPF Installer Near You</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>PPF Installer Near You</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Acacia Ridge, Brisbane.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

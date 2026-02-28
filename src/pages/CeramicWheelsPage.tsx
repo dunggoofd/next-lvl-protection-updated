@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Droplets, Clock, Eye, TrendingUp, Zap } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Shield, title: 'Brake Dust Resistance', desc: 'Brake dust is hot, acidic, and abrasive. On bare alloy, it bonds rapidly and etches the surface. Ceramic-coated wheels resist adhesion — dust sits on the surface rather than bonding to it, and lifts with a basic rinse.' },
@@ -52,6 +51,11 @@ export default function CeramicWheelsPage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating for Wheels Brisbane | Brake Dust Protection | NextLvl Protection"
+        description="Ceramic coating for wheels in Brisbane. Resist brake dust bonding and keep wheels cleaner longer. NextLvl Protection, Acacia Ridge."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-wheels-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -67,7 +71,7 @@ export default function CeramicWheelsPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for Wheels</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for Wheels</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Brake Dust Rinses Off.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

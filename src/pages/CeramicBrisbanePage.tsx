@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Sun, Droplets, Shield, TrendingUp, Clock, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Sun, title: 'Brisbane UV Index Is Extreme', desc: 'Brisbane regularly records UV Index 11–13 in summer — the "extreme" band. Clear coat without protection oxidises and thins within 2–3 years in south-east Queensland conditions. Ceramic coating adds a UV-absorbing layer that the factory clear coat alone does not provide.' },
@@ -52,6 +51,11 @@ export default function CeramicBrisbanePage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating UV Protection Brisbane | NextLvl Protection"
+        description="Ceramic coating UV protection for Brisbane cars. Nano-ceramic layer resists UV oxidation and fading. Precision application, Acacia Ridge studio."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-uv-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function CeramicBrisbanePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Built for QLD UV.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

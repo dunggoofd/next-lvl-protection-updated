@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Eye, TrendingUp, Award, Zap, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Shield, title: 'Physical chip absorption', desc: 'Dark paint shows chips more clearly than light paint. PPF absorbs stone impacts and road debris before they reach the surface — no white or silver chips visible against black or dark grey.' },
@@ -52,6 +51,11 @@ export default function PPFDarkPaintPage() {
 
   return (
     <>
+      <PageMeta
+        title="PPF for Dark Paint Brisbane | Black & Dark Cars | NextLvl Protection"
+        description="Paint protection film for dark and black paint in Brisbane. Swirl-resistant, self-healing SunTek PPF for dark cars. Acacia Ridge installer."
+        canonical="https://www.nextlvlprotection.com.au/ppf-dark-paint-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function PPFDarkPaintPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
               PPF for Dark Paint — Brisbane
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>

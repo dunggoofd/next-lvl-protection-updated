@@ -37,19 +37,11 @@ export default function Footer() {
               Brisbane's certified premium film installation specialist.<br />
               SunTek PPF · Solar Gard VTX PRO · 3M Window Films
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, fontSize: 14 }}>
-              <a href="tel:0411164886" style={{ color: 'var(--color-text-secondary)', transition: 'color 150ms' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}>
-                0411 164 886
-              </a>
-              <a href="mailto:halo@nextlvlprotection.com.au" style={{ color: 'var(--color-text-secondary)', transition: 'color 150ms' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}>
-                halo@nextlvlprotection.com.au
-              </a>
-              <span style={{ color: 'var(--color-text-muted)' }}>Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110</span>
-              <span style={{ color: 'var(--color-text-muted)' }}>Mon–Fri 9am–5:30pm · Sat–Sun Closed</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <a href="tel:0411164886" className="footer-link">0411 164 886</a>
+              <a href="mailto:halo@nextlvlprotection.com.au" className="footer-link">halo@nextlvlprotection.com.au</a>
+              <span style={{ color: 'var(--color-text-muted)', fontSize: 14 }}>Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110</span>
+              <span style={{ color: 'var(--color-text-muted)', fontSize: 14 }}>Mon–Fri 9am–5:30pm · Sat–Sun Closed</span>
             </div>
           </div>
 
@@ -59,11 +51,7 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
               {services.map(s => (
                 <li key={s.href}>
-                  <Link to={s.href} style={{ color: 'var(--color-text-secondary)', fontSize: 14, transition: 'color 150ms' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent)')}
-                    onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}>
-                    {s.label}
-                  </Link>
+                  <Link to={s.href} className="footer-link">{s.label}</Link>
                 </li>
               ))}
             </ul>
@@ -75,11 +63,7 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
               {resourceLinks.map(h => (
                 <li key={h.href}>
-                  <Link to={h.href} style={{ color: 'var(--color-text-secondary)', fontSize: 14, transition: 'color 150ms' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent)')}
-                    onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}>
-                    {h.label}
-                  </Link>
+                  <Link to={h.href} className="footer-link">{h.label}</Link>
                 </li>
               ))}
             </ul>
@@ -100,9 +84,10 @@ export default function Footer() {
             © {new Date().getFullYear()} NextLvl Protection Pty Ltd. All rights reserved. Acacia Ridge, Brisbane QLD.
           </p>
           <div style={{ display: 'flex', gap: 20 }}>
-            <Link to="/gallery" style={{ color: 'var(--color-text-muted)', fontSize: 13, transition: 'color 150ms' }}>Gallery</Link>
-            <Link to="/about" style={{ color: 'var(--color-text-muted)', fontSize: 13, transition: 'color 150ms' }}>About</Link>
-            <Link to="/get-a-quote" style={{ color: 'var(--color-text-muted)', fontSize: 13, transition: 'color 150ms' }}>Get a Quote</Link>
+            <Link to="/gallery" className="footer-link" style={{ fontSize: 13 }}>Gallery</Link>
+            <Link to="/about" className="footer-link" style={{ fontSize: 13 }}>About</Link>
+            <Link to="/privacy-policy" className="footer-link" style={{ fontSize: 13 }}>Privacy Policy</Link>
+            <Link to="/get-a-quote" className="footer-link" style={{ fontSize: 13 }}>Get a Quote</Link>
           </div>
         </div>
       </div>

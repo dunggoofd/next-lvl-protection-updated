@@ -1,7 +1,11 @@
 import { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage                   = lazy(() => import('./pages/HomePage'));
 const PPFPage                    = lazy(() => import('./pages/PPFPage'));
@@ -41,6 +45,8 @@ const CeramicMattePage           = lazy(() => import('./pages/CeramicMattePage')
 const CeramicMaintenancePage     = lazy(() => import('./pages/CeramicMaintenancePage'));
 const CeramicResalePage          = lazy(() => import('./pages/CeramicResalePage'));
 const CeramicNearMePage          = lazy(() => import('./pages/CeramicNearMePage'));
+const NotFoundPage               = lazy(() => import('./pages/NotFoundPage'));
+const PrivacyPolicyPage          = lazy(() => import('./pages/PrivacyPolicyPage'));
 
 function PageLoader() {
   return (
@@ -115,6 +121,8 @@ export default function App() {
             <Route path="/ceramic-coating-maintenance-brisbane" element={<CeramicMaintenancePage />} />
             <Route path="/ceramic-coating-resale-brisbane" element={<CeramicResalePage />} />
             <Route path="/ceramic-coating-near-me-brisbane" element={<CeramicNearMePage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
       </Suspense>

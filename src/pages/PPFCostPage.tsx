@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   { q: 'How much does PPF cost in Brisbane?', a: 'PPF pricing in Brisbane depends on coverage area, film grade, and vehicle size. At NextLvl Protection: Impact Shield (bonnet leading edge + front bumper + guards) from $599. Front End Package (full bonnet + bumper + guards + headlights + mirrors) from $1,490. Track Package (front end + roof + A-pillars) from $2,290. Full wraps are quoted on application — contact us with your vehicle make and model.' },
@@ -44,6 +43,11 @@ export default function PPFCostPage() {
 
   return (
     <>
+      <PageMeta
+        title="PPF Cost Brisbane | Paint Protection Film Pricing | NextLvl Protection"
+        description="Paint protection film pricing in Brisbane. Impact shield from $599, front end from $1,490. Full wrap POA. SunTek Authorised installer."
+        canonical="https://www.nextlvlprotection.com.au/ppf-cost-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -59,7 +63,7 @@ export default function PPFCostPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>PPF Cost Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>PPF Cost Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Transparent Pricing.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 520 }}>

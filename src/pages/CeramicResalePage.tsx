@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, TrendingUp, Eye, Droplets, CheckCircle, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: TrendingUp, title: 'Buyers Pay More for Preserved Paint', desc: 'Paint condition is the first thing a serious buyer or dealer inspects. A vehicle with original glossy swirl-free paint with a documented ceramic history commands a measurable premium. Buyers accept lower offers when they see heavy swirling, oxidation, or paint defects — because they factor in correction costs.' },
@@ -52,6 +51,11 @@ export default function CeramicResalePage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating & Resale Value Brisbane | NextLvl Protection"
+        description="How ceramic coating protects resale value in Brisbane. Preserved paint condition in Queensland's harsh UV climate. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-resale-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function CeramicResalePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating and Resale Value</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating and Resale Value</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Sell More. Spend Less to Prepare.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

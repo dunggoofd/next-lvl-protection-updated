@@ -178,11 +178,6 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 768px) {
-          .pkg-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
     </div>
   );
 }

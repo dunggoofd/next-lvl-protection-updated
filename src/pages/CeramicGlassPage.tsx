@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Droplets, Shield, Clock, TrendingUp, Sun, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Droplets, title: 'Hydrophobic Glass — Real-World Benefit', desc: 'Water sheets off ceramic-coated glass instead of beading and sitting. At highway speed above 80km/h, rain effectively clears itself without wipers. Night driving in rain on coated glass is noticeably clearer than uncoated.' },
@@ -53,6 +52,11 @@ export default function CeramicGlassPage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Glass Coating Brisbane | Hydrophobic Glass | NextLvl Protection"
+        description="Ceramic coating for glass in Brisbane. Hydrophobic glass coating improves rain visibility and reduces cleaning. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-glass-coating-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function CeramicGlassPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Glass Coating Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Glass Coating Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Rain Sheets Off. Wipers Optional.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

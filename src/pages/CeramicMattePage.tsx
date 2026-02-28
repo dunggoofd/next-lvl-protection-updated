@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Droplets, Sun, CheckCircle, TrendingUp, Wrench } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Droplets, title: 'Matte Stays Matte', desc: 'Standard ceramic coatings formulated for gloss paint add a wet-look gloss that flattens the depth of matte. Matte-specific ceramic enhances hydrophobic performance without adding gloss — the satin and flat finish is preserved exactly.' },
@@ -52,6 +51,11 @@ export default function CeramicMattePage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating for Matte Paint Brisbane | NextLvl Protection"
+        description="Ceramic coating for matte and satin paint in Brisbane. Correct product for matte finishes — no gloss, no damage. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-matte-paint-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function CeramicMattePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for Matte Paint</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for Matte Paint</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Protect Without the Gloss.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

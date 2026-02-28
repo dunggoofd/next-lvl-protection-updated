@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/FAQAccordion';
+import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What is residential window tinting?', a: 'Residential window tinting is the application of a professional window film (such as 3M Solar film) to the inside of home or apartment windows. It reduces solar heat gain, UV radiation, and glare while preserving natural light transmission.' },
@@ -47,6 +48,12 @@ export default function ResidentialTintQuestionsPage() {
   }, []);
 
   return (
+    <>
+      <PageMeta
+        title="Residential Window Tinting Questions | Brisbane | NextLvl Protection"
+        description="Common questions about residential window tinting in Brisbane — heat rejection, privacy, 3M film options. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/residential-tinting-questions"
+      />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Residential Window Tinting — Brisbane Questions</h1>
@@ -67,5 +74,6 @@ export default function ResidentialTintQuestionsPage() {
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>
     </main>
+    </>
   );
 }

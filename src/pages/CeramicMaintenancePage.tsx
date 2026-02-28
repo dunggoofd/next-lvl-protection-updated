@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Droplets, Sun, CheckCircle, TrendingUp, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Droplets, title: 'pH-Neutral Wash Only', desc: 'After ceramic application, only pH-neutral car wash shampoos should be used. Alkaline or acidic products degrade the coating\'s hydrophobic layer from the top. pH-neutral products clean without attacking the Si-O bond that forms the ceramic matrix.' },
@@ -52,6 +51,11 @@ export default function CeramicMaintenancePage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating Maintenance Brisbane | Aftercare Guide | NextLvl Protection"
+        description="How to maintain ceramic coating in Brisbane. Washing tips, maintenance schedule, and aftercare guide. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-maintenance-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -67,7 +71,7 @@ export default function CeramicMaintenancePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Maintenance</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Maintenance</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Keep the Protection Performing.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

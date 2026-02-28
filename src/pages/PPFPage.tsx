@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Zap, TrendingUp, Clock, Award, Droplets, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import PackageVisualizer from '../components/PackageVisualizer';
@@ -10,8 +9,8 @@ import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const tiers: PackageTier[] = [
   {
@@ -85,6 +84,11 @@ export default function PPFPage() {
 
   return (
     <>
+      <PageMeta
+        title="Paint Protection Film Brisbane | SunTek Authorised Installer | NextLvl Protection"
+        description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 10-year warranty. Front end packages from $1,490. Acacia Ridge studio."
+        canonical="https://www.nextlvlprotection.com.au/ppf-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -101,7 +105,7 @@ export default function PPFPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
               Paint Protection Film — Brisbane
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>

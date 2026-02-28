@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Zap, TrendingUp, Award, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Shield, title: 'The chip never reaches your paint', desc: 'Stone chips, gravel, and road debris hit the film first. The urethane absorbs the impact. The paint underneath is undisturbed. No filler, no touch-up, no respray.' },
@@ -53,6 +52,11 @@ export default function PPFStoneChipPage() {
 
   return (
     <>
+      <PageMeta
+        title="Stone Chip Protection Brisbane | PPF | NextLvl Protection"
+        description="Paint protection film against stone chips and road debris in Brisbane. SunTek Authorised PPF installer. Packages from $599."
+        canonical="https://www.nextlvlprotection.com.au/ppf-stone-chip-protection-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -69,7 +73,7 @@ export default function PPFStoneChipPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
               Stop Stone Chips — Brisbane PPF
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>

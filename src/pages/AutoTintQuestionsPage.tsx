@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/FAQAccordion';
+import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What VLT (Visible Light Transmission) is legal in Queensland?', a: 'In Queensland, the minimum VLT is 35% for all windows in passenger vehicles (including SUVs and utes), except the rear window and rear side windows behind the B-pillar, which have no VLT restriction for vehicles with rear-view mirrors. The windscreen front strip (visor band) is also regulated. NextLvl Protection installs compliant VLT levels on all front windows as standard.' },
@@ -47,6 +48,12 @@ export default function AutoTintQuestionsPage() {
   }, []);
 
   return (
+    <>
+      <PageMeta
+        title="Automotive Tinting Questions Answered | Brisbane | NextLvl Protection"
+        description="Common questions about automotive window tinting in Brisbane — VLT laws, heat rejection, Solar Gard film. NextLvl Protection."
+        canonical="https://www.nextlvlprotection.com.au/automotive-tinting-questions"
+      />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Automotive Window Tinting — Brisbane Questions</h1>
@@ -67,5 +74,6 @@ export default function AutoTintQuestionsPage() {
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>
     </main>
+    </>
   );
 }

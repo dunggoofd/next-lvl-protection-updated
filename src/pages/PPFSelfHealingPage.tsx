@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Zap, Thermometer, Shield, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Zap, title: 'Light Swirls Vanish Under Heat', desc: 'SunTek Ultra\'s topcoat reflows under warmth — solar heat, warm water, or a heat gun. Light swirl marks from automatic washes or incorrect hand washing disappear without any product or polishing.' },
@@ -53,6 +52,11 @@ export default function PPFSelfHealingPage() {
 
   return (
     <>
+      <PageMeta
+        title="Self-Healing PPF Brisbane | SunTek Ultra | NextLvl Protection"
+        description="Self-healing paint protection film in Brisbane. SunTek Ultra PPF heals minor scratches with heat. Authorised installer, Acacia Ridge."
+        canonical="https://www.nextlvlprotection.com.au/ppf-self-healing-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -68,7 +72,7 @@ export default function PPFSelfHealingPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Self-Healing PPF Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Self-Healing PPF Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Swirls Gone. In the Sun.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

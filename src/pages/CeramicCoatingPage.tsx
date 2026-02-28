@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Droplets, Sun, Shield, TrendingUp, Eye, Clock, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import PackageVisualizer from '../components/PackageVisualizer';
@@ -10,8 +9,8 @@ import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const tiers: PackageTier[] = [
   {
@@ -84,6 +83,11 @@ export default function CeramicCoatingPage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating Brisbane | Precision Application | NextLvl Protection"
+        description="Professional ceramic coating in Brisbane. Hydrophobic, UV-resistant nano-ceramic bonded to your paint. Packages from $699. Acacia Ridge studio."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -97,9 +101,9 @@ export default function CeramicCoatingPage() {
         <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=1920&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
-          <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
+          <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating — Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating — Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Precision Application.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 500 }}>

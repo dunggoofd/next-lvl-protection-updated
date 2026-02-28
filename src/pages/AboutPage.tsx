@@ -1,11 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Award, MapPin, Clock, Phone, Mail, Shield, Star } from 'lucide-react';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const certifications = [
   { title: 'SunTek Authorised Installer', desc: 'Authorised to install SunTek PPF and window film under manufacturer warranty terms.' },
@@ -37,6 +36,27 @@ export default function AboutPage() {
 
   return (
     <>
+      <PageMeta
+        title="About NextLvl Protection | Brisbane Film Installation Specialists"
+        description="Meet the team behind NextLvl Protection — Brisbane's certified PPF, ceramic coating and window tinting studio. SunTek, Solar Gard VTX PRO, 3M authorised."
+        canonical="https://www.nextlvlprotection.com.au/about"
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "NextLvl Protection",
+        "url": "https://www.nextlvlprotection.com.au",
+        "telephone": "0411164886",
+        "email": "info@nextlvlprotection.com.au",
+        "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110", "addressCountry": "AU" },
+        "geo": { "@type": "GeoCoordinates", "latitude": -27.5585, "longitude": 153.0197 },
+        "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "SunTek Authorised Installer" },
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Solar Gard VTX PRO Authorised Installer" },
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "3M Authorised Window Film Installer" }
+        ],
+      })}} />
       <section ref={heroRef} style={{ position: 'relative', height: '70dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
         <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />

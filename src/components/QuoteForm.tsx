@@ -14,15 +14,18 @@ interface QuoteFormProps {
   defaultService?: string;
 }
 
+function FieldError({ msg }: { msg: string }) {
+  return <p style={{ color: '#c0392b', fontSize: 12, marginTop: 4 }}>{msg}</p>;
+}
+
 export default function QuoteForm({ defaultService }: QuoteFormProps) {
   const [step, setStep] = useState(1);
   const [service, setService] = useState(defaultService || '');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const formRef = useRef<HTMLDivElement>(null);
-  const successRef = useRef<HTMLDivElement>(null);
 
-  // Vehicle / property fields
   const [vehicleMake, setVehicleMake] = useState('');
   const [vehicleModel, setVehicleModel] = useState('');
   const [vehicleYear, setVehicleYear] = useState('');
@@ -37,7 +40,6 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
   const [sqm, setSqm] = useState('');
   const [commGoal, setCommGoal] = useState('');
 
-  // Contact fields
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
@@ -45,25 +47,51 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
   const [date, setDate] = useState('');
   const [referral, setReferral] = useState('');
 
-  const handleNext = () => {
-    if (step < 3) {
-      gsap.fromTo(formRef.current, { x: 0, opacity: 1 }, { x: -40, opacity: 0, duration: 0.2, ease: 'power2.in', onComplete: () => {
-        setStep(s => s + 1);
-        gsap.fromTo(formRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'power3.out' });
-      }});
-    }
+  const animateStep = (direction: 'forward' | 'back', next: () => void) => {
+    const outX = direction === 'forward' ? -40 : 40;
+    const inX = direction === 'forward' ? 40 : -40;
+    gsap.fromTo(formRef.current, { x: 0, opacity: 1 }, {
+      x: outX, opacity: 0, duration: 0.2, ease: 'power2.in',
+      onComplete: () => {
+        next();
+        gsap.fromTo(formRef.current, { x: inX, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'power3.out' });
+      },
+    });
   };
-  const handleBack = () => {
-    if (step > 1) {
-      gsap.fromTo(formRef.current, { x: 0, opacity: 1 }, { x: 40, opacity: 0, duration: 0.2, ease: 'power2.in', onComplete: () => {
-        setStep(s => s - 1);
-        gsap.fromTo(formRef.current, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'power3.out' });
-      }});
+
+  const validateStep1 = (): Record<string, string> => {
+    if (!service) return { service: 'Please select a service.' };
+    return {};
+  };
+
+  const validateStep3 = () => {
+    const errs: Record<string, string> = {};
+    if (!name.trim()) errs.name = 'Name is required.';
+    if (!mobile.trim()) errs.mobile = 'Mobile is required.';
+    else if (mobile.replace(/\D/g, '').length < 10) errs.mobile = 'Enter a valid Australian mobile number.';
+    if (!email.trim()) errs.email = 'Email is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errs.email = 'Enter a valid email address.';
+    return errs;
+  };
+
+  const handleNext = () => {
+    if (step === 1) {
+      const errs = validateStep1();
+      if (Object.keys(errs).length) { setErrors(errs); return; }
     }
+    setErrors({});
+    if (step < 3) animateStep('forward', () => setStep(s => s + 1));
+  };
+
+  const handleBack = () => {
+    setErrors({});
+    if (step > 1) animateStep('back', () => setStep(s => s - 1));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const errs = validateStep3();
+    if (Object.keys(errs).length) { setErrors(errs); return; }
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -75,7 +103,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
 
   if (submitted) {
     return (
-      <div ref={successRef} style={{ textAlign: 'center', padding: '40px 0' }}>
+      <div style={{ textAlign: 'center', padding: '40px 0' }}>
         <CheckCircle size={48} color="var(--color-accent)" style={{ marginBottom: 20 }} />
         <h3 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 12 }}>We've Got Your Request.</h3>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: 24 }}>
@@ -96,7 +124,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
           <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <div style={{
               width: 28, height: 28, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-              background: s < step ? 'var(--color-accent)' : s === step ? 'var(--color-accent)' : 'var(--color-surface-raised)',
+              background: s <= step ? 'var(--color-accent)' : 'var(--color-surface-raised)',
               color: s <= step ? 'var(--color-bg-primary)' : 'var(--color-text-muted)',
               fontSize: 12, fontWeight: 700, flexShrink: 0,
               border: s > step ? '1px solid var(--color-border)' : 'none',
@@ -118,10 +146,11 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
             <div>
               <label htmlFor="service">Service Interested In</label>
-              <select id="service" value={service} onChange={e => setService(e.target.value)} required aria-required="true">
+              <select id="service" value={service} onChange={e => { setService(e.target.value); setErrors({}); }} aria-required="true" aria-invalid={!!errors.service}>
                 <option value="">Select a service…</option>
                 {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
+              {errors.service && <FieldError msg={errors.service} />}
             </div>
 
             {(service === 'Paint Protection Film (PPF)' || service === 'Ceramic Coating' || service === 'Automotive Window Tinting') && (
@@ -238,16 +267,19 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <label htmlFor="fullName">Full Name *</label>
-                <input id="fullName" value={name} onChange={e => setName(e.target.value)} required aria-required="true" placeholder="Your full name" />
+                <input id="fullName" value={name} onChange={e => setName(e.target.value)} aria-required="true" aria-invalid={!!errors.name} placeholder="Your full name" />
+                {errors.name && <FieldError msg={errors.name} />}
               </div>
               <div>
                 <label htmlFor="mobile">Mobile *</label>
-                <input id="mobile" type="tel" value={mobile} onChange={e => setMobile(e.target.value)} required aria-required="true" placeholder="04XX XXX XXX" />
+                <input id="mobile" type="tel" value={mobile} onChange={e => setMobile(e.target.value)} aria-required="true" aria-invalid={!!errors.mobile} placeholder="04XX XXX XXX" />
+                {errors.mobile && <FieldError msg={errors.mobile} />}
               </div>
             </div>
             <div>
               <label htmlFor="email">Email *</label>
-              <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required aria-required="true" placeholder="your@email.com" />
+              <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} aria-required="true" aria-invalid={!!errors.email} placeholder="your@email.com" />
+              {errors.email && <FieldError msg={errors.email} />}
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
@@ -279,7 +311,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         </div>
         <div>
           {step < 3 ? (
-            <button type="button" className="btn-primary" onClick={handleNext} disabled={step === 1 && !service} style={{ opacity: step === 1 && !service ? 0.5 : 1 }}>
+            <button type="button" className="btn-primary" onClick={handleNext}>
               <span className="btn-slide" />
               <span>Continue</span>
             </button>
@@ -297,7 +329,6 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
           )}
         </div>
       </div>
-      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </form>
   );
 }

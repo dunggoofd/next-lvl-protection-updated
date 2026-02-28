@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MapPin, Shield, Clock, CheckCircle, TrendingUp, Droplets } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: MapPin, title: 'Acacia Ridge — Central South Brisbane', desc: 'Our studio at Unit 16, 18-24 Loam St, Acacia Ridge is 15 minutes from the CBD. Easy freeway access via the M3 and Logan Motorway. Acacia Ridge is accessible from Sunnybank, Calamvale, Stretton, Runcorn, Eight Mile Plains, Rochedale, and Carindale without crossing the city.' },
@@ -52,6 +51,11 @@ export default function CeramicNearMePage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating Near Me Brisbane | NextLvl Protection Acacia Ridge"
+        description="Looking for ceramic coating near you in Brisbane? NextLvl Protection is in Acacia Ridge, serving all southside Brisbane suburbs."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-near-me-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -72,7 +76,7 @@ export default function CeramicNearMePage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Near Me — Brisbane</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating Near Me — Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Acacia Ridge. South Brisbane.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>

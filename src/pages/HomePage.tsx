@@ -1,14 +1,12 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Droplets, Eye, Building2, Car, ArrowRight } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 import heroHome from '../assets/hero-home.jpg';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
@@ -95,11 +93,31 @@ export default function HomePage() {
 
   return (
     <>
+      <PageMeta
+        title="Paint Protection Film, Ceramic Coating &amp; Window Tinting Brisbane | NextLvl Protection"
+        description="Brisbane's certified PPF, ceramic coating and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0411 164 886."
+        canonical="https://www.nextlvlprotection.com.au/"
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "NextLvl Protection",
+        "telephone": "0411164886",
+        "email": "halo@nextlvlprotection.com.au",
+        "url": "https://www.nextlvlprotection.com.au",
+        "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110", "addressCountry": "AU" },
+        "geo": { "@type": "GeoCoordinates", "latitude": -27.5667, "longitude": 153.0167 },
+        "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30" }],
+        "areaServed": "Brisbane",
+        "description": "Brisbane's certified paint protection film, ceramic coating, and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised Installer.",
+        "priceRange": "$$",
+      })}} />
+
       {/* HERO */}
       <section
         ref={heroRef}
         style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}
-        aria-label="Hero"
+        aria-label="Hero — Paint &amp; Glass Protection Brisbane"
       >
         {/* Background image */}
         <div
@@ -114,10 +132,12 @@ export default function HomePage() {
         {/* Gradient overlay */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 25%, transparent 100%)' }} aria-hidden="true" />
 
+        {/* Sine wave decoration */}
+
         {/* Content */}
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ marginTop: 0, marginBottom: 0 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', letterSpacing: '-0.01em', lineHeight: 1 }}>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', letterSpacing: '-0.01em', lineHeight: 1 }}>
               Paint &amp; Glass Protection — Brisbane
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', letterSpacing: '-0.02em', lineHeight: 0.95, marginTop: 4 }}>

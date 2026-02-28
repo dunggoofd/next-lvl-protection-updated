@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Sun, Droplets, Clock, TrendingUp, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
+import PageMeta from '../components/PageMeta';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   { icon: Shield, title: 'First Coat Is Easiest', desc: 'Factory paint that has never been exposed to UV or contamination bonds the most effectively with ceramic. The coating fills microscopic imperfections in fresh clear coat for a stronger, longer-lasting bond than on weathered paint.' },
@@ -53,6 +52,11 @@ export default function CeramicNewCarPage() {
 
   return (
     <>
+      <PageMeta
+        title="Ceramic Coating for New Cars Brisbane | NextLvl Protection"
+        description="Ceramic coating for new cars in Brisbane. Protect your new car's paint before Queensland's UV causes damage. From $699."
+        canonical="https://www.nextlvlprotection.com.au/ceramic-coating-new-car-brisbane"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
@@ -69,7 +73,7 @@ export default function CeramicNewCarPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ceramic']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for New Cars</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating for New Cars</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Brisbane. First 30 Days.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
