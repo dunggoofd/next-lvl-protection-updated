@@ -209,6 +209,14 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
 }
 .radial-glow { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59, 100, 220, 0.05) 0%, transparent 70%); }
 
+.services-wave-bg {
+  background-image: url('/abstract-wave.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services-wave-bg::before { display: none; }
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-bg-primary); }

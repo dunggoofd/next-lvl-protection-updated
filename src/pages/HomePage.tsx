@@ -161,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES GRID */}
-      <section ref={servicesRef} className="section" style={{ background: 'var(--color-bg-secondary)' }}>
+      <section ref={servicesRef} className="section services-wave-bg" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <div style={{ marginBottom: 48 }}>
             <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>What We Do</p>
