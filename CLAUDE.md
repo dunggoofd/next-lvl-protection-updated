@@ -1,4 +1,4 @@
-# CLAUDE.md — NextLvl Protection Website
+# CLAUDE.md: NextLvl Protection Website
 
 ## Project Overview
 
@@ -10,6 +10,12 @@
 - Address: Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110
 - Hours: Mon–Fri 9am–5:30pm · Sat–Sun Closed
 - Certifications: SunTek PPF Authorised · Solar Gard VTX PRO Certified · 3M Window Films Authorised · Ceramic Pro Certified
+
+---
+
+## Writing Style
+
+- Never use em dashes (—) in this file or in any generated copy, comments, or documentation. Use commas, semicolons, colons, or rewrite the sentence instead.
 
 ---
 
@@ -37,7 +43,7 @@ npm run preview    # Serve the dist/ build locally
 npm run lint       # ESLint (TypeScript + React hooks rules)
 ```
 
-Always run `npm run build` before committing to catch TypeScript errors — the type-check runs as part of the build step.
+Always run `npm run build` before committing to catch TypeScript errors. The type-check runs as part of the build step.
 
 ---
 
@@ -48,7 +54,7 @@ src/
 ├── App.tsx               # Router, lazy imports, Layout shell, ScrollToTop
 ├── main.tsx              # React root mount
 ├── index.css             # Global design system (CSS custom properties, utility classes)
-├── App.css               # (minimal, largely unused — prefer index.css)
+├── App.css               # (minimal, largely unused; prefer index.css)
 ├── assets/
 │   └── hero-home.jpg     # Local hero image (only local asset; all other images are Unsplash URLs)
 ├── components/           # Shared UI components (see below)
@@ -120,7 +126,7 @@ Layout = <Navbar /> + <main><Outlet /></main> + <Footer />
 All shared components live in `src/components/`. Each is a default export.
 
 ### `Navbar`
-Fixed, pill-shaped floating navbar. Transitions from transparent to frosted-glass on scroll (threshold: 60px). Has a desktop dropdown for Services and a full-screen mobile overlay (GSAP staggered entrance). Mobile breakpoint: 768px — desktop nav hides, hamburger shows.
+Fixed, pill-shaped floating navbar. Transitions from transparent to frosted-glass on scroll (threshold: 60px). Has a desktop dropdown for Services and a full-screen mobile overlay (GSAP staggered entrance). Mobile breakpoint: 768px; desktop nav hides, hamburger shows.
 
 **Mobile sticky bottom bar** (`mobile-sticky-bar` CSS class): renders a fixed bar at the bottom on mobile with three quick-action links: Call, Quote, Directions.
 
@@ -150,9 +156,9 @@ Accordion with GSAP height animations. Single item open at a time. Accepts `{ q:
 
 ### `PackageVisualizer`
 Tab-based package selector with an SVG diagram on the right. Supports three diagram types:
-- `'car'` — Shows which panels are highlighted based on the active tier name (string matching on tier name)
-- `'house'` — Static, all windows highlighted
-- `'building'` — Static grid of glazing panels highlighted
+- `'car'`: Shows which panels are highlighted based on the active tier name (string matching on tier name)
+- `'house'`: Static, all windows highlighted
+- `'building'`: Static grid of glazing panels highlighted
 
 ```ts
 interface PackageTier {
@@ -185,16 +191,16 @@ Star-rating review cards grid. Accepts an optional `aggregate` prop for the over
 
 ## Design System (`src/index.css`)
 
-The entire visual language is defined with CSS custom properties. **Never hardcode colour values** — always use the tokens.
+The entire visual language is defined with CSS custom properties. **Never hardcode colour values**; always use the tokens.
 
 ### Colour tokens
 ```css
---color-bg-primary      /* #F8F9FB — page background */
---color-bg-secondary    /* #FFFFFF — section alternate */
+--color-bg-primary      /* #F8F9FB - page background */
+--color-bg-secondary    /* #FFFFFF - section alternate */
 --color-bg-tertiary     /* #EEF0F5 */
---color-surface         /* rgba(255,255,255,0.80) — card/glass backgrounds */
+--color-surface         /* rgba(255,255,255,0.80) - card/glass backgrounds */
 --color-surface-raised  /* rgba(255,255,255,0.95) */
---color-accent          /* #1A1F2E — primary brand colour (dark navy) */
+--color-accent          /* #1A1F2E - primary brand colour (dark navy) */
 --color-accent-bright   /* #0D1117 */
 --color-accent-dim      /* rgba(26,31,46,0.12) */
 --color-text-primary    /* #0D1117 */
@@ -211,7 +217,7 @@ The entire visual language is defined with CSS custom properties. **Never hardco
 --font-display   /* 'Syne', sans-serif */
 --font-body      /* 'DM Sans', sans-serif */
 
-/* Also used inline: 'Bebas Neue', sans-serif — display/hero headings */
+/* Also used inline: 'Bebas Neue', sans-serif - display/hero headings */
 
 --size-hero   /* clamp(72px, 12vw, 160px) */
 --size-h1     /* clamp(40px, 6vw, 80px) */
@@ -253,11 +259,11 @@ The entire visual language is defined with CSS custom properties. **Never hardco
 - **Inline styles (`style={{...}}`)** are used for layout, spacing, and one-off values inside page components.
 - **CSS classes** are used for repeated patterns (buttons, cards, sections) defined in `index.css`.
 - **No Tailwind, no CSS modules, no styled-components.**
-- Responsive overrides for grid layouts use **CSS class-based rules**, not `[style*="..."]` attribute selectors. Attribute selectors targeting React inline styles are unreliable in practice — React's client-side style serialisation does not guarantee a format that attribute selectors can consistently match.
+- Responsive overrides for grid layouts use **CSS class-based rules**, not `[style*="..."]` attribute selectors. Attribute selectors targeting React inline styles are unreliable in practice; React's client-side style serialisation does not guarantee a format that attribute selectors can consistently match.
 - **Pattern for any new two-column or multi-column grid:**
   1. Add a semantic `className` to the grid element (e.g. `className="my-section-grid"`).
   2. Add a `@media (max-width: 900px)` rule in `index.css` that sets `grid-template-columns: 1fr !important` on that class.
-  3. Keep the inline `style` for desktop layout as-is — the `!important` in the class rule overrides it on mobile.
+  3. Keep the inline `style` for desktop layout as-is; the `!important` in the class rule overrides it on mobile.
 - **Existing responsive classes** (already in `index.css`):
   | Class | Collapses at |
   |---|---|
@@ -273,18 +279,18 @@ The entire visual language is defined with CSS custom properties. **Never hardco
 
 Every service page follows this consistent section order:
 
-1. **Hero** — full-viewport, parallax background image (Unsplash URL), `<TrustBadges>`, H1, subtitle, CTA buttons
-2. **Packages** — `<PackageVisualizer>` with `tiers` data
-3. **Benefits** — 2-column grid of `<div className="card">` items with Lucide icons
-4. **Process** — 3-step numbered cards
-5. **Inclusions** — checklist section
-6. **Warranty / Aftercare** — two-column card layout
-7. **Before / After** — `<BeforeAfterSlider>` grid
-8. **Reviews** — `<Reviews>` with page-specific testimonials
-9. **FAQ** — `<FAQAccordion>` + link to the dedicated questions page
-10. **Philosophy** — full-width display type statement
-11. **CTA** — `<CTABlock>` with the form
-12. **Internal links** — related service `<Link>` buttons
+1. **Hero**: full-viewport, parallax background image (Unsplash URL), `<TrustBadges>`, H1, subtitle, CTA buttons
+2. **Packages**: `<PackageVisualizer>` with `tiers` data
+3. **Benefits**: 2-column grid of `<div className="card">` items with Lucide icons
+4. **Process**: 3-step numbered cards
+5. **Inclusions**: checklist section
+6. **Warranty / Aftercare**: two-column card layout
+7. **Before / After**: `<BeforeAfterSlider>` grid
+8. **Reviews**: `<Reviews>` with page-specific testimonials
+9. **FAQ**: `<FAQAccordion>` + link to the dedicated questions page
+10. **Philosophy**: full-width display type statement
+11. **CTA**: `<CTABlock>` with the form
+12. **Internal links**: related service `<Link>` buttons
 
 Variation/SEO pages (e.g. `PPFCostPage`, `CeramicMaintenancePage`) are lighter: they omit `PackageVisualizer` and `PackageVisualizer`-related sections but keep the hero, FAQ, reviews, and `CTABlock` pattern.
 
@@ -306,7 +312,7 @@ useEffect(() => {
 }, []);
 ```
 
-All animated elements inside the hero get `className="hero-anim"` — this is how GSAP selects them.
+All animated elements inside the hero get `className="hero-anim"`; this is how GSAP selects them.
 
 ### JSON-LD structured data
 Every service page renders a `<script type="application/ld+json">` block using `dangerouslySetInnerHTML`. Schema type is `Service` with `LocalBusiness` provider. Always include this when creating new service pages.
@@ -340,13 +346,13 @@ Every service page renders a `<script type="application/ld+json">` block using `
 - `gsap` and `ScrollTrigger` are imported from the `gsap` package.
 - `gsap.registerPlugin(ScrollTrigger)` is called at the module level in every page that uses scroll-based animations.
 - Always use `gsap.context()` with a cleanup `return () => ctx.revert()` inside `useEffect` to prevent animation leaks on unmount.
-- `FAQAccordion` uses imperative GSAP height tweens on `div` refs — not React state for height — to avoid layout thrash.
+- `FAQAccordion` uses imperative GSAP height tweens on `div` refs, not React state for height, to avoid layout thrash.
 
 ---
 
 ## Adding a New Page
 
-1. Create `src/pages/YourNewPage.tsx` — follow the page conventions above.
+1. Create `src/pages/YourNewPage.tsx`; follow the page conventions above.
 2. Add a `lazy` import in `src/App.tsx`.
 3. Add a `<Route>` inside the `<Route element={<Layout />}>` block in `src/App.tsx`.
 4. If it's an SEO/variation page, add it to the relevant section in the footer or as an internal link on its parent service page.
@@ -355,7 +361,7 @@ Every service page renders a `<script type="application/ld+json">` block using `
 
 ## Business Content Rules
 
-- All copy is Brisbane/Queensland specific — reference the location, UV conditions, and local context.
+- All copy is Brisbane/Queensland specific; reference the location, UV conditions, and local context.
 - Prices must match what's in the service page `tiers` arrays:
   - PPF: Impact Shield from $599 · Front End from $1,490 · Track from $2,290 · Full Wrap POA
   - Ceramic: Essential from $699 · Protection from $1,299 · Elite from $1,999 · Signature POA
@@ -363,7 +369,7 @@ Every service page renders a `<script type="application/ld+json">` block using `
   - Residential Tint: from $390
   - Commercial Tint: POA
 - Response time commitment: "within 2 business hours"
-- The business does not offer cheap/generic options — copy always emphasises SunTek, quality, and precision.
+- The business does not offer cheap/generic options; copy always emphasises SunTek, quality, and precision.
 
 ---
 
@@ -375,7 +381,7 @@ Config is `eslint.config.js` (flat config format). Rules applied to all `.ts` an
 - `eslint-plugin-react-hooks` recommended
 - `eslint-plugin-react-refresh` (Vite mode)
 
-Run `npm run lint` to check. The build does not fail on lint errors — run lint separately.
+Run `npm run lint` to check. The build does not fail on lint errors; run lint separately.
 
 ---
 
