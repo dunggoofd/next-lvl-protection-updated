@@ -1,14 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Shield, Droplets, Eye, Building2, Car, ArrowRight } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import heroHome from '../assets/hero-home.jpg';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {

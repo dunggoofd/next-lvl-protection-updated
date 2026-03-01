@@ -1,11 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Award, MapPin, Clock, Phone, Mail, Shield, Star } from 'lucide-react';
 import CTABlock from '../components/CTABlock';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const certifications = [
   { title: 'SunTek Authorised Installer', desc: 'Authorised to install SunTek PPF and window film under manufacturer warranty terms.' },
