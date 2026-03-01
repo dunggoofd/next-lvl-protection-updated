@@ -73,12 +73,12 @@ export default function PPFStoneChipPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Why PPF</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>How the Film Stops Chips</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => {
                 const Icon = b.icon;
                 return (
@@ -100,7 +100,7 @@ export default function PPFStoneChipPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Coverage</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Where Chips Happen Most</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { zone: 'Front Bumper', risk: 'Highest', desc: 'Direct exposure to road debris at highway speed. The first panel to take gravel and stone impacts.' },
               { zone: 'Bonnet', risk: 'High', desc: 'Stones deflected upward by the front bumper and from leading wheel arch area. High chip accumulation over time.' },

@@ -299,4 +299,9 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
   .link-row {
     flex-direction: column;
   }
+
+  .price-row-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
 }

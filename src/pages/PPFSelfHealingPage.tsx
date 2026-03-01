@@ -86,7 +86,7 @@ export default function PPFSelfHealingPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>What Self-Healing Does and Doesn't Fix</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
             <div className="card" style={{ padding: 28, borderTop: '2px solid #22c55e' }}>
               <p style={{ fontWeight: 700, fontSize: 14, color: '#22c55e', marginBottom: 16, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Self-Healing Fixes</p>
               {['Light swirl marks from hand washing', 'Fine surface scratches from wiping', 'Automatic car wash brush marks', 'Minor surface abrasion from fabric', 'Environmental micro-scratches'].map((item, i) => (

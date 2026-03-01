@@ -70,7 +70,7 @@ export default function PPFCostPage() {
             ].map((row, i, arr) => (
               <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === arr.length - 1 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {row.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}
-                <div style={{ display: 'grid', gridTemplateColumns: '200px 1fr 120px 160px', gap: 24, alignItems: 'center' }}>
+                <div className="price-row-grid" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 120px 160px', gap: 24, alignItems: 'center' }}>
                   <div>
                     <p style={{ fontWeight: 700, fontSize: 15, marginBottom: 2 }}>{row.package}</p>
                     <p style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>{row.warranty} warranty</p>
@@ -92,7 +92,7 @@ export default function PPFCostPage() {
       {/* WHAT'S INCLUDED */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What Every Quote Includes</h2>

@@ -99,7 +99,7 @@ export default function SunTekPPFPage() {
               { spec: 'Manufacturer', value: 'SunTek Window Films — Eastman Chemical Company. Manufactured in USA.' },
             ].map((row, i) => (
               <div key={i} className="card" style={{ padding: '16px 24px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 7 ? '0 0 4px 4px' : 0 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '220px 1fr', gap: 24, alignItems: 'center' }}>
+                <div className="price-row-grid" style={{ display: 'grid', gridTemplateColumns: '220px 1fr', gap: 24, alignItems: 'center' }}>
                   <p style={{ fontWeight: 700, fontSize: 13, color: 'var(--color-text-muted)' }}>{row.spec}</p>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{row.value}</p>
                 </div>

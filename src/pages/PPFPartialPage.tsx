@@ -83,7 +83,7 @@ export default function PPFPartialPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
             {partialZones.map((zone, i) => (
               <div key={i} className="card" style={{ padding: '18px 24px', borderRadius: i === 0 ? '4px 4px 0 0' : i === partialZones.length - 1 ? '0 0 4px 4px' : 0 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '240px 1fr 180px', gap: 24, alignItems: 'center' }}>
+                <div className="price-row-grid" style={{ display: 'grid', gridTemplateColumns: '240px 1fr 180px', gap: 24, alignItems: 'center' }}>
                   <p style={{ fontWeight: 700, fontSize: 14 }}>{zone.zone}</p>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{zone.why}</p>
                   <p style={{ color: 'var(--color-accent)', fontFamily: 'Bebas Neue, sans-serif', fontSize: 14, letterSpacing: '0.05em' }}>{zone.price}</p>

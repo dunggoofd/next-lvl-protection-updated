@@ -72,7 +72,7 @@ export default function PPFResalePage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>The Resale Case</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05, marginBottom: 24 }}>What Paint Condition Costs You at Sale</h2>
@@ -104,12 +104,12 @@ export default function PPFResalePage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Why It Works</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>How PPF Protects Your Sale Price</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => {
                 const Icon = b.icon;
                 return (
@@ -128,7 +128,7 @@ export default function PPFResalePage() {
       {/* INCLUSIONS */}
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>04</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What You Get at Handover</h2>

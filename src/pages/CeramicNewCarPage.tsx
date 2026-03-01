@@ -96,7 +96,7 @@ export default function CeramicNewCarPage() {
               { window: '12+ months', condition: 'Established UV oxidation, clear coat thinning beginning', prep: 'Multi-stage correction likely. Paint condition assessment at booking.', outcome: 'Correct First' },
             ].map((row, i, arr) => (
               <div key={i} className="card" style={{ padding: '18px 24px', borderRadius: i === 0 ? '4px 4px 0 0' : i === arr.length - 1 ? '0 0 4px 4px' : 0 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '120px 1fr 1fr 100px', gap: 20, alignItems: 'center' }}>
+                <div className="price-row-grid" style={{ display: 'grid', gridTemplateColumns: '120px 1fr 1fr 100px', gap: 20, alignItems: 'center' }}>
                   <p style={{ fontWeight: 700, fontSize: 13, color: 'var(--color-accent)', fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.05em' }}>{row.window}</p>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: 12 }}>{row.condition}</p>
                   <p style={{ color: 'var(--color-text-muted)', fontSize: 12 }}>{row.prep}</p>

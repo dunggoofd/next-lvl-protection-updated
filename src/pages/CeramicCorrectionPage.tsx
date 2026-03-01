@@ -86,7 +86,7 @@ export default function CeramicCorrectionPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Stage 1 vs Multi-Stage</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
             {[
               { stage: 'Stage 1 Correction', targets: ['Light swirl marks from wash events', 'Surface haze and oxidation', 'Minor buffer trails', 'Fine water spot etching'], time: '2–4 hours', included: 'Included in Elite package' },
               { stage: 'Multi-Stage Correction', targets: ['Heavier swirling from automatic washes', 'Moderate oxidation and fade', 'Deeper scratches within clear coat', 'Compound buffer trails from prior correction'], time: '6–12+ hours', included: 'Included in Signature package' },
