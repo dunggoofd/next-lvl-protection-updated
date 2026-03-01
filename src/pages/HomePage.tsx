@@ -161,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES GRID */}
-      <section ref={servicesRef} className="section services-wave-bg" style={{ background: 'var(--color-bg-secondary)' }}>
+      <section ref={servicesRef} className="section services-wave-bg">
         <div className="container">
           <div style={{ marginBottom: 48 }}>
             <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>What We Do</p>
@@ -219,21 +219,6 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* SERVICE AREAS */}
-      <section className="section" style={{ background: 'var(--color-bg-secondary)', paddingTop: 'clamp(40px, 5vw, 60px)', paddingBottom: 'clamp(40px, 5vw, 60px)' }}>
-        <div className="container">
-          <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>
-            We Service
-          </p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 2 }}>
-            Acacia Ridge · Sunnybank · Eight Mile Plains · Moorooka · Salisbury · Rocklea · Coopers Plains · Archerfield · Runcorn · Calamvale · Algester · Parkinson · Oxley · Forest Lake · Richlands · Inala · Browns Plains · Sunnybank Hills · Macgregor · Nathan
-          </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: 13, marginTop: 12 }}>
-            Based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Brisbane southside specialists.
-          </p>
         </div>
       </section>
 
