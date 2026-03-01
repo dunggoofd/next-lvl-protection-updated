@@ -217,6 +217,29 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
 .accordion-body { overflow: hidden; height: 0; }
 .accordion-body-inner { padding-bottom: 20px; color: var(--color-text-secondary); line-height: 1.75; font-size: var(--size-body); }
 
+/* Differentiators + CTABlock — mobile collapse */
+@media (max-width: 900px) {
+  .differentiators-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .cta-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+@media (max-width: 640px) {
+  .cta-grid .card {
+    padding: 20px !important;
+  }
+  .form-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .form-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Mobile sticky bar */
 .mobile-sticky-bar { display: none; }
 @media (max-width: 768px) {

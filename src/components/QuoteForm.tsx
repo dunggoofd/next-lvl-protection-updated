@@ -138,7 +138,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
             </div>
 
             {(service === 'Paint Protection Film (PPF)' || service === 'Ceramic Coating' || service === 'Automotive Window Tinting') && (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
+              <div className="form-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
                 <div><label htmlFor="make">Vehicle Make</label><input id="make" value={vehicleMake} onChange={e => setVehicleMake(e.target.value)} placeholder="e.g. Toyota" /></div>
                 <div><label htmlFor="model">Model</label><input id="model" value={vehicleModel} onChange={e => setVehicleModel(e.target.value)} placeholder="e.g. Camry" /></div>
                 <div><label htmlFor="year">Year</label><input id="year" value={vehicleYear} onChange={e => setVehicleYear(e.target.value)} placeholder="e.g. 2023" /></div>
@@ -248,7 +248,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         {/* Step 3 */}
         {step === 3 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+            <div className="form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <label htmlFor="fullName">Full Name *</label>
                 <input id="fullName" value={name} onChange={e => setName(e.target.value)} required aria-required="true" placeholder="Your full name" />
@@ -262,7 +262,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
               <label htmlFor="email">Email *</label>
               <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required aria-required="true" placeholder="your@email.com" />
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+            <div className="form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <label htmlFor="suburb">Suburb</label>
                 <input id="suburb" value={suburb} onChange={e => setSuburb(e.target.value)} placeholder="Your suburb" />
