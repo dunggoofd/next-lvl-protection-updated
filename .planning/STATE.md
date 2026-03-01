@@ -46,8 +46,11 @@
 ### Blockers
 - None identified yet
 
-### Todos
-- Plan Phase 1 tasks (FAQ verification per service)
+### Pending Todos
+
+1 todo — `.planning/todos/pending/`
+
+- **Run discuss-phase before planning Phase 1** (`planning`) — Phase 1 needs CONTEXT.md before plan-phase. Run `/gsd:discuss-phase 1` first, then `/gsd:plan-phase 1`.
 
 ---
 
