@@ -108,12 +108,12 @@ export default function CeramicCoatingPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>Why Ceramic Coating</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => { const Icon = b.icon; return (
                 <div key={i} className="card" style={{ padding: '24px 20px' }}>
                   <Icon size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 14 }} />
@@ -131,7 +131,7 @@ export default function CeramicCoatingPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>The Process</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>The Workshop Floor</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { step: '01', title: 'Preparation', desc: 'Decontamination wash, iron fallout removal, clay bar treatment, and panel inspection. Paint correction where required. This stage determines the quality of everything that follows.' },
               { step: '02', title: 'Application', desc: 'Ceramic coating applied panel by panel under controlled conditions. Precise buffing and levelling ensure even coverage and maximum bonding. No shortcuts, no skipped panels.' },
@@ -149,7 +149,7 @@ export default function CeramicCoatingPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>05</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
@@ -169,7 +169,7 @@ export default function CeramicCoatingPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
             <div className="card" style={{ padding: '36px 28px' }}>
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Warranty</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Up to 7-year protection warranty</p>
@@ -202,7 +202,7 @@ export default function CeramicCoatingPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Gallery</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Before &amp; After</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80" after="https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80" alt="Ceramic coating before and after" height={300} />
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80" after="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Paint gloss before and after" height={300} />
           </div>

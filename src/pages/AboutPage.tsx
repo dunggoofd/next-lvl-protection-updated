@@ -47,7 +47,7 @@ export default function AboutPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 24 }}>The Workshop</h2>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
@@ -97,7 +97,7 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Certifications</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {certifications.map((c, i) => (
               <div key={i} className="card" style={{ padding: '28px 24px' }}>
                 <Award size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 16 }} />
@@ -112,7 +112,7 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>How We Work</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {values.map((v, i) => { const Icon = v.icon; return (
               <div key={i} className="card" style={{ padding: '36px 28px' }}>
                 <Icon size={22} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 18 }} />

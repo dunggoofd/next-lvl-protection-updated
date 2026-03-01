@@ -103,7 +103,7 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
   return (
     <div>
       {/* Tab rail */}
-      <div style={{ display: 'flex', gap: 8, marginBottom: 32, flexWrap: 'wrap' }}>
+      <div className="tab-row" style={{ display: 'flex', gap: 8, marginBottom: 32, flexWrap: 'wrap' }}>
         {tiers.map((tier, i) => (
           <button
             key={i}

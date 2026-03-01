@@ -101,9 +101,9 @@ export default function CommercialTintPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
             <div><h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>Performance &amp; ROI</h2></div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => { const Icon = b.icon; return (
                 <div key={i} className="card" style={{ padding: '24px 20px' }}>
                   <Icon size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 14 }} />
@@ -120,7 +120,7 @@ export default function CommercialTintPage() {
         <span className="section-number" aria-hidden="true">04</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Commercial Installation Process</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+          <div className="page-4col" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
             {[
               { step: '01', title: 'Site Survey', desc: 'We assess glazing type, aspect, building access, and your primary goals. We provide a zone-by-zone film recommendation.' },
               { step: '02', title: 'Proposal', desc: 'Full written quote with film specs, timeline, installation schedule, and warranty details. No surprises on site.' },
@@ -139,7 +139,7 @@ export default function CommercialTintPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
             </div>
@@ -159,7 +159,7 @@ export default function CommercialTintPage() {
         <span className="section-number" aria-hidden="true">07</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Before &amp; After</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" after="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Commercial window tint before and after" height={300} />
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" after="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80" alt="Office window film before and after" height={300} />
           </div>

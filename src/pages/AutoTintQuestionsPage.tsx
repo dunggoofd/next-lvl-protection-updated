@@ -56,13 +56,13 @@ export default function AutoTintQuestionsPage() {
         <FAQAccordion items={faqs} />
       </section>
       <section style={{ padding: '40px var(--section-padding-x)', maxWidth: 780, margin: '0 auto' }}>
-        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+        <div className="link-row" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
           <Link to="/automotive-window-tinting-brisbane" className="btn-primary" style={{ fontSize: 13 }}><span className="btn-slide" /><span>Tinting Packages &amp; Pricing</span></Link>
           <Link to="/ppf-questions" className="btn-ghost" style={{ padding: '10px 20px', fontSize: 13 }}>PPF Q&A</Link>
           <Link to="/residential-tinting-questions" className="btn-ghost" style={{ padding: '10px 20px', fontSize: 13 }}>Residential Tinting Q&A</Link>
         </div>
       </section>
-      <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 90, background: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)', padding: '14px var(--section-padding-x)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="faq-cta-bar" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 90, background: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)', padding: '14px var(--section-padding-x)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>Ready to tint your windows?</span>
         <Link to="/get-a-quote" className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}><span className="btn-slide" /><span>Get a Quote →</span></Link>
       </div>

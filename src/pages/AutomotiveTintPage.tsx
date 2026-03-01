@@ -102,12 +102,12 @@ export default function AutomotiveTintPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>Why VTX PRO</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => { const Icon = b.icon; return (
                 <div key={i} className="card" style={{ padding: '24px 20px' }}>
                   <Icon size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 14 }} />
@@ -124,7 +124,7 @@ export default function AutomotiveTintPage() {
         <span className="section-number" aria-hidden="true">04</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>The Workshop Floor</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { step: '01', title: 'Preparation', desc: 'Every window is cleaned with a specialist glass cleaner to remove grease, silicone, and contamination. The gasket edges are inspected. This stage determines whether edges lift within months.' },
               { step: '02', title: 'Application', desc: 'Solar Gard VTX PRO film is cut precisely to each window, applied with a slip solution, and pressed with professional squeegees. No bubbles, no contamination under the film.' },
@@ -142,7 +142,7 @@ export default function AutomotiveTintPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>05</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
@@ -161,7 +161,7 @@ export default function AutomotiveTintPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
             <div className="card" style={{ padding: '36px 28px' }}>
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by Solar Gard</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Lifetime warranty — Solar Gard Authorised Installer</p>
@@ -193,7 +193,7 @@ export default function AutomotiveTintPage() {
         <span className="section-number" aria-hidden="true">07</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Before &amp; After</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1562141961-b8bc81614208?w=800&q=80" after="https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80" alt="Window tint before and after" height={300} />
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" after="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Car tint before and after" height={300} />
           </div>

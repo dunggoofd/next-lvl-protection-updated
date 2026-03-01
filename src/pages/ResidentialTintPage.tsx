@@ -101,9 +101,9 @@ export default function ResidentialTintPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
+          <div className="page-sidebar" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
             <div><h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>Why 3M Film</h2></div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => { const Icon = b.icon; return (
                 <div key={i} className="card" style={{ padding: '24px 20px' }}>
                   <Icon size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 14 }} />
@@ -120,7 +120,7 @@ export default function ResidentialTintPage() {
         <span className="section-number" aria-hidden="true">04</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>The Workshop Floor</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="page-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { step: '01', title: 'Site Assessment', desc: 'We assess window aspect, glass type, and your primary goals before recommending film. The right film for a west-facing bedroom is different from the right film for a street-facing bathroom.' },
               { step: '02', title: 'Installation', desc: '3M film is cut to each window, applied with precision, and squeegeed free of moisture. Edges are pressed tight to gaskets. We work clean — no water on floors or furnishings.' },
@@ -138,7 +138,7 @@ export default function ResidentialTintPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
             </div>
@@ -156,7 +156,7 @@ export default function ResidentialTintPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
             <div className="card" style={{ padding: '36px 28px' }}>
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by 3M</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>3M limited warranty — residential installations</p>
@@ -188,7 +188,7 @@ export default function ResidentialTintPage() {
         <span className="section-number" aria-hidden="true">07</span>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Before &amp; After</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
+          <div className="page-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}>
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" after="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Residential window tint before and after" height={300} />
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" after="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80" alt="Home window tint before and after" height={300} />
           </div>
