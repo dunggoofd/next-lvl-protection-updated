@@ -253,7 +253,18 @@ The entire visual language is defined with CSS custom properties. **Never hardco
 - **Inline styles (`style={{...}}`)** are used for layout, spacing, and one-off values inside page components.
 - **CSS classes** are used for repeated patterns (buttons, cards, sections) defined in `index.css`.
 - **No Tailwind, no CSS modules, no styled-components.**
-- Responsive overrides for grid layouts are handled in `index.css` via attribute selectors targeting `style` values (e.g. `[style*="grid-template-columns: 1fr 1fr"]`). This is intentional — do not refactor to utility classes unless asked.
+- Responsive overrides for grid layouts use **CSS class-based rules**, not `[style*="..."]` attribute selectors. Attribute selectors targeting React inline styles are unreliable in practice — React's client-side style serialisation does not guarantee a format that attribute selectors can consistently match.
+- **Pattern for any new two-column or multi-column grid:**
+  1. Add a semantic `className` to the grid element (e.g. `className="my-section-grid"`).
+  2. Add a `@media (max-width: 900px)` rule in `index.css` that sets `grid-template-columns: 1fr !important` on that class.
+  3. Keep the inline `style` for desktop layout as-is — the `!important` in the class rule overrides it on mobile.
+- **Existing responsive classes** (already in `index.css`):
+  | Class | Collapses at |
+  |---|---|
+  | `.differentiators-grid` | 900px → `1fr` |
+  | `.cta-grid` | 900px → `1fr`; card padding reduces at 640px |
+  | `.form-grid-2` | 640px → `1fr` |
+  | `.form-grid-3` | 640px → `1fr` |
 - Mobile breakpoints: primary at `900px` (grid collapse), `768px` (nav switch), `640px` (misc flex adjustments).
 
 ---
