@@ -119,7 +119,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
   return (
     <form onSubmit={handleSubmit} role="form" aria-label="Get a Quote" noValidate>
       {/* Progress steps */}
-      <div style={{ display: 'flex', gap: 12, marginBottom: 32, alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: 12, marginBottom: 32, alignItems: 'center', flexWrap: 'wrap' }}>
         {[1, 2, 3].map(s => (
           <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <div style={{
@@ -154,7 +154,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
             </div>
 
             {(service === 'Paint Protection Film (PPF)' || service === 'Ceramic Coating' || service === 'Automotive Window Tinting') && (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
+              <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
                 <div><label htmlFor="make">Vehicle Make</label><input id="make" value={vehicleMake} onChange={e => setVehicleMake(e.target.value)} placeholder="e.g. Toyota" /></div>
                 <div><label htmlFor="model">Model</label><input id="model" value={vehicleModel} onChange={e => setVehicleModel(e.target.value)} placeholder="e.g. Camry" /></div>
                 <div><label htmlFor="year">Year</label><input id="year" value={vehicleYear} onChange={e => setVehicleYear(e.target.value)} placeholder="e.g. 2023" /></div>
@@ -264,7 +264,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         {/* Step 3 */}
         {step === 3 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <label htmlFor="fullName">Full Name *</label>
                 <input id="fullName" value={name} onChange={e => setName(e.target.value)} aria-required="true" aria-invalid={!!errors.name} placeholder="Your full name" />
@@ -281,7 +281,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
               <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} aria-required="true" aria-invalid={!!errors.email} placeholder="your@email.com" />
               {errors.email && <FieldError msg={errors.email} />}
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <label htmlFor="suburb">Suburb</label>
                 <input id="suburb" value={suburb} onChange={e => setSuburb(e.target.value)} placeholder="Your suburb" />

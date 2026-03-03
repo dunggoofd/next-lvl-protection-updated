@@ -144,13 +144,13 @@ export default function HomePage() {
               SunTek. Solar Gard. 3M.
             </span>
           </h1>
-          <div className="hero-anim" style={{ marginTop: 24 }}>
-            <TrustBadges />
-          </div>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 540 }}>
             Brisbane's certified film installation specialist. One studio, four disciplines — every install precision-first.
           </p>
-          <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
+          <div className="hero-anim" style={{ marginTop: 20 }}>
+            <TrustBadges />
+          </div>
+          <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 28, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary">
               <span className="btn-slide" />
               <span>Get a Quote</span>
@@ -192,7 +192,7 @@ export default function HomePage() {
       {/* DIFFERENTIATORS */}
       <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>Why NextLvl</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h1)', marginBottom: 24, lineHeight: 1.05 }}>

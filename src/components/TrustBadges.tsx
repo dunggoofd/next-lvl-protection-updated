@@ -2,27 +2,32 @@ interface TrustBadgesProps {
   services?: ('ppf' | 'tint' | 'window' | 'ceramic')[];
 }
 
+// Ribbon / certified award icon
+const RibbonIcon = () => (
+  <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+    <circle cx="8" cy="7" r="5.5" stroke="#E07B3A" strokeWidth="1.4" fill="none" />
+    <circle cx="8" cy="7" r="3" stroke="#E07B3A" strokeWidth="1" fill="none" />
+    <path d="M5 11.5L4 17L8 15L12 17L11 11.5" stroke="#E07B3A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: TrustBadgesProps) {
   const badges = [
     {
       id: 'ppf',
-      label: 'SunTek Authorised',
-      sub: 'PPF Installer',
+      label: 'SunTek Certified PPF',
     },
     {
       id: 'ceramic',
       label: 'Ceramic Pro Certified',
-      sub: 'Ceramic Coating',
     },
     {
       id: 'tint',
       label: 'Solar Gard VTX PRO',
-      sub: 'Certified Installer',
     },
     {
       id: 'window',
       label: '3M Window Films',
-      sub: 'Authorised Installer',
     },
   ].filter(b => services.includes(b.id as any));
 
@@ -30,10 +35,8 @@ export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: Tr
     <div
       style={{
         display: 'flex',
-        gap: 16,
-        flexWrap: 'nowrap',
-        overflowX: 'auto',
-        opacity: 0.85,
+        gap: 10,
+        flexWrap: 'wrap',
         paddingBottom: 4,
       }}
     >
@@ -42,22 +45,25 @@ export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: Tr
           key={b.id}
           style={{
             flexShrink: 0,
-            border: '1px solid var(--color-border-bright)',
+            border: '1px solid rgba(255,255,255,0.08)',
             borderRadius: 100,
-            padding: '8px 18px',
+            padding: '9px 18px 9px 14px',
             display: 'flex',
-            flexDirection: 'column',
-            gap: 2,
-            background: 'rgba(255, 255, 255, 0.55)',
-            backdropFilter: 'blur(16px) saturate(160%)',
-            WebkitBackdropFilter: 'blur(16px) saturate(160%)',
+            alignItems: 'center',
+            gap: 9,
+            background: '#1A1F2E',
           }}
         >
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 13, color: 'var(--color-accent)', letterSpacing: '0.04em' }}>
+          <RibbonIcon />
+          <span style={{
+            fontFamily: 'var(--font-body)',
+            fontWeight: 500,
+            fontSize: 13,
+            color: '#FFFFFF',
+            letterSpacing: '0.02em',
+            whiteSpace: 'nowrap',
+          }}>
             {b.label}
-          </span>
-          <span style={{ fontSize: 11, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            {b.sub}
           </span>
         </div>
       ))}

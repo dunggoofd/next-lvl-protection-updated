@@ -12,7 +12,7 @@ export default function CTABlock({ service, defaultService }: CTABlockProps) {
       style={{ background: 'var(--color-bg-primary)', position: 'relative', overflow: 'hidden' }}
     >
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-        <div className="cta-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+        <div className="cta-grid grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
           <div>
             <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>
               Get Started
@@ -35,7 +35,7 @@ export default function CTABlock({ service, defaultService }: CTABlockProps) {
             </div>
           </div>
 
-          <div className="card" style={{ padding: 36 }}>
+          <div className="card" style={{ padding: 'clamp(20px, 4vw, 36px)' }}>
             <QuoteForm defaultService={defaultService} />
           </div>
         </div>

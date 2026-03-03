@@ -24,10 +24,10 @@ export default function GetAQuotePage() {
         </p>
       </section>
       <section style={{ padding: '0 var(--section-padding-x)', maxWidth: 600, margin: '0 auto' }}>
-        <div className="card" style={{ padding: '40px 36px' }}>
+        <div className="card" style={{ padding: 'clamp(24px, 5vw, 40px) clamp(16px, 4vw, 36px)' }}>
           <QuoteForm />
         </div>
-        <div style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+        <div className="grid-2col" style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div className="card" style={{ padding: '20px 18px' }}>
             <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginBottom: 6 }}>Prefer to call?</p>
             <a href="tel:0411164886" style={{ color: 'var(--color-accent)', fontSize: 15, fontWeight: 600 }}>0411 164 886</a>

@@ -1,73 +1,171 @@
-# React + TypeScript + Vite
+# NextLvl Protection — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Brisbane's certified paint protection film, ceramic coating and window tinting studio.
+**Stack:** React 18 · Vite 7 · TypeScript (strict) · React Router DOM · GSAP · Lucide React · Vercel
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dev
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev      # localhost:5173
+npm run build    # production build → dist/
+npx tsc --noEmit # type-check only (must be clean before commit)
+vercel --prod    # deploy to production
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Design System (`src/index.css`)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Colour Palette
+
+| Token | Value | Usage |
+|---|---|---|
+| `--color-bg-primary` | `#F8F9FB` | Page background |
+| `--color-bg-secondary` | `#FFFFFF` | Section backgrounds |
+| `--color-accent` | `#1A1F2E` | Dark navy — headings, buttons, badges |
+| `--color-accent-bright` | `#0D1117` | Deep black |
+| `--color-text-primary` | `#0D1117` | Body copy |
+| `--color-text-secondary` | `#4A5368` | Subtext |
+| `--color-text-muted` | `#8A94A8` | Labels, captions |
+| `--color-border-bright` | `rgba(26,31,46,0.20)` | Card / button borders |
+| `--gradient-brand` | `135deg #2563EB → #7C3AED → #DB2777` | Defined, currently unused |
+
+### Typography
+
+| Token | Value |
+|---|---|
+| `--font-display` | `'Syne', sans-serif` |
+| `--font-body` | `'DM Sans', sans-serif` |
+| `--size-hero` | `clamp(72px, 12vw, 160px)` |
+| `--size-h1` | `clamp(40px, 6vw, 80px)` |
+| `--size-h2` | `clamp(28px, 4vw, 48px)` |
+
+### Utility Classes
+
+| Class | Effect |
+|---|---|
+| `.hero-text-mono` | `linear-gradient(160deg, #0D1117 0%, #667085 100%)` — monochrome gradient clipped to text |
+| `.text-gradient` | Brand gradient clipped to text (defined, currently unused) |
+| `.section` | Full-width section with `--section-padding-y` vertical padding + flowing wave SVG `::before` overlay |
+| `.container` | `max-width: 1280px`, centred, horizontal padding |
+| `.card` | Glassmorphism surface — white 80% + blur + border |
+| `.btn-primary` | Dark navy pill button with left-to-right slate wipe on hover (see below) |
+| `.btn-ghost` | Frosted white pill button |
+
+---
+
+## Components (`src/components/`)
+
+### `TrustBadges`
+
+Dark navy pill badges with ribbon SVG icon in `#E07B3A` (warm orange).
+
+```tsx
+<TrustBadges services={['ppf', 'tint', 'window']} />
+// services accepts: 'ppf' | 'tint' | 'window' | 'ceramic'
+// defaults to ['ppf', 'tint', 'window'] — 'ceramic' is also valid
 ```
+
+**Badge labels:**
+- `ppf` → SunTek Certified PPF
+- `tint` → Solar Gard VTX PRO
+- `window` → 3M Window Films
+- `ceramic` → Ceramic Pro Certified
+
+### `btn-primary` Hover Effect
+
+The button uses a two-layer wipe mechanic:
+
+1. **Base layer** — `linear-gradient(135deg, #1A1F2E → #2D3450)` (dark navy)
+2. **Slide layer** (`.btn-slide` `<span>`) — `linear-gradient(135deg, #3D4A6E → #4A5580)` (lighter slate-navy), starts `translateX(-100%)`, animates to `translateX(0)` on hover via `cubic-bezier(0.22, 1, 0.36, 1)` (out-expo)
+3. **Text** sits on `z-index: 1` above both layers
+4. On hover: `scale(1.03)` + `box-shadow` glow in navy
+
+To change the wipe colour, edit `.btn-primary .btn-slide { background: ... }` in `index.css`.
+
+### `Navbar`
+
+Transparent on scroll-top → frosted white on scroll. Mobile hamburger menu.
+
+### `FAQAccordion`
+
+Accepts `{ q: string; a: string }[]`. Used on all Q&A variation pages.
+
+### `PackageVisualizer`
+
+Horizontal package tier selector with animated highlight.
+
+### `BeforeAfterSlider`
+
+Drag-to-reveal before/after image comparison component.
+
+### `Reviews`
+
+Static review cards grid. Data passed as props or imported from `src/data/`.
+
+### `CTABlock`
+
+Full-width CTA banner. Accepts `heading`, `sub`, `btnText`, `btnHref`.
+
+### `QuoteForm`
+
+Contact / quote request form with validation.
+
+### `PageMeta`
+
+Thin wrapper around `<Helmet>` for `<title>`, `<meta description>`, `<link rel="canonical">`.
+
+---
+
+## Page Architecture
+
+### Money Pages (5)
+| Route | File |
+|---|---|
+| `/ppf-brisbane` | `PPFPage.tsx` |
+| `/ceramic-coating-brisbane` | `CeramicCoatingPage.tsx` |
+| `/automotive-window-tinting-brisbane` | `AutomotiveTintPage.tsx` |
+| `/residential-window-tinting-brisbane` | `ResidentialTintPage.tsx` |
+| `/commercial-window-tinting-brisbane` | `CommercialTintPage.tsx` |
+
+### Q&A Pages (5)
+`PPFQuestionsPage`, `CeramicQuestionsPage`, `AutoTintQuestionsPage`, `ResidentialTintQuestionsPage`, `CommercialTintQuestionsPage`
+
+### B1 — PPF Variation Pages (11) ✅
+`/ppf-cost-brisbane`, `/ppf-near-me-brisbane`, `/ppf-new-car-brisbane`, `/ppf-partial-brisbane`, `/ppf-self-healing-brisbane`, `/ppf-stone-chip-brisbane`, `/ppf-warranty-brisbane`, `/ppf-dark-paint-brisbane`, `/ppf-gloss-matte-brisbane`, `/ppf-resale-value-brisbane`, `/suntek-ppf-brisbane`
+
+### B2 — Ceramic Variation Pages (13) ✅
+`/ceramic-coating-cost-brisbane`, `/ceramic-coating-near-me-brisbane`, `/ceramic-coating-new-car-brisbane`, `/ceramic-coating-brisbane-south`, `/ceramic-coating-longevity-brisbane`, `/ceramic-coating-maintenance-brisbane`, `/ceramic-coating-resale-brisbane`, `/ceramic-coating-matte-brisbane`, `/ceramic-coating-wheels-brisbane`, `/ceramic-glass-coating-brisbane`, `/ceramic-vs-dealer-brisbane`, `/ceramic-ppf-combo-brisbane`, `/paint-correction-brisbane`
+
+### B3 — Auto Tint Variation Pages ❌ (pending)
+Planned routes: `/window-tinting-cost-brisbane`, `/car-window-tinting-brisbane`, `/automotive-tint-shades-brisbane`, `/window-tint-legal-brisbane`, `/solar-gard-tint-brisbane`, `/window-tint-heat-rejection-brisbane`, `/window-tint-uv-protection-brisbane`, `/window-tint-privacy-brisbane`, `/window-tint-new-car-brisbane`, `/window-tint-warranty-brisbane`, `/window-tinting-near-me-brisbane`, `/window-tint-vs-ppf-brisbane`
+
+### B4 — Residential Tint Variation Pages ❌ (pending, ~12 pages)
+
+### B5 — Commercial Tint Variation Pages ❌ (pending, ~11 pages)
+
+### Section C — Bundle Pages ❌ (pending, ~10 pages)
+
+### Section D — Comparison Pages ❌ (pending, ~15 pages)
+
+---
+
+## Section Wave Texture
+
+All `.section` elements get a flowing SVG wave overlay via `::before` pseudo-element (18 paths, 0.6px stroke, 7% opacity). Children are `position: relative; z-index: 1` to sit above it.
+
+To override for a specific section, add `position: relative; overflow: hidden` to the section and inject an absolutely-positioned `<div>` with a custom inline SVG.
+
+---
+
+## Deployment
+
+Hosted on **Vercel** — project `dannys-projects-e4c45659`.
+
+```bash
+vercel --prod
+```
+
+Last production commit: `110cd52` — B2 Ceramic complete.
