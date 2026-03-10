@@ -17,26 +17,26 @@ const tiers: PackageTier[] = [
     name: 'Impact Shield',
     subtitle: 'High-impact front zones — where chips happen most',
     inclusions: ['Full bonnet leading edge (30cm)', 'Front bumper (full)', 'Front guards', 'SunTek Ultra PPF — self-healing, hydrophobic', '5-year SunTek film warranty'],
-    price: 'From $599',
+    price: 'Get a Quote',
   },
   {
     name: 'Front End Package',
     subtitle: 'Full front protection — bonnet, bumper, guards, headlights, mirrors',
     inclusions: ['Full bonnet', 'Front bumper (full)', 'Front guards', 'Headlights', 'Mirrors', 'SunTek Ultra PPF — self-healing, hydrophobic', '10-year SunTek authorised installer warranty'],
-    price: 'From $1,490',
+    price: 'Get a Quote',
     recommended: true,
   },
   {
     name: 'Track Package',
     subtitle: 'Front end + roof + A-pillars — extended impact coverage',
     inclusions: ['Full bonnet + front bumper + front guards + headlights + mirrors', 'Roof', 'A-pillars', 'SunTek Ultra PPF — self-healing, hydrophobic', '10-year SunTek authorised installer warranty'],
-    price: 'From $2,290',
+    price: 'Get a Quote',
   },
   {
     name: 'Full Wrap',
     subtitle: 'Complete vehicle — every painted panel, edge to edge',
     inclusions: ['Entire exterior vehicle surface', 'SunTek Ultra PPF — self-healing, hydrophobic', 'Edge-tucked installation (no exposed edges)', '10-year SunTek authorised installer warranty'],
-    price: 'POA',
+    price: 'Get a Quote',
   },
 ];
 
@@ -50,7 +50,7 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'How much does PPF cost in Brisbane?', a: 'PPF in Brisbane ranges from $599 for a basic impact shield package to $1,490+ for a full front end, with full wraps quoted on application. Price varies by vehicle size and coverage area. At NextLvl Protection, our front end package — the most popular — starts at $1,490 and includes bonnet, bumper, guards, headlights, and mirrors with SunTek Ultra film and a 10-year warranty.' },
+  { q: 'How much does PPF cost in Brisbane?', a: 'Pricing depends on coverage zone, vehicle size, and film specification. Contact us for a quote.' },
   { q: 'Is PPF worth it for a new car in Brisbane?', a: 'Yes — particularly in Queensland, where UV exposure and dusty highway conditions accelerate paint damage. Applying PPF within the first few months keeps the paint in showroom condition and protects the investment before any chips occur. The cost of quality PPF is significantly less than a future paint correction or respray.' },
   { q: 'How long does PPF last?', a: 'SunTek Ultra PPF is warranted for up to 10 years when installed by an authorised installer. In Queensland conditions, film performs well across this period. Yellowing and adhesive failure are common with lower-grade film — SunTek\'s clarity warranty covers discolouration specifically.' },
   { q: 'Does PPF change how my car looks?', a: 'High-quality PPF should be virtually invisible once installed. SunTek Ultra has optically clear top coat and no visible edges when properly tucked. Gloss PPF enhances depth; matte PPF converts gloss paint to a satin finish. We\'ll walk you through finish options before installation.' },
@@ -86,16 +86,16 @@ export default function PPFPage() {
     <>
       <PageMeta
         title="Paint Protection Film Brisbane | SunTek Authorised Installer | NextLvl Protection"
-        description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 10-year warranty. Front end packages from $1,490. Acacia Ridge studio."
+        description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 10-year warranty. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ppf-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Paint Protection Film Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "SunTek Authorised PPF installer in Acacia Ridge, Brisbane. Paint Protection Film packages from $599.",
+        "description": "SunTek Authorised PPF installer in Acacia Ridge, Brisbane.",
       })}} />
 
       {/* HERO */}

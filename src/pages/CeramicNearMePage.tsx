@@ -24,7 +24,7 @@ const faqs = [
   { q: 'Do you service the North Brisbane suburbs?', a: 'Yes — clients from Chermside, Stafford, Nundah, Windsor, Newmarket, and the northern suburbs regularly book with us. The freeway corridor makes travel time manageable. We do not offer mobile ceramic application as studio conditions are required for correct application.' },
   { q: 'Is there a ceramic coating studio closer to me?', a: 'There are other applicators operating in Brisbane. We would encourage you to ask any applicator about: the specific ceramic product used, whether it carries a manufacturer warranty, what preparation steps are included, and whether the application environment is climate-controlled. These are the baseline standards for professional ceramic. Proximity is less relevant than application quality and warranty backing.' },
   { q: 'How long does the application take and do you offer drop-off service?', a: 'Yes — all our packages are drop-off. The Essential package takes 1 day. Protection takes 1–2 days. Elite takes 2 days (includes stage 1 correction). Signature is 2–3 days (multi-stage correction plus all surfaces). We provide estimated completion time at booking. Most clients drop off in the morning and collect the following day. We provide collection time estimates via SMS.' },
-  { q: 'Can I get a quote online without visiting the studio?', a: 'Yes. Use the quote form on our website or call 0411 164 886 to discuss pricing for your vehicle. We quote on vehicle size and condition — for Elite and Signature packages, we may request photos of the paint to assess correction requirements before finalising pricing. Essential and Protection packages have standard pricing by vehicle size.' },
+  { q: 'Can I get a quote online without visiting the studio?', a: 'Yes. Use the quote form on our website or call 0468 810 666 to discuss pricing for your vehicle. We quote on vehicle size and condition — for Elite and Signature packages, we may request photos of the paint to assess correction requirements before finalising pricing. Essential and Protection packages have standard pricing by vehicle size.' },
 ];
 
 const reviews = [
@@ -60,14 +60,13 @@ export default function CeramicNearMePage() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "NextLvl Protection — Ceramic Coating Brisbane",
-        "telephone": "0411164886",
+        "telephone": "0468810666",
         "url": "https://nextlvlprotection.com.au",
         "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" },
         "geo": { "@type": "GeoCoordinates", "latitude": -27.5585, "longitude": 153.0197 },
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
         "areaServed": "Brisbane",
         "description": "Professional ceramic coating studio in Acacia Ridge, South Brisbane. Studio-controlled application, manufacturer warranty, certified applicators. Serving all Brisbane suburbs.",
-        "priceRange": "$$",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -80,7 +79,7 @@ export default function CeramicNearMePage() {
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Acacia Ridge. South Brisbane.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            Professional ceramic coating studio at Unit 16, 18-24 Loam St, Acacia Ridge. 15 minutes from Brisbane CBD. Studio-controlled application with manufacturer warranty. From $699.
+            Professional ceramic coating studio at Unit 16, 18-24 Loam St, Acacia Ridge. 15 minutes from Brisbane CBD. Studio-controlled application with manufacturer warranty.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Book at Our Studio</span></Link>
@@ -98,7 +97,7 @@ export default function CeramicNearMePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 48 }}>
             {[
               { label: 'Address', value: 'Unit 16, 18-24 Loam St\nAcacia Ridge QLD 4110' },
-              { label: 'Phone', value: '0411 164 886' },
+              { label: 'Phone', value: '0468 810 666' },
               { label: 'Hours', value: 'Mon–Fri 8:00am – 5:00pm' },
               { label: 'Distance from CBD', value: '12–15 km south\n15–20 min drive' },
             ].map((item, i) => (

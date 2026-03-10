@@ -26,10 +26,10 @@ export default function CTABlock({ service, defaultService }: CTABlockProps) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               <span style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>Prefer to talk?</span>
               <a
-                href="tel:0411164886"
+                href="tel:0468810666"
                 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(28px, 4vw, 44px)', color: 'var(--color-accent)', letterSpacing: '0.04em', lineHeight: 1 }}
               >
-                0411 164 886
+                0468 810 666
               </a>
               <span style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>Mon–Fri 9am–5:30pm</span>
             </div>

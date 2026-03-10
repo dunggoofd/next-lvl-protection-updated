@@ -16,7 +16,7 @@ const comparisonRows = [
   { attribute: 'Gloss Depth', ceramic: 'High — adds depth and wet look', ppf: 'Preserves original gloss — does not add depth', combined: 'Ceramic over PPF adds gloss depth to protected panels' },
   { attribute: 'Swirl Resistance', ceramic: 'Hard surface — more resistant to fine swirls than uncoated paint', ppf: 'Self-healing topcoat addresses light swirls', combined: 'Ceramic provides additional swirl resistance over the PPF topcoat' },
   { attribute: 'Coverage', ceramic: 'Full exterior — paint, glass, wheels', ppf: 'Selected panels — front end, partial, or full wrap', combined: 'PPF on high-chip zones. Ceramic over PPF and remaining panels.' },
-  { attribute: 'Cost', ceramic: 'From $699 (Essential)', ppf: 'From $599 (Impact Shield)', combined: 'Combined packages — contact for specific quote' },
+  { attribute: 'Cost', ceramic: 'Contact us for a quote', ppf: 'Contact us for a quote', combined: 'Combined packages — contact for specific quote' },
 ];
 
 const faqs = [
@@ -24,7 +24,7 @@ const faqs = [
   { q: 'Can you apply ceramic coating over PPF?', a: 'Yes — this is standard practice and the recommended full-protection setup. Ceramic coating bonds to the PPF surface and adds a hard, hydrophobic top layer over the film. The film handles chip impact below; the ceramic handles contamination and hydrophobic performance above. The ceramic does not interfere with the PPF\'s self-healing topcoat function.' },
   { q: 'Which should I do first — PPF or ceramic?', a: 'PPF is always installed first. Ceramic coating is then applied over the PPF and any unfilmed panels. The correct sequence is: decontamination wash, paint correction if needed, PPF installation, followed by ceramic application over the complete exterior. Never install PPF over existing ceramic coating — the adhesive will not bond correctly.' },
   { q: 'Is PPF + ceramic the "best" protection available?', a: 'Yes — for paint preservation, the combination is the most comprehensive option. PPF handles impact. Ceramic handles contamination. The PPF keeps chips from reaching the paint. The ceramic keeps contamination from reaching the PPF surface. Each layer extends the life and performance of the other.' },
-  { q: 'What does PPF + ceramic cost?', a: 'Combined packages depend on PPF coverage and ceramic tier. A front end PPF package with a full-car ceramic (Protection tier) typically starts from $2,000–$2,500 for a standard-size car. Contact us with your vehicle details and coverage preference for an exact quote.' },
+  { q: 'What does PPF + ceramic cost?', a: 'Combined packages depend on PPF coverage and ceramic tier. Contact us with your vehicle details and coverage preference for an exact quote.' },
   { q: 'Does ceramic coating on PPF affect the PPF warranty?', a: 'No. Applying ceramic coating over PPF is a standard and endorsed practice. SunTek\'s PPF warranty is not voided by ceramic coating application over the film. The two products are compatible and the warranty terms for each apply independently.' },
 ];
 
@@ -61,7 +61,7 @@ export default function CeramicPPFComboPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF and Ceramic Coating Brisbane — Combined Protection",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "PPF and ceramic coating combined in Brisbane. PPF absorbs chips. Ceramic adds hydrophobic performance and chemical resistance over the film and full exterior. Acacia Ridge studio.",
       })}} />

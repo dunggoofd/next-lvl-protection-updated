@@ -17,20 +17,20 @@ const tiers: PackageTier[] = [
     name: 'Rear Privacy',
     subtitle: 'Rear passenger glass — privacy and UV protection',
     inclusions: ['All rear passenger windows', 'Solar Gard VTX PRO film (select VLT)', 'UV rejection: 99%', 'Lifetime warranty (Solar Gard authorised)'],
-    price: 'From $290',
+    price: 'Get a Quote',
   },
   {
     name: 'Full Car Tint',
     subtitle: 'All windows except windscreen — heat, UV, privacy',
     inclusions: ['All rear passenger windows + rear windscreen', 'Solar Gard VTX PRO film (select VLT)', 'Heat rejection up to 60%', 'UV rejection: 99%', 'Glare reduction', 'Lifetime warranty (Solar Gard authorised)'],
-    price: 'From $490',
+    price: 'Get a Quote',
     recommended: true,
   },
   {
     name: 'Full Car + Windscreen',
     subtitle: 'Total glass coverage — maximum heat and UV rejection',
     inclusions: ['All windows including front windscreen (clear/light VLT compliant)', 'Solar Gard VTX PRO film', 'Maximum heat rejection', 'UV rejection: 99%', 'Lifetime warranty (Solar Gard authorised)'],
-    price: 'From $690',
+    price: 'Get a Quote',
   },
 ];
 
@@ -45,7 +45,7 @@ const benefits = [
 
 const faqs = [
   { q: 'What VLT is legal for car tinting in Queensland?', a: 'In Queensland, the legal minimum VLT is 35% for all windows except the windscreen (which must allow 75% or more). Solar Gard VTX PRO is available in multiple VLT options that meet Queensland legal requirements. At NextLvl Protection, we only install Queensland-legal VLT unless the vehicle is not registered for road use.' },
-  { q: 'How much does car window tinting cost in Brisbane?', a: 'Car window tinting in Brisbane ranges from $290 for rear windows only to $690+ for full glass coverage including the windscreen. At NextLvl Protection in Acacia Ridge, our Full Car package — all windows except windscreen, Solar Gard VTX PRO — starts at $490 with a lifetime warranty.' },
+  { q: 'How much does car window tinting cost in Brisbane?', a: 'Pricing depends on vehicle size and coverage selected. Contact us for a personalised quote.' },
   { q: 'How long does window tinting take?', a: 'Most standard car tint jobs are completed in 2–4 hours. A full car including windscreen may take up to half a day depending on vehicle complexity. You can wait at our Acacia Ridge studio or we can arrange drop-off.' },
   { q: 'How long do I need to wait before rolling my windows down?', a: 'We recommend waiting at least 3–4 days before rolling windows down. This allows the adhesive to cure fully. Rolling windows down too early can cause the film to lift from the edges. We\'ll confirm cure time at handover.' },
   { q: 'What is Solar Gard VTX PRO film?', a: 'Solar Gard VTX PRO is a premium automotive window film manufactured by Solar Gard — a global film brand with over 50 years of product history. VTX PRO specifically refers to their high-performance nano-ceramic tint series, offering superior heat rejection versus standard dyed film. It\'s the film we use on every automotive tint job at NextLvl Protection.' },
@@ -78,16 +78,16 @@ export default function AutomotiveTintPage() {
     <>
       <PageMeta
         title="Automotive Window Tinting Brisbane | Solar Gard VTX PRO | NextLvl Protection"
-        description="Solar Gard VTX PRO certified automotive window tinting in Brisbane. Reject heat, block UV. Queensland-legal VLT. From $290. Acacia Ridge."
+        description="Solar Gard VTX PRO certified automotive window tinting in Brisbane. Reject heat, block UV. Queensland-legal VLT. Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/automotive-window-tinting-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Automotive Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Solar Gard VTX PRO Certified automotive window tinting in Acacia Ridge, Brisbane. Car tint packages from $290 with lifetime warranty.",
+        "description": "Solar Gard VTX PRO Certified automotive window tinting in Acacia Ridge, Brisbane. Car tint packages with lifetime warranty.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

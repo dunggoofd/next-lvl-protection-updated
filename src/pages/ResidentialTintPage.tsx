@@ -17,20 +17,20 @@ const tiers: PackageTier[] = [
     name: 'Privacy Glass',
     subtitle: 'Privacy and glare control — bedrooms, bathrooms, street-facing windows',
     inclusions: ['Up to 5 windows', '3M window film (privacy or solar)', 'UV rejection: 99%', '3M limited warranty'],
-    price: 'From $390',
+    price: 'Get a Quote',
   },
   {
     name: 'Solar Comfort',
     subtitle: 'Heat reduction + UV protection — living areas and high-sun rooms',
     inclusions: ['Up to 12 windows', '3M Solar film (heat and UV optimised)', 'Heat rejection up to 78%', 'UV rejection: 99%', 'Glare reduction', '3M limited warranty'],
-    price: 'From $790',
+    price: 'Get a Quote',
     recommended: true,
   },
   {
     name: 'Whole Home',
     subtitle: 'Full property coverage — every window, custom film selection',
     inclusions: ['Whole home — unlimited windows', '3M Solar / Safety / Privacy film (mix per room)', 'Heat rejection up to 78%', 'UV rejection: 99%', 'Consultation + custom film recommendation per zone', '3M limited warranty'],
-    price: 'POA',
+    price: 'Get a Quote',
   },
 ];
 
@@ -44,7 +44,7 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'How much does home window tinting cost in Brisbane?', a: 'Residential window tinting in Brisbane starts from $390 for up to 5 windows, and $790 for up to 12 windows with our Solar Comfort package. Whole-home pricing is quoted on application. At NextLvl Protection in Acacia Ridge, pricing is based on window count and film type.' },
+  { q: 'How much does home window tinting cost in Brisbane?', a: 'Residential window tinting pricing is based on window count and film type selected. Contact us for a personalised quote. At NextLvl Protection in Acacia Ridge, we\'ll assess your property and recommend the right film for each zone.' },
   { q: 'How long does residential window tinting take?', a: 'A 5-window installation typically takes 2–3 hours. A 12-window Solar Comfort package usually takes 4–6 hours. Whole-home projects are quoted and staged based on property size. We work around your schedule and don\'t leave until every window passes inspection.' },
   { q: 'What is the best window film for west-facing windows in Brisbane?', a: '3M Solar film with high TSER (Total Solar Energy Rejection) is the best choice for west-facing windows — the aspect that gets the most direct afternoon sun in Brisbane. We specify film per zone during the consultation so the right product goes on the right window.' },
   { q: 'How long does 3M window film last?', a: '3M window film in residential applications typically lasts 10–20 years depending on exposure. West-facing windows in direct Brisbane sun degrade faster than south-facing. The 3M limited warranty covers defects in materials and workmanship for the warranty period.' },
@@ -78,16 +78,16 @@ export default function ResidentialTintPage() {
     <>
       <PageMeta
         title="Residential Window Tinting Brisbane | 3M Authorised Installer | NextLvl Protection"
-        description="3M Authorised residential window tinting in Brisbane. Block up to 78% solar heat, 99% UV. From $390. Southside Brisbane specialists."
+        description="3M Authorised residential window tinting in Brisbane. Block up to 78% solar heat, 99% UV. Southside Brisbane specialists."
         canonical="https://www.nextlvlprotection.com.au/residential-window-tinting-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Residential Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "3M Authorised residential window film installer in Acacia Ridge, Brisbane. Home window tinting packages from $390 with 3M warranty.",
+        "description": "3M Authorised residential window film installer in Acacia Ridge, Brisbane. Home window tinting with 3M warranty.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

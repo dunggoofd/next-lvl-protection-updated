@@ -14,7 +14,7 @@ const benefits = [
   { icon: Sun, title: 'Brisbane Degrades Budget Coatings Faster', desc: 'Budget spray ceramics and dealership sealants degrade under Brisbane\'s UV within months. Professional coatings with 3–7 year warranties use higher-concentration SiO₂ formulations and catalysts that resist UV degradation — the product chemistry is fundamentally different.' },
   { icon: Eye, title: 'Preparation Matters as Much as Product', desc: 'A high-grade coating applied over contaminated or swirled paint will underperform a mid-grade coating applied over correctly prepared paint. Our decontamination and clay bar prep is standard on every package — the product\'s rated durability assumes correct preparation.' },
   { icon: Clock, title: 'Top-Up Services Extend the Life', desc: 'Annual maintenance ceramic top-up services can extend performance beyond the original warranty period for customers who maintain their car correctly. Contact us about maintenance coating services if your original ceramic is approaching its warranty anniversary.' },
-  { icon: TrendingUp, title: 'Longer Warranty = Better Economics Per Year', desc: 'Essential ($699, 12-month): $699/year. Protection ($1,299, 3-year): $433/year. Elite ($1,999, 5-year): $400/year. Signature (POA, 7-year): lower still per year. The per-year cost decreases as you move up tiers.' },
+  { icon: TrendingUp, title: 'Longer Warranty = Better Economics Per Year', desc: 'The per-year cost of protection decreases as you move up tiers — a longer warranty period means better value over your ownership. Contact us to compare packages.' },
   { icon: Droplets, title: 'What Voids the Warranty', desc: 'Using alkaline or acidic cleaning products on the coating surface. Machine polishing without specialist guidance. Applying wax or sealant products over ceramic. Failure to follow the aftercare guide in the first 14 days post-application.' },
 ];
 
@@ -60,10 +60,9 @@ export default function CeramicLongevityPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "How Long Does Ceramic Coating Last Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating durability in Brisbane. 12-month to 7-year warranty options. How long ceramic coating lasts in Queensland UV conditions. Acacia Ridge studio.",
-        "offers": { "@type": "Offer", "price": "699", "priceCurrency": "AUD" },
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -93,10 +92,10 @@ export default function CeramicLongevityPage() {
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Durability by Tier</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
             {[
-              { package: 'Essential', duration: '12 Months', costPerYear: '$699/yr', typical: 'Entry ceramic. Daily driver, covered parking, or short-term ownership.' },
-              { package: 'Protection', duration: '3 Years', costPerYear: '$433/yr', typical: 'Full exterior. Most popular for Brisbane daily drivers parked outdoors.', recommended: true },
-              { package: 'Elite', duration: '5 Years', costPerYear: '$400/yr', typical: 'With paint correction. Best value per year for cars with existing marks.' },
-              { package: 'Signature', duration: '7 Years', costPerYear: 'POA/yr', typical: 'Full vehicle. Prestige and long-term ownership — lowest cost per year at scale.' },
+              { package: 'Essential', duration: '12 Months', costPerYear: 'Contact us', typical: 'Entry ceramic. Daily driver, covered parking, or short-term ownership.' },
+              { package: 'Protection', duration: '3 Years', costPerYear: 'Contact us', typical: 'Full exterior. Most popular for Brisbane daily drivers parked outdoors.', recommended: true },
+              { package: 'Elite', duration: '5 Years', costPerYear: 'Contact us', typical: 'With paint correction. Best value per year for cars with existing marks.' },
+              { package: 'Signature', duration: '7 Years', costPerYear: 'Contact us', typical: 'Full vehicle. Prestige and long-term ownership — lowest cost per year at scale.' },
             ].map((row, i) => (
               <div key={i} className="card" style={{ padding: '20px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {row.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}

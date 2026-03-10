@@ -61,7 +61,7 @@ export default function CeramicGlassPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for Car Glass Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating for car glass in Brisbane. Hydrophobic windscreen, side windows, and rear glass. Rain sheets off at speed. 3-year warranty. Acacia Ridge studio.",
       })}} />

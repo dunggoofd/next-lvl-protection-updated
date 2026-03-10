@@ -30,7 +30,7 @@ export default function GetAQuotePage() {
         <div className="grid-2col" style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div className="card" style={{ padding: '20px 18px' }}>
             <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginBottom: 6 }}>Prefer to call?</p>
-            <a href="tel:0411164886" style={{ color: 'var(--color-accent)', fontSize: 15, fontWeight: 600 }}>0411 164 886</a>
+            <a href="tel:0468810666" style={{ color: 'var(--color-accent)', fontSize: 15, fontWeight: 600 }}>0468 810 666</a>
           </div>
           <div className="card" style={{ padding: '20px 18px' }}>
             <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginBottom: 6 }}>Email us</p>

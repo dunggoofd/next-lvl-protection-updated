@@ -60,7 +60,7 @@ export default function PPFDarkPaintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF for Dark Paint Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Paint protection film for black, dark grey and dark-coloured cars in Brisbane. Prevent chips and swirl marks on dark paint. SunTek Authorised installer, Acacia Ridge.",
       })}} />

@@ -61,7 +61,7 @@ export default function PPFWarrantyPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF Warranty Brisbane — SunTek 10-Year Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised installer in Brisbane — 10-year manufacturer warranty on Paint Protection Film. Delamination, yellowing, cracking, and hazing covered.",
       })}} />

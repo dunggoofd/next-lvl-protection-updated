@@ -10,12 +10,12 @@ import PageMeta from '../components/PageMeta';
 
 
 const faqs = [
-  { q: 'How much does ceramic coating cost in Brisbane?', a: 'At NextLvl Protection in Acacia Ridge: Essential (exterior paint only) from $699. Protection (paint + glass + wheels) from $1,299 with a 3-year warranty. Elite (paint + glass + wheels + stage 1 paint correction) from $1,999. Signature (full vehicle + multi-stage correction) is quoted per vehicle. All pricing is starting point for standard-size cars — SUVs and prestige vehicles may vary.' },
-  { q: 'Why does ceramic coating pricing vary so much across Brisbane?', a: 'Three variables drive price: (1) Product quality — professional-grade coatings with manufacturer warranties cost more than "ceramic spray" products. (2) Paint preparation — correction adds labour hours. (3) Coverage area — paint only vs paint, glass, and wheels. A $299 "ceramic coating" is a spray sealant product, not a cured professional ceramic system. The gap in durability and protection is substantial.' },
+  { q: 'How much does ceramic coating cost in Brisbane?', a: 'Pricing varies by vehicle size, paint condition, and package selected. Contact us for a personalised quote.' },
+  { q: 'Why does ceramic coating pricing vary so much across Brisbane?', a: 'Three variables drive price: (1) Product quality — professional-grade coatings with manufacturer warranties cost more than "ceramic spray" products. (2) Paint preparation — correction adds labour hours. (3) Coverage area — paint only vs paint, glass, and wheels. A budget "ceramic coating" is a spray sealant product, not a cured professional ceramic system. The gap in durability and protection is substantial.' },
   { q: 'What is included in the price at NextLvl Protection?', a: 'Every package includes full decontamination wash, iron fallout removal, and clay bar treatment as standard prep. The Essential package does not include glass or wheels. Protection covers all three exterior surfaces. Elite adds stage 1 paint correction. Signature adds multi-stage correction and interior protection. Warranty documentation is included on all packages. No hidden fees.' },
-  { q: 'Is ceramic coating cheaper than PPF?', a: 'Yes — but they protect against different threats. Ceramic coating starts at $699 for an exterior paint application. PPF starts at $599 for the front impact zone. Ceramic does not stop rock chips. PPF does not add the same chemical resistance or hydrophobic performance as ceramic. Most serious protection setups use both: PPF on the high-chip zones, ceramic over the full car including the PPF.' },
-  { q: 'Does paint correction affect the total cost?', a: 'Yes. Paint correction is a separate labour step quoted after inspection. Stage 1 (light swirl and haze removal) adds $300–$600 to the base package cost depending on vehicle size and paint condition. Multi-stage correction (for heavier oxidation, scratches, or buffer trails) adds more. We assess every car at reception and advise on what is needed before any work begins — no surprise invoices at pickup.' },
-  { q: 'Is there a cheaper ceramic option for a tight budget?', a: 'The Essential package at $699 covers exterior paint only. It is a genuine professional-grade ceramic application with a 12-month warranty — not a spray product. If budget is a firm constraint, start with the Essential and add glass and wheels at a later date. The coating products are compatible across service intervals.' },
+  { q: 'Is ceramic coating cheaper than PPF?', a: 'They protect against different threats and are priced differently. Ceramic does not stop rock chips. PPF does not add the same chemical resistance or hydrophobic performance as ceramic. Most serious protection setups use both: PPF on the high-chip zones, ceramic over the full car including the PPF. Contact us to compare packages.' },
+  { q: 'Does paint correction affect the total cost?', a: 'Yes. Paint correction is a separate labour step quoted after inspection. The cost depends on vehicle size and paint condition. Multi-stage correction (for heavier oxidation, scratches, or buffer trails) adds more. We assess every car at reception and advise on what is needed before any work begins — no surprise invoices at pickup.' },
+  { q: 'Is there a cheaper ceramic option for a tight budget?', a: 'The Essential package covers exterior paint only. It is a genuine professional-grade ceramic application with a 12-month warranty — not a spray product. If budget is a firm constraint, start with the Essential and add glass and wheels at a later date. The coating products are compatible across service intervals.' },
   { q: 'How do I get an accurate ceramic coating quote?', a: 'Contact NextLvl Protection with your vehicle make, model, year, colour, and the package you\'re considering. We\'ll provide a specific quote within 2 business hours. For vehicles where paint condition is uncertain, a brief inspection at our Acacia Ridge studio allows us to confirm whether correction is needed before committing to a price.' },
 ];
 
@@ -45,17 +45,16 @@ export default function CeramicCostPage() {
     <>
       <PageMeta
         title="Ceramic Coating Cost Brisbane | Pricing Guide | NextLvl Protection"
-        description="Ceramic coating pricing in Brisbane. Essential from $699, Protection from $1,299, Elite from $1,999. NextLvl Protection, Acacia Ridge."
+        description="Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. NextLvl Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-cost-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Cost Brisbane — Transparent Pricing",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Ceramic coating pricing in Brisbane. Essential from $699. Protection from $1,299. Elite from $1,999. No hidden fees. Acacia Ridge studio.",
-        "offers": { "@type": "Offer", "price": "699", "priceCurrency": "AUD" },
+        "description": "Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. No hidden fees. Acacia Ridge studio.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -85,10 +84,10 @@ export default function CeramicCostPage() {
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Ceramic Coating Packages</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
             {[
-              { name: 'Essential', coverage: 'Exterior paint surfaces only', warranty: '12-month', price: 'From $699', note: 'Entry point — exterior protection, no glass or wheels' },
-              { name: 'Protection', coverage: 'Exterior paint + all glass + all wheels', warranty: '3-year', price: 'From $1,299', recommended: true, note: 'Most popular — complete exterior coverage' },
-              { name: 'Elite', coverage: 'Paint + glass + wheels + stage 1 paint correction', warranty: '5-year', price: 'From $1,999', note: 'For cars with existing swirl marks or light scratches' },
-              { name: 'Signature', coverage: 'Full vehicle + multi-stage correction + interior protection', warranty: '7-year', price: 'POA', note: 'Prestige and collector vehicles — quoted per car' },
+              { name: 'Essential', coverage: 'Exterior paint surfaces only', warranty: '12-month', price: 'Contact us', note: 'Entry point — exterior protection, no glass or wheels' },
+              { name: 'Protection', coverage: 'Exterior paint + all glass + all wheels', warranty: '3-year', price: 'Contact us', recommended: true, note: 'Most popular — complete exterior coverage' },
+              { name: 'Elite', coverage: 'Paint + glass + wheels + stage 1 paint correction', warranty: '5-year', price: 'Contact us', note: 'For cars with existing swirl marks or light scratches' },
+              { name: 'Signature', coverage: 'Full vehicle + multi-stage correction + interior protection', warranty: '7-year', price: 'Contact us', note: 'Prestige and collector vehicles — quoted per car' },
             ].map((pkg, i) => (
               <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: pkg.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {pkg.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}

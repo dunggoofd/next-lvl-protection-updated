@@ -42,7 +42,7 @@ const faqs = [
   { q: 'How long does a PPF install take?', a: 'Impact Shield installs (bumper, leading edge, guards) are typically completed in half a day. Front End Packages take a full day. Track Packages and larger installs are typically 1.5–2 days. Full wraps are quoted per vehicle — contact us for a specific time estimate.' },
   { q: 'Can I drop my car off and pick it up the same day?', a: 'For smaller installs (Impact Shield and below), same-day drop-off and pick-up is often possible. For Front End Package and above, we recommend a next-morning pick-up to allow proper post-install settling time. This will be confirmed at booking.' },
   { q: 'Do you install PPF on all car makes and models?', a: 'Yes — we install on all makes and models. Coverage templates exist for most production vehicles. Rare or heavily modified vehicles may require custom-cut film, which is noted at quote stage. We work on everything from daily hatchbacks to prestige European sports cars.' },
-  { q: 'How do I book a PPF appointment?', a: 'Use the Get a Quote form or call 0411 164 886. Provide your vehicle make, model, year, colour, and the coverage you\'re considering. We\'ll confirm pricing and availability within 2 business hours.' },
+  { q: 'How do I book a PPF appointment?', a: 'Use the Get a Quote form or call 0468 810 666. Provide your vehicle make, model, year, colour, and the coverage you\'re considering. We\'ll confirm pricing and availability within 2 business hours.' },
 ];
 
 const reviews = [
@@ -78,7 +78,7 @@ export default function PPFNearMePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF Near Me Brisbane — NextLvl Protection Acacia Ridge",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": ["Brisbane", "Acacia Ridge", "Sunnybank", "Eight Mile Plains", "Calamvale", "Runcorn", "Algester", "Forest Lake"],
         "description": "Paint Protection Film installer in Acacia Ridge, south Brisbane. SunTek Authorised. Serving Sunnybank, Eight Mile Plains, Runcorn, Calamvale, and all south Brisbane suburbs.",
       })}} />
@@ -122,7 +122,7 @@ export default function PPFNearMePage() {
               <div>
                 <p style={{ fontWeight: 700, marginBottom: 4 }}>NextLvl Protection</p>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110</p>
-                <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginTop: 4 }}>0411 164 886 · Open Mon–Sat by appointment</p>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginTop: 4 }}>0468 810 666 · Open Mon–Sat by appointment</p>
               </div>
             </div>
           </div>

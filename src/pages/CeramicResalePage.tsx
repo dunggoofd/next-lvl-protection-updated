@@ -13,14 +13,14 @@ const benefits = [
   { icon: TrendingUp, title: 'Buyers Pay More for Preserved Paint', desc: 'Paint condition is the first thing a serious buyer or dealer inspects. A vehicle with original glossy swirl-free paint with a documented ceramic history commands a measurable premium. Buyers accept lower offers when they see heavy swirling, oxidation, or paint defects — because they factor in correction costs.' },
   { icon: Eye, title: 'Interior-Grade Appearance Retention', desc: 'Ceramic-coated vehicles maintain a consistently clean exterior that reads as "well maintained" on inspection. Clean, protected paint combined with glass coating creates a presentation impact that uncared-for paint simply cannot match regardless of mechanical condition.' },
   { icon: Shield, title: 'Documentation Adds Verifiable Value', desc: 'We provide clients with a certificate of ceramic application including product name, date, applicator details, and warranty period. This document is presented at sale — it verifies the protection history and is an asset in negotiation, particularly when selling privately.' },
-  { icon: Droplets, title: 'Delays the Need for Pre-Sale Correction', desc: 'Most vehicles require detailing or paint correction before sale to present well. Ceramic protects the paint throughout ownership, reducing or eliminating the need for pre-sale correction spend — typically $300–$800 on uncorrected vehicles.' },
+  { icon: Droplets, title: 'Delays the Need for Pre-Sale Correction', desc: 'Most vehicles require detailing or paint correction before sale to present well. Ceramic protects the paint throughout ownership, reducing or eliminating the need for pre-sale correction spend.' },
   { icon: CheckCircle, title: 'Factory Paint Preservation', desc: 'Verified factory paint is the highest resale value state for any vehicle. Ceramic reduces the risk of UV fade, oxidation, bird dropping etching, and water spot etching that would require respray to correct — each of which significantly reduces resale value when detected.' },
-  { icon: Clock, title: 'ROI Over Ownership Duration', desc: 'A Protection package at $1,299 over 3 years costs $433/year. If maintained correctly, the coating preserves paint condition that would otherwise require $500–$1,000 in pre-sale correction. The ceramic typically returns its cost in preserved resale value — before factoring in the premium it commands from buyers.' },
+  { icon: Clock, title: 'ROI Over Ownership Duration', desc: 'If maintained correctly, the coating preserves paint condition that would otherwise require pre-sale correction or detailing spend. The ceramic typically returns its cost in preserved resale value — before factoring in the premium it commands from buyers.' },
 ];
 
 const faqs = [
   { q: 'Does ceramic coating increase resale value?', a: 'Yes — in two ways. First, it prevents the paint degradation (oxidation, swirl marks, etching) that reduces resale value and requires pre-sale correction spend. Second, documented ceramic application history is a positive differentiator with informed buyers — particularly for prestige, performance, and luxury vehicles. The combination of preserved appearance and verifiable documentation supports a higher asking price.' },
-  { q: 'How much does ceramic coating add to resale value?', a: 'It varies by vehicle segment. For prestige and performance vehicles (BMW, Mercedes, Porsche, Audi, Toyota Land Cruiser), ceramic history combined with excellent paint condition has been associated with 2–5% premiums above equivalent non-coated vehicles in private sale. For volume vehicles, the primary benefit is avoiding correction costs ($400–$900) that would otherwise be spent to prepare the car for sale.' },
+  { q: 'How much does ceramic coating add to resale value?', a: 'It varies by vehicle segment. For prestige and performance vehicles (BMW, Mercedes, Porsche, Audi, Toyota Land Cruiser), ceramic history combined with excellent paint condition has been associated with meaningful premiums above equivalent non-coated vehicles in private sale. For volume vehicles, the primary benefit is avoiding correction costs that would otherwise be spent to prepare the car for sale.' },
   { q: 'Do buyers know what ceramic coating is?', a: 'Increasingly yes — particularly buyers of prestige and enthusiast vehicles. Younger buyers are typically more aware of ceramic coating than older buyers. The documentation we provide is useful because it explains the product, duration, and warranty in plain language — a buyer does not need prior knowledge to understand what they are receiving.' },
   { q: 'What documentation do you provide with ceramic application?', a: 'We provide a ceramic application certificate stating: vehicle details, application date, product name and manufacturer, installer name, warranty period, and warranty terms summary. This is a physical or digital document you can present to the buyer or dealer. Some of our clients attach it to the vehicle\'s service history folder.' },
   { q: 'Should I get ceramic before selling my car?', a: 'If the paint is in good condition and the car will not sell immediately, yes — ceramic 12+ months before sale is the correct timing. A coating applied one week before sale has not had time to cure fully and the hydrophobic performance is not yet at peak. If sale is imminent, a professional decontamination and one-step correction is typically the better investment. Contact us with timing and we\'ll advise the right approach.' },
@@ -28,7 +28,7 @@ const faqs = [
 ];
 
 const reviews = [
-  { name: 'Liam S.', suburb: 'Wishart', service: 'Ceramic Coating — Elite Package (pre-ownership)', text: 'Got the Elite package on my new RS5 specifically to protect the paint for resale. 4 years later, sold it privately with the certificate. Buyer commented on the paint quality. Got $4k above the initial asking price I was expecting.' },
+  { name: 'Liam S.', suburb: 'Wishart', service: 'Ceramic Coating — Elite Package (pre-ownership)', text: 'Got the Elite package on my new RS5 specifically to protect the paint for resale. 4 years later, sold it privately with the certificate. Buyer commented on the paint quality. Sold well above what I initially expected.' },
   { name: 'Michelle P.', suburb: 'Mansfield', service: 'Ceramic Coating — Protection Package', text: 'Sold my 86 after 2 years with the certificate. Private buyer was an enthusiast who asked about it specifically. The ceramic history was a genuine positive in the sale negotiation.' },
   { name: 'Andrew K.', suburb: 'Carindale', service: 'Ceramic Coating — Resale Strategy Advice', text: 'They gave me honest advice about timing and which package would make most financial sense for my resale timeline. That kind of clarity is rare in this industry.' },
 ];
@@ -60,10 +60,9 @@ export default function CeramicResalePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for Resale Value Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Ceramic coating to protect and increase resale value in Brisbane. Documented application history, paint preservation, and buyer-facing certification. From $699. Acacia Ridge.",
-        "offers": { "@type": "Offer", "price": "699", "priceCurrency": "AUD" },
+        "description": "Ceramic coating to protect and increase resale value in Brisbane. Documented application history, paint preservation, and buyer-facing certification. Acacia Ridge.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -76,7 +75,7 @@ export default function CeramicResalePage() {
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Sell More. Spend Less to Prepare.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            Ceramic coating preserves paint condition and provides documented protection history — both of which strengthen resale position. From $699 with application certificate included.
+            Ceramic coating preserves paint condition and provides documented protection history — both of which strengthen resale position. Application certificate included.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Book Ceramic Coating</span></Link>
@@ -117,10 +116,10 @@ export default function CeramicResalePage() {
               </thead>
               <tbody>
                 {[
-                  { pkg: 'Essential', price: '$699', dur: '12 mo', cpy: '$699', avoid: '$300–$500', net: 'Neutral to slightly positive' },
-                  { pkg: 'Protection', price: '$1,299', dur: '3 yr', cpy: '$433', avoid: '$400–$700', net: 'Positive — cost recovered' },
-                  { pkg: 'Elite', price: '$1,999', dur: '5 yr', cpy: '$400', avoid: '$600–$900', net: 'Strongly positive at 3yr+ sale' },
-                  { pkg: 'Signature', price: 'POA', dur: '7 yr', cpy: 'Lowest', avoid: '$800–$1,200', net: 'Strongly positive — premium segment' },
+                  { pkg: 'Essential', price: 'POA', dur: '12 mo', cpy: 'POA', avoid: 'Moderate saving', net: 'Neutral to slightly positive' },
+                  { pkg: 'Protection', price: 'POA', dur: '3 yr', cpy: 'POA', avoid: 'Meaningful saving', net: 'Positive — cost recovered' },
+                  { pkg: 'Elite', price: 'POA', dur: '5 yr', cpy: 'POA', avoid: 'Significant saving', net: 'Strongly positive at 3yr+ sale' },
+                  { pkg: 'Signature', price: 'POA', dur: '7 yr', cpy: 'Lowest', avoid: 'Maximum saving', net: 'Strongly positive — premium segment' },
                 ].map((row, i) => (
                   <tr key={i} style={{ background: i % 2 === 0 ? 'transparent' : 'var(--color-surface)' }}>
                     <td style={{ padding: '11px 16px', fontWeight: 700, fontSize: 12, border: '1px solid var(--color-border)', color: 'var(--color-accent)' }}>{row.pkg}</td>

@@ -61,7 +61,7 @@ export default function PPFSelfHealingPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Self-Healing PPF Brisbane — SunTek Ultra Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Self-healing PPF in Brisbane. SunTek Ultra film with elastomeric topcoat — light swirls vanish under heat. Activated by Brisbane ambient temperatures. Acacia Ridge studio.",
       })}} />

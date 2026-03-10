@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
             },
             {
               heading: '7. Contact',
-              body: 'For any privacy-related queries, contact: halo@nextlvlprotection.com.au or call 0411 164 886.',
+              body: 'For any privacy-related queries, contact: halo@nextlvlprotection.com.au or call 0468 810 666.',
             },
           ].map(s => (
             <div key={s.heading} style={{ marginBottom: 40 }}>

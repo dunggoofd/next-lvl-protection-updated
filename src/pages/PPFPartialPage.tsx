@@ -15,14 +15,14 @@ const partialZones = [
   { zone: 'Front Guards', why: 'High exposure to rear spray from the front wheels on wet roads.', price: 'Included in Impact Shield' },
   { zone: 'Full Bonnet', why: 'Upgrade from leading-edge for vehicles with wide-opening bonnets or open highway use.', price: 'Part of Front End Package' },
   { zone: 'Headlights', why: 'Polycarbonate lenses are unrecoverable once pitted — PPF preserves them permanently.', price: 'Part of Front End Package' },
-  { zone: 'Door Cups', why: 'Key and ring scratch zone. One of the highest-ROI partial adds for daily drivers.', price: 'Add-on from $89' },
-  { zone: 'Mirrors', why: 'Exposed at all times. Small panels — high value per cm² of protection.', price: 'Add-on from $149' },
+  { zone: 'Door Cups', why: 'Key and ring scratch zone. One of the highest-ROI partial adds for daily drivers.', price: 'Available as an add-on' },
+  { zone: 'Mirrors', why: 'Exposed at all times. Small panels — high value per cm² of protection.', price: 'Available as an add-on' },
   { zone: 'Roof', why: 'Necessary for open-road and highway-heavy driving where debris arcs over the windscreen.', price: 'Part of Track Package' },
-  { zone: 'Door Sills', why: 'Foot scuff and chip zone for SUVs and vehicles with deep step-in wells.', price: 'Add-on from $129' },
+  { zone: 'Door Sills', why: 'Foot scuff and chip zone for SUVs and vehicles with deep step-in wells.', price: 'Available as an add-on' },
 ];
 
 const benefits = [
-  { icon: DollarSign, title: 'Lower Entry Cost', desc: 'Partial installs let you prioritise the highest-risk zones on a tighter budget. The Impact Shield package starts at $599 — covering the three zones responsible for most chip events.' },
+  { icon: DollarSign, title: 'Lower Entry Cost', desc: 'Partial installs let you prioritise the highest-risk zones on a tighter budget. The Impact Shield package covers the three zones responsible for most chip events.' },
   { icon: Layers, title: 'Add Panels Later', desc: 'PPF panels are independent. You can add door cups, mirrors, or a full bonnet at a later date. There is no penalty for starting small.' },
   { icon: Shield, title: 'Correct Priority Order', desc: 'Front bumper + bonnet leading edge + guards covers the zones where 90% of chips originate. Partial coverage on these zones outperforms full coverage on lower-risk panels.' },
   { icon: Zap, title: 'Same SunTek Film Quality', desc: 'Partial installs use the same SunTek Ultra PPF as full wraps. The only difference is coverage area — not film grade or installation standard.' },
@@ -71,9 +71,9 @@ export default function PPFPartialPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Partial PPF Brisbane — Panel-by-Panel Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Partial PPF installations in Brisbane. Cover the highest-risk panels first — Impact Shield from $599. Add panels at any time. SunTek Authorised installer, Acacia Ridge.",
+        "description": "Partial PPF installations in Brisbane. Cover the highest-risk panels first. Add panels at any time. SunTek Authorised installer, Acacia Ridge.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

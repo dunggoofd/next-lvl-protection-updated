@@ -5,7 +5,7 @@ import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What VLT (Visible Light Transmission) is legal in Queensland?', a: 'In Queensland, the minimum VLT is 35% for all windows in passenger vehicles (including SUVs and utes), except the rear window and rear side windows behind the B-pillar, which have no VLT restriction for vehicles with rear-view mirrors. The windscreen front strip (visor band) is also regulated. NextLvl Protection installs compliant VLT levels on all front windows as standard.' },
-  { q: 'How much does window tinting cost for a car in Brisbane?', a: 'Automotive window tinting in Brisbane starts from $290 (rear privacy — rear window and rear sides only) to $490 (full car tint) and $690 (full car + windscreen with Solar Gard UV film). Prices at NextLvl Protection include Solar Gard VTX PRO film and lifetime warranty.' },
+  { q: 'How much does window tinting cost for a car in Brisbane?', a: 'Window tinting pricing depends on vehicle size and coverage. Contact us for a personalised quote.' },
   { q: 'What is the best window film for cars in Brisbane?', a: 'For Brisbane\'s UV and heat, Solar Gard VTX PRO is one of the highest-performing automotive window films available. It provides 99% UV rejection, significant heat rejection, and maintains clarity without a strong reflective or purple tint over time.' },
   { q: 'Does window tint help with heat in the car?', a: 'Yes — significantly. Solar Gard VTX PRO rejects a substantial portion of solar heat. The difference is most noticeable on cars parked in the sun — the cabin cools faster and the peak temperature is lower. The front windows (driver/passenger) have the most impact on occupant comfort.' },
   { q: 'How long does car window tinting take?', a: 'A rear-only package takes approximately 1.5–2 hours. A full car tint takes 2.5–3.5 hours. Full car + windscreen takes 3–4 hours. We do not release a vehicle until the installation has passed our quality inspection.' },
@@ -23,7 +23,7 @@ const faqs = [
   { q: 'Is NextLvl Protection a Solar Gard Authorised Installer?', a: 'Yes — NextLvl Protection is a Solar Gard Authorised Installer. This means we use genuine Solar Gard film, install to manufacturer standards, and the Solar Gard lifetime warranty applies to your installation.' },
   { q: 'Can window tint be applied to new cars that already have factory tint?', a: 'Yes — factory tint (privacy glass) is in the glass itself and typically provides privacy without significant heat or UV rejection. Adding Solar Gard VTX PRO over factory privacy glass adds UV protection and heat rejection while deepening the appearance. VLT compliance must be confirmed for front windows.' },
   { q: 'What types of vehicles does NextLvl Protection tint?', a: 'We tint all passenger vehicles — sedans, hatchbacks, SUVs, 4WDs, utes, vans, and prestige/luxury vehicles. We also accommodate commercial vehicles on request.' },
-  { q: 'Where is NextLvl Protection located?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Open Monday–Friday 9am–5:30pm. Call 0411 164 886 or use the quote form to book.' },
+  { q: 'Where is NextLvl Protection located?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Open Monday–Friday 9am–5:30pm. Call 0468 810 666 or use the quote form to book.' },
 ];
 
 const schema = {

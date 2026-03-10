@@ -13,7 +13,7 @@ const benefits = [
   { icon: Shield, title: 'First Coat Is Easiest', desc: 'Factory paint that has never been exposed to UV or contamination bonds the most effectively with ceramic. The coating fills microscopic imperfections in fresh clear coat for a stronger, longer-lasting bond than on weathered paint.' },
   { icon: Sun, title: 'Block Brisbane UV Before It Starts', desc: 'A new car\'s clear coat is at peak thickness at delivery. UV oxidation begins immediately. Applying ceramic coating in the first 30 days captures that factory condition and holds it for the coating\'s full warranty period.' },
   { icon: Droplets, title: 'Avoid Dealership Products', desc: 'Most dealership paint protection packages use sealant or wax applied over factory paint — not ceramic. They are not comparable in durability or protection. A single-stage ceramic applied by a specialist outperforms any dealership package.' },
-  { icon: Clock, title: 'No Paint Correction Cost', desc: 'Paint correction is required when swirl marks or scratches are present before coating. New cars that are ceramic coated within the first few weeks rarely need any correction — saving $300–$600 on an otherwise preventable prep step.' },
+  { icon: Clock, title: 'No Paint Correction Cost', desc: 'Paint correction is required when swirl marks or scratches are present before coating. New cars that are ceramic coated within the first few weeks rarely need any correction — avoiding a prep cost that is entirely preventable.' },
   { icon: TrendingUp, title: 'Preserves Resale Value', desc: 'A ceramic-protected car in Brisbane retains paint condition that an unprotected car loses within 2–3 years. At resale, factory-condition paint holds more value and eliminates paint-condition negotiation.' },
   { icon: Eye, title: 'Factory Gloss, Amplified', desc: 'Ceramic coating adds gloss depth beyond the factory finish. On metallic and pearl paints, the ceramic layer reveals colour depth that the standard clear coat alone cannot produce.' },
 ];
@@ -22,7 +22,7 @@ const faqs = [
   { q: 'When should I get ceramic coating on a new car?', a: 'Within the first 30 days is the recommended window. Factory paint is at its cleanest and most receptive state — no contamination, no UV exposure, no swirl marks from early washes. Coating in this window avoids any need for paint correction and gives the coating its strongest possible bond to the clear coat.' },
   { q: 'Should I reject the dealership paint protection and book separately?', a: 'In most cases, yes. Dealership "paint protection" packages are typically sealant or wax products applied by non-specialist staff in non-controlled environments. They do not carry independent manufacturer warranties. A ceramic coating applied by an authorised specialist in a controlled studio environment is not the same product — not in durability, not in bonding chemistry, not in the warranty backing it.' },
   { q: 'Does a new car need paint correction before ceramic coating?', a: 'Usually no — provided the car is coated within the first 1–3 weeks and has not been through an automatic car wash or had poorly-executed early washes. If swirl marks are present from delivery handling or an early wash, a minor correction step is required before coating. We inspect every new car at reception and advise before any work begins.' },
-  { q: 'What package do you recommend for a new car?', a: 'The Protection package (exterior paint, glass, and wheels — from $1,299 with a 3-year warranty) is the most popular starting point for new cars. It covers all exterior surfaces where environmental exposure occurs. The Elite package adds paint correction capacity, which is only needed if the car has existing marks. For prestige and collector vehicles, the Signature package with a 7-year warranty is the appropriate choice.' },
+  { q: 'What package do you recommend for a new car?', a: 'The Protection package (exterior paint, glass, and wheels — 3-year warranty) is the most popular starting point for new cars. It covers all exterior surfaces where environmental exposure occurs. The Elite package adds paint correction capacity, which is only needed if the car has existing marks. For prestige and collector vehicles, the Signature package with a 7-year warranty is the appropriate choice. Contact us for a quote tailored to your vehicle.' },
   { q: 'Will ceramic coating affect the manufacturer\'s warranty on my new car?', a: 'No. Ceramic coating is applied to the exterior surface of the paint — it does not interact with any mechanical or structural component that would affect a manufacturer\'s warranty. It is a surface protection product, not a modification.' },
   { q: 'How long after delivery should I wait before washing the car?', a: 'Ideally, bring the car directly to us before any washes. If you must wash before your appointment, use a pH-neutral touchless rinse only — no brushes, no automatic car washes. The first wash method is the most common source of early swirl marks on new paint.' },
   { q: 'What is the aftercare period after ceramic coating a new car?', a: 'The first 7–14 days after application are the critical cure period. During this time, avoid washing, water contact, and parking under trees. We provide a specific aftercare guide at handover covering exactly what to do and avoid in the first two weeks. After curing, maintenance is straightforward — pH-neutral wash with a clean microfibre.' },
@@ -54,17 +54,16 @@ export default function CeramicNewCarPage() {
     <>
       <PageMeta
         title="Ceramic Coating for New Cars Brisbane | NextLvl Protection"
-        description="Ceramic coating for new cars in Brisbane. Protect your new car's paint before Queensland's UV causes damage. From $699."
+        description="Ceramic coating for new cars in Brisbane. Protect your new car's paint before Queensland's UV causes damage. NextLvl Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-new-car-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for New Cars Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating for new cars in Brisbane. Apply within 30 days of delivery — no paint correction required, strongest bond, full warranty. Acacia Ridge studio.",
-        "offers": { "@type": "Offer", "price": "699", "priceCurrency": "AUD" },
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

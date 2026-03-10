@@ -38,7 +38,7 @@ export default function Footer() {
               SunTek PPF · Solar Gard VTX PRO · 3M Window Films
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <a href="tel:0411164886" className="footer-link">0411 164 886</a>
+              <a href="tel:0468810666" className="footer-link">0468 810 666</a>
               <a href="mailto:halo@nextlvlprotection.com.au" className="footer-link">halo@nextlvlprotection.com.au</a>
               <span style={{ color: 'var(--color-text-muted)', fontSize: 14 }}>Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110</span>
               <span style={{ color: 'var(--color-text-muted)', fontSize: 14 }}>Mon–Fri 9am–5:30pm · Sat–Sun Closed</span>

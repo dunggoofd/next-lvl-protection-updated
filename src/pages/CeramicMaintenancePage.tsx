@@ -60,7 +60,7 @@ export default function CeramicMaintenancePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Maintenance Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating maintenance and top-up services in Brisbane. Annual inspection, decontamination, and maintenance layer services. Acacia Ridge studio.",
       })}} />

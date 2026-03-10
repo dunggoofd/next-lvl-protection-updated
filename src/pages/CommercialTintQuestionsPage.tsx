@@ -23,7 +23,7 @@ const faqs = [
   { q: 'Can window film replace venetian blinds or external shading?', a: 'Window film is a complementary solution, not a complete replacement for blinds in all scenarios. Film provides always-on heat and UV rejection without the maintenance of blinds. For scenarios requiring complete blackout or full privacy, blinds remain appropriate. Many commercial spaces use both.' },
   { q: 'Do you offer a 3M commercial warranty on installations?', a: 'Yes — NextLvl Protection is a 3M Authorised Installer. Commercial installations are backed by the applicable 3M commercial limited warranty. Warranty documentation is provided at handover. Warranty period varies by film series.' },
   { q: 'Can window film be applied to existing tinted commercial glazing?', a: 'Yes — 3M Solar or safety film can be applied to commercial glass that already has a factory tint. VLT must be checked for compliance in applicable areas. Additional tint over existing tinted glass will darken the appearance.' },
-  { q: 'Where is NextLvl Protection and do you cover all of Brisbane for commercial tinting?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for commercial window tinting projects. Call 0411 164 886 or use the quote form on this site.' },
+  { q: 'Where is NextLvl Protection and do you cover all of Brisbane for commercial tinting?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for commercial window tinting projects. Call 0468 810 666 or use the quote form on this site.' },
 ];
 
 const schema = {

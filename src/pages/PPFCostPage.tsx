@@ -10,12 +10,12 @@ import PageMeta from '../components/PageMeta';
 
 
 const faqs = [
-  { q: 'How much does PPF cost in Brisbane?', a: 'PPF pricing in Brisbane depends on coverage area, film grade, and vehicle size. At NextLvl Protection: Impact Shield (bonnet leading edge + front bumper + guards) from $599. Front End Package (full bonnet + bumper + guards + headlights + mirrors) from $1,490. Track Package (front end + roof + A-pillars) from $2,290. Full wraps are quoted on application — contact us with your vehicle make and model.' },
+  { q: 'How much does PPF cost in Brisbane?', a: 'Pricing depends on coverage zone and vehicle size. Contact us for a personalised quote.' },
   { q: 'Why does PPF cost more than a basic paint protection product?', a: 'PPF is a physical urethane film cut and applied panel by panel. It requires specialist training, a controlled environment, and precision tooling. Generic "paint protection" products from dealerships or car washes are wax or sealant coatings — they cost less because they provide no physical chip protection. The comparison is not valid: one stops chips, the other does not.' },
   { q: 'What is included in the price at NextLvl Protection?', a: 'Every PPF quote includes: full decontamination wash, clay bar treatment, panel inspection, film application with edge tucks on all panels, post-installation QC under workshop lighting, SunTek warranty documentation, and a written aftercare guide. There are no hidden fees. Paint correction, if required, is quoted separately and advised upfront before any work begins.' },
   { q: 'Is a cheaper PPF installer worth considering?', a: 'The film and the installation are inseparable. Cheaper installers typically use lower-grade film (not SunTek, XPEL, or equivalent tier-one brands), skip edge tucking (leaving exposed edges that lift), and install in uncontrolled environments where contamination under the film is common. These failures are not covered by any warranty. The cost of removal and reinstallation on a failed job typically exceeds the original saving.' },
-  { q: 'Can I get a partial PPF install to reduce cost?', a: 'Yes — partial installs are the most common entry point. A front bumper and bonnet leading edge kit starts at $599 and protects the two highest-chip-risk zones on any car. You can always add panels later. The critical thing is that what is installed is done correctly with quality film the first time.' },
-  { q: 'Does PPF add value at resale that offsets the cost?', a: 'It prevents value loss rather than adding value above market. A PPF-protected car at trade-in arrives with factory paint condition — no chip negotiation, no paint correction cost. The typical dealer discount for paint condition issues on a used car is $1,500–$3,000. A front end package at $1,490 applied at delivery is cost-neutral over a 3-year ownership period in realistic scenarios.' },
+  { q: 'Can I get a partial PPF install to reduce cost?', a: 'Yes — partial installs are the most common entry point. An Impact Shield kit protects the two highest-chip-risk zones on any car — the front bumper and bonnet leading edge. You can always add panels later. The critical thing is that what is installed is done correctly with quality film the first time.' },
+  { q: 'Does PPF add value at resale that offsets the cost?', a: 'It prevents value loss rather than adding value above market. A PPF-protected car at trade-in arrives with factory paint condition — no chip negotiation, no paint correction cost. Dealer discounts for reconditioning on unprotected vehicles can be significant. A front end package applied at delivery is cost-neutral over a typical ownership period in realistic scenarios.' },
   { q: 'How do I get an accurate PPF quote in Brisbane?', a: 'Contact NextLvl Protection with your vehicle make, model, year, and colour — and the coverage you\'re interested in. We\'ll provide a specific quote within 2 business hours. For complex vehicles or full wraps, a brief inspection at our Acacia Ridge studio may be required to confirm pricing.' },
 ];
 
@@ -45,16 +45,16 @@ export default function PPFCostPage() {
     <>
       <PageMeta
         title="PPF Cost Brisbane | Paint Protection Film Pricing | NextLvl Protection"
-        description="Paint protection film pricing in Brisbane. Impact shield from $599, front end from $1,490. Full wrap POA. SunTek Authorised installer."
+        description="Paint protection film pricing in Brisbane. Impact Shield, Front End, Track Package, and Full Wrap options. SunTek Authorised installer."
         canonical="https://www.nextlvlprotection.com.au/ppf-cost-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF Cost Brisbane — Paint Protection Film Pricing",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Transparent PPF pricing in Brisbane. SunTek Authorised installer in Acacia Ridge — Impact Shield from $599, Front End from $1,490. No hidden fees.",
+        "description": "Transparent PPF pricing in Brisbane. SunTek Authorised installer in Acacia Ridge. No hidden fees.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -84,10 +84,10 @@ export default function PPFCostPage() {
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What PPF Costs at NextLvl Protection</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
             {[
-              { package: 'Impact Shield', coverage: 'Bonnet leading edge (30cm) + front bumper + front guards', price: 'From $599', warranty: '5-year SunTek', note: 'Entry point — covers the highest-chip-frequency zones' },
-              { package: 'Front End Package', coverage: 'Full bonnet + front bumper + front guards + headlights + mirrors', price: 'From $1,490', warranty: '10-year SunTek', note: 'Most popular — covers 90% of chip events on any road car', recommended: true },
-              { package: 'Track Package', coverage: 'Front end + roof + A-pillars', price: 'From $2,290', warranty: '10-year SunTek', note: 'Highway drivers and open road use — additional high-exposure zones covered' },
-              { package: 'Full Wrap', coverage: 'Entire exterior painted surface', price: 'POA', warranty: '10-year SunTek', note: 'Prestige and performance vehicles — quoted on application by vehicle' },
+              { package: 'Impact Shield', coverage: 'Bonnet leading edge (30cm) + front bumper + front guards', price: 'Contact us for a quote', warranty: '5-year SunTek', note: 'Entry point — covers the highest-chip-frequency zones' },
+              { package: 'Front End Package', coverage: 'Full bonnet + front bumper + front guards + headlights + mirrors', price: 'Contact us for a quote', warranty: '10-year SunTek', note: 'Most popular — covers 90% of chip events on any road car', recommended: true },
+              { package: 'Track Package', coverage: 'Front end + roof + A-pillars', price: 'Contact us for a quote', warranty: '10-year SunTek', note: 'Highway drivers and open road use — additional high-exposure zones covered' },
+              { package: 'Full Wrap', coverage: 'Entire exterior painted surface', price: 'Contact us for a quote', warranty: '10-year SunTek', note: 'Prestige and performance vehicles — quoted on application by vehicle' },
             ].map((row, i) => (
               <div key={i} className="card" style={{ padding: '24px 28px', borderRadius: i === 0 ? '4px 4px 0 0' : i === 3 ? '0 0 4px 4px' : 0, border: row.recommended ? '1.5px solid var(--color-accent)' : undefined, position: 'relative' }}>
                 {row.recommended && <span style={{ position: 'absolute', top: -12, left: 24, background: 'var(--color-accent)', color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 12px', borderRadius: 100 }}>Most Popular</span>}

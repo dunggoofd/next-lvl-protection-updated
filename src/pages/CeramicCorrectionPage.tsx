@@ -61,7 +61,7 @@ export default function CeramicCorrectionPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Paint Correction Brisbane — Before Ceramic Coating",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Paint correction in Brisbane before ceramic coating. Stage 1 and multi-stage correction — swirl removal, oxidation, scratches. Quoted separately, assessed at inspection. Acacia Ridge.",
       })}} />

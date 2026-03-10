@@ -15,7 +15,7 @@ const benefits = [
   { icon: Shield, title: 'Hard Surface Layer vs Wax', desc: 'Wax and sealant degrade rapidly under Brisbane heat — lasting 3–6 months at best. Ceramic coating cures as a semi-permanent hard layer with 1–7 year warranty options. It does not melt, migrate, or require reapplication on the same cycle.' },
   { icon: TrendingUp, title: 'Paint Preservation Over Time', desc: 'A ceramic-coated car in Brisbane at 5 years will have paint condition that an unprotected car reaches after 2 years. The protective layer delays oxidation, retains colour depth, and keeps the clear coat at a consistent thickness over the protection period.' },
   { icon: Eye, title: 'Summer Wash Frequency Drops', desc: 'Brisbane summers mean more dust, pollen, and insect activity. Ceramic-coated cars shed contamination with rain or a simple rinse — reducing the wash frequency and the handling contact that causes swirl accumulation over time.' },
-  { icon: Clock, title: 'Long-Term Economics in QLD', desc: 'A professional correction and regrind on oxidised paint in Brisbane typically costs $800–$2,000 depending on severity. A ceramic coating package applied before degradation reaches that stage is cheaper than the correction cost alone.' },
+  { icon: Clock, title: 'Long-Term Economics in QLD', desc: 'A professional correction and regrind on oxidised paint in Brisbane can be a significant cost depending on severity. A ceramic coating package applied before degradation reaches that stage is more economical than paying for correction alone.' },
 ];
 
 const faqs = [
@@ -60,10 +60,9 @@ export default function CeramicBrisbanePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Brisbane — UV Protection for QLD Conditions",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Professional ceramic coating in Brisbane. High-UV environment specialists. Acacia Ridge studio — Essential from $699, Protection from $1,299. 3-year to 7-year warranty options.",
-        "offers": { "@type": "Offer", "price": "699", "priceCurrency": "AUD" },
+        "description": "Professional ceramic coating in Brisbane. High-UV environment specialists. Acacia Ridge studio. 3-year to 7-year warranty options.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

@@ -22,13 +22,13 @@ const faqs = [
   { q: 'Does PPF actually increase resale value?', a: 'PPF directly protects one of the most visible depreciation factors — paint condition. A car with original, undamaged factory paint commands a higher price than one with chips, touch-up marks, or corrected paint. The film doesn\'t add value to the car — it prevents the value loss that would otherwise occur. The net effect at sale time is a meaningful price premium over an unprotected equivalent.' },
   { q: 'How do I prove to a buyer that PPF is installed?', a: 'You\'ll receive SunTek warranty documentation at handover from NextLvl Protection — this is the paper trail. In addition, the film itself is visible on close inspection under direct light, and a knowledgeable buyer or dealer will confirm it during inspection. The warranty paperwork is the formal record.' },
   { q: 'Does PPF warranty transfer to a new owner?', a: 'SunTek\'s warranty is on the film installation, not the registered owner. When you sell the vehicle, the remaining warranty period transfers to the new owner. This is a selling point — they\'re buying not just a car with good paint but a film installation with remaining manufacturer warranty.' },
-  { q: 'Is partial PPF (front end only) enough to help resale?', a: 'Yes — the front end is where most of the visible chip damage accumulates. A buyer or dealer looking at the bonnet, front bumper, and guards in factory condition reads that as a well-maintained vehicle. A front end package covering these zones costs from $1,490 and provides the most visible protection for resale purposes.' },
+  { q: 'Is partial PPF (front end only) enough to help resale?', a: 'Yes — the front end is where most of the visible chip damage accumulates. A buyer or dealer looking at the bonnet, front bumper, and guards in factory condition reads that as a well-maintained vehicle. A front end package covering these zones provides the most visible protection for resale purposes.' },
   { q: 'Will a dealer pay more for a PPF-protected car at trade-in?', a: 'A dealer\'s pricing is partly based on the reconditioning cost they\'d need to invest. A car in excellent paint condition requires less reconditioning — that margin can work in your favour at trade-in. It\'s not guaranteed, but arriving with factory paint and warranty documentation is objectively a stronger negotiating position.' },
   { q: 'What is the best combination for maximum resale protection in Brisbane?', a: 'For maximum resale value protection: PPF on the front end (or full car for premium vehicles), combined with ceramic coating over the full painted surface. This gives you chip protection on high-impact zones, chemical and UV resistance across the full surface, and a maintained gloss that photographs and presents well at sale time.' },
 ];
 
 const reviews = [
-  { name: 'Michael B.', suburb: 'Sunnybank Hills', service: 'PPF — Front End Package', text: 'Sold my GLA after 3 years with PPF. The dealer commented specifically on the paint condition. Got $3,200 more than the initial offer after we pointed out the PPF documentation and warranty. Worth it.' },
+  { name: 'Michael B.', suburb: 'Sunnybank Hills', service: 'PPF — Front End Package', text: 'Sold my GLA after 3 years with PPF. The dealer commented specifically on the paint condition. Got significantly more than the initial offer after we pointed out the PPF documentation and warranty. Worth it.' },
   { name: 'Lisa T.', suburb: 'Calamvale', service: 'PPF + Ceramic Package', text: 'Full front PPF plus ceramic on a new RAV4. Now 4 years in — paint looks like year one. Already had interest from family members wanting to buy it. The condition is the selling point.' },
   { name: 'Paul D.', suburb: 'Algester', service: 'PPF — Full Wrap', text: 'Full wrap on a Porsche Cayenne. Sold it last year. The paint was the first thing mentioned by every buyer. Film came off cleanly at the buyer\'s request — factory paint underneath. Sold at asking price.' },
 ];
@@ -60,9 +60,9 @@ export default function PPFResalePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF for Resale Value Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Protect your car's resale value with PPF in Brisbane. SunTek Authorised installer in Acacia Ridge — paint stays factory-condition. Packages from $599.",
+        "description": "Protect your car's resale value with PPF in Brisbane. SunTek Authorised installer in Acacia Ridge — paint stays factory-condition.",
       })}} />
 
       {/* HERO */}
@@ -110,7 +110,7 @@ export default function PPFResalePage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               <div style={{ padding: '20px 24px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '4px 4px 0 0' }}>
                 <p style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: 8 }}>Without PPF</p>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.6 }}>Chips on bonnet and bumper, touch-up visible, swirl marks in guards. Dealer discounts $1,500–$3,000 for reconditioning. Private buyer negotiates same downward.' </p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.6 }}>Chips on bonnet and bumper, touch-up visible, swirl marks in guards. Dealer discounts for reconditioning can be significant. Private buyer negotiates same downward.</p>
               </div>
               <div style={{ padding: '20px 24px', background: 'var(--color-accent)', borderRadius: '0 0 4px 4px' }}>
                 <p style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'rgba(255,255,255,0.6)', marginBottom: 8 }}>With PPF</p>

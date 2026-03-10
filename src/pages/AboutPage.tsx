@@ -46,7 +46,7 @@ export default function AboutPage() {
         "@type": "LocalBusiness",
         "name": "NextLvl Protection",
         "url": "https://www.nextlvlprotection.com.au",
-        "telephone": "0411164886",
+        "telephone": "0468810666",
         "email": "info@nextlvlprotection.com.au",
         "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110", "addressCountry": "AU" },
         "geo": { "@type": "GeoCoordinates", "latitude": -27.5585, "longitude": 153.0197 },
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 <Phone size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ flexShrink: 0, marginTop: 2 }} />
                 <div>
                   <p style={{ fontWeight: 600, fontSize: 14, marginBottom: 4 }}>Phone</p>
-                  <a href="tel:0411164886" style={{ color: 'var(--color-accent)', fontSize: 13 }}>0411 164 886</a>
+                  <a href="tel:0468810666" style={{ color: 'var(--color-accent)', fontSize: 13 }}>0468 810 666</a>
                 </div>
               </div>
               <div className="card" style={{ padding: '24px 20px', display: 'flex', gap: 16, alignItems: 'flex-start' }}>

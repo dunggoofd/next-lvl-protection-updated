@@ -17,26 +17,26 @@ const tiers: PackageTier[] = [
     name: 'Essential',
     subtitle: 'Exterior paint surfaces — base-level gloss and protection',
     inclusions: ['Full decontamination wash + iron fallout removal', 'Ceramic coating applied to all exterior paint', 'Hydrophobic protection — water beads and rolls off', 'UV and oxidation resistance', '12-month protection warranty'],
-    price: 'From $699',
+    price: 'Get a Quote',
   },
   {
     name: 'Protection',
     subtitle: 'Exterior paint + glass + wheels — complete exterior coverage',
     inclusions: ['Full decontamination + clay bar treatment', 'Ceramic coating — all exterior paint', 'Ceramic coating — all glass (hydrophobic, improves rain visibility)', 'Ceramic coating — all wheels (brake dust resistance)', 'Hydrophobic + UV + oxidation protection', '3-year protection warranty'],
-    price: 'From $1,299',
+    price: 'Get a Quote',
     recommended: true,
   },
   {
     name: 'Elite',
     subtitle: 'Full exterior + glass + wheels + stage 1 paint correction',
     inclusions: ['Full decontamination + clay bar + stage 1 paint correction', 'Ceramic coating — all exterior paint', 'Ceramic coating — all glass', 'Ceramic coating — all wheels', 'Ceramic coating — interior trim and plastics', 'Hydrophobic + UV + oxidation + swirl reduction', '5-year protection warranty'],
-    price: 'From $1,999',
+    price: 'Get a Quote',
   },
   {
     name: 'Signature',
     subtitle: 'Complete vehicle — multi-stage correction + full ceramic system',
     inclusions: ['Full decontamination + clay bar + multi-stage paint correction', 'Premium ceramic coating — full exterior paint', 'Ceramic coating — all glass, wheels, interior trim', 'Engine bay clean and protect', 'Maximum gloss, hydrophobic, UV, and scratch resistance', '7-year protection warranty'],
-    price: 'POA',
+    price: 'Get a Quote',
   },
 ];
 
@@ -50,7 +50,7 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'How much does ceramic coating cost in Brisbane?', a: 'Ceramic coating in Brisbane ranges from $699 for a single-stage exterior application to $1,999+ for an elite package including paint correction and full exterior coverage. At NextLvl Protection in Acacia Ridge, our Protection package — exterior paint, glass, and wheels — starts at $1,299 with a 3-year warranty.' },
+  { q: 'How much does ceramic coating cost in Brisbane?', a: 'Pricing varies based on vehicle size, paint condition, and package selected. Contact us for a personalised quote.' },
   { q: 'How long does ceramic coating last in Brisbane\'s heat?', a: 'Quality ceramic coating installed correctly lasts 1 to 7 years depending on the product and package. Our Protection tier carries a 3-year warranty; our Signature tier is warranted for 7 years. Brisbane\'s UV environment accelerates degradation of budget coatings — product quality matters here.' },
   { q: 'Does my car need paint correction before ceramic coating?', a: 'It depends on paint condition. If your paint has swirl marks, light scratches, or oxidation, those defects will be sealed under the coating permanently. Our Elite and Signature packages include paint correction. We inspect every car before coating and advise honestly on what\'s needed.' },
   { q: 'How long does ceramic coating take to apply?', a: 'Our Essential package typically takes 1 day. Protection takes 1–2 days. Elite and Signature packages include paint correction and take 2–4 days. The curing process continues for 7–14 days after application — we provide specific aftercare instructions for this period.' },
@@ -85,16 +85,16 @@ export default function CeramicCoatingPage() {
     <>
       <PageMeta
         title="Ceramic Coating Brisbane | Precision Application | NextLvl Protection"
-        description="Professional ceramic coating in Brisbane. Hydrophobic, UV-resistant nano-ceramic bonded to your paint. Packages from $699. Acacia Ridge studio."
+        description="Professional ceramic coating in Brisbane. Hydrophobic, UV-resistant nano-ceramic bonded to your paint. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "SunTek Authorised ceramic coating installer in Acacia Ridge, Brisbane. 9H ceramic coating packages from $699 with up to 7-year warranty.",
+        "description": "SunTek Authorised ceramic coating installer in Acacia Ridge, Brisbane. Up to 7-year warranty.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

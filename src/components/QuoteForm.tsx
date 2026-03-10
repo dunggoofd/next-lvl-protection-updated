@@ -109,8 +109,8 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: 24 }}>
           We'll be in touch within 2 business hours. If it's urgent, call us directly.
         </p>
-        <a href="tel:0411164886" style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', color: 'var(--color-accent)', letterSpacing: '0.04em' }}>
-          0411 164 886
+        <a href="tel:0468810666" style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', color: 'var(--color-accent)', letterSpacing: '0.04em' }}>
+          0468 810 666
         </a>
       </div>
     );

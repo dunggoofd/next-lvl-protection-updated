@@ -85,7 +85,7 @@ export default function CommercialTintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Commercial Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "3M Authorised commercial window film installer in Acacia Ridge, Brisbane. Offices, shopfronts, and multi-storey buildings. Out-of-hours installation available.",
       })}} />

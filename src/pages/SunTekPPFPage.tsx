@@ -61,7 +61,7 @@ export default function SunTekPPFPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "SunTek PPF Brisbane — Authorised Paint Protection Film Installer",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised PPF installer in Brisbane. SunTek Ultra 10-year manufacturer warranty. Self-healing topcoat. Gloss and matte available. Acacia Ridge studio.",
       })}} />

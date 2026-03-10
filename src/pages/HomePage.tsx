@@ -15,7 +15,6 @@ const services = [
     sub: 'SunTek Authorised',
     desc: 'Self-healing urethane film that takes the hit so your paint doesn\'t. Invisible protection with a 10-year warranty.',
     href: '/ppf-brisbane',
-    from: 'From $599',
   },
   {
     icon: Droplets,
@@ -23,7 +22,6 @@ const services = [
     sub: 'Precision Application',
     desc: 'Hydrophobic nano-ceramic layer bonded to your paint. Water beads. Gloss deepens. UV can\'t touch it.',
     href: '/ceramic-coating-brisbane',
-    from: 'From $699',
   },
   {
     icon: Car,
@@ -31,7 +29,6 @@ const services = [
     sub: 'Solar Gard VTX PRO Certified',
     desc: 'Premium solar film engineered to reject heat and UV — not just darken glass. Queensland-legal VLT options.',
     href: '/automotive-window-tinting-brisbane',
-    from: 'From $290',
   },
   {
     icon: Eye,
@@ -39,7 +36,6 @@ const services = [
     sub: '3M Authorised Installer',
     desc: 'Block up to 78% of solar heat and 99% of UV. Brisbane summers are relentless — your windows shouldn\'t be.',
     href: '/residential-window-tinting-brisbane',
-    from: 'From $390',
   },
   {
     icon: Building2,
@@ -47,7 +43,6 @@ const services = [
     sub: '3M Authorised Installer',
     desc: 'Offices, shopfronts, medical clinics. Energy savings, glare control, privacy — site audit and project management included.',
     href: '/commercial-window-tinting-brisbane',
-    from: 'POA',
   },
 ];
 
@@ -94,15 +89,15 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title="Paint Protection Film, Ceramic Coating &amp; Window Tinting Brisbane | NextLvl Protection"
-        description="Brisbane's certified PPF, ceramic coating and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0411 164 886."
+        title="NextLvl Protection | PPF | Ceramic Coating | Window Tinting Brisbane"
+        description="Brisbane's certified PPF, ceramic coating and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0468 810 666."
         canonical="https://www.nextlvlprotection.com.au/"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "NextLvl Protection",
-        "telephone": "0411164886",
+        "telephone": "0468810666",
         "email": "halo@nextlvlprotection.com.au",
         "url": "https://www.nextlvlprotection.com.au",
         "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110", "addressCountry": "AU" },
@@ -110,7 +105,6 @@ export default function HomePage() {
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30" }],
         "areaServed": "Brisbane",
         "description": "Brisbane's certified paint protection film, ceramic coating, and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised Installer.",
-        "priceRange": "$$",
       })}} />
 
       {/* HERO */}
@@ -181,7 +175,6 @@ export default function HomePage() {
                   <p style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 6 }}>{s.sub}</p>
                   <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(20px, 2.5vw, 28px)', letterSpacing: '0.02em', marginBottom: 12 }}>{s.title}</h3>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.65, marginBottom: 20 }}>{s.desc}</p>
-                  <p style={{ color: 'var(--color-accent)', fontSize: 14, fontWeight: 500 }}>{s.from}</p>
                 </Link>
               );
             })}

@@ -14,7 +14,7 @@ const benefits = [
   { icon: Zap, title: 'Self-healing surface resets the film', desc: 'Light abrasion that would become surface scratches on bare paint? SunTek Ultra PPF heals them with heat. Direct sunlight or a warm water pour resets the topcoat.' },
   { icon: TrendingUp, title: 'Maintained paint = maintained value', desc: 'Paint condition is one of the most visible factors at trade-in or private sale. PPF-protected cars arrive with factory-condition paint. That is a provable point of difference.' },
   { icon: Award, title: 'Brisbane conditions are unusually harsh', desc: 'Gravel roads heading south-west of Brisbane, dusty highway conditions, and UV intensity that accelerates chip oxidation. PPF is not a luxury item here — it is appropriate protection for real-world use.' },
-  { icon: Clock, title: 'Cost of chips vs cost of PPF', desc: 'A single door panel respray in Brisbane costs $500–$1,200. A full front PPF package at $1,490 covers hundreds of impact events over 10 years. The economics are clear over time.' },
+  { icon: Clock, title: 'Cost of chips vs cost of PPF', desc: 'The cost of paint correction or a respray after significant chip damage is substantial. A full front PPF package covers hundreds of impact events over 10 years. The economics are clear over time.' },
   { icon: Shield, title: '10-year SunTek Authorised warranty', desc: 'SunTek\'s film warranty covers yellowing, peeling, and adhesive failure. Installed by a SunTek Authorised installer, every front end and full wrap package is manufacturer-backed.' },
 ];
 
@@ -25,7 +25,7 @@ const faqs = [
   { q: 'What happens if the PPF gets a chip — does it still protect my paint?', a: 'Yes. A chip in the PPF film means the chip stopped at the film and did not reach your paint. The film can be repaired or replaced section by section if the damage is significant. The paint under a chipped film is still protected and in original condition.' },
   { q: 'Does PPF self-heal after chips?', a: 'PPF self-heals minor surface scratches and abrasions — the kind caused by light contact, fingernails, or soft debris. Deep impacts from sharp stones may leave a mark in the film surface that requires replacement of that section. But the key point: even a marked PPF film means the paint beneath is undamaged.' },
   { q: 'What coverage do I need to protect against stone chips on Brisbane roads?', a: 'For typical Brisbane suburban and highway driving, a front end package — bonnet, front bumper, guards, headlights, mirrors — covers the primary impact zones. If you drive the Ipswich Motorway, Logan Motorway, or any gravel sections regularly, a track package adding the roof and A-pillars is worth considering. Full wraps are the complete solution for maximum protection.' },
-  { q: 'How much does stone chip PPF protection cost in Brisbane?', a: 'Our Impact Shield partial package (bonnet leading edge + bumper + guards) starts at $599. A full front end — bonnet, bumper, guards, headlights, mirrors — starts at $1,490 with a 10-year SunTek warranty. Full wraps are quoted on application.' },
+  { q: 'How much does stone chip PPF protection cost in Brisbane?', a: 'Pricing depends on coverage zone and vehicle size. Contact us for a quote.' },
 ];
 
 const reviews = [
@@ -54,16 +54,16 @@ export default function PPFStoneChipPage() {
     <>
       <PageMeta
         title="Stone Chip Protection Brisbane | PPF | NextLvl Protection"
-        description="Paint protection film against stone chips and road debris in Brisbane. SunTek Authorised PPF installer. Packages from $599."
+        description="Paint protection film against stone chips and road debris in Brisbane. SunTek Authorised PPF installer. Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ppf-stone-chip-protection-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Stone Chip Protection Brisbane — PPF",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Stop stone chips with paint protection film in Brisbane. SunTek Authorised PPF installer in Acacia Ridge — front end packages from $599.",
+        "description": "Stop stone chips with paint protection film in Brisbane. SunTek Authorised PPF installer in Acacia Ridge.",
       })}} />
 
       {/* HERO */}

@@ -39,7 +39,7 @@ export default function GalleryPage() {
         "name": "NextLvl Protection — Before & After Gallery",
         "description": "Before and after photos of PPF, ceramic coating, and window tinting installations by NextLvl Protection in Brisbane.",
         "url": "https://www.nextlvlprotection.com.au/gallery",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0411164886", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
       })}} />
       <section style={{ paddingTop: 120, paddingBottom: 60, paddingLeft: 'var(--section-padding-x)', paddingRight: 'var(--section-padding-x)', background: 'var(--color-bg-primary)' }}>
         <div className="container">
