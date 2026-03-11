@@ -15,7 +15,7 @@ const benefits = [
   { icon: Shield, title: 'Swirls vs Chips — Different Mechanisms', desc: 'Self-healing addresses surface-level scratches in the film\'s topcoat. It does not repair chip damage that penetrates to the adhesive layer — that\'s what the urethane body of the film handles. Both mechanisms work simultaneously on different threat levels.' },
   { icon: Eye, title: 'Optical Clarity Maintained', desc: 'The self-healing topcoat is optically transparent. It does not add visible texture or colour. After healing, the panel surface returns to a clear, swirl-free finish without polishing or product application.' },
   { icon: Zap, title: 'No Limit on Healing Cycles', desc: 'The topcoat does not "run out" of healing capacity. Light swirls will heal repeatedly across the life of the film — the 10-year SunTek warranty period.' },
-  { icon: Shield, title: 'Available on All Packages', desc: 'Self-healing film is standard on SunTek Ultra PPF — the film used on all NextLvl Protection installs. You do not need to select a special upgrade tier to get self-healing capability.' },
+  { icon: Shield, title: 'Available on All Packages', desc: 'Self-healing film is standard on SunTek Ultra PPF — the film used on all Next LVL Protection installs. You do not need to select a special upgrade tier to get self-healing capability.' },
 ];
 
 const faqs = [
@@ -53,7 +53,7 @@ export default function PPFSelfHealingPage() {
   return (
     <>
       <PageMeta
-        title="Self-Healing PPF Brisbane | SunTek Ultra | NextLvl Protection"
+        title="Self-Healing PPF Brisbane | SunTek Ultra | Next LVL Protection"
         description="Self-healing paint protection film in Brisbane. SunTek Ultra PPF heals minor scratches with heat. Authorised installer, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ppf-self-healing-brisbane"
       />
@@ -61,7 +61,7 @@ export default function PPFSelfHealingPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Self-Healing PPF Brisbane — SunTek Ultra Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Self-healing PPF in Brisbane. SunTek Ultra film with elastomeric topcoat — light swirls vanish under heat. Activated by Brisbane ambient temperatures. Acacia Ridge studio.",
       })}} />
@@ -76,7 +76,7 @@ export default function PPFSelfHealingPage() {
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Swirls Gone. In the Sun.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            SunTek Ultra's elastomeric topcoat closes light surface scratches under heat. Brisbane's climate activates it automatically. Standard on every NextLvl Protection install.
+            SunTek Ultra's elastomeric topcoat closes light surface scratches under heat. Brisbane's climate activates it automatically. Standard on every Next LVL Protection install.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>

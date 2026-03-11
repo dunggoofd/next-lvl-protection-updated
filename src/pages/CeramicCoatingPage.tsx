@@ -84,7 +84,7 @@ export default function CeramicCoatingPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating Brisbane | Precision Application | NextLvl Protection"
+        title="Ceramic Coating Brisbane | Precision Application | Next LVL Protection"
         description="Professional ceramic coating in Brisbane. Hydrophobic, UV-resistant nano-ceramic bonded to your paint. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-brisbane"
       />
@@ -92,7 +92,7 @@ export default function CeramicCoatingPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised ceramic coating installer in Acacia Ridge, Brisbane. Up to 7-year warranty.",
       })}} />
@@ -173,7 +173,7 @@ export default function CeramicCoatingPage() {
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>05</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
-              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>Standard across all ceramic coating packages at NextLvl Protection.</p>
+              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>Standard across all ceramic coating packages at Next LVL Protection.</p>
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>
               {['Full decontamination wash prior to coating', 'Iron fallout removal and clay bar treatment', 'Pre-coating paint inspection', 'Ceramic coating applied by experienced installer', 'Post-application quality check under workshop lights', 'Warranty documentation provided at handover', 'Written aftercare instructions', 'Acacia Ridge, Brisbane — precision installation studio'].map((inc, i) => (
@@ -194,7 +194,7 @@ export default function CeramicCoatingPage() {
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Warranty</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Up to 7-year protection warranty</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['Hydrophobic performance failure', 'UV protection failure', 'Coating delamination under normal use', 'Coverage: all packages installed by NextLvl Protection'].map((item, i) => (
+                {['Hydrophobic performance failure', 'UV protection failure', 'Coating delamination under normal use', 'Coverage: all packages installed by Next LVL Protection'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10 }}>
                     <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 3 }} />
                     <span style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{item}</span>

@@ -17,13 +17,13 @@ const faqs = [
   { q: 'Can ceramic coating be applied to a new car?', a: 'Yes — in fact, new cars benefit most from early ceramic protection before UV and environmental damage begin. New car paint often has dealer wash swirls and should be inspected and corrected before coating regardless of age.' },
   { q: 'Can ceramic coating be applied to matte paint?', a: 'Some ceramic coatings are formulated for matte paint. Standard gloss ceramic coatings will alter the appearance of matte surfaces. If your vehicle has factory matte or satin paint, advise us at quoting stage so the correct product is specified.' },
   { q: 'Does ceramic coating require maintenance?', a: 'Yes — ceramic coating is not zero maintenance. Regular washing with pH-neutral products, periodic maintenance washes with a ceramic booster, and avoiding harsh chemicals will extend coating life significantly. We provide a full maintenance guide at handover.' },
-  { q: 'What is the SunTek/Solar Gard ceramic coating range?', a: 'At NextLvl Protection, we use SunTek and Solar Gard ceramic coatings depending on the package and application. Both are manufacturer-backed products with defined warranty terms. We do not use unbranded or grey-market ceramic products.' },
+  { q: 'What is the SunTek/Solar Gard ceramic coating range?', a: 'At Next LVL Protection, we use SunTek and Solar Gard ceramic coatings depending on the package and application. Both are manufacturer-backed products with defined warranty terms. We do not use unbranded or grey-market ceramic products.' },
   { q: 'What happens if my car gets a scratch on a ceramic-coated surface?', a: 'Ceramic coating provides scratch resistance, not scratch immunity. Light marring (car wash swirls) is resisted. Deep scratches through the clear coat are not prevented. For physical scratch protection, PPF is the appropriate product.' },
   { q: 'How long after ceramic coating application can I drive my car?', a: 'We recommend waiting 24 hours before driving and 7 days before washing. Avoid parking under trees or in areas with heavy contamination during the cure period. We provide full aftercare instructions at handover.' },
   { q: 'Can ceramic coating be applied to wheels?', a: 'Yes — ceramic coating for wheels is available as an add-on or as part of our Elite and Signature packages. Coated wheels repel brake dust and make cleaning significantly easier.' },
   { q: 'What is multi-layer ceramic coating?', a: 'Multi-layer ceramic coating involves applying two or more coats of ceramic product over the paint, allowing each layer to cure before the next is applied. More layers generally means greater hardness, depth, and longevity — and a higher price. Our Elite and Signature packages use multi-layer application.' },
-  { q: 'Does NextLvl Protection offer a warranty on ceramic coating?', a: 'Yes — all NextLvl Protection ceramic installations are backed by a workmanship warranty and the applicable manufacturer product warranty. Warranty terms vary by package. We provide documentation at handover.' },
-  { q: 'Where is NextLvl Protection located and what areas do you cover?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We service all of greater Brisbane. Call 0468 810 666 or use the quote form on this site to book.' },
+  { q: 'Does Next LVL Protection offer a warranty on ceramic coating?', a: 'Yes — all Next LVL Protection ceramic installations are backed by a workmanship warranty and the applicable manufacturer product warranty. Warranty terms vary by package. We provide documentation at handover.' },
+  { q: 'Where is Next LVL Protection located and what areas do you cover?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We service all of greater Brisbane. Call 0468 810 666 or use the quote form on this site to book.' },
 ];
 
 const schema = {
@@ -38,7 +38,7 @@ const schema = {
 
 export default function CeramicQuestionsPage() {
   useEffect(() => {
-    document.title = 'Ceramic Coating Questions — Brisbane | NextLvl Protection';
+    document.title = 'Ceramic Coating Questions — Brisbane | Next LVL Protection';
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.id = 'faq-schema';
@@ -50,15 +50,15 @@ export default function CeramicQuestionsPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating Questions Answered | Brisbane | NextLvl Protection"
-        description="Answers to common ceramic coating questions — cost, longevity, paint correction, aftercare. NextLvl Protection, Brisbane."
+        title="Ceramic Coating Questions Answered | Brisbane | Next LVL Protection"
+        description="Answers to common ceramic coating questions — cost, longevity, paint correction, aftercare. Next LVL Protection, Brisbane."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-questions"
       />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Ceramic Coating — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
-          Every common (and uncommon) question about ceramic coating answered honestly. Written by the team at NextLvl Protection, a certified installer at Acacia Ridge, QLD.
+          Every common (and uncommon) question about ceramic coating answered honestly. Written by the team at Next LVL Protection, a certified installer at Acacia Ridge, QLD.
         </p>
         <FAQAccordion items={faqs} />
       </section>

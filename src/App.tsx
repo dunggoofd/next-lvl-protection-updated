@@ -53,7 +53,7 @@ function PageLoader() {
   return (
     <div style={{ minHeight: '100dvh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, letterSpacing: '0.1em', color: 'var(--color-text-muted)' }}>
-        NEXTLVL<span style={{ color: 'var(--color-accent)' }}> PROTECTION</span>
+        NEXT LVL<span style={{ color: 'var(--color-accent)' }}> PROTECTION</span>
       </div>
     </div>
   );

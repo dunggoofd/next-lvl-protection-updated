@@ -10,26 +10,26 @@ import PageMeta from '../components/PageMeta';
 
 
 const benefits = [
-  { icon: Award, title: 'SunTek Authorised Application Centre', desc: 'NextLvl Protection is an SunTek Authorised Application Centre in Brisbane. SunTek\'s manufacturer warranty is only valid on installations performed by authorised centres — not general PPF installers using alternative sourcing.' },
+  { icon: Award, title: 'SunTek Authorised Application Centre', desc: 'Next LVL Protection is an SunTek Authorised Application Centre in Brisbane. SunTek\'s manufacturer warranty is only valid on installations performed by authorised centres — not general PPF installers using alternative sourcing.' },
   { icon: Shield, title: 'SunTek Ultra — Tier One Film', desc: 'SunTek Ultra is SunTek\'s flagship PPF product. It carries a 10-year manufacturer warranty covering delamination, yellowing, cracking, and hazing. The self-healing elastomeric topcoat closes light surface scratches under heat.' },
   { icon: Zap, title: 'Self-Healing Topcoat', desc: 'SunTek Ultra\'s topcoat reflows under ambient heat to eliminate light swirl marks. Brisbane\'s UV environment activates this automatically in parked conditions — no product or treatment required.' },
   { icon: Check, title: 'Optically Clear Finish', desc: 'SunTek Ultra is precision-engineered for optical clarity. When installed over gloss paint, the film is indistinguishable at normal viewing distance. No orange-peel texture. No visible edges on properly tucked installs.' },
-  { icon: Award, title: 'SunTek Ultra Matte Available', desc: 'For vehicles requiring a satin finish or transformation from gloss to matte, SunTek Ultra Matte is available at NextLvl Protection. Same 10-year warranty, same self-healing capability — different topcoat finish.' },
-  { icon: Shield, title: 'End-to-End Warranty Documentation', desc: 'Every SunTek PPF install at NextLvl Protection includes manufacturer warranty documentation, installer certification reference, installation date, and panel coverage record — all provided at handover.' },
+  { icon: Award, title: 'SunTek Ultra Matte Available', desc: 'For vehicles requiring a satin finish or transformation from gloss to matte, SunTek Ultra Matte is available at Next LVL Protection. Same 10-year warranty, same self-healing capability — different topcoat finish.' },
+  { icon: Shield, title: 'End-to-End Warranty Documentation', desc: 'Every SunTek PPF install at Next LVL Protection includes manufacturer warranty documentation, installer certification reference, installation date, and panel coverage record — all provided at handover.' },
 ];
 
 const faqs = [
   { q: 'What makes SunTek PPF different from other brands?', a: 'SunTek is a tier-one PPF manufacturer with a consistent product line and structured installer authorisation programme. The key differences from lower-tier alternatives: (1) the 10-year manufacturer warranty is backed by SunTek directly, not just the installer; (2) SunTek Ultra\'s self-healing topcoat is a factory specification, not a add-on coating; (3) the film\'s optical clarity and conformability are consistent batch to batch.' },
   { q: 'How does SunTek compare to XPEL?', a: 'SunTek and XPEL are both tier-one PPF manufacturers. Both produce films with self-healing topcoats and manufacturer warranties. Differences exist in film weight, conformability on complex curves, and warranty terms by product line — but both are legitimate high-quality products. The installer\'s skill and installation environment matter as much as the brand choice at this tier.' },
   { q: 'Is SunTek PPF made in the USA?', a: 'SunTek is a US-headquartered company. Its PPF products are manufactured in the United States. The brand is part of the Eastman Chemical Company portfolio, which also owns LLumar window films.' },
-  { q: 'How do I know if an installer is SunTek Authorised?', a: 'Authorised Application Centres are listed on the SunTek website. NextLvl Protection appears on the SunTek installer directory as a Brisbane authorised centre. If a PPF installer claims to use SunTek film but is not on the official directory, the manufacturer warranty on their installs may not be valid.' },
-  { q: 'Does SunTek PPF require any special maintenance?', a: 'SunTek Ultra PPF is maintained with pH-neutral automotive shampoo and clean microfibre. Avoid alkaline or acidic cleaners, automatic car washes with brushes, and pressure-washing directly at film edges. A ceramic coating compatible with PPF (such as SunTek\'s own CC36) adds hydrophobic performance over the top. A detailed aftercare guide is provided with every NextLvl Protection install.' },
-  { q: 'What SunTek products does NextLvl Protection install?', a: 'NextLvl Protection installs SunTek Ultra PPF (gloss) and SunTek Ultra Matte PPF on all applicable packages. Window tinting at NextLvl Protection is performed with Solar Gard products — not SunTek window film — as our window tinting line is a separate authorisation.' },
+  { q: 'How do I know if an installer is SunTek Authorised?', a: 'Authorised Application Centres are listed on the SunTek website. Next LVL Protection appears on the SunTek installer directory as a Brisbane authorised centre. If a PPF installer claims to use SunTek film but is not on the official directory, the manufacturer warranty on their installs may not be valid.' },
+  { q: 'Does SunTek PPF require any special maintenance?', a: 'SunTek Ultra PPF is maintained with pH-neutral automotive shampoo and clean microfibre. Avoid alkaline or acidic cleaners, automatic car washes with brushes, and pressure-washing directly at film edges. A ceramic coating compatible with PPF (such as SunTek\'s own CC36) adds hydrophobic performance over the top. A detailed aftercare guide is provided with every Next LVL Protection install.' },
+  { q: 'What SunTek products does Next LVL Protection install?', a: 'Next LVL Protection installs SunTek Ultra PPF (gloss) and SunTek Ultra Matte PPF on all applicable packages. Window tinting at Next LVL Protection is performed with Solar Gard products — not SunTek window film — as our window tinting line is a separate authorisation.' },
   { q: 'Can SunTek PPF be removed without damaging the paint?', a: 'Yes, when removed correctly. SunTek Ultra is designed for safe removal from factory paint. Film that has been installed on properly prepared paint (no existing damage, correct surface prep) and is removed within the warranty period should come off cleanly. Very old or brittle paint should be assessed before removal. We do not perform mobile removal — all removal work is done in-studio.' },
 ];
 
 const reviews = [
-  { name: 'Alex T.', suburb: 'Calamvale', service: 'SunTek PPF — Front End Package', text: 'Did research on brands before booking. SunTek and XPEL were both considered. The authorised status of NextLvl combined with their SunTek pricing made the decision straightforward. Film is optically invisible at any distance.' },
+  { name: 'Alex T.', suburb: 'Calamvale', service: 'SunTek PPF — Front End Package', text: 'Did research on brands before booking. SunTek and XPEL were both considered. The authorised status of Next LVL combined with their SunTek pricing made the decision straightforward. Film is optically invisible at any distance.' },
   { name: 'Sophie G.', suburb: 'Eight Mile Plains', service: 'SunTek PPF — Track Package', text: 'Wanted to know the film was warranted by someone other than just the installer. SunTek\'s direct manufacturer warranty was the deciding factor. Three years on — film is flawless.' },
   { name: 'Danny N.', suburb: 'Sunnybank', service: 'SunTek Ultra Matte — Full Front', text: 'Matte PPF on a pearl white car. The transformation is exactly what the photos on SunTek\'s site show. The installer authorisation matters — you see it in the quality of the edges and the clarity of the film.' },
 ];
@@ -53,7 +53,7 @@ export default function SunTekPPFPage() {
   return (
     <>
       <PageMeta
-        title="SunTek PPF Brisbane | Authorised SunTek Installer | NextLvl Protection"
+        title="SunTek PPF Brisbane | Authorised SunTek Installer | Next LVL Protection"
         description="SunTek Authorised PPF installer in Brisbane. SunTek Ultra paint protection film with 10-year warranty. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/suntek-ppf-brisbane"
       />
@@ -61,7 +61,7 @@ export default function SunTekPPFPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "SunTek PPF Brisbane — Authorised Paint Protection Film Installer",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised PPF installer in Brisbane. SunTek Ultra 10-year manufacturer warranty. Self-healing topcoat. Gloss and matte available. Acacia Ridge studio.",
       })}} />
@@ -76,7 +76,7 @@ export default function SunTekPPFPage() {
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Authorised Installer.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            NextLvl Protection is a SunTek Authorised Application Centre in Brisbane. SunTek Ultra PPF — 10-year manufacturer warranty, self-healing topcoat, optically clear finish.
+            Next LVL Protection is a SunTek Authorised Application Centre in Brisbane. SunTek Ultra PPF — 10-year manufacturer warranty, self-healing topcoat, optically clear finish.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
@@ -90,7 +90,7 @@ export default function SunTekPPFPage() {
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>SunTek Authorised</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Why SunTek at NextLvl Protection</h2>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Why SunTek at Next LVL Protection</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             {benefits.map((b, i) => (
               <div key={i} className="card" style={{ padding: 28 }}>
@@ -113,7 +113,7 @@ export default function SunTekPPFPage() {
               { spec: 'Film Type', value: 'Thermoplastic polyurethane (TPU) with elastomeric topcoat' },
               { spec: 'Warranty', value: '10 years — delamination, yellowing, cracking, hazing' },
               { spec: 'Self-Healing', value: 'Elastomeric topcoat — activates under heat (approx. 60°C surface temp)' },
-              { spec: 'Finish', value: 'Gloss (optically clear) or Matte (satin-flat) — both available at NextLvl Protection' },
+              { spec: 'Finish', value: 'Gloss (optically clear) or Matte (satin-flat) — both available at Next LVL Protection' },
               { spec: 'Thickness', value: '8mil total — film body + topcoat combined' },
               { spec: 'UV Resistance', value: 'UV absorber integrated into film — no yellowing under Australian UV conditions within warranty period' },
               { spec: 'Adhesive', value: 'Pressure-sensitive adhesive — safe removal from factory paint' },

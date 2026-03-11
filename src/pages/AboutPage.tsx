@@ -19,7 +19,7 @@ const values = [
 ];
 
 const team = [
-  { name: 'Dung Luong', role: 'Founder & Lead Installer', note: 'SunTek Certified | Solar Gard Certified | 3M Authorised' },
+  { name: 'Loki', role: 'Founder & Lead Installer', note: 'SunTek Certified | Solar Gard Certified | 3M Authorised' },
 ];
 
 export default function AboutPage() {
@@ -37,14 +37,14 @@ export default function AboutPage() {
   return (
     <>
       <PageMeta
-        title="About NextLvl Protection | Brisbane Film Installation Specialists"
-        description="Meet the team behind NextLvl Protection — Brisbane's certified PPF, ceramic coating and window tinting studio. SunTek, Solar Gard VTX PRO, 3M authorised."
+        title="About Next LVL Protection | Brisbane Film Installation Specialists"
+        description="Meet the team behind Next LVL Protection — Brisbane's certified PPF, ceramic coating and window tinting studio. SunTek, Solar Gard VTX PRO, 3M authorised."
         canonical="https://www.nextlvlprotection.com.au/about"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "NextLvl Protection",
+        "name": "Next LVL Protection",
         "url": "https://www.nextlvlprotection.com.au",
         "telephone": "0468810666",
         "email": "info@nextlvlprotection.com.au",
@@ -62,7 +62,7 @@ export default function AboutPage() {
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />
         <div style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ marginTop: 28 }}>
-            <span className="font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>About NextLvl Protection</span>
+            <span className="font-display" style={{ display: 'block', fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>About Next LVL Protection</span>
             <span className="font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Acacia Ridge.</span>
           </h1>
         </div>
@@ -74,7 +74,7 @@ export default function AboutPage() {
             <div>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 24 }}>The Workshop</h2>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
-                NextLvl Protection is a certified PPF, ceramic coating, and window film installation studio based at Acacia Ridge in Brisbane's south. We work on prestige and everyday vehicles, residential properties, and commercial buildings.
+                Next LVL Protection is a certified PPF, ceramic coating, and window film installation studio based at Acacia Ridge in Brisbane's south. We work on prestige and everyday vehicles, residential properties, and commercial buildings.
               </p>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
                 Our certifications are from SunTek, Solar Gard, and 3M — the manufacturers behind the products we install. That means manufacturer-backed warranties, not self-issued guarantees.

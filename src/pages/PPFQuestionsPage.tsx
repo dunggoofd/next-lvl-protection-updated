@@ -17,13 +17,13 @@ const faqs = [
   { q: 'Can PPF be applied to matte paint?', a: 'Yes — SunTek PPF is compatible with matte factory paint. Use SunTek Matte PPF to match the finish. Do not ceramic coat over matte paint unless specifically designed for matte surfaces.' },
   { q: 'Does PPF self-heal scratches?', a: 'SunTek UltraBarrier Pro includes a self-healing topcoat. Minor surface scratches — caused by light abrasion or fingernail marks — recover with heat (warm water or sunlight). Deep cuts do not self-heal.' },
   { q: 'What is the difference between partial and full PPF?', a: 'Partial PPF covers the highest-impact zones: bumper, bonnet, mirrors. Full PPF covers every painted surface — full bonnet, front bumper, front guards, side skirts, door edges, and rear bumper. Full coverage is ideal for new cars or track use.' },
-  { q: 'Is there a warranty on PPF?', a: 'SunTek PPF carries a 10-year manufacturer warranty covering yellowing, cracking, bubbling, and delamination. NextLvl Protection backs all installations with our own workmanship guarantee. Warranty documentation is provided at handover.' },
+  { q: 'Is there a warranty on PPF?', a: 'SunTek PPF carries a 10-year manufacturer warranty covering yellowing, cracking, bubbling, and delamination. Next LVL Protection backs all installations with our own workmanship guarantee. Warranty documentation is provided at handover.' },
   { q: 'Can PPF be installed on a leased vehicle?', a: 'Yes — PPF is removable and does not damage paint when professionally removed. It\'s a popular choice for leased vehicles to maintain the condition of the paint before return. Confirm with your lease provider that film application is permitted.' },
   { q: 'Can you see where the PPF is applied?', a: 'On a correctly installed vehicle, PPF is virtually invisible. Film edges are tucked into door jams, panel gaps, or wrapped around edges where possible. Some edge lines are unavoidable on certain panels but are minimised during installation.' },
   { q: 'Can PPF go on a car that has already been repainted?', a: 'Yes — but the paint must be fully cured (minimum 30–60 days after spray) and in sound condition before PPF is applied. We inspect paintwork during the quote stage and advise on any prep requirements.' },
-  { q: 'What areas of Brisbane does NextLvl Protection service for PPF?', a: 'We service all of greater Brisbane from our Acacia Ridge workshop, including the Southside (Logan, Sunnybank, Moorooka), Northside (Chermside, Aspley), East (Carindale, Wynnum), West (Ipswich, Springfield), and inner city suburbs.' },
+  { q: 'What areas of Brisbane does Next LVL Protection service for PPF?', a: 'We service all of greater Brisbane from our Acacia Ridge workshop, including the Southside (Logan, Sunnybank, Moorooka), Northside (Chermside, Aspley), East (Carindale, Wynnum), West (Ipswich, Springfield), and inner city suburbs.' },
   { q: 'How do I book a PPF appointment?', a: 'Use the quote form on this website, call us on 0468 810 666, or email halo@nextlvlprotection.com.au. We\'ll confirm your vehicle details, preferred package, and a suitable appointment date.' },
-  { q: 'Does NextLvl Protection use SunTek or XPEL PPF?', a: 'NextLvl Protection is a SunTek Authorised Installer. Our primary PPF range is SunTek UltraBarrier Pro (Gloss and Matte). We also have access to the Solar Gard film range for specific applications.' },
+  { q: 'Does Next LVL Protection use SunTek or XPEL PPF?', a: 'Next LVL Protection is a SunTek Authorised Installer. Our primary PPF range is SunTek UltraBarrier Pro (Gloss and Matte). We also have access to the Solar Gard film range for specific applications.' },
 ];
 
 const schema = {
@@ -38,7 +38,7 @@ const schema = {
 
 export default function PPFQuestionsPage() {
   useEffect(() => {
-    document.title = 'Paint Protection Film Questions — Brisbane | NextLvl Protection';
+    document.title = 'Paint Protection Film Questions — Brisbane | Next LVL Protection';
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.id = 'faq-schema';
@@ -50,15 +50,15 @@ export default function PPFQuestionsPage() {
   return (
     <>
       <PageMeta
-        title="PPF Questions Answered | Paint Protection Film Brisbane | NextLvl Protection"
-        description="Answers to common PPF questions — cost, longevity, installation process, warranty and aftercare. NextLvl Protection, Brisbane."
+        title="PPF Questions Answered | Paint Protection Film Brisbane | Next LVL Protection"
+        description="Answers to common PPF questions — cost, longevity, installation process, warranty and aftercare. Next LVL Protection, Brisbane."
         canonical="https://www.nextlvlprotection.com.au/ppf-questions"
       />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Paint Protection Film — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
-          Everything you need to know about PPF in Brisbane — from what it is, to how long it lasts, to what it costs. Written by the team at NextLvl Protection, a SunTek Authorised Installer at Acacia Ridge, QLD.
+          Everything you need to know about PPF in Brisbane — from what it is, to how long it lasts, to what it costs. Written by the team at Next LVL Protection, a SunTek Authorised Installer at Acacia Ridge, QLD.
         </p>
         <FAQAccordion items={faqs} />
       </section>

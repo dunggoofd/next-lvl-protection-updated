@@ -44,7 +44,7 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'How much does commercial window tinting cost in Brisbane?', a: 'Commercial window tinting in Brisbane is quoted on application — window count, glazing type, film specification, and installation access all affect pricing. Contact NextLvl Protection in Acacia Ridge for a site-specific quote.' },
+  { q: 'How much does commercial window tinting cost in Brisbane?', a: 'Commercial window tinting in Brisbane is quoted on application — window count, glazing type, film specification, and installation access all affect pricing. Contact Next LVL Protection in Acacia Ridge for a site-specific quote.' },
   { q: 'How long does commercial window film installation take?', a: 'A small office of 10 windows typically takes 1–2 days. Larger commercial fitouts are staged per floor or zone. We provide a project timeline at quoting stage so you can plan around it.' },
   { q: 'Can commercial window film be installed without closing the office?', a: 'Yes — in many cases installation can be staged room by room so adjacent spaces remain operational. For larger fitouts, out-of-hours and weekend installation is available on request.' },
   { q: 'Will 3M window film affect the appearance of our building from the outside?', a: '3M commercial solar films are designed to maintain a consistent appearance from outside while delivering performance inside. We carry sample sets and can advise on aesthetics relative to your existing glazing before installation.' },
@@ -77,7 +77,7 @@ export default function CommercialTintPage() {
   return (
     <>
       <PageMeta
-        title="Commercial Window Tinting Brisbane | 3M Authorised Installer | NextLvl Protection"
+        title="Commercial Window Tinting Brisbane | 3M Authorised Installer | Next LVL Protection"
         description="Commercial window tinting for offices, shopfronts and medical clinics in Brisbane. 3M Authorised. Site audit and project management included."
         canonical="https://www.nextlvlprotection.com.au/commercial-window-tinting-brisbane"
       />
@@ -85,7 +85,7 @@ export default function CommercialTintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Commercial Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "3M Authorised commercial window film installer in Acacia Ridge, Brisbane. Offices, shopfronts, and multi-storey buildings. Out-of-hours installation available.",
       })}} />

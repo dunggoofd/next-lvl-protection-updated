@@ -54,15 +54,15 @@ const faqs = [
   { q: 'Is PPF worth it for a new car in Brisbane?', a: 'Yes — particularly in Queensland, where UV exposure and dusty highway conditions accelerate paint damage. Applying PPF within the first few months keeps the paint in showroom condition and protects the investment before any chips occur. The cost of quality PPF is significantly less than a future paint correction or respray.' },
   { q: 'How long does PPF last?', a: 'SunTek Ultra PPF is warranted for up to 10 years when installed by an authorised installer. In Queensland conditions, film performs well across this period. Yellowing and adhesive failure are common with lower-grade film — SunTek\'s clarity warranty covers discolouration specifically.' },
   { q: 'Does PPF change how my car looks?', a: 'High-quality PPF should be virtually invisible once installed. SunTek Ultra has optically clear top coat and no visible edges when properly tucked. Gloss PPF enhances depth; matte PPF converts gloss paint to a satin finish. We\'ll walk you through finish options before installation.' },
-  { q: 'Can PPF be applied over existing paint correction?', a: 'Yes — and we recommend it. Film applied over imperfect paint traps existing defects under it. At NextLvl Protection, we inspect paint condition before every PPF job. If correction is needed, we\'ll advise before installation.' },
+  { q: 'Can PPF be applied over existing paint correction?', a: 'Yes — and we recommend it. Film applied over imperfect paint traps existing defects under it. At Next LVL Protection, we inspect paint condition before every PPF job. If correction is needed, we\'ll advise before installation.' },
   { q: 'How long does PPF installation take at Acacia Ridge?', a: 'A front bumper kit takes 1–2 hours. A full front end package is typically 1 day. Full wraps require 2–4 days depending on vehicle complexity. We\'ll provide an accurate timeline at quote stage.' },
-  { q: 'What is SunTek Authorised status?', a: 'SunTek Authorised Installer is a certification that confirms training, installation standards, and access to SunTek\'s full product range. Only authorised installers can provide SunTek\'s full manufacturer warranty. NextLvl Protection is one of a select group of SunTek Authorised installers in Queensland.' },
+  { q: 'What is SunTek Authorised status?', a: 'SunTek Authorised Installer is a certification that confirms training, installation standards, and access to SunTek\'s full product range. Only authorised installers can provide SunTek\'s full manufacturer warranty. Next LVL Protection is one of a select group of SunTek Authorised installers in Queensland.' },
   { q: 'What voids a PPF warranty?', a: 'SunTek\'s warranty covers film failure — yellowing, peeling, adhesive failure, and cracking under normal use. It does not cover damage from improper washing, abrasive products, or chemical exposure. We provide a full aftercare guide at handover so you know exactly what to avoid.' },
 ];
 
 const reviews = [
   { name: 'Tom B.', suburb: 'Sunnybank Hills', service: 'PPF — Front End Package', text: 'Track days don\'t stress me out anymore. The front end package on my M2 is holding up perfectly. Zero chips, film is completely invisible.' },
-  { name: 'Chris A.', suburb: 'Moorooka', service: 'PPF — Track Package', text: 'NextLvl Protection did my GR Corolla — roof, bonnet, full front. The edge tucks are clean, no lifting. SunTek quality is obvious compared to what I had on my previous car.' },
+  { name: 'Chris A.', suburb: 'Moorooka', service: 'PPF — Track Package', text: 'Next LVL Protection did my GR Corolla — roof, bonnet, full front. The edge tucks are clean, no lifting. SunTek quality is obvious compared to what I had on my previous car.' },
   { name: 'Nat D.', suburb: 'Algester', service: 'PPF — Full Wrap', text: 'Full wrap on a new Porsche. These guys know what they\'re doing. Patient, meticulous, and they pointed out a paint defect on delivery that I\'d missed.' },
 ];
 
@@ -85,7 +85,7 @@ export default function PPFPage() {
   return (
     <>
       <PageMeta
-        title="Paint Protection Film Brisbane | SunTek Authorised Installer | NextLvl Protection"
+        title="Paint Protection Film Brisbane | SunTek Authorised Installer | Next LVL Protection"
         description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 10-year warranty. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ppf-brisbane"
       />
@@ -93,7 +93,7 @@ export default function PPFPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Paint Protection Film Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised PPF installer in Acacia Ridge, Brisbane.",
       })}} />
@@ -188,7 +188,7 @@ export default function PPFPage() {
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>05</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included</h2>
-              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>Every PPF installation at NextLvl Protection includes the following as standard — regardless of package.</p>
+              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>Every PPF installation at Next LVL Protection includes the following as standard — regardless of package.</p>
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>
               {[
@@ -219,7 +219,7 @@ export default function PPFPage() {
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by SunTek</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Up to 10-year manufacturer warranty</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['Yellowing and discolouration', 'Film peeling or lifting', 'Adhesive failure under normal conditions', 'Cracking or hazing', 'Coverage: all packages installed by NextLvl Protection as SunTek Authorised Installer'].map((item, i) => (
+                {['Yellowing and discolouration', 'Film peeling or lifting', 'Adhesive failure under normal conditions', 'Cracking or hazing', 'Coverage: all packages installed by Next LVL Protection as SunTek Authorised Installer'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
                     <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 3 }} />
                     <span style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{item}</span>

@@ -52,15 +52,15 @@ export default function CeramicMaintenancePage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating Maintenance Brisbane | Aftercare Guide | NextLvl Protection"
-        description="How to maintain ceramic coating in Brisbane. Washing tips, maintenance schedule, and aftercare guide. NextLvl Protection."
+        title="Ceramic Coating Maintenance Brisbane | Aftercare Guide | Next LVL Protection"
+        description="How to maintain ceramic coating in Brisbane. Washing tips, maintenance schedule, and aftercare guide. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-maintenance-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Maintenance Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating maintenance and top-up services in Brisbane. Annual inspection, decontamination, and maintenance layer services. Acacia Ridge studio.",
       })}} />

@@ -12,15 +12,15 @@ import PageMeta from '../components/PageMeta';
 const faqs = [
   { q: 'How much does ceramic coating cost in Brisbane?', a: 'Pricing varies by vehicle size, paint condition, and package selected. Contact us for a personalised quote.' },
   { q: 'Why does ceramic coating pricing vary so much across Brisbane?', a: 'Three variables drive price: (1) Product quality — professional-grade coatings with manufacturer warranties cost more than "ceramic spray" products. (2) Paint preparation — correction adds labour hours. (3) Coverage area — paint only vs paint, glass, and wheels. A budget "ceramic coating" is a spray sealant product, not a cured professional ceramic system. The gap in durability and protection is substantial.' },
-  { q: 'What is included in the price at NextLvl Protection?', a: 'Every package includes full decontamination wash, iron fallout removal, and clay bar treatment as standard prep. The Essential package does not include glass or wheels. Protection covers all three exterior surfaces. Elite adds stage 1 paint correction. Signature adds multi-stage correction and interior protection. Warranty documentation is included on all packages. No hidden fees.' },
+  { q: 'What is included in the price at Next LVL Protection?', a: 'Every package includes full decontamination wash, iron fallout removal, and clay bar treatment as standard prep. The Essential package does not include glass or wheels. Protection covers all three exterior surfaces. Elite adds stage 1 paint correction. Signature adds multi-stage correction and interior protection. Warranty documentation is included on all packages. No hidden fees.' },
   { q: 'Is ceramic coating cheaper than PPF?', a: 'They protect against different threats and are priced differently. Ceramic does not stop rock chips. PPF does not add the same chemical resistance or hydrophobic performance as ceramic. Most serious protection setups use both: PPF on the high-chip zones, ceramic over the full car including the PPF. Contact us to compare packages.' },
   { q: 'Does paint correction affect the total cost?', a: 'Yes. Paint correction is a separate labour step quoted after inspection. The cost depends on vehicle size and paint condition. Multi-stage correction (for heavier oxidation, scratches, or buffer trails) adds more. We assess every car at reception and advise on what is needed before any work begins — no surprise invoices at pickup.' },
   { q: 'Is there a cheaper ceramic option for a tight budget?', a: 'The Essential package covers exterior paint only. It is a genuine professional-grade ceramic application with a 12-month warranty — not a spray product. If budget is a firm constraint, start with the Essential and add glass and wheels at a later date. The coating products are compatible across service intervals.' },
-  { q: 'How do I get an accurate ceramic coating quote?', a: 'Contact NextLvl Protection with your vehicle make, model, year, colour, and the package you\'re considering. We\'ll provide a specific quote within 2 business hours. For vehicles where paint condition is uncertain, a brief inspection at our Acacia Ridge studio allows us to confirm whether correction is needed before committing to a price.' },
+  { q: 'How do I get an accurate ceramic coating quote?', a: 'Contact Next LVL Protection with your vehicle make, model, year, colour, and the package you\'re considering. We\'ll provide a specific quote within 2 business hours. For vehicles where paint condition is uncertain, a brief inspection at our Acacia Ridge studio allows us to confirm whether correction is needed before committing to a price.' },
 ];
 
 const reviews = [
-  { name: 'James W.', suburb: 'Sunnybank', service: 'Ceramic Coating — Protection Package', text: 'Got quotes from three places. NextLvl were clear about exactly what each package includes and what it doesn\'t. No upsell pressure. Went with the Protection package — three months on, the water behaviour alone is worth it.' },
+  { name: 'James W.', suburb: 'Sunnybank', service: 'Ceramic Coating — Protection Package', text: 'Got quotes from three places. Next LVL were clear about exactly what each package includes and what it doesn\'t. No upsell pressure. Went with the Protection package — three months on, the water behaviour alone is worth it.' },
   { name: 'Tanya R.', suburb: 'Calamvale', service: 'Ceramic Coating — Essential', text: 'Started with the Essential to see the quality before committing to more. The finish was enough to convince me to book the Elite package for my partner\'s car. Pricing is fair and transparent.' },
   { name: 'Steve M.', suburb: 'Runcorn', service: 'Ceramic Coating — Elite Package', text: 'The correction work before the coating was worth every dollar. The paint on a 4-year-old car looks better now than it did at delivery. Honest advice, no hidden costs at pickup.' },
 ];
@@ -44,15 +44,15 @@ export default function CeramicCostPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating Cost Brisbane | Pricing Guide | NextLvl Protection"
-        description="Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. NextLvl Protection, Acacia Ridge."
+        title="Ceramic Coating Cost Brisbane | Pricing Guide | Next LVL Protection"
+        description="Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-cost-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Cost Brisbane — Transparent Pricing",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. No hidden fees. Acacia Ridge studio.",
       })}} />

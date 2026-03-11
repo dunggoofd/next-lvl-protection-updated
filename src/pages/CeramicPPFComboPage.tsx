@@ -31,7 +31,7 @@ const faqs = [
 const reviews = [
   { name: 'Michael C.', suburb: 'Eight Mile Plains', service: 'PPF Front End + Full Ceramic Elite', text: 'Did both at the same appointment. PPF first, then ceramic over everything including the film. The car is comprehensively protected and the finish is exceptional. Worth every dollar for a car I\'m keeping long-term.' },
   { name: 'Karen H.', suburb: 'Calamvale', service: 'PPF Impact Shield + Ceramic Protection', text: 'New RAV4. Impact shield on the front, full ceramic over the car. The team explained the logic clearly — each product handles a different threat. Combined it makes sense and the result speaks for itself.' },
-  { name: 'Al B.', suburb: 'Sunnybank', service: 'Full PPF Wrap + Ceramic Signature', text: 'Full wrap on a prestige vehicle, Signature ceramic over everything. Maximum protection for a car that earns that treatment. NextLvl handled the complexity without issue.' },
+  { name: 'Al B.', suburb: 'Sunnybank', service: 'Full PPF Wrap + Ceramic Signature', text: 'Full wrap on a prestige vehicle, Signature ceramic over everything. Maximum protection for a car that earns that treatment. Next LVL handled the complexity without issue.' },
 ];
 
 export default function CeramicPPFComboPage() {
@@ -53,15 +53,15 @@ export default function CeramicPPFComboPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating + PPF Brisbane | Combined Protection | NextLvl Protection"
-        description="Combining ceramic coating and PPF in Brisbane for maximum paint protection. Physical barrier plus chemical protection. NextLvl Protection."
+        title="Ceramic Coating + PPF Brisbane | Combined Protection | Next LVL Protection"
+        description="Combining ceramic coating and PPF in Brisbane for maximum paint protection. Physical barrier plus chemical protection. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/ceramic-ppf-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF and Ceramic Coating Brisbane — Combined Protection",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "PPF and ceramic coating combined in Brisbane. PPF absorbs chips. Ceramic adds hydrophobic performance and chemical resistance over the film and full exterior. Acacia Ridge studio.",
       })}} />

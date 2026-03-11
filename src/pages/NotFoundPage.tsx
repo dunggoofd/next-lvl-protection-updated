@@ -5,8 +5,8 @@ export default function NotFoundPage() {
   return (
     <>
       <PageMeta
-        title="Page Not Found — NextLvl Protection Brisbane"
-        description="The page you're looking for doesn't exist. Return to NextLvl Protection for PPF, ceramic coating and window tinting in Brisbane."
+        title="Page Not Found — Next LVL Protection Brisbane"
+        description="The page you're looking for doesn't exist. Return to Next LVL Protection for PPF, ceramic coating and window tinting in Brisbane."
         canonical="https://www.nextlvlprotection.com.au/404"
       />
       <section style={{ minHeight: '100dvh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 var(--section-padding-x)', textAlign: 'center' }}>

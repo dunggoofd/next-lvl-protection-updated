@@ -53,7 +53,7 @@ export default function CeramicCorrectionPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating & Paint Correction Brisbane | NextLvl Protection"
+        title="Ceramic Coating & Paint Correction Brisbane | Next LVL Protection"
         description="Paint correction before ceramic coating in Brisbane. Remove swirl marks and scratches before sealing under ceramic. Elite and Signature packages available."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-paint-correction-brisbane"
       />
@@ -61,7 +61,7 @@ export default function CeramicCorrectionPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Paint Correction Brisbane — Before Ceramic Coating",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Paint correction in Brisbane before ceramic coating. Stage 1 and multi-stage correction — swirl removal, oxidation, scratches. Quoted separately, assessed at inspection. Acacia Ridge.",
       })}} />

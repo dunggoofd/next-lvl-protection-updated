@@ -15,17 +15,17 @@ const benefits = [
   { icon: AlertCircle, title: 'What the Warranty Covers', desc: 'Delamination from the paint surface. Film yellowing or discolouration. Edge lifting from a factory tuck (not post-damage). Film cracking or hazing under normal conditions.' },
   { icon: AlertCircle, title: 'What the Warranty Excludes', desc: 'Damage caused by abrasion (pressure washing the film edge), chemical contamination, physical punctures or cuts, or modification by an unauthorised party. Vandalism is an insurance claim, not a warranty claim.' },
   { icon: Clock, title: '5-Year Option Available', desc: 'Entry-level packages use SunTek\'s 5-year film — mechanically identical protection but with a shorter warranty term. Upgrading to 10-year is available on any package.' },
-  { icon: Shield, title: 'Warranty Requires Authorised Installer', desc: 'SunTek warranties are only valid when installed by an Authorised Application Centre. NextLvl Protection is a SunTek Authorised installer in Brisbane.' },
+  { icon: Shield, title: 'Warranty Requires Authorised Installer', desc: 'SunTek warranties are only valid when installed by an Authorised Application Centre. Next LVL Protection is a SunTek Authorised installer in Brisbane.' },
 ];
 
 const faqs = [
   { q: 'How long does PPF last in Brisbane?', a: 'SunTek Ultra PPF is warranted for 10 years against delamination, yellowing, cracking, and hazing. In Brisbane\'s UV environment, the 10-year warranty film is a practical necessity. The 5-year film is mechanically similar but the warranty period is shorter — for a long-term ownership vehicle, the 10-year option is better value.' },
   { q: 'What does the SunTek PPF warranty actually cover?', a: 'The SunTek manufacturer warranty covers: (1) delamination — film separating from the paint surface without a physical cause; (2) yellowing or discolouration from UV or ambient oxidation; (3) edge lifting from a properly installed factory tuck; (4) film cracking or surface hazing under normal driving conditions. It does not cover physical damage, chemical contamination, or abrasion.' },
-  { q: 'Does the warranty require me to use the same installer for claims?', a: 'Warranty claims are assessed by SunTek directly. The film carries a serial batch number recorded at installation. You do not need to return to the same installer for a warranty assessment, but the film must have been installed by an Authorised Application Centre — which NextLvl Protection is. We document every installation for your records.' },
+  { q: 'Does the warranty require me to use the same installer for claims?', a: 'Warranty claims are assessed by SunTek directly. The film carries a serial batch number recorded at installation. You do not need to return to the same installer for a warranty assessment, but the film must have been installed by an Authorised Application Centre — which Next LVL Protection is. We document every installation for your records.' },
   { q: 'Does DIY or kit-form PPF come with a warranty?', a: 'No reputable manufacturer warranties film installed by a non-certified party. Kit-form PPF — sold through car parts stores or online — uses lower-grade film and has no manufacturer warranty. If it lifts, yellows, or fails, the remedy cost falls entirely on you.' },
   { q: 'What happens if the film is damaged and it isn\'t covered by warranty?', a: 'Physical damage — chips, cuts, deep abrasions — is not a warranty failure, it\'s the film doing its job. Damaged sections can be replaced panel by panel. The film absorbs the damage instead of the paint. Replacement cost varies by panel — contact us for a re-film quote if a section has taken impact.' },
   { q: 'Does ceramic coating over PPF affect the warranty?', a: 'No — applying a ceramic coating over PPF is a standard and recommended practice. It does not void the film warranty. The ceramic coating is a separate product on the film surface and does not affect the film\'s adhesion or structural properties.' },
-  { q: 'How do I register my PPF warranty?', a: 'NextLvl Protection provides SunTek warranty documentation at handover. This includes the installer authorisation, film specification, installation date, and covered panels. Keep this document with your vehicle records. We can also provide a digital copy on request.' },
+  { q: 'How do I register my PPF warranty?', a: 'Next LVL Protection provides SunTek warranty documentation at handover. This includes the installer authorisation, film specification, installation date, and covered panels. Keep this document with your vehicle records. We can also provide a digital copy on request.' },
 ];
 
 const reviews = [
@@ -53,15 +53,15 @@ export default function PPFWarrantyPage() {
   return (
     <>
       <PageMeta
-        title="PPF Warranty Brisbane | SunTek 10-Year Warranty | NextLvl Protection"
-        description="SunTek paint protection film warranty for Brisbane installs. 10-year manufacturer warranty through NextLvl Protection authorised installer status."
+        title="PPF Warranty Brisbane | SunTek 10-Year Warranty | Next LVL Protection"
+        description="SunTek paint protection film warranty for Brisbane installs. 10-year manufacturer warranty through Next LVL Protection authorised installer status."
         canonical="https://www.nextlvlprotection.com.au/ppf-warranty-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF Warranty Brisbane — SunTek 10-Year Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised installer in Brisbane — 10-year manufacturer warranty on Paint Protection Film. Delamination, yellowing, cracking, and hazing covered.",
       })}} />

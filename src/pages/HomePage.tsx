@@ -89,14 +89,14 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title="NextLvl Protection | PPF | Ceramic Coating | Window Tinting Brisbane"
+        title="Next LVL Protection | PPF | Ceramic Coating | Window Tinting Brisbane"
         description="Brisbane's certified PPF, ceramic coating and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0468 810 666."
         canonical="https://www.nextlvlprotection.com.au/"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "NextLvl Protection",
+        "name": "Next LVL Protection",
         "telephone": "0468810666",
         "email": "halo@nextlvlprotection.com.au",
         "url": "https://www.nextlvlprotection.com.au",
@@ -187,7 +187,7 @@ export default function HomePage() {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
             <div>
-              <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>Why NextLvl</p>
+              <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 16 }}>Why Next LVL</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h1)', marginBottom: 24, lineHeight: 1.05 }}>
                 Certified Product.<br /><span style={{ color: 'var(--color-accent)' }}>Precision Install.</span>
               </h2>

@@ -7,7 +7,7 @@ const faqs = [
   { q: 'What is residential window tinting?', a: 'Residential window tinting is the application of a professional window film (such as 3M Solar film) to the inside of home or apartment windows. It reduces solar heat gain, UV radiation, and glare while preserving natural light transmission.' },
   { q: 'How much does residential window tinting cost in Brisbane?', a: 'Pricing is based on the number of windows and film type selected. Contact us for a quote.' },
   { q: 'Does window film really reduce heat in a Brisbane home?', a: 'Yes — measurably. 3M Solar film rejects up to 78% of incoming solar heat. In Brisbane homes with west or north-facing rooms, the temperature difference after installation can be 5–10°C in direct afternoon sun. The reduction in air conditioning run time is also noticeable.' },
-  { q: 'What is 3M window film?', a: '3M is one of the world\'s largest manufacturers of window film. 3M Solar film uses a multi-layer construction to selectively block infrared (heat) and UV radiation while transmitting visible light. NextLvl Protection is a 3M Authorised Window Film Installer.' },
+  { q: 'What is 3M window film?', a: '3M is one of the world\'s largest manufacturers of window film. 3M Solar film uses a multi-layer construction to selectively block infrared (heat) and UV radiation while transmitting visible light. Next LVL Protection is a 3M Authorised Window Film Installer.' },
   { q: 'How long does 3M window film last in a Queensland home?', a: '3M window film in residential applications typically lasts 10–20 years. Longevity depends on aspect (west-facing glass degrades faster under direct afternoon sun), glass type (double-glazed glass generates more heat and can affect some films), and maintenance. 3M\'s limited warranty covers defects in film and adhesive.' },
   { q: 'Will window film damage my glass?', a: 'No — correctly installed 3M window film will not damage the glass itself. However, some films are not compatible with certain glass types (particularly some double-glazed, heat-absorbing, or tempered glass configurations). We assess glass type before specifying film to ensure compatibility.' },
   { q: 'Can I have window film removed if I change my mind?', a: 'Yes — window film can be professionally removed without damaging the glass. DIY removal often leaves adhesive residue that is difficult to clean without scratching. We offer removal and replacement as a service.' },
@@ -23,7 +23,7 @@ const faqs = [
   { q: 'What is safety window film?', a: '3M safety film holds shattered glass together in the event of breakage, reducing injury risk from flying glass shards. It is used in high-wind areas, ground-floor windows, and any application where glass breakage is a risk. It can be combined with solar film properties in a single product.' },
   { q: 'Does window tinting provide privacy at night?', a: 'The one-way privacy effect of window film relies on the light differential — it works when it is brighter outside than inside (daytime). At night, when interior lighting is brighter than the exterior, the effect reverses — and anyone outside can see in. For night privacy, blinds or curtains are still required.' },
   { q: 'Can window film be installed on the outside of glass?', a: 'Some speciality 3M films are rated for exterior installation. Exterior-mounted film is exposed to weathering and typically has a shorter lifespan than interior-mounted film. We specify exterior-rated film where needed (e.g., accessible skylights, specific commercial applications).' },
-  { q: 'Where is NextLvl Protection and what areas do you service?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for residential window tinting. Call 0468 810 666, email halo@nextlvlprotection.com.au, or use the quote form to book.' },
+  { q: 'Where is Next LVL Protection and what areas do you service?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for residential window tinting. Call 0468 810 666, email halo@nextlvlprotection.com.au, or use the quote form to book.' },
 ];
 
 const schema = {
@@ -38,7 +38,7 @@ const schema = {
 
 export default function ResidentialTintQuestionsPage() {
   useEffect(() => {
-    document.title = 'Residential Window Tinting Questions — Brisbane | NextLvl Protection';
+    document.title = 'Residential Window Tinting Questions — Brisbane | Next LVL Protection';
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.id = 'faq-schema';
@@ -50,15 +50,15 @@ export default function ResidentialTintQuestionsPage() {
   return (
     <>
       <PageMeta
-        title="Residential Window Tinting Questions | Brisbane | NextLvl Protection"
-        description="Common questions about residential window tinting in Brisbane — heat rejection, privacy, 3M film options. NextLvl Protection."
+        title="Residential Window Tinting Questions | Brisbane | Next LVL Protection"
+        description="Common questions about residential window tinting in Brisbane — heat rejection, privacy, 3M film options. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/residential-tinting-questions"
       />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Residential Window Tinting — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
-          Everything homeowners and renters need to know about 3M residential window film in Brisbane. Written by NextLvl Protection — 3M Authorised Installer, Acacia Ridge, QLD.
+          Everything homeowners and renters need to know about 3M residential window film in Brisbane. Written by Next LVL Protection — 3M Authorised Installer, Acacia Ridge, QLD.
         </p>
         <FAQAccordion items={faqs} />
       </section>

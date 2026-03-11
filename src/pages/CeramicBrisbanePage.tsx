@@ -52,7 +52,7 @@ export default function CeramicBrisbanePage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating UV Protection Brisbane | NextLvl Protection"
+        title="Ceramic Coating UV Protection Brisbane | Next LVL Protection"
         description="Ceramic coating UV protection for Brisbane cars. Nano-ceramic layer resists UV oxidation and fading. Precision application, Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-uv-brisbane"
       />
@@ -60,7 +60,7 @@ export default function CeramicBrisbanePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating Brisbane — UV Protection for QLD Conditions",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Professional ceramic coating in Brisbane. High-UV environment specialists. Acacia Ridge studio. 3-year to 7-year warranty options.",
       })}} />

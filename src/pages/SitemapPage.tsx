@@ -67,8 +67,8 @@ export default function SitemapPage() {
   return (
     <>
       <PageMeta
-        title="Sitemap — NextLvl Protection Brisbane"
-        description="Full sitemap for NextLvl Protection — all PPF, ceramic coating, and window tinting pages for Brisbane."
+        title="Sitemap — Next LVL Protection Brisbane"
+        description="Full sitemap for Next LVL Protection — all PPF, ceramic coating, and window tinting pages for Brisbane."
         canonical="https://www.nextlvlprotection.com.au/sitemap"
       />
       <section style={{ minHeight: '100dvh', paddingTop: 120, paddingBottom: 80, padding: '120px var(--section-padding-x) 80px' }}>

@@ -44,14 +44,14 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'How much does home window tinting cost in Brisbane?', a: 'Residential window tinting pricing is based on window count and film type selected. Contact us for a personalised quote. At NextLvl Protection in Acacia Ridge, we\'ll assess your property and recommend the right film for each zone.' },
+  { q: 'How much does home window tinting cost in Brisbane?', a: 'Residential window tinting pricing is based on window count and film type selected. Contact us for a personalised quote. At Next LVL Protection in Acacia Ridge, we\'ll assess your property and recommend the right film for each zone.' },
   { q: 'How long does residential window tinting take?', a: 'A 5-window installation typically takes 2–3 hours. A 12-window Solar Comfort package usually takes 4–6 hours. Whole-home projects are quoted and staged based on property size. We work around your schedule and don\'t leave until every window passes inspection.' },
   { q: 'What is the best window film for west-facing windows in Brisbane?', a: '3M Solar film with high TSER (Total Solar Energy Rejection) is the best choice for west-facing windows — the aspect that gets the most direct afternoon sun in Brisbane. We specify film per zone during the consultation so the right product goes on the right window.' },
   { q: 'How long does 3M window film last?', a: '3M window film in residential applications typically lasts 10–20 years depending on exposure. West-facing windows in direct Brisbane sun degrade faster than south-facing. The 3M limited warranty covers defects in materials and workmanship for the warranty period.' },
   { q: 'Can window film be removed without damaging the glass?', a: 'Yes — 3M window film can be removed by a professional without damaging the glass. Film removal is a separate service. DIY removal often leaves adhesive residue that is difficult to clean without scratching. We offer removal and replacement on request.' },
   { q: 'Will tinted windows reduce my view?', a: 'In most cases, the reduction in view clarity is negligible — particularly with modern 3M Solar film. The primary reduction is in glare and heat, not visible light transmission. We carry sample sets you can view before committing to a film.' },
   { q: 'Can renters tint their windows in Queensland?', a: 'In Queensland, tenants generally need written approval from the property owner before making modifications such as window film. Film is typically removable, but approval is the tenant\'s responsibility. We\'re happy to provide documentation to support an owner approval request.' },
-  { q: 'What is a 3M Authorised Installer?', a: 'A 3M Authorised Installer has been vetted by 3M, trained in 3M installation standards, and has access to the full 3M Window Film product range. The authorisation means the warranty on your film is backed by 3M — not just a general installer guarantee. NextLvl Protection is a 3M Authorised Installer in Acacia Ridge, Brisbane.' },
+  { q: 'What is a 3M Authorised Installer?', a: 'A 3M Authorised Installer has been vetted by 3M, trained in 3M installation standards, and has access to the full 3M Window Film product range. The authorisation means the warranty on your film is backed by 3M — not just a general installer guarantee. Next LVL Protection is a 3M Authorised Installer in Acacia Ridge, Brisbane.' },
 ];
 
 const reviews = [
@@ -77,7 +77,7 @@ export default function ResidentialTintPage() {
   return (
     <>
       <PageMeta
-        title="Residential Window Tinting Brisbane | 3M Authorised Installer | NextLvl Protection"
+        title="Residential Window Tinting Brisbane | 3M Authorised Installer | Next LVL Protection"
         description="3M Authorised residential window tinting in Brisbane. Block up to 78% solar heat, 99% UV. Southside Brisbane specialists."
         canonical="https://www.nextlvlprotection.com.au/residential-window-tinting-brisbane"
       />
@@ -85,7 +85,7 @@ export default function ResidentialTintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Residential Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "3M Authorised residential window film installer in Acacia Ridge, Brisbane. Home window tinting with 3M warranty.",
       })}} />
@@ -180,7 +180,7 @@ export default function ResidentialTintPage() {
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by 3M</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>3M limited warranty — residential installations</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['Film delamination or peeling', 'Adhesive failure', 'Discolouration under normal conditions', 'Coverage: all 3M installations by NextLvl Protection'].map((item, i) => (
+                {['Film delamination or peeling', 'Adhesive failure', 'Discolouration under normal conditions', 'Coverage: all 3M installations by Next LVL Protection'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10 }}>
                     <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 3 }} />
                     <span style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{item}</span>

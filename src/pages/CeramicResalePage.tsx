@@ -52,15 +52,15 @@ export default function CeramicResalePage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating & Resale Value Brisbane | NextLvl Protection"
-        description="How ceramic coating protects resale value in Brisbane. Preserved paint condition in Queensland's harsh UV climate. NextLvl Protection."
+        title="Ceramic Coating & Resale Value Brisbane | Next LVL Protection"
+        description="How ceramic coating protects resale value in Brisbane. Preserved paint condition in Queensland's harsh UV climate. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-resale-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for Resale Value Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating to protect and increase resale value in Brisbane. Documented application history, paint preservation, and buyer-facing certification. Acacia Ridge.",
       })}} />

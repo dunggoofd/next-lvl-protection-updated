@@ -29,17 +29,17 @@ export default function GalleryPage() {
   return (
     <>
       <PageMeta
-        title="Gallery | PPF, Ceramic Coating & Window Tinting Work | NextLvl Protection Brisbane"
-        description="View NextLvl Protection's completed PPF, ceramic coating, and window tinting work in Brisbane. Before and after photos from our Acacia Ridge studio."
+        title="Gallery | PPF, Ceramic Coating & Window Tinting Work | Next LVL Protection Brisbane"
+        description="View Next LVL Protection's completed PPF, ceramic coating, and window tinting work in Brisbane. Before and after photos from our Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/gallery"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ImageGallery",
-        "name": "NextLvl Protection — Before & After Gallery",
-        "description": "Before and after photos of PPF, ceramic coating, and window tinting installations by NextLvl Protection in Brisbane.",
+        "name": "Next LVL Protection — Before & After Gallery",
+        "description": "Before and after photos of PPF, ceramic coating, and window tinting installations by Next LVL Protection in Brisbane.",
         "url": "https://www.nextlvlprotection.com.au/gallery",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
       })}} />
       <section style={{ paddingTop: 120, paddingBottom: 60, paddingLeft: 'var(--section-padding-x)', paddingRight: 'var(--section-padding-x)', background: 'var(--color-bg-primary)' }}>
         <div className="container">

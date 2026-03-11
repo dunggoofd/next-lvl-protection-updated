@@ -4,7 +4,7 @@ import FAQAccordion from '../components/FAQAccordion';
 import PageMeta from '../components/PageMeta';
 
 const faqs = [
-  { q: 'What VLT (Visible Light Transmission) is legal in Queensland?', a: 'In Queensland, the minimum VLT is 35% for all windows in passenger vehicles (including SUVs and utes), except the rear window and rear side windows behind the B-pillar, which have no VLT restriction for vehicles with rear-view mirrors. The windscreen front strip (visor band) is also regulated. NextLvl Protection installs compliant VLT levels on all front windows as standard.' },
+  { q: 'What VLT (Visible Light Transmission) is legal in Queensland?', a: 'In Queensland, the minimum VLT is 35% for all windows in passenger vehicles (including SUVs and utes), except the rear window and rear side windows behind the B-pillar, which have no VLT restriction for vehicles with rear-view mirrors. The windscreen front strip (visor band) is also regulated. Next LVL Protection installs compliant VLT levels on all front windows as standard.' },
   { q: 'How much does window tinting cost for a car in Brisbane?', a: 'Window tinting pricing depends on vehicle size and coverage. Contact us for a personalised quote.' },
   { q: 'What is the best window film for cars in Brisbane?', a: 'For Brisbane\'s UV and heat, Solar Gard VTX PRO is one of the highest-performing automotive window films available. It provides 99% UV rejection, significant heat rejection, and maintains clarity without a strong reflective or purple tint over time.' },
   { q: 'Does window tint help with heat in the car?', a: 'Yes — significantly. Solar Gard VTX PRO rejects a substantial portion of solar heat. The difference is most noticeable on cars parked in the sun — the cabin cools faster and the peak temperature is lower. The front windows (driver/passenger) have the most impact on occupant comfort.' },
@@ -20,10 +20,10 @@ const faqs = [
   { q: 'Can window film be applied to curved rear windows?', a: 'Yes — curved rear windows require wet-applied film or a pre-cut pattern. We use vehicle-specific pre-cut patterns for most models, ensuring a clean edge and no patchwork seams. Highly curved windows (some utes, coupes) may require more time.' },
   { q: 'Will window tint make my car hotter to touch on the exterior?', a: 'Window tint affects heat transmittance through the glass — not the exterior surface temperature of the glass itself. The glass may absorb slightly more heat, but the key metric is cabin temperature reduction, which improves significantly with quality film.' },
   { q: 'What is the difference between privacy tint and solar film?', a: 'Privacy tint prioritises darkness (low VLT) for visual privacy. Solar film prioritises heat and UV rejection (often achievable at higher VLT levels). Solar Gard VTX PRO is a solar film that also provides privacy at typical automotive VLT levels.' },
-  { q: 'Is NextLvl Protection a Solar Gard Authorised Installer?', a: 'Yes — NextLvl Protection is a Solar Gard Authorised Installer. This means we use genuine Solar Gard film, install to manufacturer standards, and the Solar Gard lifetime warranty applies to your installation.' },
+  { q: 'Is Next LVL Protection a Solar Gard Authorised Installer?', a: 'Yes — Next LVL Protection is a Solar Gard Authorised Installer. This means we use genuine Solar Gard film, install to manufacturer standards, and the Solar Gard lifetime warranty applies to your installation.' },
   { q: 'Can window tint be applied to new cars that already have factory tint?', a: 'Yes — factory tint (privacy glass) is in the glass itself and typically provides privacy without significant heat or UV rejection. Adding Solar Gard VTX PRO over factory privacy glass adds UV protection and heat rejection while deepening the appearance. VLT compliance must be confirmed for front windows.' },
-  { q: 'What types of vehicles does NextLvl Protection tint?', a: 'We tint all passenger vehicles — sedans, hatchbacks, SUVs, 4WDs, utes, vans, and prestige/luxury vehicles. We also accommodate commercial vehicles on request.' },
-  { q: 'Where is NextLvl Protection located?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Open Monday–Friday 9am–5:30pm. Call 0468 810 666 or use the quote form to book.' },
+  { q: 'What types of vehicles does Next LVL Protection tint?', a: 'We tint all passenger vehicles — sedans, hatchbacks, SUVs, 4WDs, utes, vans, and prestige/luxury vehicles. We also accommodate commercial vehicles on request.' },
+  { q: 'Where is Next LVL Protection located?', a: 'We\'re at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Open Monday–Friday 9am–5:30pm. Call 0468 810 666 or use the quote form to book.' },
 ];
 
 const schema = {
@@ -38,7 +38,7 @@ const schema = {
 
 export default function AutoTintQuestionsPage() {
   useEffect(() => {
-    document.title = 'Automotive Window Tinting Questions — Brisbane | NextLvl Protection';
+    document.title = 'Automotive Window Tinting Questions — Brisbane | Next LVL Protection';
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.id = 'faq-schema';
@@ -50,15 +50,15 @@ export default function AutoTintQuestionsPage() {
   return (
     <>
       <PageMeta
-        title="Automotive Tinting Questions Answered | Brisbane | NextLvl Protection"
-        description="Common questions about automotive window tinting in Brisbane — VLT laws, heat rejection, Solar Gard film. NextLvl Protection."
+        title="Automotive Tinting Questions Answered | Brisbane | Next LVL Protection"
+        description="Common questions about automotive window tinting in Brisbane — VLT laws, heat rejection, Solar Gard film. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/automotive-tinting-questions"
       />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Automotive Window Tinting — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
-          Queensland tint laws, Solar Gard VTX PRO performance, pricing — every question answered. Written by the team at NextLvl Protection, Acacia Ridge, QLD.
+          Queensland tint laws, Solar Gard VTX PRO performance, pricing — every question answered. Written by the team at Next LVL Protection, Acacia Ridge, QLD.
         </p>
         <FAQAccordion items={faqs} />
       </section>

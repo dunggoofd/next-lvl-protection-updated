@@ -54,15 +54,15 @@ export default function PPFGlossMattePage() {
   return (
     <>
       <PageMeta
-        title="Gloss vs Matte PPF Brisbane | SunTek Film Options | NextLvl Protection"
-        description="Choosing between gloss and matte PPF in Brisbane. SunTek gloss and matte film options explained. NextLvl Protection, Acacia Ridge."
+        title="Gloss vs Matte PPF Brisbane | SunTek Film Options | Next LVL Protection"
+        description="Choosing between gloss and matte PPF in Brisbane. SunTek gloss and matte film options explained. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/gloss-vs-matte-ppf-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Gloss vs Matte PPF Brisbane — SunTek Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Gloss and matte PPF available in Brisbane. SunTek Ultra gloss PPF is optically clear. SunTek Ultra Matte transforms gloss paint to satin finish. Acacia Ridge studio.",
       })}} />

@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 22, letterSpacing: '0.05em', marginBottom: 16 }}>
-              NEXTLVL<span style={{ color: 'var(--color-accent)' }}> PROTECTION</span>
+              NEXT LVL<span style={{ color: 'var(--color-accent)' }}> PROTECTION</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>
               Brisbane's certified premium film installation specialist.<br />
@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid var(--color-border)', padding: '24px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 13 }}>
-            © {new Date().getFullYear()} NextLvl Protection Pty Ltd. All rights reserved. Acacia Ridge, Brisbane QLD.
+            © {new Date().getFullYear()} Next LVL Protection Pty Ltd. All rights reserved. Acacia Ridge, Brisbane QLD.
           </p>
           <div style={{ display: 'flex', gap: 20 }}>
             <Link to="/gallery" className="footer-link" style={{ fontSize: 13 }}>Gallery</Link>

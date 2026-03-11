@@ -20,7 +20,7 @@ const benefits = [
 
 const faqs = [
   { q: 'Why is PPF especially important for dark-coloured cars?', a: 'Dark paint — black, dark grey, navy, dark green — shows surface defects significantly more than silver or white. A stone chip on a black car is an immediate white or silver mark that cannot be unseen. Swirl marks from washing appear as visible spider-web patterns under direct light. PPF prevents chips from reaching the surface and its self-healing topcoat addresses light scratches before they become permanent.' },
-  { q: 'Can PPF fix swirl marks already on my dark car?', a: 'No — PPF does not repair existing paint defects. If your car already has swirl marks, paint correction is required before film is applied. Installing film over existing swirl marks traps them permanently under the film. At NextLvl Protection, we inspect paint condition before every installation and advise on correction requirements first.' },
+  { q: 'Can PPF fix swirl marks already on my dark car?', a: 'No — PPF does not repair existing paint defects. If your car already has swirl marks, paint correction is required before film is applied. Installing film over existing swirl marks traps them permanently under the film. At Next LVL Protection, we inspect paint condition before every installation and advise on correction requirements first.' },
   { q: 'Does PPF change how dark paint looks?', a: 'Gloss PPF on gloss dark paint adds depth to the finish — many customers say the car looks better after film. The optical clarity of SunTek Ultra PPF is very high. It should not introduce haze, yellowing, or colour shift. If you want to change the finish, matte PPF converts gloss dark paint to a satin look.' },
   { q: 'Can I combine PPF and ceramic coating on a dark car?', a: 'Yes — and this is one of our most popular combinations for dark cars. PPF goes on the high-impact zones (front end, full car, or sections as required), then ceramic coating is applied over the PPF and across the rest of the painted surface. You get physical chip protection from the film and hydrophobic/chemical resistance from the ceramic. The result is a very low-maintenance, very deep-looking dark finish.' },
   { q: 'What PPF coverage do you recommend for a black car?', a: 'For a black or dark grey car that gets daily use, we recommend at minimum a full front end — bonnet, front bumper, guards, headlights, and mirrors. That covers the zones that generate 90% of chip events. If you do highway driving regularly, consider adding the roof and A-pillars (Track Package). Full wraps are worth it on dark prestige or performance cars where the full surface needs protection.' },
@@ -52,7 +52,7 @@ export default function PPFDarkPaintPage() {
   return (
     <>
       <PageMeta
-        title="PPF for Dark Paint Brisbane | Black & Dark Cars | NextLvl Protection"
+        title="PPF for Dark Paint Brisbane | Black & Dark Cars | Next LVL Protection"
         description="Paint protection film for dark and black paint in Brisbane. Swirl-resistant, self-healing SunTek PPF for dark cars. Acacia Ridge installer."
         canonical="https://www.nextlvlprotection.com.au/ppf-dark-paint-brisbane"
       />
@@ -60,7 +60,7 @@ export default function PPFDarkPaintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF for Dark Paint Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Paint protection film for black, dark grey and dark-coloured cars in Brisbane. Prevent chips and swirl marks on dark paint. SunTek Authorised installer, Acacia Ridge.",
       })}} />

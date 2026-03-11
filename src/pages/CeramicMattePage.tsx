@@ -52,17 +52,17 @@ export default function CeramicMattePage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating for Matte Paint Brisbane | NextLvl Protection"
-        description="Ceramic coating for matte and satin paint in Brisbane. Correct product for matte finishes — no gloss, no damage. NextLvl Protection."
+        title="Ceramic Coating for Matte Paint Brisbane | Next LVL Protection"
+        description="Ceramic coating for matte and satin paint in Brisbane. Correct product for matte finishes — no gloss, no damage. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-matte-paint-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for Matte Paint Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Ceramic coating for matte and satin paint in Brisbane. Matte-specific formulation preserves finish appearance. NextLvl Protection, Acacia Ridge."
+        "description": "Ceramic coating for matte and satin paint in Brisbane. Matte-specific formulation preserves finish appearance. Next LVL Protection, Acacia Ridge."
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>

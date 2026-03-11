@@ -52,15 +52,15 @@ export default function CeramicWheelsPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating for Wheels Brisbane | Brake Dust Protection | NextLvl Protection"
-        description="Ceramic coating for wheels in Brisbane. Resist brake dust bonding and keep wheels cleaner longer. NextLvl Protection, Acacia Ridge."
+        title="Ceramic Coating for Wheels Brisbane | Brake Dust Protection | Next LVL Protection"
+        description="Ceramic coating for wheels in Brisbane. Resist brake dust bonding and keep wheels cleaner longer. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-wheels-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for Wheels Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating for car wheels in Brisbane. Brake dust resistance — rinses clean with water. Included in Protection, Elite, and Signature ceramic packages. Acacia Ridge studio.",
       })}} />

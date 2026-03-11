@@ -31,7 +31,7 @@ const faqs = [
 const reviews = [
   { name: 'Ash P.', suburb: 'Calamvale', service: 'Ceramic Coating — New Car, Protection Package', text: 'Brought the car in 3 days after delivery. No correction needed. The team were thorough on the prep and the finish is outstanding. Dealer was pushing their sealant — glad I did my research.' },
   { name: 'Mei L.', suburb: 'Sunnybank Hills', service: 'Ceramic Coating — New Car, Elite Package', text: 'New Mazda CX-5 in soul red. The ceramic added a depth to that colour that I didn\'t think was possible over factory. Car is 8 months old and looks better than delivery day.' },
-  { name: 'Greg T.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — New Prestige, Signature', text: 'New BMW 3 Series. Went straight to NextLvl from the dealership. The Signature package covers everything. 7-year warranty, proper documentation, the right product for the investment.' },
+  { name: 'Greg T.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — New Prestige, Signature', text: 'New BMW 3 Series. Went straight to Next LVL from the dealership. The Signature package covers everything. 7-year warranty, proper documentation, the right product for the investment.' },
 ];
 
 export default function CeramicNewCarPage() {
@@ -53,15 +53,15 @@ export default function CeramicNewCarPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating for New Cars Brisbane | NextLvl Protection"
-        description="Ceramic coating for new cars in Brisbane. Protect your new car's paint before Queensland's UV causes damage. NextLvl Protection, Acacia Ridge."
+        title="Ceramic Coating for New Cars Brisbane | Next LVL Protection"
+        description="Ceramic coating for new cars in Brisbane. Protect your new car's paint before Queensland's UV causes damage. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-new-car-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating for New Cars Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating for new cars in Brisbane. Apply within 30 days of delivery — no paint correction required, strongest bond, full warranty. Acacia Ridge studio.",
       })}} />

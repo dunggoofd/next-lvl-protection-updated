@@ -20,7 +20,7 @@ const benefits = [
 
 const faqs = [
   { q: 'Does PPF actually increase resale value?', a: 'PPF directly protects one of the most visible depreciation factors — paint condition. A car with original, undamaged factory paint commands a higher price than one with chips, touch-up marks, or corrected paint. The film doesn\'t add value to the car — it prevents the value loss that would otherwise occur. The net effect at sale time is a meaningful price premium over an unprotected equivalent.' },
-  { q: 'How do I prove to a buyer that PPF is installed?', a: 'You\'ll receive SunTek warranty documentation at handover from NextLvl Protection — this is the paper trail. In addition, the film itself is visible on close inspection under direct light, and a knowledgeable buyer or dealer will confirm it during inspection. The warranty paperwork is the formal record.' },
+  { q: 'How do I prove to a buyer that PPF is installed?', a: 'You\'ll receive SunTek warranty documentation at handover from Next LVL Protection — this is the paper trail. In addition, the film itself is visible on close inspection under direct light, and a knowledgeable buyer or dealer will confirm it during inspection. The warranty paperwork is the formal record.' },
   { q: 'Does PPF warranty transfer to a new owner?', a: 'SunTek\'s warranty is on the film installation, not the registered owner. When you sell the vehicle, the remaining warranty period transfers to the new owner. This is a selling point — they\'re buying not just a car with good paint but a film installation with remaining manufacturer warranty.' },
   { q: 'Is partial PPF (front end only) enough to help resale?', a: 'Yes — the front end is where most of the visible chip damage accumulates. A buyer or dealer looking at the bonnet, front bumper, and guards in factory condition reads that as a well-maintained vehicle. A front end package covering these zones provides the most visible protection for resale purposes.' },
   { q: 'Will a dealer pay more for a PPF-protected car at trade-in?', a: 'A dealer\'s pricing is partly based on the reconditioning cost they\'d need to invest. A car in excellent paint condition requires less reconditioning — that margin can work in your favour at trade-in. It\'s not guaranteed, but arriving with factory paint and warranty documentation is objectively a stronger negotiating position.' },
@@ -52,15 +52,15 @@ export default function PPFResalePage() {
   return (
     <>
       <PageMeta
-        title="PPF & Resale Value Brisbane | Protect Your Investment | NextLvl Protection"
-        description="How PPF protects resale value in Brisbane's climate. Keep your paint in showroom condition with SunTek PPF. NextLvl Protection, Acacia Ridge."
+        title="PPF & Resale Value Brisbane | Protect Your Investment | Next LVL Protection"
+        description="How PPF protects resale value in Brisbane's climate. Keep your paint in showroom condition with SunTek PPF. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ppf-resale-value-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF for Resale Value Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Protect your car's resale value with PPF in Brisbane. SunTek Authorised installer in Acacia Ridge — paint stays factory-condition.",
       })}} />
@@ -160,7 +160,7 @@ export default function PPFResalePage() {
                 'SunTek Ultra PPF — manufacturer warranty documentation',
                 'Warranty transferable to subsequent owner',
                 'Installation date and coverage area recorded',
-                'NextLvl Protection installer certification record',
+                'Next LVL Protection installer certification record',
                 'Aftercare and maintenance guide',
                 'Guidance on how to present PPF to buyers at sale time',
               ].map((inc, i) => (

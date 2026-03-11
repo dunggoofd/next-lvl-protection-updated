@@ -27,7 +27,7 @@ export default function PageMeta({ title, description, canonical }: PageMetaProp
     canon.href = canonical;
 
     return () => {
-      document.title = 'NextLvl Protection — Brisbane';
+      document.title = 'Next LVL Protection — Brisbane';
     };
   }, [title, description, canonical]);
 

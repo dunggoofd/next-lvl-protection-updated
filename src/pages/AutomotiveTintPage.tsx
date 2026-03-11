@@ -44,11 +44,11 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'What VLT is legal for car tinting in Queensland?', a: 'In Queensland, the legal minimum VLT is 35% for all windows except the windscreen (which must allow 75% or more). Solar Gard VTX PRO is available in multiple VLT options that meet Queensland legal requirements. At NextLvl Protection, we only install Queensland-legal VLT unless the vehicle is not registered for road use.' },
+  { q: 'What VLT is legal for car tinting in Queensland?', a: 'In Queensland, the legal minimum VLT is 35% for all windows except the windscreen (which must allow 75% or more). Solar Gard VTX PRO is available in multiple VLT options that meet Queensland legal requirements. At Next LVL Protection, we only install Queensland-legal VLT unless the vehicle is not registered for road use.' },
   { q: 'How much does car window tinting cost in Brisbane?', a: 'Pricing depends on vehicle size and coverage selected. Contact us for a personalised quote.' },
   { q: 'How long does window tinting take?', a: 'Most standard car tint jobs are completed in 2–4 hours. A full car including windscreen may take up to half a day depending on vehicle complexity. You can wait at our Acacia Ridge studio or we can arrange drop-off.' },
   { q: 'How long do I need to wait before rolling my windows down?', a: 'We recommend waiting at least 3–4 days before rolling windows down. This allows the adhesive to cure fully. Rolling windows down too early can cause the film to lift from the edges. We\'ll confirm cure time at handover.' },
-  { q: 'What is Solar Gard VTX PRO film?', a: 'Solar Gard VTX PRO is a premium automotive window film manufactured by Solar Gard — a global film brand with over 50 years of product history. VTX PRO specifically refers to their high-performance nano-ceramic tint series, offering superior heat rejection versus standard dyed film. It\'s the film we use on every automotive tint job at NextLvl Protection.' },
+  { q: 'What is Solar Gard VTX PRO film?', a: 'Solar Gard VTX PRO is a premium automotive window film manufactured by Solar Gard — a global film brand with over 50 years of product history. VTX PRO specifically refers to their high-performance nano-ceramic tint series, offering superior heat rejection versus standard dyed film. It\'s the film we use on every automotive tint job at Next LVL Protection.' },
   { q: 'Can I get the windscreen tinted in Queensland?', a: 'A windscreen tint must maintain at least 75% VLT in Queensland — which essentially means a very light, almost clear film. We offer clear Solar Gard film for windscreens that rejects UV and reduces glare without visibly darkening the glass. Our Full Car + Windscreen package includes this.' },
   { q: 'Does window tinting make a noticeable difference in Brisbane\'s heat?', a: 'Yes — particularly with a film like Solar Gard VTX PRO that has high solar heat rejection. Standard cabin temperatures in Queensland\'s summer can drop by 5–10°C with quality window film. The difference is most noticeable when entering a parked car on a hot day.' },
   { q: 'What if my window tint bubbles or peels?', a: 'Film failure — bubbling, peeling, or discolouration — is covered by the Solar Gard authorised installer warranty for the life of your vehicle ownership. If you notice any failure, contact us and we\'ll assess and address it under warranty. Bubbling during the initial cure period (first few days) is normal and resolves as the film dries.' },
@@ -77,7 +77,7 @@ export default function AutomotiveTintPage() {
   return (
     <>
       <PageMeta
-        title="Automotive Window Tinting Brisbane | Solar Gard VTX PRO | NextLvl Protection"
+        title="Automotive Window Tinting Brisbane | Solar Gard VTX PRO | Next LVL Protection"
         description="Solar Gard VTX PRO certified automotive window tinting in Brisbane. Reject heat, block UV. Queensland-legal VLT. Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/automotive-window-tinting-brisbane"
       />
@@ -85,7 +85,7 @@ export default function AutomotiveTintPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Automotive Window Tinting Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Solar Gard VTX PRO Certified automotive window tinting in Acacia Ridge, Brisbane. Car tint packages with lifetime warranty.",
       })}} />
@@ -185,7 +185,7 @@ export default function AutomotiveTintPage() {
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by Solar Gard</h3>
               <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Lifetime warranty — Solar Gard Authorised Installer</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['Bubbling or peeling under normal conditions', 'Film discolouration / purple fade', 'Edge lifting from normal use', 'Coverage: all Solar Gard VTX PRO installations by NextLvl Protection'].map((item, i) => (
+                {['Bubbling or peeling under normal conditions', 'Film discolouration / purple fade', 'Edge lifting from normal use', 'Coverage: all Solar Gard VTX PRO installations by Next LVL Protection'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10 }}>
                     <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 3 }} />
                     <span style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>{item}</span>

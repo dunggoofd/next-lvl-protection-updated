@@ -33,7 +33,7 @@ const faqs = [
   { q: 'Is partial PPF worth it compared to a full wrap?', a: 'For most daily drivers, yes. Chips and damage concentrate heavily on the front bumper and bonnet leading edge. Protecting these zones prevents the majority of paint damage at a fraction of full-wrap cost. A full wrap is appropriate for prestige, track, or high-kilometre vehicles where rear-quarter and door exposure is also high.' },
   { q: 'Can I add more panels later?', a: 'Yes. PPF panels are applied independently. You can start with an Impact Shield (bumper, leading edge, guards) and add the full bonnet, headlights, or door cups at a later service. There is no penalty or incompatibility in adding coverage later.' },
   { q: 'What is the best partial PPF starting point for a daily driver?', a: 'The Impact Shield — front bumper, bonnet leading edge, and front guards — is the most cost-effective entry point. These three panels collectively receive the majority of chip impact on any road car. Starting here and upgrading later is a rational strategy if budget is a consideration.' },
-  { q: 'Is the film the same quality on a partial install as a full wrap?', a: 'Yes. NextLvl Protection installs SunTek Ultra PPF on every job regardless of coverage area. The only variable is panel count. Film grade and installation standard are identical across all packages.' },
+  { q: 'Is the film the same quality on a partial install as a full wrap?', a: 'Yes. Next LVL Protection installs SunTek Ultra PPF on every job regardless of coverage area. The only variable is panel count. Film grade and installation standard are identical across all packages.' },
   { q: 'Do partial installs come with the same warranty?', a: 'Yes. Covered panels carry the same SunTek manufacturer warranty — 5-year or 10-year depending on the film tier chosen. The warranty applies to each installed panel individually.' },
   { q: 'Can I get partial PPF on just the bonnet?', a: 'Yes. Individual panel quotes are available. Common individual-panel requests include the full bonnet, boot lid, or roof. Contact us with your vehicle details and the panel you want covered for a specific quote.' },
 ];
@@ -63,7 +63,7 @@ export default function PPFPartialPage() {
   return (
     <>
       <PageMeta
-        title="Partial PPF Brisbane | Front End Protection | NextLvl Protection"
+        title="Partial PPF Brisbane | Front End Protection | Next LVL Protection"
         description="Partial paint protection film packages for Brisbane cars. Protect the highest-impact zones — bonnet, bumper, guards. SunTek Authorised."
         canonical="https://www.nextlvlprotection.com.au/partial-ppf-brisbane"
       />
@@ -71,7 +71,7 @@ export default function PPFPartialPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Partial PPF Brisbane — Panel-by-Panel Paint Protection Film",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Partial PPF installations in Brisbane. Cover the highest-risk panels first. Add panels at any time. SunTek Authorised installer, Acacia Ridge.",
       })}} />

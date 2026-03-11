@@ -52,15 +52,15 @@ export default function CeramicLongevityPage() {
   return (
     <>
       <PageMeta
-        title="How Long Does Ceramic Coating Last in Brisbane | NextLvl Protection"
-        description="Ceramic coating longevity in Brisbane's climate. Warranties from 1 to 7 years depending on package. NextLvl Protection, Acacia Ridge."
+        title="How Long Does Ceramic Coating Last in Brisbane | Next LVL Protection"
+        description="Ceramic coating longevity in Brisbane's climate. Warranties from 1 to 7 years depending on package. Next LVL Protection, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-longevity-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "How Long Does Ceramic Coating Last Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating durability in Brisbane. 12-month to 7-year warranty options. How long ceramic coating lasts in Queensland UV conditions. Acacia Ridge studio.",
       })}} />

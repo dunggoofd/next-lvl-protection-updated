@@ -14,7 +14,7 @@ const benefits = [
   { icon: Shield, title: 'Independent Warranty Backing', desc: 'Professional ceramic applied by a certified applicator carries a manufacturer warranty backed by the coating company — not just the installer. If the installer closes, the manufacturer warranty still holds. Dealership packages have no such protection.' },
   { icon: Sun, title: 'Preparation Standard', desc: 'Dealership paint protection is applied over factory paint in showroom conditions — often without decontamination, clay bar, or panel inspection. A professional ceramic is applied after full prep in a controlled studio environment. The difference in bonding strength and longevity is significant.' },
   { icon: Droplets, title: 'Hydrophobic Performance Is Not Equal', desc: 'Professional ceramic coatings achieve contact angles of 100°+ — water beads and rolls off the surface. Spray sealants achieve 70–80° — water beads but sits on the surface rather than rolling. The visible hydrophobic performance difference is immediately apparent.' },
-  { icon: TrendingUp, title: 'Cost Comparison Per Year', desc: 'A dealership package lasting 12 months requires annual repurchase. A professional-grade 3-year package from NextLvl costs less per year of protection over time — not more. Longevity is part of the value equation.' },
+  { icon: TrendingUp, title: 'Cost Comparison Per Year', desc: 'A dealership package lasting 12 months requires annual repurchase. A professional-grade 3-year package from Next LVL costs less per year of protection over time — not more. Longevity is part of the value equation.' },
   { icon: Clock, title: 'No Obligation to Dealership Terms', desc: 'Dealer paint protection packages often come with maintenance conditions tied to dealer servicing. Professional ceramic from an independent specialist has no such obligations — you maintain and service your car where you choose.' },
 ];
 
@@ -27,8 +27,8 @@ const faqs = [
 ];
 
 const reviews = [
-  { name: 'Craig W.', suburb: 'Calamvale', service: 'Ceramic Coating — Protection Package (post-dealer)', text: 'Declined the dealer sealant and booked NextLvl directly. Saved money, got better protection, and the warranty documentation is from the manufacturer. Clear decision in retrospect.' },
-  { name: 'Anna M.', suburb: 'Sunnybank', service: 'Ceramic Coating — Strip + Rebook', text: 'Had already accepted the dealer package before I knew better. NextLvl removed the sealant and applied professional ceramic. The difference in hydrophobic performance was immediately visible.' },
+  { name: 'Craig W.', suburb: 'Calamvale', service: 'Ceramic Coating — Protection Package (post-dealer)', text: 'Declined the dealer sealant and booked Next LVL directly. Saved money, got better protection, and the warranty documentation is from the manufacturer. Clear decision in retrospect.' },
+  { name: 'Anna M.', suburb: 'Sunnybank', service: 'Ceramic Coating — Strip + Rebook', text: 'Had already accepted the dealer package before I knew better. Next LVL removed the sealant and applied professional ceramic. The difference in hydrophobic performance was immediately visible.' },
   { name: 'Rob T.', suburb: 'Runcorn', service: 'Ceramic Coating — New Car, Elite Package', text: 'Did the research before delivery. Found that the dealer\'s "ceramic" package was actually a sealant product. Booked Elite for a similar total cost and got a 5-year warranty backed by the manufacturer.' },
 ];
 
@@ -51,7 +51,7 @@ export default function CeramicVsDealerPage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating vs Dealer Paint Protection Brisbane | NextLvl Protection"
+        title="Ceramic Coating vs Dealer Paint Protection Brisbane | Next LVL Protection"
         description="How professional ceramic coating compares to dealer-applied paint protection in Brisbane. Independent vs. in-dealership application explained."
         canonical="https://www.nextlvlprotection.com.au/ceramic-vs-dealer-paint-protection-brisbane"
       />
@@ -59,7 +59,7 @@ export default function CeramicVsDealerPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Ceramic Coating vs Dealer Paint Protection Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating vs dealership paint protection in Brisbane. Why most dealer packages are sealants, not ceramic. Professional ceramic with manufacturer warranty. Acacia Ridge.",
       })}} />
@@ -93,7 +93,7 @@ export default function CeramicVsDealerPage() {
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
               <thead>
                 <tr style={{ background: 'var(--color-surface)' }}>
-                  {['Factor', 'Dealership Package', 'Professional Ceramic (NextLvl)'].map((h, i) => (
+                  {['Factor', 'Dealership Package', 'Professional Ceramic (Next LVL)'].map((h, i) => (
                     <th key={i} style={{ padding: '14px 20px', textAlign: 'left', fontWeight: 700, color: i === 2 ? 'var(--color-accent)' : 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: 11, border: '1px solid var(--color-border)' }}>{h}</th>
                   ))}
                 </tr>

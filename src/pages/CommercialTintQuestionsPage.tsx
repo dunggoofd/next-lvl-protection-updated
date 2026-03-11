@@ -5,7 +5,7 @@ import PageMeta from '../components/PageMeta';
 
 const faqs = [
   { q: 'What is commercial window tinting?', a: 'Commercial window tinting is the application of professional window film to the glazing of offices, retail premises, warehouses, and commercial buildings. It reduces solar heat gain, glare, and UV radiation — improving occupant comfort and reducing HVAC energy consumption.' },
-  { q: 'How much does commercial window tinting cost in Brisbane?', a: 'Commercial window tinting in Brisbane is quoted on application — pricing depends on window count, glazing type, film specification, access, and installation schedule. Contact NextLvl Protection at Acacia Ridge for a site-specific quote.' },
+  { q: 'How much does commercial window tinting cost in Brisbane?', a: 'Commercial window tinting in Brisbane is quoted on application — pricing depends on window count, glazing type, film specification, access, and installation schedule. Contact Next LVL Protection at Acacia Ridge for a site-specific quote.' },
   { q: 'How long does commercial window film installation take?', a: 'A small office (10 windows) typically takes 1–2 days. Larger fitouts are staged per zone or floor. We provide a full project timeline at quoting stage so you can plan around it. Out-of-hours and weekend installation is available.' },
   { q: 'Can commercial window film be installed without closing the office?', a: 'In most cases, yes. We stage installation room by room so adjacent spaces remain operational. For whole-building fitouts, weekend or out-of-hours scheduling is available to minimise disruption to staff and customers.' },
   { q: 'Does 3M commercial window film reduce air conditioning costs?', a: 'Yes — measurably in glazed commercial buildings. By rejecting up to 78% of solar heat, 3M Solar film reduces the peak load on HVAC systems. The energy saving varies by building, but heavily glazed north and west-facing floors typically see the greatest improvement.' },
@@ -21,9 +21,9 @@ const faqs = [
   { q: 'Can 3M film be applied to high-rise buildings?', a: 'Yes — we have experience with multi-storey commercial buildings. Access (internal scaffold, elevated work platform, or rope access) is assessed at site survey and factored into project planning and pricing.' },
   { q: 'What is glare control and why does it matter in offices?', a: 'Glare control refers to reducing the intensity of direct and reflected sunlight on screens, whiteboards, and work surfaces. Excessive glare causes eye strain, reduces productivity, and makes screens difficult to read. Modern solar film reduces glare without a significant reduction in visible light.' },
   { q: 'Can window film replace venetian blinds or external shading?', a: 'Window film is a complementary solution, not a complete replacement for blinds in all scenarios. Film provides always-on heat and UV rejection without the maintenance of blinds. For scenarios requiring complete blackout or full privacy, blinds remain appropriate. Many commercial spaces use both.' },
-  { q: 'Do you offer a 3M commercial warranty on installations?', a: 'Yes — NextLvl Protection is a 3M Authorised Installer. Commercial installations are backed by the applicable 3M commercial limited warranty. Warranty documentation is provided at handover. Warranty period varies by film series.' },
+  { q: 'Do you offer a 3M commercial warranty on installations?', a: 'Yes — Next LVL Protection is a 3M Authorised Installer. Commercial installations are backed by the applicable 3M commercial limited warranty. Warranty documentation is provided at handover. Warranty period varies by film series.' },
   { q: 'Can window film be applied to existing tinted commercial glazing?', a: 'Yes — 3M Solar or safety film can be applied to commercial glass that already has a factory tint. VLT must be checked for compliance in applicable areas. Additional tint over existing tinted glass will darken the appearance.' },
-  { q: 'Where is NextLvl Protection and do you cover all of Brisbane for commercial tinting?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for commercial window tinting projects. Call 0468 810 666 or use the quote form on this site.' },
+  { q: 'Where is Next LVL Protection and do you cover all of Brisbane for commercial tinting?', a: 'We\'re based at Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110 and service all of greater Brisbane for commercial window tinting projects. Call 0468 810 666 or use the quote form on this site.' },
 ];
 
 const schema = {
@@ -38,7 +38,7 @@ const schema = {
 
 export default function CommercialTintQuestionsPage() {
   useEffect(() => {
-    document.title = 'Commercial Window Tinting Questions — Brisbane | NextLvl Protection';
+    document.title = 'Commercial Window Tinting Questions — Brisbane | Next LVL Protection';
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.id = 'faq-schema';
@@ -50,15 +50,15 @@ export default function CommercialTintQuestionsPage() {
   return (
     <>
       <PageMeta
-        title="Commercial Window Tinting Questions | Brisbane | NextLvl Protection"
-        description="Common questions about commercial window tinting in Brisbane — energy savings, glare control, 3M film options. NextLvl Protection."
+        title="Commercial Window Tinting Questions | Brisbane | Next LVL Protection"
+        description="Common questions about commercial window tinting in Brisbane — energy savings, glare control, 3M film options. Next LVL Protection."
         canonical="https://www.nextlvlprotection.com.au/commercial-tinting-questions"
       />
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Commercial Window Tinting — Brisbane Questions</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
-          Office, retail, and whole-building commercial window film — every question answered. Written by NextLvl Protection — 3M Authorised Installer, Acacia Ridge, QLD.
+          Office, retail, and whole-building commercial window film — every question answered. Written by Next LVL Protection — 3M Authorised Installer, Acacia Ridge, QLD.
         </p>
         <FAQAccordion items={faqs} />
       </section>

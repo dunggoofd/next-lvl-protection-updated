@@ -21,7 +21,7 @@ const benefits = [
 const faqs = [
   { q: 'When is the best time to get PPF on a new car?', a: 'As soon as possible after taking delivery — ideally within the first 2–4 weeks. New paint is in perfect condition: no swirl marks, no chips, no contamination. Applying PPF immediately means the film goes on a perfect surface. The longer you wait, the higher the risk that something happens to the paint first.' },
   { q: 'Does PPF affect the factory warranty on my new car?', a: 'No — PPF applied by a professional installer does not affect your vehicle\'s factory warranty. It\'s a removable film applied to the exterior surface. Car manufacturers do not void warranties for PPF application. If a dealer or manufacturer tells you otherwise, that is incorrect.' },
-  { q: 'Should I get PPF before or after ceramic coating on a new car?', a: 'PPF goes on first, then ceramic coating over the top if you want both. PPF protects the paint physically; ceramic coating is applied over the film (and unprotected paint) to add hydrophobic and chemical resistance. At NextLvl Protection, we often combine PPF on the high-impact zones with ceramic coating over the full car for a new car delivery package.' },
+  { q: 'Should I get PPF before or after ceramic coating on a new car?', a: 'PPF goes on first, then ceramic coating over the top if you want both. PPF protects the paint physically; ceramic coating is applied over the film (and unprotected paint) to add hydrophobic and chemical resistance. At Next LVL Protection, we often combine PPF on the high-impact zones with ceramic coating over the full car for a new car delivery package.' },
   { q: 'Is full body PPF worth it on a new car?', a: 'It depends on how you use the car and what you paid for it. For prestige or performance cars, full body PPF is a sound investment — the cost of full wrap is a fraction of a future respray. For everyday cars, a full front end package (bonnet, bumper, guards, headlights, mirrors) covers the areas that get hit 90% of the time and is the most popular choice.' },
   { q: 'How much does PPF for a new car cost in Brisbane?', a: 'PPF pricing for new cars depends on coverage and vehicle size. Contact us for a quote.' },
   { q: 'Will PPF affect how my new car looks?', a: 'Properly installed SunTek Ultra PPF is virtually invisible. Gloss PPF on a gloss paint car adds subtle depth without changing colour or sheen. Matte PPF converts gloss paint to a satin finish — a popular choice for customers wanting a factory matte look. We\'ll walk you through options before we start.' },
@@ -53,7 +53,7 @@ export default function PPFNewCarPage() {
   return (
     <>
       <PageMeta
-        title="PPF for New Cars Brisbane | Protect From Day One | NextLvl Protection"
+        title="PPF for New Cars Brisbane | Protect From Day One | Next LVL Protection"
         description="Paint protection film for new cars in Brisbane. Protect your new car from rock chips and UV before they cause damage. SunTek Authorised installer."
         canonical="https://www.nextlvlprotection.com.au/ppf-new-car-brisbane"
       />
@@ -61,7 +61,7 @@ export default function PPFNewCarPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF for New Cars Brisbane",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "New car paint protection film in Brisbane. SunTek Authorised PPF installer in Acacia Ridge — apply within 30 days of delivery.",
       })}} />

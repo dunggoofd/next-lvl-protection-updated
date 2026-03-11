@@ -31,13 +31,13 @@ const suburbs = [
 const benefits = [
   { icon: MapPin, title: 'Acacia Ridge — South Brisbane', desc: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Easily accessible from the M3 Logan Motorway and Gateway Motorway interchange. On-site parking directly in front of the studio.' },
   { icon: Clock, title: 'Booking Available This Week', desc: 'Most installs are completed within 1–3 business days of enquiry. Contact us with your vehicle and coverage preference for a same-week appointment.' },
-  { icon: Shield, title: 'SunTek Authorised in Brisbane', desc: 'NextLvl Protection is a SunTek Authorised Application Centre — one of a limited number of certified PPF installers in Brisbane. The manufacturer warranty is valid only through authorised installers.' },
+  { icon: Shield, title: 'SunTek Authorised in Brisbane', desc: 'Next LVL Protection is a SunTek Authorised Application Centre — one of a limited number of certified PPF installers in Brisbane. The manufacturer warranty is valid only through authorised installers.' },
   { icon: Star, title: 'Rated 4.9 on Google', desc: 'Over 80 Google reviews from Brisbane customers across PPF, ceramic coating, and window tinting. Every review is unfiltered and publicly visible on our Google Business profile.' },
 ];
 
 const faqs = [
-  { q: 'Where is NextLvl Protection located?', a: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We are in the industrial precinct of Acacia Ridge, south of Brisbane CBD. The studio is a short drive from the Logan Motorway interchange and is accessible from all south Brisbane suburbs.' },
-  { q: 'Is NextLvl Protection the closest PPF installer to me?', a: 'We are one of the closest SunTek Authorised PPF installers in south Brisbane. If you are in Sunnybank, Eight Mile Plains, Calamvale, Runcorn, Algester, Sunnybank Hills, Forest Lake, Macgregor, Moorooka, Salisbury, or Coopers Plains, you are within 15 minutes of our studio.' },
+  { q: 'Where is Next LVL Protection located?', a: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We are in the industrial precinct of Acacia Ridge, south of Brisbane CBD. The studio is a short drive from the Logan Motorway interchange and is accessible from all south Brisbane suburbs.' },
+  { q: 'Is Next LVL Protection the closest PPF installer to me?', a: 'We are one of the closest SunTek Authorised PPF installers in south Brisbane. If you are in Sunnybank, Eight Mile Plains, Calamvale, Runcorn, Algester, Sunnybank Hills, Forest Lake, Macgregor, Moorooka, Salisbury, or Coopers Plains, you are within 15 minutes of our studio.' },
   { q: 'Do you offer mobile PPF installation?', a: 'No. PPF installation requires a controlled, climate-managed environment to prevent contamination under the film during application. Mobile installations in open environments are not a valid delivery method for quality PPF. All work is performed at our Acacia Ridge studio.' },
   { q: 'How long does a PPF install take?', a: 'Impact Shield installs (bumper, leading edge, guards) are typically completed in half a day. Front End Packages take a full day. Track Packages and larger installs are typically 1.5–2 days. Full wraps are quoted per vehicle — contact us for a specific time estimate.' },
   { q: 'Can I drop my car off and pick it up the same day?', a: 'For smaller installs (Impact Shield and below), same-day drop-off and pick-up is often possible. For Front End Package and above, we recommend a next-morning pick-up to allow proper post-install settling time. This will be confirmed at booking.' },
@@ -47,7 +47,7 @@ const faqs = [
 
 const reviews = [
   { name: 'Nathan V.', suburb: 'Sunnybank', service: 'PPF — Front End Package', text: '7 minutes from home. The proximity made me book the initial consultation with no commitment. Ended up doing the full front end. Easy to get to and the studio is purpose-built for this work.' },
-  { name: 'Laura K.', suburb: 'Runcorn', service: 'PPF — Impact Shield', text: 'Couldn\'t find a quality PPF installer close to the south side for a while. NextLvl is the answer. 10 minutes from Runcorn, SunTek authorised, and the install is flawless.' },
+  { name: 'Laura K.', suburb: 'Runcorn', service: 'PPF — Impact Shield', text: 'Couldn\'t find a quality PPF installer close to the south side for a while. Next LVL is the answer. 10 minutes from Runcorn, SunTek authorised, and the install is flawless.' },
   { name: 'Mike O.', suburb: 'Algester', service: 'PPF — Track Package', text: 'Booked based on proximity — stayed because of quality. The team are straight-up about pricing and what each package covers. No pressure, no padding. Track package on a GR Yaris.' },
 ];
 
@@ -70,15 +70,15 @@ export default function PPFNearMePage() {
   return (
     <>
       <PageMeta
-        title="PPF Near Me Brisbane | Paint Protection Film | NextLvl Protection"
-        description="Looking for PPF near you in Brisbane? NextLvl Protection is at Acacia Ridge, servicing all Brisbane southside suburbs. SunTek Authorised."
+        title="PPF Near Me Brisbane | Paint Protection Film | Next LVL Protection"
+        description="Looking for PPF near you in Brisbane? Next LVL Protection is at Acacia Ridge, servicing all Brisbane southside suburbs. SunTek Authorised."
         canonical="https://www.nextlvlprotection.com.au/ppf-near-me-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "PPF Near Me Brisbane — NextLvl Protection Acacia Ridge",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "name": "PPF Near Me Brisbane — Next LVL Protection Acacia Ridge",
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": ["Brisbane", "Acacia Ridge", "Sunnybank", "Eight Mile Plains", "Calamvale", "Runcorn", "Algester", "Forest Lake"],
         "description": "Paint Protection Film installer in Acacia Ridge, south Brisbane. SunTek Authorised. Serving Sunnybank, Eight Mile Plains, Runcorn, Calamvale, and all south Brisbane suburbs.",
       })}} />
@@ -120,7 +120,7 @@ export default function PPFNearMePage() {
             <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
               <MapPin size={20} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 2 }} />
               <div>
-                <p style={{ fontWeight: 700, marginBottom: 4 }}>NextLvl Protection</p>
+                <p style={{ fontWeight: 700, marginBottom: 4 }}>Next LVL Protection</p>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: 13 }}>Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110</p>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: 12, marginTop: 4 }}>0468 810 666 · Open Mon–Sat by appointment</p>
               </div>
@@ -129,11 +129,11 @@ export default function PPFNearMePage() {
         </div>
       </section>
 
-      {/* WHY NEXTLVL */}
+      {/* WHY NEXT LVL */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>03</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Why NextLvl Protection</h2>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Why Next LVL Protection</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
             {benefits.map((b, i) => (
               <div key={i} className="card" style={{ padding: 28 }}>

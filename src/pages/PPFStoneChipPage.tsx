@@ -53,7 +53,7 @@ export default function PPFStoneChipPage() {
   return (
     <>
       <PageMeta
-        title="Stone Chip Protection Brisbane | PPF | NextLvl Protection"
+        title="Stone Chip Protection Brisbane | PPF | Next LVL Protection"
         description="Paint protection film against stone chips and road debris in Brisbane. SunTek Authorised PPF installer. Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ppf-stone-chip-protection-brisbane"
       />
@@ -61,7 +61,7 @@ export default function PPFStoneChipPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Stone Chip Protection Brisbane — PPF",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Stop stone chips with paint protection film in Brisbane. SunTek Authorised PPF installer in Acacia Ridge.",
       })}} />

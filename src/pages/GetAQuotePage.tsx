@@ -5,19 +5,19 @@ export default function GetAQuotePage() {
   return (
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh', paddingTop: 100, paddingBottom: 80 }}>
       <PageMeta
-        title="Get a Quote — NextLvl Protection Brisbane"
-        description="Request a quote for PPF, ceramic coating or window tinting in Brisbane. NextLvl Protection, Acacia Ridge. Usually replied within one business day."
+        title="Get a Quote — Next LVL Protection Brisbane"
+        description="Request a quote for PPF, ceramic coating or window tinting in Brisbane. Next LVL Protection, Acacia Ridge. Usually replied within one business day."
         canonical="https://www.nextlvlprotection.com.au/get-a-quote"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Get a Quote — NextLvl Protection",
+        "name": "Get a Quote — Next LVL Protection",
         "url": "https://www.nextlvlprotection.com.au/get-a-quote",
         "description": "Request a quote for paint protection film, ceramic coating or window tinting in Brisbane.",
       })}} />
       <section style={{ padding: '40px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>NextLvl Protection — Brisbane</p>
+        <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>Next LVL Protection — Brisbane</p>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 20 }}>Get a Quote</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, maxWidth: 520, margin: '0 auto 0' }}>
           Tell us about your vehicle or property and we'll come back to you with a detailed quote. Usually within one business day.

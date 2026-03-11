@@ -19,7 +19,7 @@ const benefits = [
 ];
 
 const faqs = [
-  { q: 'Where is the NextLvl Protection studio located?', a: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We are in the southern industrial precinct of Brisbane — easy access from the M3 Pacific Motorway, Logan Motorway, and Ipswich Motorway. 15 minutes from the Brisbane CBD. GPS coordinates and exact access instructions are provided with booking confirmation.' },
+  { q: 'Where is the Next LVL Protection studio located?', a: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We are in the southern industrial precinct of Brisbane — easy access from the M3 Pacific Motorway, Logan Motorway, and Ipswich Motorway. 15 minutes from the Brisbane CBD. GPS coordinates and exact access instructions are provided with booking confirmation.' },
   { q: 'How far is Acacia Ridge from the Brisbane CBD?', a: 'Approximately 12–15 km south of the Brisbane CBD. Travel time is 15–20 minutes via the M3 in normal traffic. The location is directly accessible from South Brisbane, Woolloongabba, and Eight Mile Plains without requiring CBD travel.' },
   { q: 'Do you service the North Brisbane suburbs?', a: 'Yes — clients from Chermside, Stafford, Nundah, Windsor, Newmarket, and the northern suburbs regularly book with us. The freeway corridor makes travel time manageable. We do not offer mobile ceramic application as studio conditions are required for correct application.' },
   { q: 'Is there a ceramic coating studio closer to me?', a: 'There are other applicators operating in Brisbane. We would encourage you to ask any applicator about: the specific ceramic product used, whether it carries a manufacturer warranty, what preparation steps are included, and whether the application environment is climate-controlled. These are the baseline standards for professional ceramic. Proximity is less relevant than application quality and warranty backing.' },
@@ -52,14 +52,14 @@ export default function CeramicNearMePage() {
   return (
     <>
       <PageMeta
-        title="Ceramic Coating Near Me Brisbane | NextLvl Protection Acacia Ridge"
-        description="Looking for ceramic coating near you in Brisbane? NextLvl Protection is in Acacia Ridge, serving all southside Brisbane suburbs."
+        title="Ceramic Coating Near Me Brisbane | Next LVL Protection Acacia Ridge"
+        description="Looking for ceramic coating near you in Brisbane? Next LVL Protection is in Acacia Ridge, serving all southside Brisbane suburbs."
         canonical="https://www.nextlvlprotection.com.au/ceramic-coating-near-me-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "NextLvl Protection — Ceramic Coating Brisbane",
+        "name": "Next LVL Protection — Ceramic Coating Brisbane",
         "telephone": "0468810666",
         "url": "https://nextlvlprotection.com.au",
         "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" },

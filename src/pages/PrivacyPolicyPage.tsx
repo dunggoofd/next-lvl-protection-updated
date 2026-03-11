@@ -4,20 +4,20 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <PageMeta
-        title="Privacy Policy — NextLvl Protection Brisbane"
-        description="Privacy Policy for NextLvl Protection Pty Ltd. How we collect, use and protect your personal information."
+        title="Privacy Policy — Next LVL Protection Brisbane"
+        description="Privacy Policy for Next LVL Protection Pty Ltd. How we collect, use and protect your personal information."
         canonical="https://www.nextlvlprotection.com.au/privacy-policy"
       />
       <section style={{ minHeight: '100dvh', paddingTop: 120, paddingBottom: 80, padding: '120px var(--section-padding-x) 80px' }}>
         <div style={{ maxWidth: 780, margin: '0 auto' }}>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Legal</p>
           <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', marginBottom: 8 }}>Privacy Policy</h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: 13, marginBottom: 48 }}>NextLvl Protection Pty Ltd — Last updated: January 2025</p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: 13, marginBottom: 48 }}>Next LVL Protection Pty Ltd — Last updated: January 2025</p>
 
           {[
             {
               heading: '1. Who We Are',
-              body: 'NextLvl Protection Pty Ltd (ABN pending) operates from Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We provide paint protection film, ceramic coating, and window tinting services in Brisbane. This policy explains how we handle your personal information when you interact with our website or contact us.',
+              body: 'Next LVL Protection Pty Ltd (ABN pending) operates from Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. We provide paint protection film, ceramic coating, and window tinting services in Brisbane. This policy explains how we handle your personal information when you interact with our website or contact us.',
             },
             {
               heading: '2. Information We Collect',

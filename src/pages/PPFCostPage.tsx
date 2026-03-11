@@ -12,15 +12,15 @@ import PageMeta from '../components/PageMeta';
 const faqs = [
   { q: 'How much does PPF cost in Brisbane?', a: 'Pricing depends on coverage zone and vehicle size. Contact us for a personalised quote.' },
   { q: 'Why does PPF cost more than a basic paint protection product?', a: 'PPF is a physical urethane film cut and applied panel by panel. It requires specialist training, a controlled environment, and precision tooling. Generic "paint protection" products from dealerships or car washes are wax or sealant coatings — they cost less because they provide no physical chip protection. The comparison is not valid: one stops chips, the other does not.' },
-  { q: 'What is included in the price at NextLvl Protection?', a: 'Every PPF quote includes: full decontamination wash, clay bar treatment, panel inspection, film application with edge tucks on all panels, post-installation QC under workshop lighting, SunTek warranty documentation, and a written aftercare guide. There are no hidden fees. Paint correction, if required, is quoted separately and advised upfront before any work begins.' },
+  { q: 'What is included in the price at Next LVL Protection?', a: 'Every PPF quote includes: full decontamination wash, clay bar treatment, panel inspection, film application with edge tucks on all panels, post-installation QC under workshop lighting, SunTek warranty documentation, and a written aftercare guide. There are no hidden fees. Paint correction, if required, is quoted separately and advised upfront before any work begins.' },
   { q: 'Is a cheaper PPF installer worth considering?', a: 'The film and the installation are inseparable. Cheaper installers typically use lower-grade film (not SunTek, XPEL, or equivalent tier-one brands), skip edge tucking (leaving exposed edges that lift), and install in uncontrolled environments where contamination under the film is common. These failures are not covered by any warranty. The cost of removal and reinstallation on a failed job typically exceeds the original saving.' },
   { q: 'Can I get a partial PPF install to reduce cost?', a: 'Yes — partial installs are the most common entry point. An Impact Shield kit protects the two highest-chip-risk zones on any car — the front bumper and bonnet leading edge. You can always add panels later. The critical thing is that what is installed is done correctly with quality film the first time.' },
   { q: 'Does PPF add value at resale that offsets the cost?', a: 'It prevents value loss rather than adding value above market. A PPF-protected car at trade-in arrives with factory paint condition — no chip negotiation, no paint correction cost. Dealer discounts for reconditioning on unprotected vehicles can be significant. A front end package applied at delivery is cost-neutral over a typical ownership period in realistic scenarios.' },
-  { q: 'How do I get an accurate PPF quote in Brisbane?', a: 'Contact NextLvl Protection with your vehicle make, model, year, and colour — and the coverage you\'re interested in. We\'ll provide a specific quote within 2 business hours. For complex vehicles or full wraps, a brief inspection at our Acacia Ridge studio may be required to confirm pricing.' },
+  { q: 'How do I get an accurate PPF quote in Brisbane?', a: 'Contact Next LVL Protection with your vehicle make, model, year, and colour — and the coverage you\'re interested in. We\'ll provide a specific quote within 2 business hours. For complex vehicles or full wraps, a brief inspection at our Acacia Ridge studio may be required to confirm pricing.' },
 ];
 
 const reviews = [
-  { name: 'Craig S.', suburb: 'Eight Mile Plains', service: 'PPF — Front End Package', text: 'Got three quotes. NextLvl weren\'t the cheapest. Went with them because they used SunTek and could explain exactly what the cheaper options were skipping. 18 months on — zero issues.' },
+  { name: 'Craig S.', suburb: 'Eight Mile Plains', service: 'PPF — Front End Package', text: 'Got three quotes. Next LVL weren\'t the cheapest. Went with them because they used SunTek and could explain exactly what the cheaper options were skipping. 18 months on — zero issues.' },
   { name: 'Michelle T.', suburb: 'Sunnybank Hills', service: 'PPF — Impact Shield', text: 'Started with the impact shield to test the quality before committing to more. The film quality and install standard are excellent. Booked the full front end three months later.' },
   { name: 'Dom L.', suburb: 'Calamvale', service: 'PPF — Track Package', text: 'Track package on a new GR86. The pricing was fair and completely transparent. No surprises at pickup. The car looks and drives better knowing the front end is protected.' },
 ];
@@ -44,7 +44,7 @@ export default function PPFCostPage() {
   return (
     <>
       <PageMeta
-        title="PPF Cost Brisbane | Paint Protection Film Pricing | NextLvl Protection"
+        title="PPF Cost Brisbane | Paint Protection Film Pricing | Next LVL Protection"
         description="Paint protection film pricing in Brisbane. Impact Shield, Front End, Track Package, and Full Wrap options. SunTek Authorised installer."
         canonical="https://www.nextlvlprotection.com.au/ppf-cost-brisbane"
       />
@@ -52,7 +52,7 @@ export default function PPFCostPage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PPF Cost Brisbane — Paint Protection Film Pricing",
-        "provider": { "@type": "LocalBusiness", "name": "NextLvl Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
+        "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Transparent PPF pricing in Brisbane. SunTek Authorised installer in Acacia Ridge. No hidden fees.",
       })}} />
@@ -81,7 +81,7 @@ export default function PPFCostPage() {
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Pricing</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What PPF Costs at NextLvl Protection</h2>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What PPF Costs at Next LVL Protection</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
             {[
               { package: 'Impact Shield', coverage: 'Bonnet leading edge (30cm) + front bumper + front guards', price: 'Contact us for a quote', warranty: '5-year SunTek', note: 'Entry point — covers the highest-chip-frequency zones' },
