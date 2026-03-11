@@ -110,6 +110,7 @@ export default function HomePage() {
       {/* HERO */}
       <section
         ref={heroRef}
+        className="home-hero"
         style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}
         aria-label="Hero — Paint &amp; Glass Protection Brisbane"
       >

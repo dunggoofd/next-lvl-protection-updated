@@ -341,8 +341,15 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
    RESPONSIVE — MOBILE OVERRIDES
    ============================================ */
 
-/* PackageVisualizer grid */
 @media (max-width: 768px) {
+  .home-hero {
+    justify-content: flex-start !important;
+    padding-top: 90px !important;
+  }
+}
+
+/* PackageVisualizer grid */
+@media (max-width: 900px) {
   .pkg-grid { grid-template-columns: 1fr !important; }
 }
 
@@ -357,7 +364,7 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
 
   /* Hero section padding */
   .hero-section {
-    padding: 0 5vw 8vh !important;
+    padding: 80px 5vw 8vh !important;
   }
 
   .section {
