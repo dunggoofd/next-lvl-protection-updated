@@ -1,14 +1,5 @@
-import { useState, useRef } from 'react';
-import { Check, CheckCircle, Loader2 } from 'lucide-react';
-import { gsap } from 'gsap';
-
-const SERVICES = [
-  'Paint Protection Film (PPF)',
-  'Ceramic Coating',
-  'Automotive Window Tinting',
-  'Residential Window Tinting',
-  'Commercial Window Tinting',
-];
+import { useState } from 'react';
+import { CheckCircle, Loader2 } from 'lucide-react';
 
 interface QuoteFormProps {
   defaultService?: string;
@@ -18,53 +9,20 @@ function FieldError({ msg }: { msg: string }) {
   return <p style={{ color: '#c0392b', fontSize: 12, marginTop: 4 }}>{msg}</p>;
 }
 
-export default function QuoteForm({ defaultService }: QuoteFormProps) {
-  const [step, setStep] = useState(1);
-  const [service, setService] = useState(defaultService || '');
+export default function QuoteForm({ defaultService: _defaultService }: QuoteFormProps) {
+  void _defaultService;
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const formRef = useRef<HTMLDivElement>(null);
-
-  const [vehicleMake, setVehicleMake] = useState('');
-  const [vehicleModel, setVehicleModel] = useState('');
-  const [vehicleYear, setVehicleYear] = useState('');
-  const [ppfPackage, setPpfPackage] = useState('');
-  const [ceramicPackage, setCeramicPackage] = useState('');
-  const [paintCondition, setPaintCondition] = useState('');
-  const [tintGoal, setTintGoal] = useState('');
-  const [tintPackage, setTintPackage] = useState('');
-  const [propType, setPropType] = useState('');
-  const [windowCount, setWindowCount] = useState('');
-  const [resGoal, setResGoal] = useState('');
-  const [sqm, setSqm] = useState('');
-  const [commGoal, setCommGoal] = useState('');
 
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
-  const [suburb, setSuburb] = useState('');
-  const [date, setDate] = useState('');
+  const [carModel, setCarModel] = useState('');
+  const [inquiry, setInquiry] = useState('');
   const [referral, setReferral] = useState('');
 
-  const animateStep = (direction: 'forward' | 'back', next: () => void) => {
-    const outX = direction === 'forward' ? -40 : 40;
-    const inX = direction === 'forward' ? 40 : -40;
-    gsap.fromTo(formRef.current, { x: 0, opacity: 1 }, {
-      x: outX, opacity: 0, duration: 0.2, ease: 'power2.in',
-      onComplete: () => {
-        next();
-        gsap.fromTo(formRef.current, { x: inX, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: 'power3.out' });
-      },
-    });
-  };
-
-  const validateStep1 = (): Record<string, string> => {
-    if (!service) return { service: 'Please select a service.' };
-    return {};
-  };
-
-  const validateStep3 = () => {
+  const validate = () => {
     const errs: Record<string, string> = {};
     if (!name.trim()) errs.name = 'Name is required.';
     if (!mobile.trim()) errs.mobile = 'Mobile is required.';
@@ -74,32 +32,17 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
     return errs;
   };
 
-  const handleNext = () => {
-    if (step === 1) {
-      const errs = validateStep1();
-      if (Object.keys(errs).length) { setErrors(errs); return; }
-    }
-    setErrors({});
-    if (step < 3) animateStep('forward', () => setStep(s => s + 1));
-  };
-
-  const handleBack = () => {
-    setErrors({});
-    if (step > 1) animateStep('back', () => setStep(s => s - 1));
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const errs = validateStep3();
+    const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
+    setErrors({});
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
     }, 1400);
   };
-
-  const stepLabel = ['What are you after?', 'Tell us more', 'How do we reach you?'];
 
   if (submitted) {
     return (
@@ -118,216 +61,52 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
 
   return (
     <form onSubmit={handleSubmit} role="form" aria-label="Get a Quote" noValidate>
-      {/* Progress steps */}
-      <div style={{ display: 'flex', gap: 12, marginBottom: 32, alignItems: 'center', flexWrap: 'wrap' }}>
-        {[1, 2, 3].map(s => (
-          <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{
-              width: 28, height: 28, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-              background: s <= step ? 'var(--color-accent)' : 'var(--color-surface-raised)',
-              color: s <= step ? 'var(--color-bg-primary)' : 'var(--color-text-muted)',
-              fontSize: 12, fontWeight: 700, flexShrink: 0,
-              border: s > step ? '1px solid var(--color-border)' : 'none',
-              transition: 'all 250ms ease',
-            }}>
-              {s < step ? <Check size={14} /> : s}
-            </div>
-            {s < 3 && <div style={{ width: 24, height: 1, background: s < step ? 'var(--color-accent)' : 'var(--color-border)', transition: 'background 250ms ease' }} />}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+        <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div>
+            <label htmlFor="fullName">Name *</label>
+            <input id="fullName" value={name} onChange={e => setName(e.target.value)} aria-required="true" aria-invalid={!!errors.name} placeholder="Your name" />
+            {errors.name && <FieldError msg={errors.name} />}
           </div>
-        ))}
-        <span style={{ fontSize: 12, color: 'var(--color-text-muted)', marginLeft: 8, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-          {stepLabel[step - 1]}
-        </span>
-      </div>
-
-      <div ref={formRef}>
-        {/* Step 1 */}
-        {step === 1 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            <div>
-              <label htmlFor="service">Service Interested In</label>
-              <select id="service" value={service} onChange={e => { setService(e.target.value); setErrors({}); }} aria-required="true" aria-invalid={!!errors.service}>
-                <option value="">Select a service…</option>
-                {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
-              </select>
-              {errors.service && <FieldError msg={errors.service} />}
-            </div>
-
-            {(service === 'Paint Protection Film (PPF)' || service === 'Ceramic Coating' || service === 'Automotive Window Tinting') && (
-              <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
-                <div><label htmlFor="make">Vehicle Make</label><input id="make" value={vehicleMake} onChange={e => setVehicleMake(e.target.value)} placeholder="e.g. Toyota" /></div>
-                <div><label htmlFor="model">Model</label><input id="model" value={vehicleModel} onChange={e => setVehicleModel(e.target.value)} placeholder="e.g. Camry" /></div>
-                <div><label htmlFor="year">Year</label><input id="year" value={vehicleYear} onChange={e => setVehicleYear(e.target.value)} placeholder="e.g. 2023" /></div>
-              </div>
-            )}
-
-            {service === 'Residential Window Tinting' && (
-              <div><label htmlFor="propType">Property Type</label>
-                <select id="propType" value={propType} onChange={e => setPropType(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Home', 'Apartment'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            )}
-
-            {service === 'Commercial Window Tinting' && (
-              <div><label htmlFor="commPropType">Property Type</label>
-                <select id="commPropType" value={propType} onChange={e => setPropType(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Office', 'Shopfront', 'Warehouse', 'Other'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            )}
+          <div>
+            <label htmlFor="mobile">Mobile *</label>
+            <input id="mobile" type="tel" value={mobile} onChange={e => setMobile(e.target.value)} aria-required="true" aria-invalid={!!errors.mobile} placeholder="04XX XXX XXX" />
+            {errors.mobile && <FieldError msg={errors.mobile} />}
           </div>
-        )}
-
-        {/* Step 2 */}
-        {step === 2 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            {service === 'Paint Protection Film (PPF)' && (
-              <div>
-                <label htmlFor="ppfPkg">Package Preference</label>
-                <select id="ppfPkg" value={ppfPackage} onChange={e => setPpfPackage(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Impact Shield', 'Front End Package', 'Track Package', 'Full Wrap', 'Not sure'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            )}
-            {service === 'Ceramic Coating' && (<>
-              <div>
-                <label htmlFor="ceramicPkg">Package Preference</label>
-                <select id="ceramicPkg" value={ceramicPackage} onChange={e => setCeramicPackage(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Essential', 'Protection', 'Elite', 'Signature', 'Not sure'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="paintCond">Paint Condition</label>
-                <select id="paintCond" value={paintCondition} onChange={e => setPaintCondition(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Showroom', 'Good', 'Minor swirls', 'Needs correction'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            </>)}
-            {service === 'Automotive Window Tinting' && (<>
-              <div>
-                <label htmlFor="tintGoal">Tint Goal</label>
-                <select id="tintGoal" value={tintGoal} onChange={e => setTintGoal(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Privacy', 'Heat rejection', 'UV protection', 'Appearance', 'All'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="tintPkg">Package Preference</label>
-                <select id="tintPkg" value={tintPackage} onChange={e => setTintPackage(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Rear Privacy', 'Full Car', 'Full Car + Windscreen', 'Not sure'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            </>)}
-            {service === 'Residential Window Tinting' && (<>
-              <div>
-                <label htmlFor="winCount">Number of Windows</label>
-                <select id="winCount" value={windowCount} onChange={e => setWindowCount(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['1–5', '6–10', '10–20', '20+'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="resGoal">Primary Goal</label>
-                <select id="resGoal" value={resGoal} onChange={e => setResGoal(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Heat reduction', 'Privacy', 'UV protection', 'Glare reduction', 'All'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            </>)}
-            {service === 'Commercial Window Tinting' && (<>
-              <div>
-                <label htmlFor="sqm">Approximate Glass Area</label>
-                <select id="sqm" value={sqm} onChange={e => setSqm(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Under 20sqm', '20–50sqm', '50–100sqm', '100sqm+'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="commGoal">Primary Goal</label>
-                <select id="commGoal" value={commGoal} onChange={e => setCommGoal(e.target.value)}>
-                  <option value="">Select…</option>
-                  {['Heat', 'Privacy', 'UV', 'Security', 'Branding', 'All'].map(o => <option key={o}>{o}</option>)}
-                </select>
-              </div>
-            </>)}
-            {!service && <p style={{ color: 'var(--color-text-muted)', fontSize: 14 }}>Please select a service in step 1.</p>}
-          </div>
-        )}
-
-        {/* Step 3 */}
-        {step === 3 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-              <div>
-                <label htmlFor="fullName">Full Name *</label>
-                <input id="fullName" value={name} onChange={e => setName(e.target.value)} aria-required="true" aria-invalid={!!errors.name} placeholder="Your full name" />
-                {errors.name && <FieldError msg={errors.name} />}
-              </div>
-              <div>
-                <label htmlFor="mobile">Mobile *</label>
-                <input id="mobile" type="tel" value={mobile} onChange={e => setMobile(e.target.value)} aria-required="true" aria-invalid={!!errors.mobile} placeholder="04XX XXX XXX" />
-                {errors.mobile && <FieldError msg={errors.mobile} />}
-              </div>
-            </div>
-            <div>
-              <label htmlFor="email">Email *</label>
-              <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} aria-required="true" aria-invalid={!!errors.email} placeholder="your@email.com" />
-              {errors.email && <FieldError msg={errors.email} />}
-            </div>
-            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-              <div>
-                <label htmlFor="suburb">Suburb</label>
-                <input id="suburb" value={suburb} onChange={e => setSuburb(e.target.value)} placeholder="Your suburb" />
-              </div>
-              <div>
-                <label htmlFor="date">Preferred Date (optional)</label>
-                <input id="date" type="date" value={date} onChange={e => setDate(e.target.value)} />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="referral">How did you hear about us? (optional)</label>
-              <select id="referral" value={referral} onChange={e => setReferral(e.target.value)}>
-                <option value="">Select…</option>
-                {['Google', 'Instagram', 'Referral', 'Other'].map(o => <option key={o}>{o}</option>)}
-              </select>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Navigation */}
-      <div style={{ display: 'flex', gap: 12, marginTop: 28, justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          {step > 1 && (
-            <button type="button" className="btn-ghost" onClick={handleBack} style={{ padding: '12px 24px' }}>Back</button>
-          )}
         </div>
         <div>
-          {step < 3 ? (
-            <button type="button" className="btn-primary" onClick={handleNext}>
-              <span className="btn-slide" />
-              <span>Continue</span>
-            </button>
+          <label htmlFor="email">Email *</label>
+          <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} aria-required="true" aria-invalid={!!errors.email} placeholder="your@email.com" />
+          {errors.email && <FieldError msg={errors.email} />}
+        </div>
+        <div>
+          <label htmlFor="carModel">Car Model</label>
+          <input id="carModel" value={carModel} onChange={e => setCarModel(e.target.value)} placeholder="e.g. 2024 Toyota Camry" />
+        </div>
+        <div>
+          <label htmlFor="inquiry">Inquiry</label>
+          <textarea id="inquiry" rows={4} value={inquiry} onChange={e => setInquiry(e.target.value)} placeholder="Tell us what you're after — service, coverage, any questions…" style={{ resize: 'vertical' }} />
+        </div>
+        <div>
+          <label htmlFor="referral">How did you hear about us?</label>
+          <select id="referral" value={referral} onChange={e => setReferral(e.target.value)}>
+            <option value="">Select…</option>
+            {['Google', 'Instagram', 'Facebook', 'Referral', 'Other'].map(o => <option key={o}>{o}</option>)}
+          </select>
+        </div>
+      </div>
+
+      <div style={{ marginTop: 28 }}>
+        <button type="submit" className="btn-primary" disabled={loading} style={{ minWidth: 160, justifyContent: 'center' }}>
+          <span className="btn-slide" />
+          {loading ? (
+            <span style={{ display: 'flex', alignItems: 'center', gap: 8, position: 'relative', zIndex: 1 }}>
+              <Loader2 size={16} style={{ animation: 'spin 1s linear infinite' }} /> Processing…
+            </span>
           ) : (
-            <button type="submit" className="btn-primary" disabled={loading} style={{ minWidth: 160, justifyContent: 'center' }}>
-              <span className="btn-slide" />
-              {loading ? (
-                <span style={{ display: 'flex', alignItems: 'center', gap: 8, position: 'relative', zIndex: 1 }}>
-                  <Loader2 size={16} style={{ animation: 'spin 1s linear infinite' }} /> Processing…
-                </span>
-              ) : (
-                <span>Get My Quote</span>
-              )}
-            </button>
+            <span>Get My Quote</span>
           )}
-        </div>
+        </button>
       </div>
     </form>
   );

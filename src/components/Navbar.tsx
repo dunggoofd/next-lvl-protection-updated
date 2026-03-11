@@ -97,10 +97,10 @@ export default function Navbar() {
           display: 'flex',
           alignItems: 'center',
           gap: 32,
-          background: scrolled ? 'rgba(255, 255, 255, 0.80)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
-          border: scrolled ? '1px solid var(--color-border)' : '1px solid transparent',
-          boxShadow: scrolled ? '0 8px 32px rgba(0, 0, 0, 0.08)' : 'none',
+          background: scrolled ? 'rgba(255, 255, 255, 0.80)' : 'rgba(0, 0, 0, 0.35)',
+          backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'blur(16px) saturate(150%)',
+          border: scrolled ? '1px solid var(--color-border)' : '1px solid rgba(255, 255, 255, 0.1)',
+          boxShadow: scrolled ? '0 8px 32px rgba(0, 0, 0, 0.08)' : '0 4px 24px rgba(0, 0, 0, 0.15)',
           transition: 'all 380ms cubic-bezier(0.25, 0.46, 0.45, 0.94)',
         }}
       >
@@ -111,12 +111,12 @@ export default function Navbar() {
             fontFamily: 'Bebas Neue, sans-serif',
             fontSize: '20px',
             letterSpacing: '0.05em',
-            color: 'var(--color-text-primary)',
+            color: scrolled ? 'var(--color-text-primary)' : '#fff',
             whiteSpace: 'nowrap',
           }}
           aria-label="Next LVL Protection — Home"
         >
-          NEXT LVL<span style={{ color: 'var(--color-accent)' }}> PROTECTION</span>
+          NEXT LVL<span style={{ color: scrolled ? 'var(--color-accent)' : 'rgba(255,255,255,0.7)' }}> PROTECTION</span>
         </Link>
 
         {/* Desktop Links */}
@@ -129,7 +129,7 @@ export default function Navbar() {
               style={{
                 background: 'transparent', border: 'none', cursor: 'pointer',
                 display: 'flex', alignItems: 'center', gap: 4,
-                color: 'var(--color-text-secondary)', fontSize: 14, fontFamily: 'var(--font-body)',
+                color: scrolled ? 'var(--color-text-secondary)' : 'rgba(255,255,255,0.8)', fontSize: 14, fontFamily: 'var(--font-body)',
                 fontWeight: 500, transition: 'color 180ms ease',
               }}
               aria-expanded={dropdownOpen}
@@ -173,7 +173,9 @@ export default function Navbar() {
               key={link.href}
               to={link.href}
               style={{
-                color: location.pathname === link.href ? 'var(--color-text-primary)' : 'var(--color-text-secondary)',
+                color: scrolled
+                  ? (location.pathname === link.href ? 'var(--color-text-primary)' : 'var(--color-text-secondary)')
+                  : (location.pathname === link.href ? '#fff' : 'rgba(255,255,255,0.8)'),
                 fontSize: 14, fontWeight: 500,
                 textDecoration: location.pathname === link.href ? 'underline' : 'none',
                 textUnderlineOffset: 4, transition: 'color 180ms ease',
@@ -195,7 +197,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileOpen}
-          style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--color-text-primary)', display: 'none' }}
+          style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: scrolled ? 'var(--color-text-primary)' : '#fff', display: 'none' }}
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>

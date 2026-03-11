@@ -1,12 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { Shield, Droplets, Eye, Building2, Car, ArrowRight } from 'lucide-react';
-import TrustBadges from '../components/TrustBadges';
+import { Shield, Droplets, Eye, Car, ArrowRight } from 'lucide-react';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
-import heroHome from '../assets/hero-home.jpg';
+import heroHome from '../assets/Hero-image 1.png';
+import logo3M from '../assets/3M.png';
+import logoNXTZEN from '../assets/NXTZEN.png';
+import logoSunTek from '../assets/suntek-automotive-window-film-seeklogo.png';
+import logoSolarGard from '../assets/solar-gard-seeklogo.png';
+import mustangPpf from '../assets/mustang-ppf1.png';
 
 const services = [
   {
@@ -15,13 +19,15 @@ const services = [
     sub: 'SunTek Authorised',
     desc: 'Self-healing urethane film that takes the hit so your paint doesn\'t. Invisible protection with a 10-year warranty.',
     href: '/ppf-brisbane',
+    img: mustangPpf,
   },
   {
     icon: Droplets,
     title: 'Ceramic Coating',
-    sub: 'Precision Application',
+    sub: 'NXTZEN Certified',
     desc: 'Hydrophobic nano-ceramic layer bonded to your paint. Water beads. Gloss deepens. UV can\'t touch it.',
     href: '/ceramic-coating-brisbane',
+    img: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&q=80',
   },
   {
     icon: Car,
@@ -29,20 +35,15 @@ const services = [
     sub: 'Solar Gard VTX PRO Certified',
     desc: 'Premium solar film engineered to reject heat and UV — not just darken glass. Queensland-legal VLT options.',
     href: '/automotive-window-tinting-brisbane',
+    img: 'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80',
   },
   {
     icon: Eye,
-    title: 'Residential Window Tinting',
+    title: 'Window Tinting',
     sub: '3M Authorised Installer',
-    desc: 'Block up to 78% of solar heat and 99% of UV. Brisbane summers are relentless — your windows shouldn\'t be.',
-    href: '/residential-window-tinting-brisbane',
-  },
-  {
-    icon: Building2,
-    title: 'Commercial Window Tinting',
-    sub: '3M Authorised Installer',
-    desc: 'Offices, shopfronts, medical clinics. Energy savings, glare control, privacy — site audit and project management included.',
-    href: '/commercial-window-tinting-brisbane',
+    desc: 'Residential and commercial. Heat rejection, UV blocking, privacy, and glare control — using 3M and Solar Gard film.',
+    href: '/automotive-window-tinting-brisbane',
+    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
 ];
 
@@ -90,7 +91,7 @@ export default function HomePage() {
     <>
       <PageMeta
         title="Next LVL Protection | PPF | Ceramic Coating | Window Tinting Brisbane"
-        description="Brisbane's certified PPF, ceramic coating and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0468 810 666."
+        description="Brisbane's certified PPF, ceramic coating and window tinting specialists. NXTZEN Certified, SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised. Based in Acacia Ridge. Call 0468 810 666."
         canonical="https://www.nextlvlprotection.com.au/"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -104,14 +105,14 @@ export default function HomePage() {
         "geo": { "@type": "GeoCoordinates", "latitude": -27.5667, "longitude": 153.0167 },
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30" }],
         "areaServed": "Brisbane",
-        "description": "Brisbane's certified paint protection film, ceramic coating, and window tinting specialists. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised Installer.",
+        "description": "Brisbane's certified paint protection film, ceramic coating, and window tinting specialists. NXTZEN Certified, SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised Installer.",
       })}} />
 
       {/* HERO */}
       <section
         ref={heroRef}
         className="home-hero"
-        style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}
+        style={{ position: 'relative', height: '85dvh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
         aria-label="Hero — Paint &amp; Glass Protection Brisbane"
       >
         {/* Background image */}
@@ -120,62 +121,79 @@ export default function HomePage() {
           style={{
             position: 'absolute', inset: '-20% 0 0 0', zIndex: 0,
             backgroundImage: `url(${heroHome})`,
-            backgroundSize: 'cover', backgroundPosition: 'center',
+            backgroundSize: 'cover', backgroundPosition: 'center 30%',
           }}
           aria-hidden="true"
         />
-        {/* Gradient overlay */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 25%, transparent 100%)' }} aria-hidden="true" />
-
-        {/* Sine wave decoration */}
+        {/* Gradient overlay — dark cinematic */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.7) 100%)' }} aria-hidden="true" />
 
         {/* Content */}
-        <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
+        <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2, maxWidth: 900, padding: '0 24px' }}>
           <h1 style={{ marginTop: 0, marginBottom: 0 }}>
-            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', letterSpacing: '-0.01em', lineHeight: 1 }}>
-              Paint &amp; Glass Protection — Brisbane
-            </span>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', letterSpacing: '-0.02em', lineHeight: 0.95, marginTop: 4 }}>
-              SunTek. Solar Gard. 3M.
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'clamp(48px, 8vw, 96px)', color: '#fff', letterSpacing: '-0.02em', lineHeight: 0.95 }}>
+              Next LVL{' '}<span style={{ color: '#C8CDD5' }}>Protection.</span>
             </span>
           </h1>
-          <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 540 }}>
-            Brisbane's certified film installation specialist. One studio, four disciplines — every install precision-first.
+
+          <p className="hero-anim" style={{ color: 'rgba(255,255,255,0.6)', fontSize: 'clamp(15px, 2vw, 18px)', fontWeight: 400, margin: 0, marginTop: 20, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+            PPF · Ceramic Coating · Window Tinting — Brisbane
           </p>
-          <div className="hero-anim" style={{ marginTop: 20 }}>
-            <TrustBadges />
-          </div>
-          <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 28, flexWrap: 'wrap' }}>
-            <Link to="/get-a-quote" className="btn-primary">
+
+          <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 40, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/get-a-quote" className="btn-primary" style={{ padding: '14px 32px', fontSize: 15 }}>
               <span className="btn-slide" />
-              <span>Get a Quote</span>
+              <span>Contact Us</span>
             </Link>
-            <Link to="/gallery" className="btn-ghost">View Our Work</Link>
+            <Link to="/gallery" className="btn-ghost" style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff', padding: '14px 32px', fontSize: 15 }}>View Our Work</Link>
           </div>
         </div>
       </section>
 
+      {/* BRAND BAR — flush below hero */}
+      <div className="brand-bar">
+        {[
+          { src: logoNXTZEN, alt: 'NXTZEN' },
+          { src: logo3M, alt: '3M' },
+          { src: logoSunTek, alt: 'SunTek' },
+          { src: logoSolarGard, alt: 'Solar Gard' },
+        ].map(logo => (
+          <img
+            key={logo.alt}
+            src={logo.src}
+            alt={logo.alt}
+            className="brand-bar-logo"
+          />
+        ))}
+      </div>
+
       {/* SERVICES GRID */}
-      <section ref={servicesRef} className="section services-wave-bg">
-        <div className="container">
+      <section ref={servicesRef} className="section services-wave-bg" style={{ position: 'relative', overflow: 'hidden' }}>
+
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div style={{ marginBottom: 48 }}>
-            <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>What We Do</p>
-            <h2 className="font-display" style={{ fontSize: 'var(--size-h1)' }}>
-              Five Services.<br /><span style={{ color: 'var(--color-accent)' }}>One Standard.</span>
+            <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.45)', marginBottom: 12 }}>What We Do</p>
+            <h2 className="font-display" style={{ fontSize: 'var(--size-h1)', color: '#FFFFFF' }}>
+              Five Services.<br /><span style={{ color: 'rgba(255,255,255,0.5)' }}>One Standard.</span>
             </h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
             {services.map(s => {
               const Icon = s.icon;
               return (
-                <Link to={s.href} key={s.href} className="card service-card" style={{ padding: '32px 28px', display: 'block', textDecoration: 'none' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 20 }}>
-                    <Icon size={20} color="var(--color-accent)" strokeWidth={1.5} />
-                    <ArrowRight size={16} color="var(--color-text-muted)" strokeWidth={1.5} />
+                <Link to={s.href} key={s.href} className="card service-card" style={{ display: 'block', textDecoration: 'none', overflow: 'hidden', position: 'relative', height: 320 }}>
+                  {/* Image layer — reveals from left on hover */}
+                  <div className="sc-img" style={{ backgroundImage: `url(${s.img})` }} />
+                  {/* Text content — slides right on hover */}
+                  <div className="sc-content">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 20 }}>
+                      <Icon size={20} color="rgba(255,255,255,0.7)" strokeWidth={1.5} />
+                      <ArrowRight size={16} color="rgba(255,255,255,0.3)" strokeWidth={1.5} className="sc-arrow" />
+                    </div>
+                    <p style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.4)', marginBottom: 6 }}>{s.sub}</p>
+                    <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(20px, 2.5vw, 28px)', letterSpacing: '0.02em', marginBottom: 12, color: '#FFFFFF' }}>{s.title}</h3>
+                    <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: 14, lineHeight: 1.65, marginBottom: 20 }}>{s.desc}</p>
                   </div>
-                  <p style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 6 }}>{s.sub}</p>
-                  <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(20px, 2.5vw, 28px)', letterSpacing: '0.02em', marginBottom: 12 }}>{s.title}</h3>
-                  <p style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.65, marginBottom: 20 }}>{s.desc}</p>
                 </Link>
               );
             })}
@@ -184,7 +202,7 @@ export default function HomePage() {
       </section>
 
       {/* DIFFERENTIATORS */}
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
             <div>
@@ -193,13 +211,13 @@ export default function HomePage() {
                 Certified Product.<br /><span style={{ color: 'var(--color-accent)' }}>Precision Install.</span>
               </h2>
               <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75, marginBottom: 32 }}>
-                Any installer can buy film off the shelf. SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised — these certifications mean we've been vetted by the brands that manufacture the best film on the market.
+                Any installer can buy film off the shelf. NXTZEN Certified, SunTek Authorised, Solar Gard VTX PRO Certified, 3M Authorised — these certifications mean we've been vetted by the brands that manufacture the best products on the market.
               </p>
               <Link to="/about" className="btn-ghost">About the Studio</Link>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[
-                { num: '01', title: 'Brand-certified, not generic', desc: 'SunTek, Solar Gard VTX PRO, 3M — not commodity film sourced from an unknown supplier.' },
+                { num: '01', title: 'Brand-certified, not generic', desc: 'NXTZEN, SunTek, Solar Gard VTX PRO, 3M — not commodity products from an unknown supplier.' },
                 { num: '02', title: 'Quality over volume', desc: 'Precision installs. Not a conveyor-belt shop. Every job receives full attention.' },
                 { num: '03', title: 'One studio, four disciplines', desc: 'PPF, ceramic coating, car tinting, residential and commercial — all under one roof.' },
               ].map(d => (

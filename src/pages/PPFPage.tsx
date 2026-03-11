@@ -296,7 +296,7 @@ export default function PPFPage() {
       </section>
 
       {/* PHILOSOPHY */}
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: 900 }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 'clamp(14px, 2vw, 18px)', marginBottom: 24 }}>
             Most PPF installers focus on: volume. More cars. Faster turnaround.

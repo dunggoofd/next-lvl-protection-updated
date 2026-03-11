@@ -7,6 +7,7 @@ import PageMeta from '../components/PageMeta';
 
 
 const certifications = [
+  { title: 'NXTZEN Certified Applicator', desc: 'Certified to apply the full NXTZEN professional ceramic range — NXTZEN Ceramic Professional, Graphene Coating, and Elite Coating — under manufacturer warranty terms.' },
   { title: 'SunTek Authorised Installer', desc: 'Authorised to install SunTek PPF and window film under manufacturer warranty terms.' },
   { title: 'Solar Gard Authorised Installer', desc: 'Authorised installer for Solar Gard automotive and commercial window films.' },
   { title: '3M Authorised Window Film Installer', desc: 'Authorised installer for the full 3M Window Film residential and commercial range.' },
@@ -14,12 +15,13 @@ const certifications = [
 
 const values = [
   { icon: Shield, title: 'No shortcuts on prep', desc: 'Prep is where most installers cut corners. We don\'t. Every surface is decontaminated, corrected where needed, and inspected before film or coating goes near it.' },
-  { icon: Star, title: 'Product quality is non-negotiable', desc: 'We only use SunTek, Solar Gard, and 3M — the three certified brands we know and trust. No grey-market film, no unbranded ceramic products.' },
-  { icon: Award, title: 'Backed by manufacturer warranties', desc: 'Every installation is covered by a manufacturer warranty — not just our word. SunTek, Solar Gard, and 3M all have formal warranty programs that we operate within.' },
+  { icon: Star, title: 'Product quality is non-negotiable', desc: 'We use NXTZEN (ceramic coatings), SunTek, Solar Gard, and 3M — certified brands we know and trust. No grey-market film, no unbranded ceramic products.' },
+  { icon: Award, title: 'Backed by manufacturer warranties', desc: 'Every installation is covered by a manufacturer warranty — not just our word. NXTZEN, SunTek, Solar Gard, and 3M all have formal warranty programs that we operate within.' },
 ];
 
 const team = [
-  { name: 'Loki', role: 'Founder & Lead Installer', note: 'SunTek Certified | Solar Gard Certified | 3M Authorised' },
+  { name: 'Loki', role: 'Founder & Lead Installer', note: 'NXTZEN Certified | SunTek Certified | Solar Gard Certified | 3M Authorised' },
+  { name: 'Lina Dai', role: 'General Manager', note: 'The engine behind every client interaction. Lina runs sales, scheduling, and studio operations — making sure every enquiry is handled with precision and every job is delivered on time.' },
 ];
 
 export default function AboutPage() {
@@ -38,7 +40,7 @@ export default function AboutPage() {
     <>
       <PageMeta
         title="About Next LVL Protection | Brisbane Film Installation Specialists"
-        description="Meet the team behind Next LVL Protection — Brisbane's certified PPF, ceramic coating and window tinting studio. SunTek, Solar Gard VTX PRO, 3M authorised."
+        description="Meet the team behind Next LVL Protection — Brisbane's certified PPF, ceramic coating and window tinting studio. NXTZEN, SunTek, Solar Gard VTX PRO, 3M authorised."
         canonical="https://www.nextlvlprotection.com.au/about"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -52,6 +54,7 @@ export default function AboutPage() {
         "geo": { "@type": "GeoCoordinates", "latitude": -27.5585, "longitude": 153.0197 },
         "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }],
         "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "NXTZEN Certified Applicator" },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "SunTek Authorised Installer" },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Solar Gard VTX PRO Authorised Installer" },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "3M Authorised Window Film Installer" }
@@ -77,7 +80,7 @@ export default function AboutPage() {
                 Next LVL Protection is a certified PPF, ceramic coating, and window film installation studio based at Acacia Ridge in Brisbane's south. We work on prestige and everyday vehicles, residential properties, and commercial buildings.
               </p>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
-                Our certifications are from SunTek, Solar Gard, and 3M — the manufacturers behind the products we install. That means manufacturer-backed warranties, not self-issued guarantees.
+                Our certifications are from NXTZEN, SunTek, Solar Gard, and 3M — the manufacturers behind the products we install. That means manufacturer-backed warranties, not self-issued guarantees.
               </p>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8 }}>
                 Every installation starts with prep. We don't coat or film over contamination, swirl marks, or compromised paint. It takes longer and costs more. That's how it should be done.
@@ -165,7 +168,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: 900 }}>
           <h2 className="font-display" style={{ fontSize: 'var(--size-hero)', lineHeight: 0.9 }}>Protection is<br /><span style={{ color: 'var(--color-accent)' }}>a craft.</span></h2>
         </div>

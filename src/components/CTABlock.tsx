@@ -8,7 +8,7 @@ interface CTABlockProps {
 export default function CTABlock({ service, defaultService }: CTABlockProps) {
   return (
     <section
-      className="section noise-overlay radial-glow"
+      className="section"
       style={{ background: 'var(--color-bg-primary)', position: 'relative', overflow: 'hidden' }}
     >
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>

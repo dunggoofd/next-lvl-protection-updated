@@ -232,7 +232,7 @@ export default function AutomotiveTintPage() {
         </div>
       </section>
 
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: 900 }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 'clamp(14px, 2vw, 18px)', marginBottom: 24 }}>Most tint shops use whatever film is cheapest that week.</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-hero)', lineHeight: 0.9 }}>We use <span style={{ color: 'var(--color-accent)' }}>SOLAR GARD VTX PRO.</span> Every time.</h2>

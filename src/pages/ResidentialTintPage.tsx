@@ -227,7 +227,7 @@ export default function ResidentialTintPage() {
         </div>
       </section>
 
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: 900 }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 'clamp(14px, 2vw, 18px)', marginBottom: 24 }}>Generic film fades. Generic installers cut corners on prep. Generic warranties aren't backed by anyone.</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-hero)', lineHeight: 0.9 }}>We install <span style={{ color: 'var(--color-accent)' }}>3M.</span> Backed by 3M.</h2>

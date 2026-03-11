@@ -16,26 +16,26 @@ const tiers: PackageTier[] = [
   {
     name: 'Essential',
     subtitle: 'Exterior paint surfaces — base-level gloss and protection',
-    inclusions: ['Full decontamination wash + iron fallout removal', 'Ceramic coating applied to all exterior paint', 'Hydrophobic protection — water beads and rolls off', 'UV and oxidation resistance', '12-month protection warranty'],
+    inclusions: ['Full decontamination wash + iron fallout removal', 'NXTZEN Ceramic Professional applied to all exterior paint', 'Hydrophobic protection — water beads and rolls off', 'UV and oxidation resistance', '12-month protection warranty'],
     price: 'Get a Quote',
   },
   {
     name: 'Protection',
     subtitle: 'Exterior paint + glass + wheels — complete exterior coverage',
-    inclusions: ['Full decontamination + clay bar treatment', 'Ceramic coating — all exterior paint', 'Ceramic coating — all glass (hydrophobic, improves rain visibility)', 'Ceramic coating — all wheels (brake dust resistance)', 'Hydrophobic + UV + oxidation protection', '3-year protection warranty'],
+    inclusions: ['Full decontamination + clay bar treatment', 'NXTZEN Ceramic Professional — all exterior paint', 'NXTZEN Ceramic Professional — all glass (hydrophobic, improves rain visibility)', 'NXTZEN Ceramic Professional — all wheels (brake dust resistance)', 'Hydrophobic + UV + oxidation protection', '3-year protection warranty'],
     price: 'Get a Quote',
     recommended: true,
   },
   {
     name: 'Elite',
     subtitle: 'Full exterior + glass + wheels + stage 1 paint correction',
-    inclusions: ['Full decontamination + clay bar + stage 1 paint correction', 'Ceramic coating — all exterior paint', 'Ceramic coating — all glass', 'Ceramic coating — all wheels', 'Ceramic coating — interior trim and plastics', 'Hydrophobic + UV + oxidation + swirl reduction', '5-year protection warranty'],
+    inclusions: ['Full decontamination + clay bar + stage 1 paint correction', 'NXTZEN Graphene Coating — all exterior paint', 'NXTZEN Graphene Coating — all glass', 'NXTZEN Graphene Coating — all wheels', 'NXTZEN Graphene Coating — interior trim and plastics', 'Hydrophobic + UV + oxidation + swirl reduction', '5-year protection warranty'],
     price: 'Get a Quote',
   },
   {
     name: 'Signature',
     subtitle: 'Complete vehicle — multi-stage correction + full ceramic system',
-    inclusions: ['Full decontamination + clay bar + multi-stage paint correction', 'Premium ceramic coating — full exterior paint', 'Ceramic coating — all glass, wheels, interior trim', 'Engine bay clean and protect', 'Maximum gloss, hydrophobic, UV, and scratch resistance', '7-year protection warranty'],
+    inclusions: ['Full decontamination + clay bar + multi-stage paint correction', 'NXTZEN Elite Coating — full exterior paint (multi-layer application)', 'NXTZEN Elite Coating — all glass, wheels, interior trim', 'Engine bay clean and protect', 'Maximum gloss, hydrophobic, UV, and scratch resistance', '7-year protection warranty'],
     price: 'Get a Quote',
   },
 ];
@@ -94,7 +94,7 @@ export default function CeramicCoatingPage() {
         "name": "Ceramic Coating Brisbane",
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "SunTek Authorised ceramic coating installer in Acacia Ridge, Brisbane. Up to 7-year warranty.",
+        "description": "NXTZEN Certified ceramic coating installer in Acacia Ridge, Brisbane. NXTZEN Ceramic Professional, Graphene Coating, and Elite Coating. Up to 7-year warranty.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -243,7 +243,7 @@ export default function CeramicCoatingPage() {
         </div>
       </section>
 
-      <section className="section noise-overlay" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
+      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: 900 }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: 'clamp(14px, 2vw, 18px)', marginBottom: 24 }}>Most detailers apply coating and move to the next car. Prep is optional. Correction is rarely offered.</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-hero)', lineHeight: 0.9 }}>We prep like the coating depends on it. <span style={{ color: 'var(--color-accent)' }}>IT DOES.</span></h2>
