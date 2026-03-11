@@ -22,13 +22,6 @@ const popularLinks = [
   { label: 'About', href: '/about' },
 ];
 
-const brandLogos = [
-  { src: logoNXTZEN, alt: 'NXTZEN' },
-  { src: logoSunTek, alt: 'SunTek' },
-  { src: logo3M, alt: '3M' },
-  { src: logoSolarGard, alt: 'Solar Gard' },
-];
-
 export default function Footer() {
   return (
     <footer style={{ background: '#0a0a0a', borderRadius: 24, margin: '0 16px 16px', paddingTop: 'clamp(60px, 8vw, 80px)', paddingBottom: 0, overflow: 'hidden' }}>
