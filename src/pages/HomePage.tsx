@@ -127,12 +127,14 @@ export default function HomePage() {
         />
         {/* Gradient overlay — dark cinematic */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.7) 100%)' }} aria-hidden="true" />
+        {/* Feathered bottom edge — blends into brand bar */}
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 120, zIndex: 1, background: 'linear-gradient(to bottom, transparent 0%, #0F1219 100%)' }} aria-hidden="true" />
 
         {/* Content */}
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2, maxWidth: 900, padding: '0 24px' }}>
           <h1 style={{ marginTop: 0, marginBottom: 0 }}>
-            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'clamp(48px, 8vw, 96px)', color: '#fff', letterSpacing: '-0.02em', lineHeight: 0.95 }}>
-              Next LVL{' '}<span style={{ color: '#C8CDD5' }}>Protection.</span>
+            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'clamp(48px, 8vw, 96px)', color: '#fff', letterSpacing: '-0.02em', lineHeight: 0.95, WebkitTextStroke: '0.5px rgba(255,255,255,0.01)' }}>
+              Next LVL{' '}<span style={{ color: '#fff' }}>Protection.</span>
             </span>
           </h1>
 

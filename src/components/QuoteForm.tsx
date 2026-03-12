@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CheckCircle, Loader2 } from 'lucide-react';
+import { pushGtmEvent } from '../lib/gtm';
 
 interface QuoteFormProps {
   defaultService?: string;
@@ -39,6 +40,17 @@ export default function QuoteForm({ defaultService: _defaultService }: QuoteForm
     setErrors({});
     setLoading(true);
     setTimeout(() => {
+      pushGtmEvent('quote_form_submit', {
+        form_name: 'get_a_quote',
+        service_context: _defaultService || 'general',
+        page_path: window.location.pathname,
+        page_title: document.title,
+      });
+      // GA4 recommended event
+      pushGtmEvent('generate_lead', {
+        currency: 'AUD',
+        value: 0,
+      });
       setLoading(false);
       setSubmitted(true);
     }, 1400);
