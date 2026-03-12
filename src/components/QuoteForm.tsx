@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CheckCircle, Loader2 } from 'lucide-react';
-import { pushGtmEvent } from '../lib/gtm';
+import { pushGtmEvent, fireGadsConversion } from '../lib/gtm';
 
 interface QuoteFormProps {
   defaultService?: string;
@@ -51,6 +51,11 @@ export default function QuoteForm({ defaultService: _defaultService }: QuoteForm
         currency: 'AUD',
         value: 0,
       });
+      // Google Ads — Request Quote conversion
+      fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'ads_conversion_Request_quote_1');
+      }
       setLoading(false);
       setSubmitted(true);
     }, 1400);

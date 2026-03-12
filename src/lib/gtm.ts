@@ -4,15 +4,26 @@ declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
     __nextLvlPhoneTrackingBound?: boolean;
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+/** Fire a Google Ads conversion via gtag */
+export function fireGadsConversion(sendTo: string) {
+  if (typeof window === 'undefined') return;
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'conversion', { send_to: sendTo });
   }
 }
 
 export function pushGtmEvent(event: string, payload: GtmEventPayload = {}) {
+  if (typeof window === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event, ...payload });
 }
 
 export function initPhoneCtaTracking() {
+  if (typeof window === 'undefined') return;
   if (window.__nextLvlPhoneTrackingBound) return;
 
   document.addEventListener('click', (event) => {
@@ -35,6 +46,8 @@ export function initPhoneCtaTracking() {
     pushGtmEvent('contact', {
       method: 'phone',
     });
+    // Google Ads — Book Appointment conversion
+    fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
   });
 
   window.__nextLvlPhoneTrackingBound = true;

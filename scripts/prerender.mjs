@@ -1,16 +1,15 @@
 /**
  * Post-build pre-rendering script.
- * Spins up a local server on the dist/ folder, visits each route with Puppeteer,
- * captures the fully-rendered HTML, and writes it back so Google's bots see real content.
+ * Imports the SSR bundle built by Vite, calls render(url) for every route,
+ * and injects the HTML into the client index.html shell.
+ * No browser needed — runs entirely in Node.
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createServer } from 'http';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, '..', 'dist');
-const PORT = 4173;
 
 const ROUTES = [
   '/',
@@ -55,103 +54,50 @@ const ROUTES = [
   '/privacy-policy',
 ];
 
-// Simple static file server for the dist folder
-function serveStatic() {
-  const mimeTypes = {
-    '.html': 'text/html',
-    '.js': 'application/javascript',
-    '.css': 'text/css',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpeg',
-    '.webp': 'image/webp',
-    '.svg': 'image/svg+xml',
-    '.ico': 'image/x-icon',
-    '.woff2': 'font/woff2',
-    '.woff': 'font/woff',
-    '.ttf': 'font/ttf',
-  };
-
-  return new Promise((resolve) => {
-    const server = createServer((req, res) => {
-      let filePath = path.join(DIST, req.url === '/' ? '/index.html' : req.url);
-
-      // SPA fallback — if file doesn't exist, serve index.html
-      if (!fs.existsSync(filePath)) {
-        filePath = path.join(DIST, 'index.html');
-      }
-
-      const ext = path.extname(filePath);
-      const contentType = mimeTypes[ext] || 'application/octet-stream';
-
-      try {
-        const content = fs.readFileSync(filePath);
-        res.writeHead(200, { 'Content-Type': contentType });
-        res.end(content);
-      } catch {
-        res.writeHead(404);
-        res.end('Not found');
-      }
-    });
-
-    server.listen(PORT, () => {
-      console.log(`  Static server running on http://localhost:${PORT}`);
-      resolve(server);
-    });
-  });
-}
-
 async function prerender() {
   console.log('\n🔄 Pre-rendering started...\n');
 
-  // Dynamic import puppeteer
-  const puppeteer = await import('puppeteer');
-  const browser = await puppeteer.default.launch({ headless: true, args: ['--no-sandbox'] });
-  const server = await serveStatic();
+  // Import the SSR bundle produced by `vite build --ssr`
+  const { render } = await import(path.resolve(DIST, 'server', 'entry-server.js'));
+
+  // Read the client-side index.html as the template
+  const template = fs.readFileSync(path.join(DIST, 'index.html'), 'utf-8');
 
   let rendered = 0;
   let failed = 0;
 
   for (const route of ROUTES) {
     try {
-      const page = await browser.newPage();
-      await page.goto(`http://localhost:${PORT}${route}`, {
-        waitUntil: 'networkidle0',
-        timeout: 30000,
-      });
+      const appHtml = render(route);
 
-      // Wait a bit for React to fully hydrate
-      await page.waitForFunction(() => {
-        const root = document.getElementById('root');
-        return root && root.children.length > 0;
-      }, { timeout: 10000 });
+      // Inject the rendered HTML into the shell
+      const html = template.replace(
+        '<div id="root"></div>',
+        `<div id="root">${appHtml}</div>`
+      );
 
-      const html = await page.content();
-      await page.close();
+      // Determine output path
+      const routePath = route === '/' ? '/index.html' : `${route}/index.html`;
+      const outFile = path.join(DIST, routePath);
+      const outDir = path.dirname(outFile);
 
-      // Write rendered HTML to correct path
-      const outputDir = route === '/' ? DIST : path.join(DIST, route);
-      const outputFile = path.join(outputDir, 'index.html');
-
-      fs.mkdirSync(outputDir, { recursive: true });
-      fs.writeFileSync(outputFile, html, 'utf-8');
+      fs.mkdirSync(outDir, { recursive: true });
+      fs.writeFileSync(outFile, html, 'utf-8');
 
       rendered++;
       console.log(`  ✅ ${route}`);
     } catch (err) {
       failed++;
-      console.error(`  ❌ ${route} — ${err.message}`);
+      console.error(`  ❌ ${route}: ${err.message}`);
     }
   }
 
-  await browser.close();
-  server.close();
-
-  console.log(`\n🏁 Pre-rendering complete: ${rendered} rendered, ${failed} failed\n`);
-
+  console.log(`\n✅ Pre-rendered ${rendered}/${ROUTES.length} routes`);
   if (failed > 0) {
+    console.log(`❌ ${failed} route(s) failed`);
     process.exit(1);
   }
+  console.log('');
 }
 
 prerender();

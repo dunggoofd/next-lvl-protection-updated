@@ -1,7 +1,17 @@
+import { useEffect } from 'react';
 import QuoteForm from '../components/QuoteForm';
 import PageMeta from '../components/PageMeta';
+import { fireGadsConversion } from '../lib/gtm';
 
 export default function GetAQuotePage() {
+  useEffect(() => {
+    // Google Ads — Request Quote page-load conversion
+    fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'ads_conversion_Request_quote_1');
+    }
+  }, []);
+
   return (
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh', paddingTop: 100, paddingBottom: 80 }}>
       <PageMeta
