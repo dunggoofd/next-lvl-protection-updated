@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { CheckCircle, Loader2 } from 'lucide-react';
 import { pushGtmEvent, fireGadsConversion } from '../lib/gtm';
 
+const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/zM2njfm3k4rchqX8UD3u/webhook-trigger/4a44e2a0-3b47-4c9a-b4d9-88b27db51dc4';
+
 interface QuoteFormProps {
   defaultService?: string;
 }
@@ -10,11 +12,11 @@ function FieldError({ msg }: { msg: string }) {
   return <p style={{ color: '#c0392b', fontSize: 12, marginTop: 4 }}>{msg}</p>;
 }
 
-export default function QuoteForm({ defaultService: _defaultService }: QuoteFormProps) {
-  void _defaultService;
+export default function QuoteForm({ defaultService }: QuoteFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitError, setSubmitError] = useState('');
 
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
@@ -33,32 +35,54 @@ export default function QuoteForm({ defaultService: _defaultService }: QuoteForm
     return errs;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setErrors({});
+    setSubmitError('');
     setLoading(true);
-    setTimeout(() => {
+
+    try {
+      const payload = {
+        name: name.trim(),
+        phone: mobile.trim(),
+        email: email.trim(),
+        carModel: carModel.trim(),
+        inquiry: inquiry.trim(),
+        referral: referral || 'Not specified',
+        service: defaultService || 'General',
+        source: 'Website Quote Form',
+        page: window.location.pathname,
+      };
+
+      const res = await fetch(GHL_WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) throw new Error('Submission failed');
+
+      // Fire tracking only after successful submission
       pushGtmEvent('quote_form_submit', {
         form_name: 'get_a_quote',
-        service_context: _defaultService || 'general',
+        service_context: defaultService || 'general',
         page_path: window.location.pathname,
         page_title: document.title,
       });
-      // GA4 recommended event
-      pushGtmEvent('generate_lead', {
-        currency: 'AUD',
-        value: 0,
-      });
-      // Google Ads — Request Quote conversion
+      pushGtmEvent('generate_lead', { currency: 'AUD', value: 0 });
       fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'ads_conversion_Request_quote_1');
       }
-      setLoading(false);
+
       setSubmitted(true);
-    }, 1400);
+    } catch {
+      setSubmitError('Something went wrong. Please call us directly or try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -112,6 +136,10 @@ export default function QuoteForm({ defaultService: _defaultService }: QuoteForm
           </select>
         </div>
       </div>
+
+      {submitError && (
+        <p style={{ color: '#c0392b', fontSize: 14, marginTop: 16, textAlign: 'center' }}>{submitError}</p>
+      )}
 
       <div style={{ marginTop: 28 }}>
         <button type="submit" className="btn-primary" disabled={loading} style={{ minWidth: 160, justifyContent: 'center' }}>
