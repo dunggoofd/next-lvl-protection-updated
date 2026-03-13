@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { CheckCircle, Loader2 } from 'lucide-react';
 import { pushGtmEvent, fireGadsConversion } from '../lib/gtm';
 
-const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/zM2njfm3k4rchqX8UD3u/webhook-trigger/4a44e2a0-3b47-4c9a-b4d9-88b27db51dc4';
+const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/zM2njfm3k4rchqX8UD3u/webhook-trigger/92c7737c-f2ed-45c7-be3c-db69f9343157';
 
 interface QuoteFormProps {
   defaultService?: string;
