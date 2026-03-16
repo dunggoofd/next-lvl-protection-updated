@@ -50,6 +50,9 @@ const benefits = [
 ];
 
 const faqs = [
+  { q: 'What are the different types of PPF?', a: 'There are two main types: gloss and matte. Gloss PPF is virtually invisible and enhances paint depth, while matte PPF gives a satin finish and can convert gloss paint to matte. Some films also offer hydrophobic or self-healing topcoats for added protection.' },
+  { q: 'Is the PPF protection self-healing?', a: 'Yes, SunTek Ultra PPF features a self-healing topcoat. Minor scratches and swirl marks disappear with heat—either from the sun or warm water—restoring the film’s smooth finish.' },
+  { q: 'Can you use Ceramic Coating over PPF?', a: 'Yes, ceramic coating can be applied over PPF. This adds extra hydrophobicity and makes cleaning even easier, but is not a substitute for the impact protection of PPF itself.' },
   { q: 'How much does PPF cost in Brisbane?', a: 'Pricing depends on coverage zone, vehicle size, and film specification. Contact us for a quote.' },
   { q: 'Is PPF worth it for a new car in Brisbane?', a: 'Yes — particularly in Queensland, where UV exposure and dusty highway conditions accelerate paint damage. Applying PPF within the first few months keeps the paint in showroom condition and protects the investment before any chips occur. The cost of quality PPF is significantly less than a future paint correction or respray.' },
   { q: 'How long does PPF last?', a: 'SunTek Ultra PPF is warranted for up to 10 years when installed by an authorised installer. In Queensland conditions, film performs well across this period. Yellowing and adhesive failure are common with lower-grade film — SunTek\'s clarity warranty covers discolouration specifically.' },
@@ -105,7 +108,15 @@ export default function PPFPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>
+            <span
+              className="hero-anim font-display"
+              style={{
+                fontSize: 'var(--size-h1)',
+                color: '#fff',
+                lineHeight: 1,
+                textShadow: '0 1px 6px rgba(0,0,0,0.15)',
+              }}
+            >
               Paint Protection Film — Brisbane
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>
@@ -118,6 +129,24 @@ export default function PPFPage() {
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
             <a href="#packages" className="btn-ghost">View Packages</a>
+          </div>
+        </div>
+      </section>
+
+
+      {/* FAQ — moved directly below hero */}
+      <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
+        <div className="container" style={{ maxWidth: 780 }}>
+          <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>FAQ</p>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Common PPF Questions</h2>
+          <FAQAccordion items={faqs} />
+          <div style={{ marginTop: 40, padding: '20px 24px', background: 'var(--color-surface)', borderRadius: 4, border: '1px solid var(--color-border)' }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>
+              Want more detailed answers?{' '}
+              <Link to="/ppf-questions" style={{ color: 'var(--color-accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>
+                Read our complete PPF Q&amp;A →
+              </Link>
+            </p>
           </div>
         </div>
       </section>

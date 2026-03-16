@@ -96,7 +96,17 @@ export default function AutomotiveTintPage() {
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-anim"><TrustBadges services={['tint']} /></div>
           <h1 style={{ marginTop: 28 }}>
-            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Window Tinting — Brisbane</span>
+            <span
+              className="hero-anim font-display"
+              style={{
+                fontSize: 'var(--size-h1)',
+                color: '#fff',
+                lineHeight: 1,
+                textShadow: '0 1px 6px rgba(0,0,0,0.15)',
+              }}
+            >
+              Window Tinting — Brisbane
+            </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Solar Gard VTX PRO.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 500 }}>
@@ -108,6 +118,16 @@ export default function AutomotiveTintPage() {
           </div>
         </div>
       </section>
+
+        {/* FAQ moved below hero */}
+        <section className="section" style={{ background: 'var(--color-bg-secondary)', paddingTop: 48, paddingBottom: 48 }}>
+          <div className="container" style={{ maxWidth: 900 }}>
+            <FAQAccordion items={faqs} />
+            <div style={{ marginTop: 40, padding: '20px 24px', background: 'var(--color-surface)', borderRadius: 4, border: '1px solid var(--color-border)' }}>
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>Want more detailed answers?{' '}<Link to="/automotive-tinting-questions" style={{ color: 'var(--color-accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Read our complete Car Tinting Q&amp;A →</Link></p>
+            </div>
+          </div>
+        </section>
 
       <section id="packages" className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
@@ -225,10 +245,6 @@ export default function AutomotiveTintPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Common Tinting Questions</h2>
-          <FAQAccordion items={faqs} />
-          <div style={{ marginTop: 40, padding: '20px 24px', background: 'var(--color-surface)', borderRadius: 4, border: '1px solid var(--color-border)' }}>
-            <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>Want more detailed answers?{' '}<Link to="/automotive-tinting-questions" style={{ color: 'var(--color-accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Read our complete Car Tinting Q&amp;A →</Link></p>
-          </div>
         </div>
       </section>
 

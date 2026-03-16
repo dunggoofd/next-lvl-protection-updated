@@ -105,6 +105,7 @@ export default function CeramicCoatingPage() {
           <h1 style={{ marginTop: 28 }}>
             <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>Ceramic Coating — Brisbane</span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Precision Application.</span>
+              <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'clamp(20px,3vw,36px)', color: '#1A1F2E', marginTop: 12, letterSpacing: '0.01em' }}>Up to 9 Year Warranty</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 500 }}>
             A nano-ceramic layer chemically bonded to your paint. Hydrophobic, UV-resistant, and built for Brisbane's climate.

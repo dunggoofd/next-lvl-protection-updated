@@ -83,8 +83,28 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Hero primary line — subtle monochrome gradient (black → dark grey, 10% shift) */
+/* Hero primary line — radial monochrome gradient (mainly white) */
+/* Hero primary line — linear monochrome gradient (black → white → black, mainly white) */
+/* Hero primary line — linear monochrome gradient (black → white → black, mainly white, 20% wider) */
+/* Hero primary line — linear monochrome gradient (black → white → black, even more white) */
+/* Hero primary line — linear monochrome gradient (black → white → black, 70% white) */
+/* Hero primary line — linear monochrome gradient (black → white → black, 80% white) */
+/* Hero primary line — linear monochrome gradient (black → white → black, 90% white) */
+/* Hero primary line — white metallic gradient effect */
+/* Hero primary line — white metallic gradient effect (30% more highlight/silver) */
+/* Hero primary line — white metallic gradient effect (50% more highlight/silver, higher contrast) */
 .hero-text-mono {
-  background: linear-gradient(160deg, #0D1117 0%, #667085 100%);
+  background: linear-gradient(90deg,
+    #bfc2c7 0%,
+    #fff 5%,
+    #fafbfc 15%,
+    #cfd2d6 30%,
+    #fff 65%,
+    #bfc2c7 80%,
+    #f8f9fa 90%,
+    #fff 95%,
+    #bfc2c7 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -92,11 +112,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .hero-text-mono {
+  /* .hero-text-mono {
     background: none;
     -webkit-text-fill-color: #FFFFFF;
     color: #FFFFFF;
-  }
+  } */
   .home-hero p {
     color: rgba(255, 255, 255, 0.85) !important;
   }

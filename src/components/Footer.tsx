@@ -24,7 +24,14 @@ const popularLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#0a0a0a', borderRadius: 24, margin: '0 16px 16px', paddingTop: 'clamp(60px, 8vw, 80px)', paddingBottom: 0, overflow: 'hidden' }}>
+    <footer style={{
+      background: 'conic-gradient(from 120deg at 70% 80%, #0a0a0a 0deg, #35373c 90deg, #35373c 180deg, #000 270deg, #0a0a0a 360deg)',
+      borderRadius: 24,
+      margin: '0 16px 16px',
+      paddingTop: 'clamp(60px, 8vw, 80px)',
+      paddingBottom: 0,
+      overflow: 'hidden'
+    }}>
       <div className="container" style={{ padding: '0 var(--section-padding-x)' }}>
         {/* Main grid */}
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr 1fr 1.3fr', gap: 48, paddingBottom: 56 }} className="footer-grid">
@@ -103,10 +110,10 @@ export default function Footer() {
           </p>
           <div style={{ display: 'flex', gap: 12 }}>
             <a href="https://www.instagram.com/nextlvlprotection" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 36, height: 36, borderRadius: '50%', background: 'var(--color-accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'opacity 150ms ease' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
             <a href="https://www.facebook.com/nextlvlprotection" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 36, height: 36, borderRadius: '50%', background: 'var(--color-accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'opacity 150ms ease' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0a0a0a"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
           </div>
         </div>

@@ -21,7 +21,8 @@ const values = [
 
 const team = [
   { name: 'Loki', role: 'Founder & Lead Installer', note: 'NXTZEN Certified | SunTek Certified | Solar Gard Certified | 3M Authorised' },
-  { name: 'Lina Dai', role: 'General Manager', note: 'The engine behind every client interaction. Lina runs sales, scheduling, and studio operations — making sure every enquiry is handled with precision and every job is delivered on time.' },
+  { name: 'Lina Dai', role: 'Director', note: 'The driving force behind Next LVL Protection\'s vision and growth. Lina oversees strategy, partnerships, and business direction — ensuring the studio delivers excellence at every level.' },
+  { name: 'Cynthia', role: 'General Manager', note: 'The engine behind every client interaction. Cynthia runs sales, scheduling, and studio operations — making sure every enquiry is handled with precision and every job is delivered on time.' },
 ];
 
 export default function AboutPage() {

@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { Shield, Droplets, Eye, Car, ArrowRight } from 'lucide-react';
+import { Shield, Droplets, Eye, Car, ArrowRight, Instagram } from 'lucide-react';
 import Reviews from '../components/Reviews';
+import GoogleReviews from '../components/GoogleReviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 import heroHome from '../assets/Hero-image 1.png';
@@ -11,6 +12,15 @@ import logoNXTZEN from '../assets/NXTZEN.png';
 import logoSunTek from '../assets/suntek-automotive-window-film-seeklogo.png';
 import logoSolarGard from '../assets/solar-gard-seeklogo.png';
 import mustangPpf from '../assets/mustang-ppf1.png';
+import ig0 from '../assets/Website-photos/Screenshot 2026-03-16 181728.jpg';
+import ig1 from '../assets/Website-photos/Screenshot 2026-03-16 181319.jpg';
+import ig2 from '../assets/Website-photos/Screenshot 2026-03-16 181459.jpg';
+import ig3 from '../assets/Website-photos/Screenshot 2026-03-16 181519.jpg';
+import ig4 from '../assets/Website-photos/Screenshot 2026-03-16 181532.jpg';
+import ig5 from '../assets/Website-photos/Screenshot 2026-03-16 181609.jpg';
+import ig6 from '../assets/Website-photos/Screenshot 2026-03-16 181625.jpg';
+import ig7 from '../assets/Website-photos/Screenshot 2026-03-16 181647.jpg';
+import ig8 from '../assets/Website-photos/Screenshot 2026-03-16 181712.jpg';
 
 const services = [
   {
@@ -45,6 +55,18 @@ const services = [
     href: '/automotive-window-tinting-brisbane',
     img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
+];
+
+const igPhotos = [
+  { src: ig0, alt: 'BYD Shark — window tint' },
+  { src: ig1, alt: 'Porsche 911 GT3 — PPF' },
+  { src: ig2, alt: 'BMW XM — ceramic coating' },
+  { src: ig3, alt: 'Toyota LandCruiser — PPF' },
+  { src: ig4, alt: 'Ferrari 296 — ceramic coating' },
+  { src: ig5, alt: 'Audi Q8 e-tron — PPF' },
+  { src: ig6, alt: 'BMW X7 — ceramic coating' },
+  { src: ig7, alt: 'Mercedes G-Wagon — PPF' },
+  { src: ig8, alt: 'Porsche Macan Turbo — ceramic coating' },
 ];
 
 const reviews = [
@@ -125,15 +147,31 @@ export default function HomePage() {
           }}
           aria-hidden="true"
         />
+        {/* Grain overlay at 50% opacity */}
+        <div
+          style={{
+            position: 'absolute', inset: 0, zIndex: 1,
+            pointerEvents: 'none',
+            opacity: 0.5,
+            backgroundImage:
+              'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 400 400\'><filter id=\'noise\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/></filter><rect width=\'400\' height=\'400\' filter=\'url(%23noise)\' opacity=\'0.7\'/></svg>")',
+            backgroundRepeat: 'repeat',
+            backgroundSize: 'auto',
+          }}
+          aria-hidden="true"
+        />
         {/* Gradient overlay — dark cinematic */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.7) 100%)' }} aria-hidden="true" />
+        <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.7) 100%)' }} aria-hidden="true" />
         {/* Feathered bottom edge — blends into brand bar */}
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 120, zIndex: 1, background: 'linear-gradient(to bottom, transparent 0%, #0F1219 100%)' }} aria-hidden="true" />
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 120, zIndex: 2, background: 'linear-gradient(to bottom, transparent 0%, #0F1219 100%)' }} aria-hidden="true" />
 
         {/* Content */}
         <div ref={heroContentRef} style={{ position: 'relative', zIndex: 2, maxWidth: 900, padding: '0 24px' }}>
           <h1 style={{ marginTop: 0, marginBottom: 0 }}>
-            <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'clamp(48px, 8vw, 96px)', color: '#fff', letterSpacing: '-0.02em', lineHeight: 0.95, WebkitTextStroke: '0.5px rgba(255,255,255,0.01)' }}>
+            <span
+              className="hero-anim font-display hero-text-mono"
+              style={{ fontSize: 'clamp(48px, 8vw, 96px)', letterSpacing: '-0.02em', lineHeight: 0.95, WebkitTextStroke: '0.5px rgba(255,255,255,0.01)' }}
+            >
               Next LVL{' '}<span style={{ color: '#fff' }}>Protection.</span>
             </span>
           </h1>
@@ -236,8 +274,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
+
+      {/* INSTAGRAM GALLERY */}
+      <section className="section" style={{ background: 'conic-gradient(from 180deg at 50% 120%, #1a1f2e 0deg, #0F1219 120deg, #1a1520 240deg, #0F1219 360deg)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 32, flexWrap: 'wrap', gap: 16 }}>
+            <div>
+<h2 className="font-display" style={{ fontSize: 'var(--size-h1)', color: '#FFFFFF', margin: 0 }}>Gallery.</h2>
+            </div>
+            <a
+              href="https://instagram.com/lokilokiz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+              style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff', display: 'inline-flex', alignItems: 'center', gap: 8 }}
+            >
+              <Instagram size={15} strokeWidth={1.5} />
+              Follow on Instagram
+            </a>
+          </div>
+
+          <a href="https://instagram.com/lokilokiz/" target="_blank" rel="noopener noreferrer" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, textDecoration: 'none' }}>
+            {igPhotos.map((photo, i) => (
+              <div key={i} style={{ overflow: 'hidden', aspectRatio: '1' }}>
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+                  onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.04)')}
+                  onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                />
+              </div>
+            ))}
+          </a>
+        </div>
+      </section>
+
+      {/* GOOGLE REVIEWS — custom section with 4 cards and link */}
+      <GoogleReviews
+        reviews={reviews}
+        googleUrl="https://www.google.com/maps/place/Next+LVL+Protection/@-27.580488,153.0004076,17z/data=!4m8!3m7!1s0x6b914f1de0e15ecf:0x8db70f1d98fcb413!8m2!3d-27.5804928!4d153.0029825!9m1!1b1!16s%2Fg%2F11mznvy7kn?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+      />
 
       {/* CTA */}
       <CTABlock service="Protection Package" />
