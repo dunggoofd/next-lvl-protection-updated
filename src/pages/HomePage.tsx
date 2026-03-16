@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { Shield, Droplets, Eye, Car, ArrowRight, Instagram } from 'lucide-react';
-import Reviews from '../components/Reviews';
 import GoogleReviews from '../components/GoogleReviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
