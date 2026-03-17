@@ -140,10 +140,12 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
       <div className="pkg-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'start' }}>
         {/* Left: details */}
         <div>
-          <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'var(--size-h2)', letterSpacing: '0.02em', marginBottom: 4 }}>
+          <h2 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'var(--size-h2)', letterSpacing: '0.02em', marginBottom: 4 }}>
             {active.name}
-          </p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: 14, marginBottom: 24 }}>{active.subtitle}</p>
+          </h2>
+          {active.subtitle.split(/\n+/).map((line, idx) => (
+            <p key={idx} style={{ color: 'var(--color-text-secondary)', fontSize: 14, marginBottom: 8 }}>{line}</p>
+          ))}
 
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 28 }}>
             {active.inclusions.map((inc, i) => (
@@ -154,12 +156,7 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
             ))}
           </ul>
 
-          <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: 20, marginBottom: 20 }}>
-            <p style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 6 }}>Starting From</p>
-            <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(32px, 4vw, 48px)', color: 'var(--color-accent)', letterSpacing: '0.02em' }}>
-              {active.price}
-            </p>
-          </div>
+
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary">
@@ -170,12 +167,6 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
           </div>
         </div>
 
-        {/* Right: diagram */}
-        <div className="pkg-diagram" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          {diagramType === 'car' && <CarDiagram activeTier={active.name} />}
-          {diagramType === 'house' && <HouseDiagram />}
-          {diagramType === 'building' && <BuildingDiagram />}
-        </div>
       </div>
 
     </div>

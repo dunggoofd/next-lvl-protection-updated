@@ -14,29 +14,17 @@ import PageMeta from '../components/PageMeta';
 
 const tiers: PackageTier[] = [
   {
-    name: 'Impact Shield',
-    subtitle: 'High-impact front zones — where chips happen most',
-    inclusions: ['Full bonnet leading edge (30cm)', 'Front bumper (full)', 'Front guards', 'SunTek Ultra PPF — self-healing, hydrophobic', '5-year SunTek film warranty'],
-    price: 'Get a Quote',
-  },
-  {
-    name: 'Front End Package',
-    subtitle: 'Full front protection — bonnet, bumper, guards, headlights, mirrors',
-    inclusions: ['Full bonnet', 'Front bumper (full)', 'Front guards', 'Headlights', 'Mirrors', 'SunTek Ultra PPF — self-healing, hydrophobic', '10-year SunTek authorised installer warranty'],
-    price: 'Get a Quote',
+    name: 'Full Front + Side PPF (Excluding Roof & Tailgate)',
+    subtitle: '5-7 Days to Complete',
+    inclusions: [
+      'BONNET / BUMPER / L/R FENDERS / L/R MIRROR CAPS / HEADLIGHTS / 4 X DOORS / L/R REAR QUARTER',
+      'SunTek Reaction PPF - 12 Year Warranty (Coating Infused & Self Healing PPF)',
+      'Full Interior & Exterior Detail',
+      'Claybar Decontamination & Stage 1-3 Paint Correction',
+      'We warranty both the PPF film and our installation, giving you peace of mind that if there is any wear or issues, you can bring the vehicle back to us for inspection and repair.'
+    ],
+    price: '',
     recommended: true,
-  },
-  {
-    name: 'Track Package',
-    subtitle: 'Front end + roof + A-pillars — extended impact coverage',
-    inclusions: ['Full bonnet + front bumper + front guards + headlights + mirrors', 'Roof', 'A-pillars', 'SunTek Ultra PPF — self-healing, hydrophobic', '10-year SunTek authorised installer warranty'],
-    price: 'Get a Quote',
-  },
-  {
-    name: 'Full Wrap',
-    subtitle: 'Complete vehicle — every painted panel, edge to edge',
-    inclusions: ['Entire exterior vehicle surface', 'SunTek Ultra PPF — self-healing, hydrophobic', 'Edge-tucked installation (no exposed edges)', '10-year SunTek authorised installer warranty'],
-    price: 'Get a Quote',
   },
 ];
 

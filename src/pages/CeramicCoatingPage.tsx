@@ -15,28 +15,38 @@ import PageMeta from '../components/PageMeta';
 const tiers: PackageTier[] = [
   {
     name: 'Essential',
-    subtitle: 'Exterior paint surfaces — base-level gloss and protection',
-    inclusions: ['Full decontamination wash + iron fallout removal', 'NXTZEN Ceramic Professional applied to all exterior paint', 'Hydrophobic protection — water beads and rolls off', 'UV and oxidation resistance', '12-month protection warranty'],
-    price: 'Get a Quote',
+    subtitle: 'Package 1: NXTZEN Ceramic Professional\n\nRecommended for: Daily drivers seeking long-term protection, enhanced gloss, and easier maintenance.',
+    inclusions: [
+      '5 Year Protection Coating System',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'Very slick finish that repels contamination and road grime'
+    ],
+    price: '',
   },
   {
     name: 'Protection',
-    subtitle: 'Exterior paint + glass + wheels — complete exterior coverage',
-    inclusions: ['Full decontamination + clay bar treatment', 'NXTZEN Ceramic Professional — all exterior paint', 'NXTZEN Ceramic Professional — all glass (hydrophobic, improves rain visibility)', 'NXTZEN Ceramic Professional — all wheels (brake dust resistance)', 'Hydrophobic + UV + oxidation protection', '3-year protection warranty'],
-    price: 'Get a Quote',
+    subtitle: 'Package 2: NXTZEN Graphene Serum Coating\n\nRecommended for: Daily driven vehicles needing stronger protection, superior gloss, and advanced UV and scratch resistance.',
+    inclusions: [
+      '7 Year warranty',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'More durable than standard ceramic, with superior resistance to heat, water spotting, and mineral deposits.'
+    ],
+    price: '',
     recommended: true,
   },
   {
     name: 'Elite',
-    subtitle: 'Full exterior + glass + wheels + stage 1 paint correction',
-    inclusions: ['Full decontamination + clay bar + stage 1 paint correction', 'NXTZEN Graphene Coating — all exterior paint', 'NXTZEN Graphene Coating — all glass', 'NXTZEN Graphene Coating — all wheels', 'NXTZEN Graphene Coating — interior trim and plastics', 'Hydrophobic + UV + oxidation + swirl reduction', '5-year protection warranty'],
-    price: 'Get a Quote',
-  },
-  {
-    name: 'Signature',
-    subtitle: 'Complete vehicle — multi-stage correction + full ceramic system',
-    inclusions: ['Full decontamination + clay bar + multi-stage paint correction', 'NXTZEN Elite Coating — full exterior paint (multi-layer application)', 'NXTZEN Elite Coating — all glass, wheels, interior trim', 'Engine bay clean and protect', 'Maximum gloss, hydrophobic, UV, and scratch resistance', '7-year protection warranty'],
-    price: 'Get a Quote',
+    subtitle: 'Package 3: NXTZEN Elite Coating\n\nRecommended for: A professional-grade, multi-layer ceramic coating with heat-activated self-healing, maximum gloss, and best UV and bird-dropping resistance, tested by CSIRO.',
+    inclusions: [
+      '9 Year warranty',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'Self-healing memory polymer helps reduce minor surface imperfections',
+      'Longest Durability'
+    ],
+    price: '',
   },
 ];
 
@@ -121,7 +131,7 @@ export default function CeramicCoatingPage() {
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Choose Your Coverage</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Ceramic Packages</h2>
+          <h1 className="font-display" style={{ fontSize: 'clamp(36px,6vw,64px)', marginBottom: 40 }}>Ceramic Packages</h1>
           <PackageVisualizer tiers={tiers} diagramType="car" />
         </div>
       </section>
