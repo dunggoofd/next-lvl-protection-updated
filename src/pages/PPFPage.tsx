@@ -3,30 +3,12 @@ import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { Shield, Zap, TrendingUp, Clock, Award, Droplets, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
-import PackageVisualizer from '../components/PackageVisualizer';
-import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
-
-const tiers: PackageTier[] = [
-  {
-    name: 'Full Front + Side PPF (Excluding Roof & Tailgate)',
-    subtitle: '5-7 Days to Complete',
-    inclusions: [
-      'BONNET / BUMPER / L/R FENDERS / L/R MIRROR CAPS / HEADLIGHTS / 4 X DOORS / L/R REAR QUARTER',
-      'SunTek Reaction PPF - 12 Year Warranty (Coating Infused & Self Healing PPF)',
-      'Full Interior & Exterior Detail',
-      'Claybar Decontamination & Stage 1-3 Paint Correction',
-      'We warranty both the PPF film and our installation, giving you peace of mind that if there is any wear or issues, you can bring the vehicle back to us for inspection and repair.'
-    ],
-    price: '',
-    recommended: true,
-  },
-];
 
 const benefits = [
   { icon: Shield, title: 'Self-healing surface', desc: 'SunTek Ultra PPF heals minor scratches and swirl marks with heat. Leave it in the sun — the film resets.' },
@@ -136,18 +118,6 @@ export default function PPFPage() {
               </Link>
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* PACKAGES */}
-      <section id="packages" className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
-        <span className="section-number" aria-hidden="true">02</span>
-        <div className="container">
-          <div style={{ marginBottom: 40 }}>
-            <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Choose Your Coverage</p>
-            <h2 className="font-display" style={{ fontSize: 'var(--size-h2)' }}>PPF Packages</h2>
-          </div>
-          <PackageVisualizer tiers={tiers} diagramType="car" />
         </div>
       </section>
 
