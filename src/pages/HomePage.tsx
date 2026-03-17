@@ -11,6 +11,7 @@ import logoNXTZEN from '../assets/NXTZEN.png';
 import logoSunTek from '../assets/suntek-automotive-window-film-seeklogo.png';
 import logoSolarGard from '../assets/solar-gard-seeklogo.png';
 import mustangPpf from '../assets/mustang-ppf1.png';
+import autoTintHero from '../assets/tesla-model-matte.png';
 import ig0 from '../assets/Website-photos/Screenshot 2026-03-16 181728.jpg';
 import ig1 from '../assets/Website-photos/Screenshot 2026-03-16 181319.jpg';
 import ig2 from '../assets/Website-photos/Screenshot 2026-03-16 181459.jpg';
@@ -44,7 +45,7 @@ const services = [
     sub: 'Solar Gard VTX PRO Certified',
     desc: 'Premium solar film engineered to reject heat and UV — not just darken glass. Queensland-legal VLT options.',
     href: '/automotive-window-tinting-brisbane',
-    img: 'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80',
+    img: autoTintHero,
   },
   {
     icon: Eye,

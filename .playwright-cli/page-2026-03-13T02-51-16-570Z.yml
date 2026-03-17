@@ -1,0 +1,149 @@
+- generic [ref=e3]:
+  - navigation "Main navigation" [ref=e4]:
+    - link "Next LVL Protection — Home" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - text: NEXT LVL PROTECTION
+    - generic [ref=e6]:
+      - button "Services" [ref=e8] [cursor=pointer]:
+        - text: Services
+        - img [ref=e9]
+      - link "Gallery" [ref=e11] [cursor=pointer]:
+        - /url: /gallery
+      - link "About" [ref=e12] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e13] [cursor=pointer]:
+        - /url: /get-a-quote
+      - link "Get a Quote" [ref=e14] [cursor=pointer]:
+        - /url: /get-a-quote
+        - generic [ref=e16]: Get a Quote
+  - main [ref=e17]:
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Next LVL Protection — Brisbane
+        - heading "Get a Quote" [level=1] [ref=e21]
+        - paragraph [ref=e22]: Tell us about your vehicle or property and we'll come back to you with a detailed quote. Usually within one business day.
+      - generic [ref=e23]:
+        - form "Get a Quote" [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - generic [ref=e28]:
+                - generic [ref=e29]: Name *
+                - textbox "Name *" [ref=e30]:
+                  - /placeholder: Your name
+              - generic [ref=e31]:
+                - generic [ref=e32]: Mobile *
+                - textbox "Mobile *" [ref=e33]:
+                  - /placeholder: 04XX XXX XXX
+            - generic [ref=e34]:
+              - generic [ref=e35]: Email *
+              - textbox "Email *" [ref=e36]:
+                - /placeholder: your@email.com
+            - generic [ref=e37]:
+              - generic [ref=e38]: Car Model
+              - textbox "Car Model" [ref=e39]:
+                - /placeholder: e.g. 2024 Toyota Camry
+            - generic [ref=e40]:
+              - generic [ref=e41]: Inquiry
+              - textbox "Inquiry" [ref=e42]:
+                - /placeholder: Tell us what you're after — service, coverage, any questions…
+            - generic [ref=e43]:
+              - generic [ref=e44]: How did you hear about us?
+              - combobox "How did you hear about us?" [ref=e45]:
+                - option "Select…" [selected]
+                - option "Google"
+                - option "Instagram"
+                - option "Facebook"
+                - option "Referral"
+                - option "Other"
+          - button "Get My Quote" [ref=e47] [cursor=pointer]:
+            - generic [ref=e49]: Get My Quote
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: Prefer to call?
+            - link "0468 810 666" [ref=e53] [cursor=pointer]:
+              - /url: tel:0468810666
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: Email us
+            - link "halo@nextlvlprotection.com.au" [ref=e56] [cursor=pointer]:
+              - /url: mailto:halo@nextlvlprotection.com.au
+        - paragraph [ref=e58]:
+          - strong [ref=e59]: "Studio:"
+          - text: Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110
+          - strong [ref=e60]: "Hours:"
+          - text: Mon–Fri 9:00am – 5:30pm
+  - contentinfo [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: NEXT LVL PROTECTION
+          - paragraph [ref=e66]: "#1 Certified Paint & Glass Protection in Brisbane."
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - img "NXTZEN" [ref=e69]
+              - img "3M" [ref=e70]
+              - img "Solar Gard" [ref=e71]
+            - img "SunTek" [ref=e73]
+        - generic [ref=e74]:
+          - heading "Quick Links" [level=4] [ref=e75]
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - link "Paint Protection Film" [ref=e78] [cursor=pointer]:
+                - /url: /ppf-brisbane
+            - listitem [ref=e79]:
+              - link "Ceramic Coating" [ref=e80] [cursor=pointer]:
+                - /url: /ceramic-coating-brisbane
+            - listitem [ref=e81]:
+              - link "Automotive Window Tinting" [ref=e82] [cursor=pointer]:
+                - /url: /automotive-window-tinting-brisbane
+            - listitem [ref=e83]:
+              - link "Residential Window Tinting" [ref=e84] [cursor=pointer]:
+                - /url: /residential-window-tinting-brisbane
+            - listitem [ref=e85]:
+              - link "Commercial Window Tinting" [ref=e86] [cursor=pointer]:
+                - /url: /commercial-window-tinting-brisbane
+            - listitem [ref=e87]:
+              - link "Get a Quote" [ref=e88] [cursor=pointer]:
+                - /url: /get-a-quote
+        - generic [ref=e89]:
+          - heading "Popular" [level=4] [ref=e90]
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "SunTek PPF" [ref=e93] [cursor=pointer]:
+                - /url: /suntek-ppf-brisbane
+            - listitem [ref=e94]:
+              - link "Ceramic Coating Questions" [ref=e95] [cursor=pointer]:
+                - /url: /ceramic-coating-questions
+            - listitem [ref=e96]:
+              - link "PPF Questions" [ref=e97] [cursor=pointer]:
+                - /url: /ppf-questions
+            - listitem [ref=e98]:
+              - link "Gallery" [ref=e99] [cursor=pointer]:
+                - /url: /gallery
+            - listitem [ref=e100]:
+              - link "About" [ref=e101] [cursor=pointer]:
+                - /url: /about
+        - generic [ref=e102]:
+          - heading "Contact Us" [level=4] [ref=e103]
+          - generic [ref=e104]:
+            - link "0468 810 666" [ref=e105] [cursor=pointer]:
+              - /url: tel:0468810666
+              - img [ref=e106]
+              - text: 0468 810 666
+            - link "halo@nextlvlprotection.com.au" [ref=e108] [cursor=pointer]:
+              - /url: mailto:halo@nextlvlprotection.com.au
+              - img [ref=e109]
+              - text: halo@nextlvlprotection.com.au
+            - generic [ref=e112]:
+              - img [ref=e113]
+              - generic [ref=e116]:
+                - text: Unit 16, 18-24 Loam St,
+                - text: Acacia Ridge QLD 4110
+      - generic [ref=e118]:
+        - paragraph [ref=e119]: Copyright © 2026 Next LVL Protection Pty Ltd
+        - generic [ref=e120]:
+          - link "Instagram" [ref=e121] [cursor=pointer]:
+            - /url: https://www.instagram.com/nextlvlprotection
+            - img [ref=e122]
+          - link "Facebook" [ref=e125] [cursor=pointer]:
+            - /url: https://www.facebook.com/nextlvlprotection
+            - img [ref=e126]

@@ -54,13 +54,13 @@ export default function BeforeAfterSlider({ before, after, alt = 'Before and aft
     >
       {/* Before image */}
       <img src={before} alt={`Before — ${alt}`} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} loading="lazy" />
-      <span className="ba-chip" style={{ right: 10 }}>Before</span>
+      <span className="ba-chip" style={{ left: 10 }}>Before</span>
 
       {/* After image */}
       <div ref={afterRef} className="ba-after" style={{ width: `${pos}%` }}>
         <img src={after} alt={`After — ${alt}`} style={{ width: containerRef.current?.offsetWidth + 'px' || '100%', height: '100%', objectFit: 'cover', display: 'block' }} loading="lazy" />
       </div>
-      <span className="ba-chip" style={{ left: 10 }}>After</span>
+      <span className="ba-chip" style={{ right: 10 }}>After</span>
 
       {/* Handle */}
       <div

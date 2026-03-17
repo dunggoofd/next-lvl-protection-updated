@@ -7,7 +7,7 @@ type Category = 'All' | 'PPF' | 'Ceramic' | 'Automotive Tint' | 'Residential Tin
 
 const gallery = [
   { category: 'PPF', label: 'BMW M3 — Full Front PPF (SunTek UltraBarrier Pro)', before: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', after: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80' },
-  { category: 'PPF', label: 'Porsche 911 — Front End Package', before: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80', after: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&q=80' },
+  { category: 'PPF', label: 'Porsche 911 — Front End Package', before: 'https://i.pinimg.com/736x/d4/fd/9c/d4fd9c6f8f13cd8d13281b52b85b0fdd.jpg', after: 'https://i.pinimg.com/736x/65/f4/a3/65f4a365e40237e5bacbe86813d3de0c.jpg' },
   { category: 'PPF', label: 'Tesla Model 3 — Track Package', before: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&q=80', after: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80' },
   { category: 'Ceramic', label: 'Range Rover — Ceramic Elite (Paint Correction + 2-Layer Coat)', before: 'https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80', after: 'https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=800&q=80' },
   { category: 'Ceramic', label: 'Mercedes C-Class — Ceramic Protection Package', before: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80', after: 'https://images.unsplash.com/photo-1471444928139-48c5bf5173f8?w=800&q=80' },
@@ -43,13 +43,13 @@ export default function GalleryPage() {
       })}} />
       <section style={{ paddingTop: 120, paddingBottom: 60, paddingLeft: 'var(--section-padding-x)', paddingRight: 'var(--section-padding-x)', background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>Before &amp; After</p>
+          <p style={{ color: 'var(--color-accent)', fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>After &amp; Before</p>
           <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Gallery</h1>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, maxWidth: 600, marginBottom: 40 }}>
             Every job is a case study in prep, precision, and product. Drag the handle to see the before and after on each installation.
           </p>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 0 }}>
-            {CATEGORIES.map(c => (
+            {[...CATEGORIES].reverse().map(c => (
               <button key={c} onClick={() => setActive(c)} style={{ padding: '8px 18px', fontSize: 12, letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 600, borderRadius: 2, cursor: 'pointer', transition: 'all 0.2s', background: active === c ? 'var(--color-accent)' : 'transparent', color: active === c ? '#FFFFFF' : 'var(--color-text-secondary)', border: `1px solid ${active === c ? 'var(--color-accent)' : 'var(--color-border)'}` }}>
                 {c}
               </button>
@@ -63,7 +63,7 @@ export default function GalleryPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))', gap: 20 }}>
             {filtered.map((item, i) => (
               <div key={i} className="card" style={{ overflow: 'hidden' }}>
-                <BeforeAfterSlider before={item.before} after={item.after} alt={item.label} height={260} />
+                  <BeforeAfterSlider before={item.after} after={item.before} alt={item.label} height={260} />
                 <div style={{ padding: '16px 20px 18px' }}>
                   <span style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-accent)', fontWeight: 600 }}>{item.category}</span>
                   <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', marginTop: 6, lineHeight: 1.5 }}>{item.label}</p>
