@@ -167,6 +167,17 @@ export default function PackageVisualizer({ tiers, diagramType = 'car' }: Packag
           </div>
         </div>
 
+        {/* Right: diagram */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {diagramType === 'house' ? (
+            <HouseDiagram />
+          ) : diagramType === 'building' ? (
+            <BuildingDiagram />
+          ) : (
+            <CarDiagram activeTier={active.name} />
+          )}
+        </div>
+
       </div>
 
     </div>
