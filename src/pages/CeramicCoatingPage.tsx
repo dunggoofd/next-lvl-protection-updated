@@ -3,12 +3,52 @@ import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { Droplets, Sun, Shield, TrendingUp, Eye, Clock, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
+import PackageVisualizer from '../components/PackageVisualizer';
+import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
 import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
+
+const tiers: PackageTier[] = [
+  {
+    name: 'Essential',
+    subtitle: 'Package 1: NXTZEN Ceramic Professional\n\nRecommended for: Daily drivers seeking long-term protection, enhanced gloss, and easier maintenance.',
+    inclusions: [
+      '5 Year Protection Coating System',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'Very slick finish that repels contamination and road grime'
+    ],
+    price: '',
+  },
+  {
+    name: 'Protection',
+    subtitle: 'Package 2: NXTZEN Graphene Serum Coating\n\nRecommended for: Daily driven vehicles needing stronger protection, superior gloss, and advanced UV and scratch resistance.',
+    inclusions: [
+      '7 Year warranty',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'More durable than standard ceramic, with superior resistance to heat, water spotting, and mineral deposits.'
+    ],
+    price: '',
+    recommended: true,
+  },
+  {
+    name: 'Elite',
+    subtitle: 'Package 3: NXTZEN Elite Coating\n\nRecommended for: A professional-grade, multi-layer ceramic coating with heat-activated self-healing, maximum gloss, and best UV and bird-dropping resistance, tested by CSIRO.',
+    inclusions: [
+      '9 Year warranty',
+      'Interior & Exterior Detail (Including Claybar)',
+      'Stage 1-3 Paint correction',
+      'Self-healing memory polymer helps reduce minor surface imperfections',
+      'Longest Durability'
+    ],
+    price: '',
+  },
+];
 
 const benefits = [
   { icon: Droplets, title: 'Permanent hydrophobic surface', desc: 'Water, mud, and road grime bead and roll off. Between washes, the car stays cleaner longer.' },
@@ -84,6 +124,15 @@ export default function CeramicCoatingPage() {
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
             <a href="#packages" className="btn-ghost">View Packages</a>
           </div>
+        </div>
+      </section>
+
+      <section id="packages" className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
+        <span className="section-number" aria-hidden="true">02</span>
+        <div className="container">
+          <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Choose Your Coverage</p>
+          <h1 className="font-display" style={{ fontSize: 'clamp(36px,6vw,64px)', marginBottom: 40 }}>Ceramic Packages</h1>
+          <PackageVisualizer tiers={tiers} diagramType="car" />
         </div>
       </section>
 
