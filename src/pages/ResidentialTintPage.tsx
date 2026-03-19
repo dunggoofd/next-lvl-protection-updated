@@ -153,9 +153,40 @@ export default function ResidentialTintPage() {
         </div>
       </section>
 
-      {/* S2: SERVICES GRID */}
-      <section id="services" className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
+      {/* S2: THE BRISBANE PROBLEM */}
+      <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">01</span>
+        <div className="container">
+          <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Brisbane UV &amp; Heat</p>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 8 }}>Queensland glass was not designed for Queensland sun.</h2>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.75, maxWidth: 660, marginBottom: 40 }}>
+            Standard double-glazed windows block less than 25% of UVA. In Brisbane, where the UV index sits at extreme for six months of the year, that means your furniture, flooring, and interiors are taking full sun exposure every day — and your air conditioner is fighting a losing battle.
+          </p>
+          <img
+            src="/ChatGPT Image Mar 19, 2026, 09_01_26 PM.png"
+            alt="Brisbane residential window tinting"
+            style={{ display: 'block', width: '100%', borderRadius: 8, objectFit: 'cover', marginBottom: 40 }}
+          />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+            {[
+              { stat: 'UV 15', label: 'Peak summer UV index', desc: 'Extreme threshold is 6. Brisbane spends 6 months above it.' },
+              { stat: '25%', label: 'UVA blocked by standard glass', desc: 'The rest passes straight through. Your furniture and flooring absorb it daily.' },
+              { stat: '$2,143', label: 'Avg QLD electricity bill', desc: 'Highest in Australia. Air conditioning in summer is the single biggest cost.' },
+              { stat: '30%', label: 'Home energy lost via windows', desc: 'Stop it at the glass — before the AC has to respond.' },
+            ].map((s, i) => (
+              <div key={i} className="card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                <span className="font-display" style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: 'var(--color-accent)', lineHeight: 1, display: 'block', marginBottom: 8 }}>{s.stat}</span>
+                <span style={{ fontSize: 12, fontWeight: 700, display: 'block', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.04em' }}>{s.label}</span>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, lineHeight: 1.6 }}>{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* S3: SERVICES GRID */}
+      <section id="services" className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
+        <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>What We Do</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 8 }}>Every problem. One installer.</h2>
@@ -184,37 +215,6 @@ export default function ResidentialTintPage() {
               Not sure what you need? We assess your home for free and recommend only what will actually make a difference.
             </p>
             <Link to="/get-a-quote" className="btn-primary" style={{ flexShrink: 0 }}><span className="btn-slide" /><span>Book Assessment</span></Link>
-          </div>
-        </div>
-      </section>
-
-      {/* S3: THE BRISBANE PROBLEM */}
-      <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
-        <span className="section-number" aria-hidden="true">02</span>
-        <div className="container">
-          <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Brisbane UV &amp; Heat</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 8 }}>Queensland glass was not designed for Queensland sun.</h2>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.75, maxWidth: 660, marginBottom: 40 }}>
-            Standard double-glazed windows block less than 25% of UVA. In Brisbane, where the UV index sits at extreme for six months of the year, that means your furniture, flooring, and interiors are taking full sun exposure every day — and your air conditioner is fighting a losing battle.
-          </p>
-          <img
-            src="/ChatGPT Image Mar 19, 2026, 09_01_26 PM.png"
-            alt="Brisbane residential window tinting"
-            style={{ display: 'block', width: '100%', borderRadius: 8, objectFit: 'cover', marginBottom: 40 }}
-          />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
-            {[
-              { stat: 'UV 15', label: 'Peak summer UV index', desc: 'Extreme threshold is 6. Brisbane spends 6 months above it.' },
-              { stat: '25%', label: 'UVA blocked by standard glass', desc: 'The rest passes straight through. Your furniture and flooring absorb it daily.' },
-              { stat: '$2,143', label: 'Avg QLD electricity bill', desc: 'Highest in Australia. Air conditioning in summer is the single biggest cost.' },
-              { stat: '30%', label: 'Home energy lost via windows', desc: 'Stop it at the glass — before the AC has to respond.' },
-            ].map((s, i) => (
-              <div key={i} className="card" style={{ padding: '28px 24px', textAlign: 'center' }}>
-                <span className="font-display" style={{ fontSize: 'clamp(28px, 3.5vw, 44px)', color: 'var(--color-accent)', lineHeight: 1, display: 'block', marginBottom: 8 }}>{s.stat}</span>
-                <span style={{ fontSize: 12, fontWeight: 700, display: 'block', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.04em' }}>{s.label}</span>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, lineHeight: 1.6 }}>{s.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
