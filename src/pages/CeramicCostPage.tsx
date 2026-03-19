@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -19,11 +18,6 @@ const faqs = [
   { q: 'How do I get an accurate ceramic coating quote?', a: 'Contact Next LVL Protection with your vehicle make, model, year, colour, and the package you\'re considering. We\'ll provide a specific quote within 2 business hours. For vehicles where paint condition is uncertain, a brief inspection at our Acacia Ridge studio allows us to confirm whether correction is needed before committing to a price.' },
 ];
 
-const reviews = [
-  { name: 'James W.', suburb: 'Sunnybank', service: 'Ceramic Coating — Protection Package', text: 'Got quotes from three places. Next LVL were clear about exactly what each package includes and what it doesn\'t. No upsell pressure. Went with the Protection package — three months on, the water behaviour alone is worth it.' },
-  { name: 'Tanya R.', suburb: 'Calamvale', service: 'Ceramic Coating — Essential', text: 'Started with the Essential to see the quality before committing to more. The finish was enough to convince me to book the Elite package for my partner\'s car. Pricing is fair and transparent.' },
-  { name: 'Steve M.', suburb: 'Runcorn', service: 'Ceramic Coating — Elite Package', text: 'The correction work before the coating was worth every dollar. The paint on a 4-year-old car looks better now than it did at delivery. Honest advice, no hidden costs at pickup.' },
-];
 
 export default function CeramicCostPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -55,6 +49,7 @@ export default function CeramicCostPage() {
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Ceramic coating pricing in Brisbane. Essential, Protection, and Elite packages. No hidden fees. Acacia Ridge studio.",
+        "dateModified": "2026-03-19",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -80,6 +75,7 @@ export default function CeramicCostPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Pricing</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>Ceramic Coating Packages</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
@@ -139,8 +135,6 @@ export default function CeramicCostPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

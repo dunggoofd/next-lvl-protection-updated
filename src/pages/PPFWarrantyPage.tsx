@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, RefreshCw, Clock, AlertCircle } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'How do I register my PPF warranty?', a: 'Next LVL Protection provides SunTek warranty documentation at handover. This includes the installer authorisation, film specification, installation date, and covered panels. Keep this document with your vehicle records. We can also provide a digital copy on request.' },
 ];
 
-const reviews = [
-  { name: 'James K.', suburb: 'Algester', service: 'PPF — 10-Year SunTek Ultra', text: 'Had the front end done 3 years ago. Film is still optically perfect. Had one warranty check after I noticed a small edge lift — it was a covered defect and was repaired at no cost. That process alone justified the install.' },
-  { name: 'Sarah B.', suburb: 'Runcorn', service: 'PPF — Front End Package', text: 'Specifically asked about the warranty before booking. The team walked through exactly what is and isn\'t covered — no vague promises. Confident in the product and the installer.' },
-  { name: 'Matt D.', suburb: 'Sunnybank', service: 'PPF — Track Package', text: 'Track package on a WRX. Knowing the warranty is backed by SunTek directly, not just a local business that might not be around in 10 years, was the deciding factor.' },
-];
 
 export default function PPFWarrantyPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -124,8 +118,6 @@ export default function PPFWarrantyPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

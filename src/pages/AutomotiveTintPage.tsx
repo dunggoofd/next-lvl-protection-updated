@@ -8,7 +8,6 @@ import PackageVisualizer from '../components/PackageVisualizer';
 import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -55,11 +54,6 @@ const faqs = [
   { q: 'What if my window tint bubbles or peels?', a: 'Film failure — bubbling, peeling, or discolouration — is covered by the Solar Gard authorised installer warranty for the life of your vehicle ownership. If you notice any failure, contact us and we\'ll assess and address it under warranty. Bubbling during the initial cure period (first few days) is normal and resolves as the film dries.' },
 ];
 
-const reviews = [
-  { name: 'Mark R.', suburb: 'Runcorn', service: 'Auto Tinting — Full Car', text: 'Solar Gard VTX PRO on my RAV4 — the heat difference is remarkable. Had cheap tint before. This is a completely different product and installation quality.' },
-  { name: 'Josh W.', suburb: 'Sunnybank', service: 'Auto Tinting — Full Car + Windscreen', text: 'Full car plus windscreen. The cabin temperature difference is night and day. Film is clear on the windscreen — you\'d never know it was there.' },
-  { name: 'Lena M.', suburb: 'Coopers Plains', service: 'Auto Tinting — Rear Privacy', text: 'Rear privacy tint for my kids — perfect. Colour match is consistent, edges are clean, and the crew explained everything about the Queensland VLT rules.' },
-];
 
 export default function AutomotiveTintPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -89,6 +83,16 @@ export default function AutomotiveTintPage() {
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Solar Gard VTX PRO Certified automotive window tinting in Acacia Ridge, Brisbane. Car tint packages with lifetime warranty.",
+        "dateModified": "2026-03-19",
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -115,7 +119,7 @@ export default function AutomotiveTintPage() {
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
-            <a href="#packages" className="btn-ghost">View Packages</a>
+            <Link to="/warranties" className="btn-ghost">View Warranties</Link>
           </div>
         </div>
       </section>
@@ -123,6 +127,7 @@ export default function AutomotiveTintPage() {
         {/* FAQ moved below hero */}
         <section className="section" style={{ background: 'var(--color-bg-secondary)', paddingTop: 48, paddingBottom: 48 }}>
           <div className="container" style={{ maxWidth: 900 }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
             <FAQAccordion items={faqs} />
             <div style={{ marginTop: 40, padding: '20px 24px', background: 'var(--color-surface)', borderRadius: 4, border: '1px solid var(--color-border)' }}>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>Want more detailed answers?{' '}<Link to="/automotive-tinting-questions" style={{ color: 'var(--color-accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>Read our complete Car Tinting Q&amp;A →</Link></p>
@@ -240,8 +245,6 @@ export default function AutomotiveTintPage() {
           <Link to="/gallery" style={{ color: 'var(--color-accent)', fontSize: 14 }}>See More Work →</Link>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Eye, TrendingUp, Award, Zap, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'How do I wash a dark PPF-covered car without creating swirl marks?', a: 'Use a pH-neutral car shampoo, a clean microfibre wash mitt, and a two-bucket wash method. Rinse thoroughly before contact washing to remove loose grit. Do not use automatic car washes — brushes introduce the swirl marks that PPF is protecting you from. We provide full aftercare instructions at handover.' },
 ];
 
-const reviews = [
-  { name: 'James H.', suburb: 'Runcorn', service: 'PPF — Full Front End (Midnight Black GLC)', text: 'Black Mercedes — every chip shows immediately. The front end package has held up for 18 months of daily driving. Zero chips through the film. Worth every dollar on a dark car.' },
-  { name: 'Marcus T.', suburb: 'Algester', service: 'PPF — Track Package (Dark Grey)', text: 'Brought in a graphite grey RS3 with light swirls. They corrected the paint first and then applied the track package. Under workshop lighting before handover — the surface was perfect.' },
-  { name: 'Priya N.', suburb: 'Sunnybank Hills', service: 'PPF + Ceramic (Black SUV)', text: 'Black Prado — high stone chip risk on QLD roads. PPF front end plus ceramic over the whole car. The depth of the black now is remarkable. Very professional team.' },
-];
 
 export default function PPFDarkPaintPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -178,9 +172,6 @@ export default function PPFDarkPaintPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

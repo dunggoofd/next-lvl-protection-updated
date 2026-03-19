@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Zap, TrendingUp, Award, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'How much does stone chip PPF protection cost in Brisbane?', a: 'Pricing depends on coverage zone and vehicle size. Contact us for a quote.' },
 ];
 
-const reviews = [
-  { name: 'Ben W.', suburb: 'Forest Lake', service: 'PPF — Front End Package', text: 'Drive the Logan Motorway every day. Before PPF, I was getting 2–3 chips per month on the bonnet. Six months post-install — zero chips through the film. That\'s the product.' },
-  { name: 'Anna C.', suburb: 'Oxley', service: 'PPF — Impact Shield', text: 'Got the impact shield after a gravel road completely chipped my previous car\'s bonnet. Now I don\'t think about it. Film does its job quietly.' },
-  { name: 'Ryan P.', suburb: 'Moorooka', service: 'PPF — Full Front End', text: 'Highway driving to the Gold Coast weekly. Front end package has been on for two years. The film has hundreds of tiny impacts that would have gone straight to the paint. Very satisfied.' },
-];
 
 export default function PPFStoneChipPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -141,9 +135,6 @@ export default function PPFStoneChipPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

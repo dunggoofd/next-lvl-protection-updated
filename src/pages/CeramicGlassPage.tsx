@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Droplets, Shield, Clock, TrendingUp, Sun, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'Can ceramic coating be applied to tinted windows?', a: 'Yes — ceramic coating is applied to the outer glass surface. Factory tint and aftermarket window film are on the inner surface. The coating does not interact with tint and is compatible with all window tinting. We recommend ceramic glass coating after window film installation, not before.' },
 ];
 
-const reviews = [
-  { name: 'Chris V.', suburb: 'Sunnybank', service: 'Ceramic Coating — Protection Package (incl. Glass)', text: 'The glass was the biggest surprise. Drove through heavy rain on the M1 and the water was sheeting off the windscreen without wipers at 100km/h. Haven\'t experienced that before.' },
-  { name: 'Helen B.', suburb: 'Algester', service: 'Ceramic Coating — Glass Add-on', text: 'Added glass coating to an existing paint package. The difference on the rear window in rain is immediately obvious. Cleaning the glass now takes half the time and effort it did before.' },
-  { name: 'Tony F.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — Elite Package', text: 'The glass hydrophobic effect is real. I was sceptical. After Brisbane\'s last big storm, the side windows had zero water standing on them. Wipers are almost a backup at this point.' },
-];
 
 export default function CeramicGlassPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -101,8 +95,6 @@ export default function CeramicGlassPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

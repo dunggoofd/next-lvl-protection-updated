@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Droplets, Clock, Eye, TrendingUp, Zap } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'How long does ceramic wheel coating last?', a: 'Warranted for the same period as the package: 3 years on Protection, 5 years on Elite, 7 years on Signature. In practice, wheel coatings receive more physical wear than paint coatings — brake dust, chemical cleaners, and abrasion from cleaning equipment. Proper maintenance (pH-neutral cleaners, soft brushes) preserves the coating at its full performance level.' },
 ];
 
-const reviews = [
-  { name: 'Brendan T.', suburb: 'Runcorn', service: 'Ceramic Coating — Protection Package (incl. Wheels)', text: 'The wheel maintenance is the most obvious daily benefit. Rinsed the wheels after a week of driving — brake dust came off with just water. First car I\'ve had where the wheels actually look clean between washes.' },
-  { name: 'Lena K.', suburb: 'Calamvale', service: 'Ceramic Coating — Elite Package', text: 'Polished alloys on a Mercedes. The ceramic makes them look wet permanently. Even after a week of Brisbane city driving, they look immaculate.' },
-  { name: 'Jason O.', suburb: 'Sunnybank Hills', service: 'Ceramic Coating — Protection Package', text: 'Brake dust on bare alloys was constant work. Since the ceramic, I rinse the wheels at the start of every wash and they\'re done. Massive time saving every week.' },
-];
 
 export default function CeramicWheelsPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -100,8 +94,6 @@ export default function CeramicWheelsPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Droplets, Sun, CheckCircle, TrendingUp, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'What happens if I don\'t maintain the ceramic coating?', a: 'Without maintenance, contamination builds up on and below the coating surface. The coating\'s hydrophobic performance degrades as the surface layer is consumed by contamination and incorrect wash products. Coatings without any maintenance typically perform noticeably below rated duration — water beading reduces, surface appearance dulls, and the protective barrier thins. Correct maintenance is a condition of our warranty.' },
 ];
 
-const reviews = [
-  { name: 'Steve H.', suburb: 'Stretton', service: 'Ceramic Coating — Elite Package + Annual Maintenance', text: 'Brings it back every 12 months for the maintenance service. After 3 years the protection package still beads water exactly as it did when applied. Worth every cent of the maintenance cost.' },
-  { name: 'Diane C.', suburb: 'Calamvale', service: 'Ceramic Coating — Protection Package', text: 'They sent a care guide with every product name for home washing. 18 months in and the hydrophobic performance is still strong. Easy to maintain with the right information.' },
-  { name: 'Tom F.', suburb: 'Robertson', service: 'Ceramic Coating — Maintenance Service', text: 'Came in for the 18-month boost. They ran the hydrophobic test, did the decon treatment, and applied the maintenance layer. The beading came back immediately. Great process.' },
-];
 
 export default function CeramicMaintenancePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -135,8 +129,6 @@ export default function CeramicMaintenancePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

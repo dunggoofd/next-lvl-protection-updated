@@ -7,7 +7,6 @@ import PackageVisualizer from '../components/PackageVisualizer';
 import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -51,11 +50,6 @@ const faqs = [
   { q: 'What voids a PPF warranty?', a: 'SunTek\'s warranty covers film failure — yellowing, peeling, adhesive failure, and cracking under normal use. It does not cover damage from improper washing, abrasive products, or chemical exposure. We provide a full aftercare guide at handover so you know exactly what to avoid.' },
 ];
 
-const reviews = [
-  { name: 'Tom B.', suburb: 'Sunnybank Hills', service: 'PPF — Front End Package', text: 'Track days don\'t stress me out anymore. The front end package on my M2 is holding up perfectly. Zero chips, film is completely invisible.' },
-  { name: 'Chris A.', suburb: 'Moorooka', service: 'PPF — Track Package', text: 'Next LVL Protection did my GR Corolla — roof, bonnet, full front. The edge tucks are clean, no lifting. SunTek quality is obvious compared to what I had on my previous car.' },
-  { name: 'Nat D.', suburb: 'Algester', service: 'PPF — Full Wrap', text: 'Full wrap on a new Porsche. These guys know what they\'re doing. Patient, meticulous, and they pointed out a paint defect on delivery that I\'d missed.' },
-];
 
 export default function PPFPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -87,6 +81,16 @@ export default function PPFPage() {
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "SunTek Authorised PPF installer in Acacia Ridge, Brisbane.",
+        "dateModified": "2026-03-19",
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
       })}} />
 
       {/* HERO */}
@@ -116,7 +120,7 @@ export default function PPFPage() {
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
-            <a href="#packages" className="btn-ghost">View Packages</a>
+            <Link to="/warranties" className="btn-ghost">View Warranties</Link>
           </div>
         </div>
       </section>
@@ -125,6 +129,7 @@ export default function PPFPage() {
       {/* FAQ — moved directly below hero */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>FAQ</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Common PPF Questions</h2>
           <FAQAccordion items={faqs} />
@@ -291,9 +296,6 @@ export default function PPFPage() {
           </Link>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Layers, Eye, Zap, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'Does ceramic coating on PPF affect the PPF warranty?', a: 'No. Applying ceramic coating over PPF is a standard and endorsed practice. SunTek\'s PPF warranty is not voided by ceramic coating application over the film. The two products are compatible and the warranty terms for each apply independently.' },
 ];
 
-const reviews = [
-  { name: 'Michael C.', suburb: 'Eight Mile Plains', service: 'PPF Front End + Full Ceramic Elite', text: 'Did both at the same appointment. PPF first, then ceramic over everything including the film. The car is comprehensively protected and the finish is exceptional. Worth every dollar for a car I\'m keeping long-term.' },
-  { name: 'Karen H.', suburb: 'Calamvale', service: 'PPF Impact Shield + Ceramic Protection', text: 'New RAV4. Impact shield on the front, full ceramic over the car. The team explained the logic clearly — each product handles a different threat. Combined it makes sense and the result speaks for itself.' },
-  { name: 'Al B.', suburb: 'Sunnybank', service: 'Full PPF Wrap + Ceramic Signature', text: 'Full wrap on a prestige vehicle, Signature ceramic over everything. Maximum protection for a car that earns that treatment. Next LVL handled the complexity without issue.' },
-];
 
 export default function CeramicPPFComboPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -139,8 +133,6 @@ export default function CeramicPPFComboPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

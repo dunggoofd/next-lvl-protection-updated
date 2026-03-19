@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { trackPageView, trackKeyPageVisit, initScrollDepthTracking, initTimeOnPageTracking } from './lib/gtm';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,6 +48,7 @@ const CeramicMattePage           = lazy(() => import('./pages/CeramicMattePage')
 const CeramicMaintenancePage     = lazy(() => import('./pages/CeramicMaintenancePage'));
 const CeramicResalePage          = lazy(() => import('./pages/CeramicResalePage'));
 const CeramicNearMePage          = lazy(() => import('./pages/CeramicNearMePage'));
+const WarrantyPage               = lazy(() => import('./pages/WarrantyPage'));
 const SitemapPage                = lazy(() => import('./pages/SitemapPage'));
 const NotFoundPage               = lazy(() => import('./pages/NotFoundPage'));
 const PrivacyPolicyPage          = lazy(() => import('./pages/PrivacyPolicyPage'));
@@ -63,7 +65,14 @@ function PageLoader() {
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, [pathname]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    trackPageView(pathname);
+    trackKeyPageVisit(pathname);
+    const cleanupScroll = initScrollDepthTracking();
+    const cleanupTimer = initTimeOnPageTracking(pathname);
+    return () => { cleanupScroll(); cleanupTimer(); };
+  }, [pathname]);
   return null;
 }
 
@@ -124,6 +133,7 @@ export default function App() {
             <Route path="/ceramic-coating-maintenance-brisbane" element={<CeramicMaintenancePage />} />
             <Route path="/ceramic-coating-resale-brisbane" element={<CeramicResalePage />} />
             <Route path="/ceramic-coating-near-me-brisbane" element={<CeramicNearMePage />} />
+            <Route path="/warranties" element={<WarrantyPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="*" element={<NotFoundPage />} />

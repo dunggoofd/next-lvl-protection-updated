@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { MapPin, Clock, Shield, Star } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -45,11 +44,6 @@ const faqs = [
   { q: 'How do I book a PPF appointment?', a: 'Use the Get a Quote form or call 0468 810 666. Provide your vehicle make, model, year, colour, and the coverage you\'re considering. We\'ll confirm pricing and availability within 2 business hours.' },
 ];
 
-const reviews = [
-  { name: 'Nathan V.', suburb: 'Sunnybank', service: 'PPF — Front End Package', text: '7 minutes from home. The proximity made me book the initial consultation with no commitment. Ended up doing the full front end. Easy to get to and the studio is purpose-built for this work.' },
-  { name: 'Laura K.', suburb: 'Runcorn', service: 'PPF — Impact Shield', text: 'Couldn\'t find a quality PPF installer close to the south side for a while. Next LVL is the answer. 10 minutes from Runcorn, SunTek authorised, and the install is flawless.' },
-  { name: 'Mike O.', suburb: 'Algester', service: 'PPF — Track Package', text: 'Booked based on proximity — stayed because of quality. The team are straight-up about pricing and what each package covers. No pressure, no padding. Track package on a GR Yaris.' },
-];
 
 export default function PPFNearMePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -145,8 +139,6 @@ export default function PPFNearMePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

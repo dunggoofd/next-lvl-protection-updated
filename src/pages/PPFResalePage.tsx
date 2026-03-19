@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { TrendingUp, Shield, Award, Clock, Eye, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'What is the best combination for maximum resale protection in Brisbane?', a: 'For maximum resale value protection: PPF on the front end (or full car for premium vehicles), combined with ceramic coating over the full painted surface. This gives you chip protection on high-impact zones, chemical and UV resistance across the full surface, and a maintained gloss that photographs and presents well at sale time.' },
 ];
 
-const reviews = [
-  { name: 'Michael B.', suburb: 'Sunnybank Hills', service: 'PPF — Front End Package', text: 'Sold my GLA after 3 years with PPF. The dealer commented specifically on the paint condition. Got significantly more than the initial offer after we pointed out the PPF documentation and warranty. Worth it.' },
-  { name: 'Lisa T.', suburb: 'Calamvale', service: 'PPF + Ceramic Package', text: 'Full front PPF plus ceramic on a new RAV4. Now 4 years in — paint looks like year one. Already had interest from family members wanting to buy it. The condition is the selling point.' },
-  { name: 'Paul D.', suburb: 'Algester', service: 'PPF — Full Wrap', text: 'Full wrap on a Porsche Cayenne. Sold it last year. The paint was the first thing mentioned by every buyer. Film came off cleanly at the buyer\'s request — factory paint underneath. Sold at asking price.' },
-];
 
 export default function PPFResalePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -173,9 +167,6 @@ export default function PPFResalePage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

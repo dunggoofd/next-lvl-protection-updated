@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Zap, Thermometer, Shield, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'Is self-healing film covered by the warranty?', a: 'Yes. SunTek Ultra\'s 10-year warranty covers the full film including the topcoat. If the topcoat degrades or fails to perform its healing function under normal conditions within the warranty period, it is a warranty claim. Damage to the topcoat from physical abrasion or incorrect maintenance products is not a warranty defect.' },
 ];
 
-const reviews = [
-  { name: 'Chris A.', suburb: 'Runcorn', service: 'PPF — Front End Package', text: 'Tested the self-healing claim after an automatic wash left some swirls. Left the car in the sun for 45 minutes. They were gone. Not marketing — it actually works in Brisbane heat.' },
-  { name: 'Yuki M.', suburb: 'Sunnybank', service: 'PPF — Full Front + Roof', text: 'The self-healing aspect was the deciding factor for me. The car sits in the sun at work. Small surface marks disappear on the commute home. Low maintenance, high protection.' },
-  { name: 'Ben F.', suburb: 'Algester', service: 'PPF — Track Package', text: 'GR Yaris on the track pack. The self-healing film handles the minor wash marks between track days without any extra effort. The panel stays clean-looking without constant detailing.' },
-];
 
 export default function PPFSelfHealingPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -124,8 +118,6 @@ export default function PPFSelfHealingPage() {
           <p style={{ marginTop: 16, color: 'var(--color-text-muted)', fontSize: 13 }}>The film body absorbing a chip is the film working correctly. The paint beneath is protected. The visible crater in the film surface is the film\'s damage record — not a failure.</p>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

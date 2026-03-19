@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Eye, Sun, Shield, Layers } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -29,11 +28,6 @@ const faqs = [
   { q: 'Which finish should I choose for a daily driver?', a: 'Gloss PPF is the practical default for most daily drivers. It is invisible, maintenance-straightforward, and compatible with all standard ceramic coating products. Matte PPF is appropriate if you want the stealth matte look — but factor in the maintenance restrictions before deciding. Gloss preserves optionality; matte is a deliberate aesthetic choice.' },
 ];
 
-const reviews = [
-  { name: 'Jay C.', suburb: 'Calamvale', service: 'Matte PPF — Front End', text: 'Wanted the satin look on a Civic Type R without committing to a wrap. Matte PPF on the bonnet, bumper, and guards looks factory. Zero visible edges at normal distance.' },
-  { name: 'Emma L.', suburb: 'Sunnybank Hills', service: 'Gloss PPF — Full Front', text: 'Specifically wanted to keep the original pearl white look. Gloss PPF is completely invisible. Six months later, I forget the film is there — which is exactly what I wanted.' },
-  { name: 'Ryan S.', suburb: 'Eight Mile Plains', service: 'Matte PPF — Full Bonnet', text: 'Switched from gloss to matte on a respray. The team walked me through the maintenance difference before I chose. Appreciated the honesty — no surprises.' },
-];
 
 export default function PPFGlossMattePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -135,8 +129,6 @@ export default function PPFGlossMattePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

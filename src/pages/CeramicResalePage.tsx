@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, TrendingUp, Eye, Droplets, CheckCircle, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'Does ceramic coating matter for trade-in value?', a: 'Less than private sale — dealers assess trade-in mechanically and will apply their own detailing and preparation regardless. Ceramic coating does not typically extract its full resale premium from a dealer trade-in. The primary value at trade-in is the clean paint condition that positions the vehicle in the dealer\'s highest inspection grade. Private sale returns the full resale benefit of documented ceramic history.' },
 ];
 
-const reviews = [
-  { name: 'Liam S.', suburb: 'Wishart', service: 'Ceramic Coating — Elite Package (pre-ownership)', text: 'Got the Elite package on my new RS5 specifically to protect the paint for resale. 4 years later, sold it privately with the certificate. Buyer commented on the paint quality. Sold well above what I initially expected.' },
-  { name: 'Michelle P.', suburb: 'Mansfield', service: 'Ceramic Coating — Protection Package', text: 'Sold my 86 after 2 years with the certificate. Private buyer was an enthusiast who asked about it specifically. The ceramic history was a genuine positive in the sale negotiation.' },
-  { name: 'Andrew K.', suburb: 'Carindale', service: 'Ceramic Coating — Resale Strategy Advice', text: 'They gave me honest advice about timing and which package would make most financial sense for my resale timeline. That kind of clarity is rare in this industry.' },
-];
 
 export default function CeramicResalePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -135,8 +129,6 @@ export default function CeramicResalePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

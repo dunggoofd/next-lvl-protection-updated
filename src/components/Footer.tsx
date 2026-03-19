@@ -24,15 +24,18 @@ const popularLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{
-      background: 'conic-gradient(from 120deg at 70% 80%, #0a0a0a 0deg, #35373c 90deg, #35373c 180deg, #000 270deg, #0a0a0a 360deg)',
-      borderRadius: 24,
-      margin: '0 16px 16px',
+    <footer className="footer-carbon" style={{
+      background: '#000',
+      borderRadius: '16px 16px 0 0',
+      margin: 0,
       paddingTop: 'clamp(60px, 8vw, 80px)',
       paddingBottom: 0,
-      overflow: 'hidden'
+      overflow: 'hidden',
+      position: 'relative',
     }}>
-      <div className="container" style={{ padding: '0 var(--section-padding-x)' }}>
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/360_F_335323173_x4DsXcW70YtXjuo6fL8hxnmzfQi2WBdJ.jpg)', backgroundSize: '120% 120%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1, pointerEvents: 'none', borderRadius: '16px 16px 0 0' }} aria-hidden="true" />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', borderRadius: '16px 16px 0 0', zIndex: 0 }} aria-hidden="true" />
+      <div className="footer-carbon-content" style={{ padding: '0 var(--section-padding-x)', position: 'relative', zIndex: 1, maxWidth: '100%', width: '100%' }}>
         {/* Main grid */}
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr 1fr 1.3fr', gap: 48, paddingBottom: 56 }} className="footer-grid">
 
@@ -82,7 +85,7 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, letterSpacing: '0.04em', color: '#C8CDD5', marginBottom: 20 }}>Contact Us</h4>
+            <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, letterSpacing: '0.04em', color: '#C8CDD5', marginBottom: 20, paddingLeft: 28 }}>Contact Us</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <a href="tel:0468810666" style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'rgba(255,255,255,0.55)', fontSize: 14, textDecoration: 'none', transition: 'color 150ms ease' }} className="footer-link-dark">
                 <Phone size={16} color="var(--color-accent)" strokeWidth={1.5} />

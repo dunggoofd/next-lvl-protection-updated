@@ -52,3 +52,42 @@ export function initPhoneCtaTracking() {
 
   window.__nextLvlPhoneTrackingBound = true;
 }
+
+const KEY_SERVICE_PATHS = ['/ppf-brisbane', '/ceramic-coating-brisbane', '/automotive-window-tinting-brisbane', '/residential-window-tinting-brisbane', '/commercial-window-tinting-brisbane'];
+
+export function trackPageView(pathname: string) {
+  pushGtmEvent('page_view', { page_path: pathname });
+}
+
+export function trackKeyPageVisit(pathname: string) {
+  if (KEY_SERVICE_PATHS.includes(pathname)) {
+    pushGtmEvent('key_service_page_view', { page_path: pathname });
+  }
+}
+
+export function initScrollDepthTracking(): () => void {
+  const thresholds = [25, 50, 75, 90];
+  const fired = new Set<number>();
+
+  function onScroll() {
+    const scrolled = window.scrollY + window.innerHeight;
+    const total = document.documentElement.scrollHeight;
+    const pct = Math.round((scrolled / total) * 100);
+    for (const t of thresholds) {
+      if (pct >= t && !fired.has(t)) {
+        fired.add(t);
+        pushGtmEvent('scroll_depth', { scroll_depth_threshold: t, page_path: window.location.pathname });
+      }
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  return () => window.removeEventListener('scroll', onScroll);
+}
+
+export function initTimeOnPageTracking(pathname: string): () => void {
+  const timer = setTimeout(() => {
+    pushGtmEvent('high_intent_time_on_page', { page_path: pathname });
+  }, 60000);
+  return () => clearTimeout(timer);
+}

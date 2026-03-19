@@ -7,7 +7,6 @@ import PackageVisualizer from '../components/PackageVisualizer';
 import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -70,11 +69,6 @@ const faqs = [
   { q: 'How do I wash my car after ceramic coating?', a: 'Wait at least 7 days after application before washing. Use pH-neutral car shampoo and a soft microfibre wash mitt. Avoid automatic car washes with abrasive brushes. Don\'t apply wax or sealant over a ceramic coating — they don\'t bond properly and can reduce performance.' },
 ];
 
-const reviews = [
-  { name: 'Sam K.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — Protection', text: 'The gloss on my black SUV after the Protection package is something else. Three months in and water still sheets off perfectly. Worth every cent.' },
-  { name: 'Aimee W.', suburb: 'Macgregor', service: 'Ceramic Coating — Elite', text: 'Elite package on a black Mercedes. The paint correction removed years of swirl marks before coating. It looks better than the day I bought it.' },
-  { name: 'Ryan P.', suburb: 'Calamvale', service: 'Ceramic Coating — Signature', text: 'Signature package — full correction, glass, wheels, interior. The attention to detail during the prep stage alone justified the price. These guys are meticulous.' },
-];
 
 export default function CeramicCoatingPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -105,6 +99,16 @@ export default function CeramicCoatingPage() {
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "NXTZEN Certified ceramic coating installer in Acacia Ridge, Brisbane. NXTZEN Ceramic Professional, Graphene Coating, and Elite Coating. Up to 7-year warranty.",
+        "dateModified": "2026-03-19",
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -122,7 +126,7 @@ export default function CeramicCoatingPage() {
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
-            <a href="#packages" className="btn-ghost">View Packages</a>
+            <Link to="/warranties" className="btn-ghost">View Warranties</Link>
           </div>
         </div>
       </section>
@@ -130,6 +134,7 @@ export default function CeramicCoatingPage() {
       <section id="packages" className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Choose Your Coverage</p>
           <h1 className="font-display" style={{ fontSize: 'clamp(36px,6vw,64px)', marginBottom: 40 }}>Ceramic Packages</h1>
           <PackageVisualizer tiers={tiers} diagramType="car" />
@@ -240,8 +245,6 @@ export default function CeramicCoatingPage() {
           <Link to="/gallery" style={{ color: 'var(--color-accent)', fontSize: 14 }}>See More Work →</Link>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

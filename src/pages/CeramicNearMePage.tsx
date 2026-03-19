@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { MapPin, Shield, Clock, CheckCircle, TrendingUp, Droplets } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'Can I get a quote online without visiting the studio?', a: 'Yes. Use the quote form on our website or call 0468 810 666 to discuss pricing for your vehicle. We quote on vehicle size and condition — for Elite and Signature packages, we may request photos of the paint to assess correction requirements before finalising pricing. Essential and Protection packages have standard pricing by vehicle size.' },
 ];
 
-const reviews = [
-  { name: 'Jason B.', suburb: 'Chermside', service: 'Ceramic Coating — Protection Package', text: 'Drive from Chermside — about 25 minutes. Worth every kilometre. Studio is professional, the product is genuine, and the result is exceptional. They\'re the only ceramic option I\'d trust in Brisbane.' },
-  { name: 'Priya N.', suburb: 'Calamvale', service: 'Ceramic Coating — Essential Package', text: '5 minutes from home. Dropped it off in the morning, collected next day. Process was smooth and the team explained exactly what had been done and how to maintain it.' },
-  { name: 'Oliver T.', suburb: 'Wynnum', service: 'Ceramic Coating — Elite Package', text: '35 minutes from the eastern suburbs. Not the closest option to me, but the only one I found that could show me genuine manufacturer warranty documentation and a controlled application studio.' },
-];
 
 export default function CeramicNearMePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -118,8 +112,6 @@ export default function CeramicNearMePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

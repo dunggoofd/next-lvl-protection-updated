@@ -29,6 +29,7 @@ const faqs = [
 const schema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "author": { "@type": "Organization", "name": "Next LVL Protection" },
   "mainEntity": faqs.map(f => ({
     "@type": "Question",
     "name": f.q,
@@ -57,8 +58,11 @@ export default function CommercialTintQuestionsPage() {
     <main style={{ background: 'var(--color-bg-primary)', minHeight: '100dvh' }}>
       <section style={{ padding: '140px var(--section-padding-x) 60px', maxWidth: 780, margin: '0 auto' }}>
         <h1 className="font-display" style={{ fontSize: 'var(--size-h1)', lineHeight: 1, marginBottom: 24 }}>Commercial Window Tinting — Brisbane Questions</h1>
-        <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75, marginBottom: 48 }}>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.75 }}>
           Office, retail, and whole-building commercial window film — every question answered. Written by Next LVL Protection — 3M Authorised Installer, Acacia Ridge, QLD.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: 13, marginTop: 12, marginBottom: 48 }}>
+          Written by the Next LVL Protection installation team · Last reviewed March 2026
         </p>
         <FAQAccordion items={faqs} />
       </section>

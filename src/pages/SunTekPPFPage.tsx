@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Award, Shield, Check, Zap } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'Can SunTek PPF be removed without damaging the paint?', a: 'Yes, when removed correctly. SunTek Ultra is designed for safe removal from factory paint. Film that has been installed on properly prepared paint (no existing damage, correct surface prep) and is removed within the warranty period should come off cleanly. Very old or brittle paint should be assessed before removal. We do not perform mobile removal — all removal work is done in-studio.' },
 ];
 
-const reviews = [
-  { name: 'Alex T.', suburb: 'Calamvale', service: 'SunTek PPF — Front End Package', text: 'Did research on brands before booking. SunTek and XPEL were both considered. The authorised status of Next LVL combined with their SunTek pricing made the decision straightforward. Film is optically invisible at any distance.' },
-  { name: 'Sophie G.', suburb: 'Eight Mile Plains', service: 'SunTek PPF — Track Package', text: 'Wanted to know the film was warranted by someone other than just the installer. SunTek\'s direct manufacturer warranty was the deciding factor. Three years on — film is flawless.' },
-  { name: 'Danny N.', suburb: 'Sunnybank', service: 'SunTek Ultra Matte — Full Front', text: 'Matte PPF on a pearl white car. The transformation is exactly what the photos on SunTek\'s site show. The installer authorisation matters — you see it in the quality of the edges and the clarity of the film.' },
-];
 
 export default function SunTekPPFPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -129,8 +123,6 @@ export default function SunTekPPFPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Sun, TrendingUp, Eye, Droplets, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -26,11 +25,6 @@ const faqs = [
   { q: 'What should I ask the dealership before accepting a paint protection package?', a: 'Ask: (1) What is the specific product name? (2) Who manufactures it? (3) What is the manufacturer warranty period and what does it cover? (4) Is the warranty backed by the manufacturer or just the dealership? (5) Can I see the warranty documentation? If you cannot get clear answers to all five, the product does not have equivalent protection to a professional ceramic with manufacturer backing.' },
 ];
 
-const reviews = [
-  { name: 'Craig W.', suburb: 'Calamvale', service: 'Ceramic Coating — Protection Package (post-dealer)', text: 'Declined the dealer sealant and booked Next LVL directly. Saved money, got better protection, and the warranty documentation is from the manufacturer. Clear decision in retrospect.' },
-  { name: 'Anna M.', suburb: 'Sunnybank', service: 'Ceramic Coating — Strip + Rebook', text: 'Had already accepted the dealer package before I knew better. Next LVL removed the sealant and applied professional ceramic. The difference in hydrophobic performance was immediately visible.' },
-  { name: 'Rob T.', suburb: 'Runcorn', service: 'Ceramic Coating — New Car, Elite Package', text: 'Did the research before delivery. Found that the dealer\'s "ceramic" package was actually a sealant product. Booked Elite for a similar total cost and got a 5-year warranty backed by the manufacturer.' },
-];
 
 export default function CeramicVsDealerPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -135,8 +129,6 @@ export default function CeramicVsDealerPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

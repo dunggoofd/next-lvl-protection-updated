@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Sun, Droplets, Shield, TrendingUp, Clock, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'Can I park outside without a cover if my car has ceramic coating?', a: 'Yes — ceramic coating is designed for outdoor exposure. It is not a substitute for a car cover in extreme hail events, but for daily UV exposure, rain, dust, and contamination, a ceramic-coated car parked outside in Brisbane is significantly better protected than an uncoated car. That\'s the scenario the product is designed for.' },
 ];
 
-const reviews = [
-  { name: 'Carl B.', suburb: 'Algester', service: 'Ceramic Coating — Protection Package', text: 'Car sits outside in Algester all year. Had an unprotected car that looked terrible by year 3. Ceramic coated this one at 2 months old. Two years on — still looks new. The Brisbane sun is brutal and this holds.' },
-  { name: 'Priya S.', suburb: 'Sunnybank Hills', service: 'Ceramic Coating — Elite Package', text: 'The difference in how the car sheds rain and dust in Brisbane\'s summer is significant. Less washing, less contact, less swirl accumulation. Exactly what was promised.' },
-  { name: 'Dave K.', suburb: 'Runcorn', service: 'Ceramic Coating — Protection Package', text: 'Moved from Melbourne to Brisbane and noticed immediately how much faster paint degrades here. Got the Protection package within the first month of moving. Smart call.' },
-];
 
 export default function CeramicBrisbanePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -100,8 +94,6 @@ export default function CeramicBrisbanePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -19,11 +18,6 @@ const faqs = [
   { q: 'How do I get an accurate PPF quote in Brisbane?', a: 'Contact Next LVL Protection with your vehicle make, model, year, and colour — and the coverage you\'re interested in. We\'ll provide a specific quote within 2 business hours. For complex vehicles or full wraps, a brief inspection at our Acacia Ridge studio may be required to confirm pricing.' },
 ];
 
-const reviews = [
-  { name: 'Craig S.', suburb: 'Eight Mile Plains', service: 'PPF — Front End Package', text: 'Got three quotes. Next LVL weren\'t the cheapest. Went with them because they used SunTek and could explain exactly what the cheaper options were skipping. 18 months on — zero issues.' },
-  { name: 'Michelle T.', suburb: 'Sunnybank Hills', service: 'PPF — Impact Shield', text: 'Started with the impact shield to test the quality before committing to more. The film quality and install standard are excellent. Booked the full front end three months later.' },
-  { name: 'Dom L.', suburb: 'Calamvale', service: 'PPF — Track Package', text: 'Track package on a new GR86. The pricing was fair and completely transparent. No surprises at pickup. The car looks and drives better knowing the front end is protected.' },
-];
 
 export default function PPFCostPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -55,6 +49,7 @@ export default function PPFCostPage() {
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
         "description": "Transparent PPF pricing in Brisbane. SunTek Authorised installer in Acacia Ridge. No hidden fees.",
+        "dateModified": "2026-03-19",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -80,6 +75,7 @@ export default function PPFCostPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Pricing</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What PPF Costs at Next LVL Protection</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
@@ -139,9 +135,6 @@ export default function PPFCostPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

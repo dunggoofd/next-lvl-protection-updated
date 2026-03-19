@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Zap, Eye, TrendingUp, Check, Clock } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'How do I know if my car needs correction before booking?', a: 'In direct sunlight or under a work light, rotate around the car and look for fine circular scratches or a general haziness in the panels. If you can see swirl patterns in the light, correction will benefit the finish before ceramic. If the paint looks clean and glossy in direct light, it may not require correction — send us photos and we can give an initial assessment before your booking.' },
 ];
 
-const reviews = [
-  { name: 'Nick A.', suburb: 'Calamvale', service: 'Stage 1 Correction + Ceramic Elite', text: 'The before/after under the workshop light was genuinely surprising. Swirls I\'d had for years are gone. The ceramic over the corrected paint looks better than the car did when I bought it.' },
-  { name: 'Rachel M.', suburb: 'Sunnybank', service: 'Multi-Stage Correction + Ceramic Signature', text: 'Five-year-old white car that had been through too many automatic washes. The correction took the team the best part of two days. The result was worth every hour — looks repainted without the cost of a respray.' },
-  { name: 'Sam K.', suburb: 'Eight Mile Plains', service: 'Paint Correction Inspection Only', text: 'Brought the car in for assessment before committing to correction. They were honest that only minor correction was needed — not a full multi-stage job. Saved me money and I trusted the result more for it.' },
-];
 
 export default function CeramicCorrectionPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -129,8 +123,6 @@ export default function CeramicCorrectionPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

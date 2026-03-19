@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, DollarSign, Layers, Zap } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -38,11 +37,6 @@ const faqs = [
   { q: 'Can I get partial PPF on just the bonnet?', a: 'Yes. Individual panel quotes are available. Common individual-panel requests include the full bonnet, boot lid, or roof. Contact us with your vehicle details and the panel you want covered for a specific quote.' },
 ];
 
-const reviews = [
-  { name: 'Rick O.', suburb: 'Sunnybank Hills', service: 'Partial PPF — Impact Shield', text: 'Got the impact shield first to see the quality before spending more. The install is clean and the film is optically invisible at distance. Booked the full front end three weeks later.' },
-  { name: 'Karen W.', suburb: 'Eight Mile Plains', service: 'Partial PPF — Door Cups Add-on', text: 'Added door cups to an existing front end package. The team matched the film perfectly. No visible seam. Exactly what I was hoping for.' },
-  { name: 'Tom H.', suburb: 'Calamvale', service: 'Partial PPF — Front End Package', text: 'Daily driver build in stages. Started with the bumper and guards, added the full bonnet six months later. Seamless process both times.' },
-];
 
 export default function PPFPartialPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -131,8 +125,6 @@ export default function PPFPartialPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

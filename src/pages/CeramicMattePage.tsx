@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Droplets, Sun, CheckCircle, TrendingUp, Wrench } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'Does ceramic work on matte vinyl wraps?', a: 'Yes. Matte-specific ceramic coating is suitable for application over quality matte or satin vinyl wraps. It extends wrap life by creating a protective surface barrier, improves hydrophobic performance, and makes the wrap easier to maintain safely. The coating bonds to the vinyl surface. If the wrap is replaced, the ceramic stays with the removed wrap and fresh ceramic is applied to the new wrap.' },
 ];
 
-const reviews = [
-  { name: 'James F.', suburb: 'Capalaba', service: 'Ceramic Coating — Matte, Protection Package', text: 'Grey matte finish on my M2. They used the correct matte ceramic and the finish looks identical to how it came from the factory — just now nothing sticks to it. These guys clearly know matte.' },
-  { name: 'Kira O.', suburb: 'Tarragindi', service: 'Ceramic Coating — Matte Satin, Elite Package', text: 'Was nervous about ceramic on satin wrap but they explained the matte-specific product and what to expect. Result is excellent — texture and colour depth unchanged, water just beads off.' },
-  { name: 'Marcus L.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — Matte PPF + Ceramic Combo', text: 'Had matte PPF applied first, then ceramic over the top. The combo on a dark matte colour is perfect — it\'s protected from both scratch and contamination without any gloss effect.' },
-];
 
 export default function CeramicMattePage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -120,8 +114,6 @@ export default function CeramicMattePage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

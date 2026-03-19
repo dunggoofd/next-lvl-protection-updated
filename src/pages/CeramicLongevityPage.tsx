@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Clock, Shield, Eye, TrendingUp, Sun, Droplets } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -27,11 +26,6 @@ const faqs = [
   { q: 'Will ceramic coating last longer on a garaged car?', a: 'Yes — UV exposure is the primary accelerant of coating degradation. A car garaged overnight and parked undercover during the day will extend coating life significantly beyond the warranty period. A car parked fully outdoors in Brisbane all day will use the full warranty term as its practical lifespan.' },
 ];
 
-const reviews = [
-  { name: 'Paul W.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — Protection (3-year)', text: 'Three years in on the Protection package. The hydrophobic effect has reduced noticeably in the last few months — exactly as expected at year three. Booked the maintenance top-up and it\'s as good as new.' },
-  { name: 'Sandra C.', suburb: 'Sunnybank Hills', service: 'Ceramic Coating — Elite (5-year)', text: 'Was going to go with Essential but the economics per year made the Elite package make more sense. Two years in and the car looks as good as the day I picked it up.' },
-  { name: 'Mark V.', suburb: 'Algester', service: 'Ceramic Coating — Signature (7-year)', text: 'Long-term ownership car. The 7-year warranty on the Signature made it the obvious choice for a car I\'m keeping for a decade. The finish at handover was better than the car looked at delivery.' },
-];
 
 export default function CeramicLongevityPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -126,8 +120,6 @@ export default function CeramicLongevityPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

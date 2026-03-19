@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Zap, TrendingUp, Clock, Award, Star, Check } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'Can new car PPF be removed later?', a: 'Yes — PPF is designed to be removable. After several years if you want to sell the car, the film can be removed by a professional installer. Underneath, the paint will be in the same condition as the day the film was applied. That is one of the core value propositions of quality PPF.' },
 ];
 
-const reviews = [
-  { name: 'Liam F.', suburb: 'Eight Mile Plains', service: 'PPF — Front End Package (New Delivery)', text: 'Picked up my new GR Yaris and brought it straight here. Front end package done within a week of delivery. Car has done 15,000km now — zero chips through the film. Worth every cent.' },
-  { name: 'Sarah K.', suburb: 'Calamvale', service: 'PPF — Full Wrap (New BMW)', text: 'Full wrap on a new M340i. The team advised against rushing and did a proper prep job first. Film is completely invisible, warranty documentation is thorough. Very professional.' },
-  { name: 'Daniel O.', suburb: 'Sunnybank', service: 'PPF + Ceramic (New Car Package)', text: 'PPF front end plus ceramic over the whole car on my new RAV4. The package pricing was fair and the result is outstanding. Car is almost a year old and looks delivered yesterday.' },
-];
 
 export default function PPFNewCarPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -187,9 +181,6 @@ export default function PPFNewCarPage() {
           </div>
         </div>
       </section>
-
-      {/* REVIEWS */}
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       {/* FAQ */}
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>

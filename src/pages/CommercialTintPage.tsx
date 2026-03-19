@@ -7,7 +7,6 @@ import PackageVisualizer from '../components/PackageVisualizer';
 import type { PackageTier } from '../components/PackageVisualizer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -54,11 +53,6 @@ const faqs = [
   { q: 'What is the commercial warranty on 3M window film?', a: '3M offers a commercial limited warranty on film installations performed by 3M Authorised Installers. Warranty periods vary by film series. We provide full warranty documentation at handover — ask for details at quoting stage.' },
 ];
 
-const reviews = [
-  { name: 'Marcus D.', suburb: 'Woolloongabba', service: 'Commercial Tinting — Shopfront Protection', text: 'Retail shopfront with full 3M safety and solar film. Noticeably cooler inside and the safety film gives peace of mind. Team worked around our trading hours.' },
-  { name: 'Samantha W.', suburb: 'Fortitude Valley', service: 'Commercial Tinting — Full Fitout', text: 'Three-storey office — they did the whole building in a weekend. Minimal disruption. Team communicated well at every stage.' },
-  { name: 'Raj P.', suburb: 'Milton', service: 'Commercial Tinting — Office Comfort', text: 'North-facing floor was unusable in the afternoon. Post-install it\'s a different space. Energy costs have dropped noticeably too.' },
-];
 
 export default function CommercialTintPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -89,6 +83,15 @@ export default function CommercialTintPage() {
         "areaServed": "Brisbane",
         "description": "3M Authorised commercial window film installer in Acacia Ridge, Brisbane. Offices, shopfronts, and multi-storey buildings. Out-of-hours installation available.",
       })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
         <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
@@ -104,7 +107,7 @@ export default function CommercialTintPage() {
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Request a Commercial Quote</span></Link>
-            <a href="#packages" className="btn-ghost">View Packages</a>
+            <Link to="/warranties" className="btn-ghost">View Warranties</Link>
           </div>
         </div>
       </section>
@@ -185,8 +188,6 @@ export default function CommercialTintPage() {
           <Link to="/gallery" style={{ color: 'var(--color-accent)', fontSize: 14 }}>See More Work →</Link>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 52 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>

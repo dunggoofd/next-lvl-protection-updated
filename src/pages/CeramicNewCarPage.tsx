@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { Shield, Sun, Droplets, Clock, TrendingUp, Eye } from 'lucide-react';
 import TrustBadges from '../components/TrustBadges';
 import FAQAccordion from '../components/FAQAccordion';
-import Reviews from '../components/Reviews';
 import CTABlock from '../components/CTABlock';
 import PageMeta from '../components/PageMeta';
 
@@ -28,11 +27,6 @@ const faqs = [
   { q: 'What is the aftercare period after ceramic coating a new car?', a: 'The first 7–14 days after application are the critical cure period. During this time, avoid washing, water contact, and parking under trees. We provide a specific aftercare guide at handover covering exactly what to do and avoid in the first two weeks. After curing, maintenance is straightforward — pH-neutral wash with a clean microfibre.' },
 ];
 
-const reviews = [
-  { name: 'Ash P.', suburb: 'Calamvale', service: 'Ceramic Coating — New Car, Protection Package', text: 'Brought the car in 3 days after delivery. No correction needed. The team were thorough on the prep and the finish is outstanding. Dealer was pushing their sealant — glad I did my research.' },
-  { name: 'Mei L.', suburb: 'Sunnybank Hills', service: 'Ceramic Coating — New Car, Elite Package', text: 'New Mazda CX-5 in soul red. The ceramic added a depth to that colour that I didn\'t think was possible over factory. Car is 8 months old and looks better than delivery day.' },
-  { name: 'Greg T.', suburb: 'Eight Mile Plains', service: 'Ceramic Coating — New Prestige, Signature', text: 'New BMW 3 Series. Went straight to Next LVL from the dealership. The Signature package covers everything. 7-year warranty, proper documentation, the right product for the investment.' },
-];
 
 export default function CeramicNewCarPage() {
   const heroRef = useRef<HTMLElement>(null);
@@ -127,8 +121,6 @@ export default function CeramicNewCarPage() {
           </div>
         </div>
       </section>
-
-      <Reviews reviews={reviews} aggregate={{ score: 4.9, count: 87 }} />
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>
