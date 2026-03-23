@@ -84,13 +84,13 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, letterSpacing: '0.04em', color: '#C8CDD5', marginBottom: 20, paddingLeft: 28 }}>Contact Us</h4>
+            <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, letterSpacing: '0.04em', color: '#C8CDD5', marginBottom: 20 }}>Contact Us</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <a href="tel:0468810666" style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'rgba(255,255,255,0.55)', fontSize: 14, textDecoration: 'none', transition: 'color 150ms ease' }} className="footer-link-dark">
                 <Phone size={16} color="var(--color-accent)" strokeWidth={1.5} />
                 0468 810 666
               </a>
-              <a href="mailto:halo@nextlvlprotection.com.au" style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'rgba(255,255,255,0.55)', fontSize: 14, textDecoration: 'none', transition: 'color 150ms ease' }} className="footer-link-dark">
+              <a href="mailto:halo@nextlvlprotection.com.au" style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'rgba(255,255,255,0.55)', fontSize: 14, textDecoration: 'none', transition: 'color 150ms ease' }} className="footer-link-dark footer-email-link">
                 <Mail size={16} color="var(--color-accent)" strokeWidth={1.5} />
                 halo@nextlvlprotection.com.au
               </a>

@@ -87,7 +87,7 @@ export default function PPFDarkPaintPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>The Problem With Dark Paint</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05, marginBottom: 24 }}>Dark Paint Hides Nothing</h2>
@@ -108,7 +108,7 @@ export default function PPFDarkPaintPage() {
                 { issue: 'Bird droppings / tree sap', impact: 'Chemical etching on dark paint creates permanent dull patches in the clear coat if not removed promptly.' },
                 { issue: 'UV oxidation', impact: 'Dark paint oxidises to a hazy, chalky finish under prolonged UV exposure — especially in Queensland.' },
               ].map((r, i) => (
-                <div key={i} className="card" style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: '140px 1fr', gap: 16, alignItems: 'start' }}>
+                <div key={i} className="card grid-2col" style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: '140px 1fr', gap: 16, alignItems: 'start' }}>
                   <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--color-accent)' }}>{r.issue}</span>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: 13, lineHeight: 1.6 }}>{r.impact}</p>
                 </div>
@@ -122,12 +122,12 @@ export default function PPFDarkPaintPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>How PPF Helps</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>What the Film Does for Dark Paint</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => {
                 const Icon = b.icon;
                 return (
@@ -146,7 +146,7 @@ export default function PPFDarkPaintPage() {
       {/* WHAT'S INCLUDED */}
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>04</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 16 }}>What's Included on Every Job</h2>

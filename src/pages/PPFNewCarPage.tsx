@@ -88,7 +88,7 @@ export default function PPFNewCarPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Timing Matters</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05, marginBottom: 24 }}>Why the First 30 Days Are Critical</h2>
@@ -108,7 +108,7 @@ export default function PPFNewCarPage() {
                 { label: 'Month 2–6', title: 'Still good', desc: 'Minor contamination possible. Full decon wash required before film. Minor swirls may need correction first.' },
                 { label: '6 months+', title: 'Correction likely needed', desc: 'Most cars have at least light swirl marks from washing. Paint correction before film adds cost and time.' },
               ].map((t, i) => (
-                <div key={i} className="card" style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: '100px 1fr', gap: 16, alignItems: 'start' }}>
+                <div key={i} className="card grid-2col" style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: '100px 1fr', gap: 16, alignItems: 'start' }}>
                   <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', paddingTop: 2 }}>{t.label}</span>
                   <div>
                     <p style={{ fontWeight: 600, fontSize: 14, marginBottom: 4 }}>{t.title}</p>
@@ -125,12 +125,12 @@ export default function PPFNewCarPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)', position: 'relative' }}>
         <span className="section-number" aria-hidden="true">03</span>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Why PPF on Delivery</p>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', lineHeight: 1.05 }}>What You're Protecting</h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               {benefits.map((b, i) => {
                 const Icon = b.icon;
                 return (
@@ -152,7 +152,7 @@ export default function PPFNewCarPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Coverage Options</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What We Recommend for New Cars</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { name: 'Front End Package', price: 'Contact us for a quote', recommended: false, desc: 'The most popular choice for new car owners. Covers the zones that get hit 90% of the time.', includes: ['Full bonnet', 'Front bumper (full)', 'Front guards', 'Headlights', 'Mirrors', '10-year SunTek warranty'] },
               { name: 'Track Package', price: 'Contact us for a quote', recommended: true, desc: 'Front end plus roof and A-pillars. Best for highway drivers and open road use in QLD.', includes: ['Everything in Front End', 'Roof', 'A-pillars', '10-year SunTek warranty'] },

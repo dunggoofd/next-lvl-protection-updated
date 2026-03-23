@@ -52,6 +52,7 @@ const WarrantyPage               = lazy(() => import('./pages/WarrantyPage'));
 const SitemapPage                = lazy(() => import('./pages/SitemapPage'));
 const NotFoundPage               = lazy(() => import('./pages/NotFoundPage'));
 const PrivacyPolicyPage          = lazy(() => import('./pages/PrivacyPolicyPage'));
+const ThankYouPage               = lazy(() => import('./pages/ThankYouPage'));
 
 function PageLoader() {
   return (
@@ -88,7 +89,7 @@ function Layout() {
         to="/get-a-quote"
         style={{
           position: 'fixed',
-          bottom: 20,
+          bottom: 68,
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 9999,
@@ -137,6 +138,7 @@ export default function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/get-a-quote" element={<GetAQuotePage />} />
+            <Route path="/thank-you" element={<ThankYouPage />} />
             <Route path="/ppf-new-car-brisbane" element={<PPFNewCarPage />} />
             <Route path="/ppf-dark-paint-brisbane" element={<PPFDarkPaintPage />} />
             <Route path="/ppf-stone-chip-protection-brisbane" element={<PPFStoneChipPage />} />

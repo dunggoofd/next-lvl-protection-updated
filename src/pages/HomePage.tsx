@@ -217,7 +217,7 @@ export default function HomePage() {
               Five Services.<br /><span style={{ color: 'rgba(255,255,255,0.5)' }}>One Standard.</span>
             </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: 20 }}>
             {services.map(s => {
               const Icon = s.icon;
               return (
@@ -294,12 +294,13 @@ export default function HomePage() {
             </a>
           </div>
 
-          <a href="https://instagram.com/lokilokiz/" target="_blank" rel="noopener noreferrer" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, textDecoration: 'none' }}>
+          <a href="https://instagram.com/lokilokiz/" target="_blank" rel="noopener noreferrer" className="ig-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, textDecoration: 'none' }}>
             {igPhotos.map((photo, i) => (
               <div key={i} style={{ overflow: 'hidden', aspectRatio: '1' }}>
                 <img
                   src={photo.src}
                   alt={photo.alt}
+                  loading="lazy"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
                   onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.04)')}
                   onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}

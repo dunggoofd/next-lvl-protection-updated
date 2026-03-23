@@ -60,7 +60,7 @@ export default function GalleryPage() {
 
       <section style={{ padding: '20px var(--section-padding-x) 80px', background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))', gap: 20 }}>
+          <div className="gallery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(400px, 100%), 1fr))', gap: 20 }}>
             {filtered.map((item, i) => (
               <div key={i} className="card" style={{ overflow: 'hidden' }}>
                   <BeforeAfterSlider before={item.after} after={item.before} alt={item.label} height={260} />

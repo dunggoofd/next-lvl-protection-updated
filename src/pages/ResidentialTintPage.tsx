@@ -170,11 +170,11 @@ export default function ResidentialTintPage() {
             Standard double-glazed windows block less than 25% of UVA. In Brisbane, where the UV index sits at extreme for six months of the year, that means your furniture, flooring, and interiors are taking full sun exposure every day — and your air conditioner is fighting a losing battle.
           </p>
           <img
-            src="/ChatGPT Image Mar 19, 2026, 09_01_26 PM.png"
+            src="/3M Prestige Window Film.png"
             alt="Brisbane residential window tinting"
             style={{ display: 'block', width: '100%', borderRadius: 8, objectFit: 'cover', marginBottom: 40 }}
           />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+          <div className="grid-4col" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
             {[
               { stat: 'UV 15', label: 'Peak summer UV index', desc: 'Extreme threshold is 6. Brisbane spends 6 months above it.' },
               { stat: '25%', label: 'UVA blocked by standard glass', desc: 'The rest passes straight through. Your furniture and flooring absorb it daily.' },
@@ -217,7 +217,7 @@ export default function ResidentialTintPage() {
               .service-body { display: block !important; padding: 0 !important; }
             }
           `}</style>
-          <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+          <div className="services-grid grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {SERVICES.map((s, i) => {
               const Icon = s.icon;
               const isOpen = openServices.has(i);
@@ -268,7 +268,7 @@ export default function ResidentialTintPage() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.75, maxWidth: 640, marginBottom: 40 }}>
             Heat enters your home as infrared radiation — invisible light you can't see but absolutely feel. Standard glass lets almost all of it through. 3M Prestige film uses hundreds of nano-optical layers to reject up to 97% of infrared while still transmitting 40–70% of visible light. The room stays bright. The heat stays outside.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 40 }}>
+          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 40 }}>
             {[
               {
                 icon: Thermometer,
@@ -314,7 +314,7 @@ export default function ResidentialTintPage() {
               .warranty-body-0, .warranty-body-1 { display: block !important; }
             }
           `}</style>
-          <div className="warranty-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, marginTop: 40 }}>
+          <div className="warranty-grid grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, marginTop: 40 }}>
             <div className="card" style={{ padding: '32px 24px' }}>
               <button
                 className="warranty-toggle"

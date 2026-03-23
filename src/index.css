@@ -550,3 +550,29 @@ label { display: block; font-size: var(--size-label); text-transform: uppercase;
     flex-direction: column;
   }
 }
+
+/* MobileAccordion — show accordion on mobile, direct render on desktop */
+.mobile-accordion-wrapper { display: block; }
+.mobile-accordion-desktop { display: none; }
+@media (min-width: 769px) {
+  .mobile-accordion-wrapper { display: none; }
+  .mobile-accordion-desktop { display: block; }
+}
+
+/* Instagram gallery responsive */
+@media (max-width: 768px) {
+  .ig-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 4px !important; }
+}
+
+/* Gallery page cards responsive */
+@media (max-width: 500px) {
+  .gallery-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Accordion touch targets */
+@media (max-width: 768px) {
+  .accordion-trigger { min-height: 44px; }
+}
+
+/* Footer email overflow */
+.footer-email-link { overflow-wrap: break-word; word-break: break-all; }

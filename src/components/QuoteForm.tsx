@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { CheckCircle, Loader2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
 import { pushGtmEvent, fireGadsConversion } from '../lib/gtm';
 
 const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/zM2njfm3k4rchqX8UD3u/webhook-trigger/92c7737c-f2ed-45c7-be3c-db69f9343157';
@@ -13,7 +14,7 @@ function FieldError({ msg }: { msg: string }) {
 }
 
 export default function QuoteForm({ defaultService }: QuoteFormProps) {
-  const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitError, setSubmitError] = useState('');
@@ -77,28 +78,13 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         window.gtag('event', 'ads_conversion_Request_quote_1');
       }
 
-      setSubmitted(true);
+      navigate('/thank-you', { state: { fromSubmit: true } });
     } catch {
       setSubmitError('Something went wrong. Please call us directly or try again.');
     } finally {
       setLoading(false);
     }
   };
-
-  if (submitted) {
-    return (
-      <div style={{ textAlign: 'center', padding: '40px 0' }}>
-        <CheckCircle size={48} color="var(--color-accent)" style={{ marginBottom: 20 }} />
-        <h3 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 12 }}>We've Got Your Request.</h3>
-        <p style={{ color: 'var(--color-text-secondary)', marginBottom: 24 }}>
-          We'll be in touch within 2 business hours. If it's urgent, call us directly.
-        </p>
-        <a href="tel:0468810666" style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', color: 'var(--color-accent)', letterSpacing: '0.04em' }}>
-          0468 810 666
-        </a>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit} role="form" aria-label="Get a Quote" noValidate>
@@ -130,7 +116,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         </div>
         <div>
           <label htmlFor="referral">How did you hear about us?</label>
-          <select id="referral" value={referral} onChange={e => setReferral(e.target.value)}>
+          <select id="referral" value={referral} onChange={e => setReferral(e.target.value)} style={{ minHeight: 44 }}>
             <option value="">Select…</option>
             {['Google', 'Instagram', 'Facebook', 'Referral', 'Other'].map(o => <option key={o}>{o}</option>)}
           </select>
@@ -142,7 +128,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
       )}
 
       <div style={{ marginTop: 28 }}>
-        <button type="submit" className="btn-primary" disabled={loading} style={{ minWidth: 160, justifyContent: 'center' }}>
+        <button type="submit" className="btn-primary" disabled={loading} style={{ minWidth: 160, width: '100%', justifyContent: 'center' }}>
           <span className="btn-slide" />
           {loading ? (
             <span style={{ display: 'flex', alignItems: 'center', gap: 8, position: 'relative', zIndex: 1 }}>

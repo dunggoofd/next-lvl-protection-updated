@@ -27,7 +27,7 @@ export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: Tr
     },
     {
       id: 'window',
-      label: '3M Window Films',
+      label: '3M Warranty & Certified',
     },
   ].filter(b => services.includes(b.id as any));
 

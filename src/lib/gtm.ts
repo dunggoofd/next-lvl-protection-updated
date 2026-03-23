@@ -46,8 +46,6 @@ export function initPhoneCtaTracking() {
     pushGtmEvent('contact', {
       method: 'phone',
     });
-    // Google Ads — Book Appointment conversion
-    fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
   });
 
   window.__nextLvlPhoneTrackingBound = true;

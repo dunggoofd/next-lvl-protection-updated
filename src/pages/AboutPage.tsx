@@ -74,7 +74,7 @@ export default function AboutPage() {
 
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
             <div>
               <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 24 }}>The Workshop</h2>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
@@ -124,7 +124,7 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Certifications</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {certifications.map((c, i) => (
               <div key={i} className="card" style={{ padding: '28px 24px' }}>
                 <Award size={20} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 16 }} />
@@ -139,7 +139,7 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>How We Work</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {values.map((v, i) => { const Icon = v.icon; return (
               <div key={i} className="card" style={{ padding: '36px 28px' }}>
                 <Icon size={22} color="var(--color-accent)" strokeWidth={1.5} style={{ marginBottom: 18 }} />
@@ -154,9 +154,9 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Team</h2>
-          <div style={{ display: 'flex', gap: 24 }}>
+          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {team.map((t, i) => (
-              <div key={i} className="card" style={{ padding: '36px 28px', width: 'min(360px, 100%)', aspectRatio: '9 / 16' }}>
+              <div key={i} className="card" style={{ padding: '36px 28px' }}>
                 <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--color-surface)', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
                   <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 22, color: 'var(--color-accent)' }}>{t.name.split(' ').map(n => n[0]).join('')}</span>
                 </div>

@@ -207,7 +207,7 @@ export default function WarrantyPage() {
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Our Partners</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Authorised by the Brands That Matter</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: 20 }}>
             {brands.map((b, i) => (
               <div key={i} className="card" style={{ padding: '28px 24px' }}>
                 <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 28, letterSpacing: '0.02em', marginBottom: 8 }}>{b.name}</h3>
@@ -237,7 +237,7 @@ export default function WarrantyPage() {
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, marginTop: 12 }}>Reaction PPF with Tetrashield Resin Technology</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 32 }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 32 }}>
             <div>
               <h3 style={{ fontSize: 15, fontWeight: 600, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
                 <Check size={16} color="var(--color-accent)" /> Covered
@@ -431,7 +431,7 @@ export default function WarrantyPage() {
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Why It Matters</p>
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Authorised vs Non-Authorised Installer</h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, borderRadius: 8, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, borderRadius: 8, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
             <div style={{ background: '#1A1F2E', padding: '24px 20px' }}>
               <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, color: 'var(--color-accent)', letterSpacing: '0.03em', marginBottom: 20 }}>Next LVL Protection (Authorised)</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>

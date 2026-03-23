@@ -43,6 +43,16 @@ export default function Navbar() {
     }
   }, [mobileOpen]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -197,9 +207,9 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileOpen}
-          style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: scrolled ? 'var(--color-text-primary)' : '#fff', display: 'none' }}
+          style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: scrolled ? 'var(--color-text-primary)' : '#fff', display: 'none', minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' }}
         >
-          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
 
@@ -217,13 +227,13 @@ export default function Navbar() {
         <div ref={mobileLinksRef} style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <p style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 8 }}>Services</p>
           {services.map(s => (
-            <Link key={s.href} to={s.href} style={{ fontSize: 'clamp(24px, 5vw, 36px)', fontFamily: 'Bebas Neue, sans-serif', color: 'var(--color-text-secondary)', letterSpacing: '0.02em' }}>
+            <Link key={s.href} to={s.href} style={{ fontSize: 'clamp(24px, 5vw, 36px)', fontFamily: 'Bebas Neue, sans-serif', color: 'var(--color-text-secondary)', letterSpacing: '0.02em', padding: '8px 0', minHeight: 44, display: 'flex', alignItems: 'center' }}>
               {s.label}
             </Link>
           ))}
           <div style={{ height: 1, background: 'var(--color-border)', margin: '16px 0' }} />
           {[{ label: 'Gallery', href: '/gallery' }, { label: 'About', href: '/about' }].map(l => (
-            <Link key={l.href} to={l.href} style={{ fontSize: 'clamp(24px, 5vw, 36px)', fontFamily: 'Bebas Neue, sans-serif', color: 'var(--color-text-secondary)', letterSpacing: '0.02em' }}>
+            <Link key={l.href} to={l.href} style={{ fontSize: 'clamp(24px, 5vw, 36px)', fontFamily: 'Bebas Neue, sans-serif', color: 'var(--color-text-secondary)', letterSpacing: '0.02em', padding: '8px 0', minHeight: 44, display: 'flex', alignItems: 'center' }}>
               {l.label}
             </Link>
           ))}
