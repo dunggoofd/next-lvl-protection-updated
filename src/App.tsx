@@ -1,5 +1,5 @@
 import { useEffect, Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, useLocation, Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from './components/Navbar';
@@ -84,6 +84,34 @@ function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <Link
+        to="/get-a-quote"
+        style={{
+          position: 'fixed',
+          bottom: 20,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 9999,
+          background: 'var(--color-accent)',
+          color: '#000',
+          fontFamily: 'Bebas Neue, sans-serif',
+          fontSize: 16,
+          letterSpacing: '0.08em',
+          padding: '14px 36px',
+          borderRadius: 4,
+          boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
+          whiteSpace: 'nowrap',
+          display: 'none',
+        }}
+        className="sticky-enquire-btn"
+      >
+        Enquire Now
+      </Link>
+      <style>{`
+        @media (max-width: 768px) {
+          .sticky-enquire-btn { display: block !important; }
+        }
+      `}</style>
     </div>
   );
 }

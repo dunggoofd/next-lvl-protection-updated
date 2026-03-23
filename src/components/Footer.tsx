@@ -25,16 +25,15 @@ const popularLinks = [
 export default function Footer() {
   return (
     <footer className="footer-carbon" style={{
-      background: '#000',
-      borderRadius: '16px 16px 0 0',
+      background: 'linear-gradient(180deg, #141416 0%, #0a0a0a 50%, #000000 100%)',
       margin: 0,
       paddingTop: 'clamp(60px, 8vw, 80px)',
       paddingBottom: 0,
       overflow: 'hidden',
       position: 'relative',
     }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/360_F_335323173_x4DsXcW70YtXjuo6fL8hxnmzfQi2WBdJ.jpg)', backgroundSize: '120% 120%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1, pointerEvents: 'none', borderRadius: '16px 16px 0 0' }} aria-hidden="true" />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', borderRadius: '16px 16px 0 0', zIndex: 0 }} aria-hidden="true" />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/360_F_335323173_x4DsXcW70YtXjuo6fL8hxnmzfQi2WBdJ.jpg)', backgroundSize: '120% 120%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 1, pointerEvents: 'none' }} aria-hidden="true" />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 100%)', pointerEvents: 'none', zIndex: 0 }} aria-hidden="true" />
       <div className="footer-carbon-content" style={{ padding: '0 var(--section-padding-x)', position: 'relative', zIndex: 1, maxWidth: '100%', width: '100%' }}>
         {/* Main grid */}
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr 1fr 1.3fr', gap: 48, paddingBottom: 56 }} className="footer-grid">
