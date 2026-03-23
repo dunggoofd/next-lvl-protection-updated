@@ -12,15 +12,15 @@ const benefits = [
   { icon: Shield, title: 'Physical chip absorption', desc: 'Dark paint shows chips more clearly than light paint. PPF absorbs stone impacts and road debris before they reach the surface — no white or silver chips visible against black or dark grey.' },
   { icon: Eye, title: 'Swirl marks stopped at the film surface', desc: 'Every wash cycle risks introducing swirl marks into dark paint. PPF\'s self-healing topcoat resets minor surface scratches with heat — the paint underneath stays unmarked.' },
   { icon: TrendingUp, title: 'Gloss depth amplified', desc: 'Gloss PPF adds measurable depth to dark paint. The film\'s optical clarity enhances the wet-look finish that dark colours are chosen for in the first place.' },
-  { icon: Zap, title: 'Self-healing that actually matters on dark', desc: 'Light swirl marks are nearly invisible on silver paint. On dark paint they\'re glaring. SunTek Ultra PPF heals these marks with heat — a functional benefit that matters most on the colours where it shows.' },
-  { icon: Award, title: '10-year SunTek warranty', desc: 'Film discolouration is covered under SunTek\'s warranty. On dark paint, yellowed or hazed film is particularly visible — SunTek\'s clarity warranty covers this specifically.' },
+  { icon: Zap, title: 'Self-healing that actually matters on dark', desc: 'Light swirl marks are nearly invisible on silver paint. On dark paint they\'re glaring. SunTek Reaction PPF heals these marks with heat — a functional benefit that matters most on the colours where it shows.' },
+  { icon: Award, title: '12-year SunTek warranty', desc: 'Film discolouration is covered under SunTek\'s warranty. On dark paint, yellowed or hazed film is particularly visible — SunTek Reaction\'s clarity warranty covers this specifically.' },
   { icon: Shield, title: 'Paint correction before film', desc: 'If your dark car already has swirl marks, we correct the paint before film goes on. Trapping existing defects under film is not something we do — the surface has to be right first.' },
 ];
 
 const faqs = [
   { q: 'Why is PPF especially important for dark-coloured cars?', a: 'Dark paint — black, dark grey, navy, dark green — shows surface defects significantly more than silver or white. A stone chip on a black car is an immediate white or silver mark that cannot be unseen. Swirl marks from washing appear as visible spider-web patterns under direct light. PPF prevents chips from reaching the surface and its self-healing topcoat addresses light scratches before they become permanent.' },
   { q: 'Can PPF fix swirl marks already on my dark car?', a: 'No — PPF does not repair existing paint defects. If your car already has swirl marks, paint correction is required before film is applied. Installing film over existing swirl marks traps them permanently under the film. At Next LVL Protection, we inspect paint condition before every installation and advise on correction requirements first.' },
-  { q: 'Does PPF change how dark paint looks?', a: 'Gloss PPF on gloss dark paint adds depth to the finish — many customers say the car looks better after film. The optical clarity of SunTek Ultra PPF is very high. It should not introduce haze, yellowing, or colour shift. If you want to change the finish, matte PPF converts gloss dark paint to a satin look.' },
+  { q: 'Does PPF change how dark paint looks?', a: 'Gloss PPF on gloss dark paint adds depth to the finish — many customers say the car looks better after film. The optical clarity of SunTek Reaction PPF is very high. It should not introduce haze, yellowing, or colour shift. If you want to change the finish, matte PPF converts gloss dark paint to a satin look.' },
   { q: 'Can I combine PPF and ceramic coating on a dark car?', a: 'Yes — and this is one of our most popular combinations for dark cars. PPF goes on the high-impact zones (front end, full car, or sections as required), then ceramic coating is applied over the PPF and across the rest of the painted surface. You get physical chip protection from the film and hydrophobic/chemical resistance from the ceramic. The result is a very low-maintenance, very deep-looking dark finish.' },
   { q: 'What PPF coverage do you recommend for a black car?', a: 'For a black or dark grey car that gets daily use, we recommend at minimum a full front end — bonnet, front bumper, guards, headlights, and mirrors. That covers the zones that generate 90% of chip events. If you do highway driving regularly, consider adding the roof and A-pillars (Track Package). Full wraps are worth it on dark prestige or performance cars where the full surface needs protection.' },
   { q: 'How do I wash a dark PPF-covered car without creating swirl marks?', a: 'Use a pH-neutral car shampoo, a clean microfibre wash mitt, and a two-bucket wash method. Rinse thoroughly before contact washing to remove loose grit. Do not use automatic car washes — brushes introduce the swirl marks that PPF is protecting you from. We provide full aftercare instructions at handover.' },
@@ -74,7 +74,7 @@ export default function PPFDarkPaintPage() {
             </span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 520 }}>
-            Dark paint shows every chip, every swirl mark. SunTek Ultra PPF stops both — self-healing film that protects the finish dark-car owners actually care about. Installed in Acacia Ridge, Brisbane.
+            Dark paint shows every chip, every swirl mark. SunTek Reaction PPF stops both — self-healing film that protects the finish dark-car owners actually care about. Installed in Acacia Ridge, Brisbane.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
@@ -157,7 +157,7 @@ export default function PPFDarkPaintPage() {
                 'Paint condition inspection before film — correction advised if needed',
                 'Full decontamination wash + iron fallout removal',
                 'Clay bar decontamination on all surfaces to be filmed',
-                'SunTek Ultra PPF — not a generic substitute',
+                'SunTek Reaction PPF — not a generic substitute',
                 'Edge-tucked installation on all covered panels',
                 'Post-installation QC under workshop lighting',
                 'SunTek warranty documentation',

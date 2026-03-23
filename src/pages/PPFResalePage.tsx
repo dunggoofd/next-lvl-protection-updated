@@ -11,7 +11,7 @@ import PageMeta from '../components/PageMeta';
 const benefits = [
   { icon: TrendingUp, title: 'Provable paint condition at sale time', desc: 'A PPF-protected car arrives at sale with factory-condition paint. That is a verifiable fact — not a claim. Buyers and dealers can see it, touch it, and confirm it.' },
   { icon: Shield, title: 'Every chip prevented is paint that doesn\'t need fixing', desc: 'Paint correction before a trade-in costs money and time. PPF prevents the chips that would require that correction — a net saving at the point of sale.' },
-  { icon: Award, title: 'Warranty documentation transfers with the car', desc: 'SunTek\'s 10-year warranty is on the film, not the owner. When you sell, the warranty documentation transfers — it\'s an asset, not just a receipt.' },
+  { icon: Award, title: 'Warranty documentation transfers with the car', desc: 'SunTek\'s 12-year warranty is on the film, not the owner. When you sell, the warranty documentation transfers — it\'s an asset, not just a receipt.' },
   { icon: Eye, title: 'Buyers notice', desc: 'A private buyer or dealer who sees PPF documentation and perfect paint condition recognises the value immediately. It removes the negotiation point of paint condition from the conversation.' },
   { icon: Clock, title: 'Works best applied early', desc: 'PPF applied at delivery means the protection runs for the full ownership period. Applied late, the benefit to resale is limited by whatever happened to the paint in the uncovered period.' },
   { icon: TrendingUp, title: 'The economics make sense over time', desc: 'PPF cost spread over a 3–5 year ownership period is a fraction of the depreciation difference between a car in excellent paint condition and one with chip and scratch damage.' },
@@ -151,7 +151,7 @@ export default function PPFResalePage() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>
               {[
-                'SunTek Ultra PPF — manufacturer warranty documentation',
+                'SunTek Reaction PPF — manufacturer warranty documentation',
                 'Warranty transferable to subsequent owner',
                 'Installation date and coverage area recorded',
                 'Next LVL Protection installer certification record',

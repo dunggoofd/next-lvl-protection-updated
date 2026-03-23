@@ -31,7 +31,7 @@ const benefits = [
   { icon: MapPin, title: 'Acacia Ridge — South Brisbane', desc: 'Unit 16, 18-24 Loam St, Acacia Ridge QLD 4110. Easily accessible from the M3 Logan Motorway and Gateway Motorway interchange. On-site parking directly in front of the studio.' },
   { icon: Clock, title: 'Booking Available This Week', desc: 'Most installs are completed within 1–3 business days of enquiry. Contact us with your vehicle and coverage preference for a same-week appointment.' },
   { icon: Shield, title: 'SunTek Authorised in Brisbane', desc: 'Next LVL Protection is a SunTek Authorised Application Centre — one of a limited number of certified PPF installers in Brisbane. The manufacturer warranty is valid only through authorised installers.' },
-  { icon: Star, title: 'Rated 4.9 on Google', desc: 'Over 80 Google reviews from Brisbane customers across PPF, ceramic coating, and window tinting. Every review is unfiltered and publicly visible on our Google Business profile.' },
+  { icon: Star, title: 'Trusted by Brisbane Car Owners', desc: 'Google reviews from Brisbane customers across PPF, ceramic coating, and window tinting. Every review is unfiltered and publicly visible on our Google Business profile.' },
 ];
 
 const faqs = [

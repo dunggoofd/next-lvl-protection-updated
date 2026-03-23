@@ -76,7 +76,7 @@ export default function GoogleReviews({ reviews, googleUrl }: GoogleReviewsProps
               ))}
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>See 40+ More Reviews</div>
+              <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>See Our Reviews</div>
               <div style={{ fontSize: 15, color: 'var(--color-text-secondary)' }}>on Google</div>
             </div>
           </a>

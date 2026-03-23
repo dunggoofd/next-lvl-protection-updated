@@ -9,16 +9,16 @@ import PageMeta from '../components/PageMeta';
 
 
 const benefits = [
-  { icon: Shield, title: '10-Year Manufacturer Warranty', desc: 'SunTek Ultra PPF carries a 10-year manufacturer warranty covering delamination, yellowing, cracking, and hazing — backed directly by SunTek, not just the installer.' },
+  { icon: Shield, title: '12-Year Manufacturer Warranty', desc: 'SunTek Reaction PPF carries a 12-year manufacturer warranty covering delamination, yellowing, cracking, and hazing — backed directly by SunTek, not just the installer.' },
   { icon: RefreshCw, title: 'Self-Healing Covered', desc: 'The self-healing topcoat that eliminates light swirl marks under heat is part of the SunTek warranty specification — not a separate feature you have to pay extra to protect.' },
   { icon: AlertCircle, title: 'What the Warranty Covers', desc: 'Delamination from the paint surface. Film yellowing or discolouration. Edge lifting from a factory tuck (not post-damage). Film cracking or hazing under normal conditions.' },
   { icon: AlertCircle, title: 'What the Warranty Excludes', desc: 'Damage caused by abrasion (pressure washing the film edge), chemical contamination, physical punctures or cuts, or modification by an unauthorised party. Vandalism is an insurance claim, not a warranty claim.' },
-  { icon: Clock, title: '5-Year Option Available', desc: 'Entry-level packages use SunTek\'s 5-year film — mechanically identical protection but with a shorter warranty term. Upgrading to 10-year is available on any package.' },
+  { icon: Clock, title: '5-Year Option Available', desc: 'Entry-level packages use SunTek\'s 5-year film — mechanically identical protection but with a shorter warranty term. Upgrading to 12-year SunTek Reaction is available on any package.' },
   { icon: Shield, title: 'Warranty Requires Authorised Installer', desc: 'SunTek warranties are only valid when installed by an Authorised Application Centre. Next LVL Protection is a SunTek Authorised installer in Brisbane.' },
 ];
 
 const faqs = [
-  { q: 'How long does PPF last in Brisbane?', a: 'SunTek Ultra PPF is warranted for 10 years against delamination, yellowing, cracking, and hazing. In Brisbane\'s UV environment, the 10-year warranty film is a practical necessity. The 5-year film is mechanically similar but the warranty period is shorter — for a long-term ownership vehicle, the 10-year option is better value.' },
+  { q: 'How long does PPF last in Brisbane?', a: 'SunTek Reaction PPF is warranted for 12 years against delamination, yellowing, cracking, and hazing. SunTek Ultra Matte carries a 10-year warranty. In Brisbane\'s UV environment, the 12-year Reaction warranty film is a practical necessity. The 5-year film is mechanically similar but the warranty period is shorter — for a long-term ownership vehicle, SunTek Reaction is better value.' },
   { q: 'What does the SunTek PPF warranty actually cover?', a: 'The SunTek manufacturer warranty covers: (1) delamination — film separating from the paint surface without a physical cause; (2) yellowing or discolouration from UV or ambient oxidation; (3) edge lifting from a properly installed factory tuck; (4) film cracking or surface hazing under normal driving conditions. It does not cover physical damage, chemical contamination, or abrasion.' },
   { q: 'Does the warranty require me to use the same installer for claims?', a: 'Warranty claims are assessed by SunTek directly. The film carries a serial batch number recorded at installation. You do not need to return to the same installer for a warranty assessment, but the film must have been installed by an Authorised Application Centre — which Next LVL Protection is. We document every installation for your records.' },
   { q: 'Does DIY or kit-form PPF come with a warranty?', a: 'No reputable manufacturer warranties film installed by a non-certified party. Kit-form PPF — sold through car parts stores or online — uses lower-grade film and has no manufacturer warranty. If it lifts, yellows, or fails, the remedy cost falls entirely on you.' },
@@ -47,17 +47,17 @@ export default function PPFWarrantyPage() {
   return (
     <>
       <PageMeta
-        title="PPF Warranty Brisbane | SunTek 10-Year Warranty | Next LVL Protection"
-        description="SunTek paint protection film warranty for Brisbane installs. 10-year manufacturer warranty through Next LVL Protection authorised installer status."
+        title="PPF Warranty Brisbane | SunTek 12-Year Warranty | Next LVL Protection"
+        description="SunTek paint protection film warranty for Brisbane installs. 12-year manufacturer warranty on SunTek Reaction through Next LVL Protection authorised installer status."
         canonical="https://www.nextlvlprotection.com.au/ppf-warranty-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "PPF Warranty Brisbane — SunTek 10-Year Paint Protection Film",
+        "name": "PPF Warranty Brisbane — SunTek 12-Year Paint Protection Film",
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "SunTek Authorised installer in Brisbane — 10-year manufacturer warranty on Paint Protection Film. Delamination, yellowing, cracking, and hazing covered.",
+        "description": "SunTek Authorised installer in Brisbane — 12-year manufacturer warranty on SunTek Reaction Paint Protection Film. Delamination, yellowing, cracking, and hazing covered.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -67,10 +67,10 @@ export default function PPFWarrantyPage() {
           <div className="hero-anim"><TrustBadges services={['ppf']} /></div>
           <h1 style={{ marginTop: 28 }}>
             <span className="hero-anim font-display hero-text-mono" style={{ fontSize: 'var(--size-h1)', color: 'var(--color-text-primary)', lineHeight: 1 }}>PPF Warranty Brisbane</span>
-            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>10 Years. SunTek.</span>
+            <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>12 Years. SunTek.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            SunTek Ultra PPF carries a 10-year manufacturer warranty — backed by SunTek, not just the installer. Know exactly what is covered before you commit.
+            SunTek Reaction PPF carries a 12-year manufacturer warranty — backed by SunTek, not just the installer. Know exactly what is covered before you commit.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
@@ -84,7 +84,7 @@ export default function PPFWarrantyPage() {
         <span className="section-number" aria-hidden="true">02</span>
         <div className="container">
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Warranty</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What the 10-Year Warranty Covers</h2>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What the 12-Year Warranty Covers</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             {benefits.map((b, i) => (
               <div key={i} className="card" style={{ padding: 28 }}>

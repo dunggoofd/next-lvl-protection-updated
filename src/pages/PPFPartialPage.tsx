@@ -24,7 +24,7 @@ const benefits = [
   { icon: DollarSign, title: 'Lower Entry Cost', desc: 'Partial installs let you prioritise the highest-risk zones on a tighter budget. The Impact Shield package covers the three zones responsible for most chip events.' },
   { icon: Layers, title: 'Add Panels Later', desc: 'PPF panels are independent. You can add door cups, mirrors, or a full bonnet at a later date. There is no penalty for starting small.' },
   { icon: Shield, title: 'Correct Priority Order', desc: 'Front bumper + bonnet leading edge + guards covers the zones where 90% of chips originate. Partial coverage on these zones outperforms full coverage on lower-risk panels.' },
-  { icon: Zap, title: 'Same SunTek Film Quality', desc: 'Partial installs use the same SunTek Ultra PPF as full wraps. The only difference is coverage area — not film grade or installation standard.' },
+  { icon: Zap, title: 'Same SunTek Film Quality', desc: 'Partial installs use the same SunTek Reaction PPF as full wraps. The only difference is coverage area — not film grade or installation standard.' },
 ];
 
 const faqs = [
@@ -32,8 +32,8 @@ const faqs = [
   { q: 'Is partial PPF worth it compared to a full wrap?', a: 'For most daily drivers, yes. Chips and damage concentrate heavily on the front bumper and bonnet leading edge. Protecting these zones prevents the majority of paint damage at a fraction of full-wrap cost. A full wrap is appropriate for prestige, track, or high-kilometre vehicles where rear-quarter and door exposure is also high.' },
   { q: 'Can I add more panels later?', a: 'Yes. PPF panels are applied independently. You can start with an Impact Shield (bumper, leading edge, guards) and add the full bonnet, headlights, or door cups at a later service. There is no penalty or incompatibility in adding coverage later.' },
   { q: 'What is the best partial PPF starting point for a daily driver?', a: 'The Impact Shield — front bumper, bonnet leading edge, and front guards — is the most cost-effective entry point. These three panels collectively receive the majority of chip impact on any road car. Starting here and upgrading later is a rational strategy if budget is a consideration.' },
-  { q: 'Is the film the same quality on a partial install as a full wrap?', a: 'Yes. Next LVL Protection installs SunTek Ultra PPF on every job regardless of coverage area. The only variable is panel count. Film grade and installation standard are identical across all packages.' },
-  { q: 'Do partial installs come with the same warranty?', a: 'Yes. Covered panels carry the same SunTek manufacturer warranty — 5-year or 10-year depending on the film tier chosen. The warranty applies to each installed panel individually.' },
+  { q: 'Is the film the same quality on a partial install as a full wrap?', a: 'Yes. Next LVL Protection installs SunTek Reaction PPF on every job regardless of coverage area. The only variable is panel count. Film grade and installation standard are identical across all packages.' },
+  { q: 'Do partial installs come with the same warranty?', a: 'Yes. Covered panels carry the same SunTek manufacturer warranty — 5-year or 12-year depending on the film tier chosen. The warranty applies to each installed panel individually.' },
   { q: 'Can I get partial PPF on just the bonnet?', a: 'Yes. Individual panel quotes are available. Common individual-panel requests include the full bonnet, boot lid, or roof. Contact us with your vehicle details and the panel you want covered for a specific quote.' },
 ];
 

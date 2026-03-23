@@ -9,6 +9,7 @@ const sections = [
       { label: 'Gallery', href: '/gallery' },
       { label: 'About', href: '/about' },
       { label: 'Get a Quote', href: '/get-a-quote' },
+      { label: 'Warranties', href: '/warranties' },
       { label: 'Privacy Policy', href: '/privacy-policy' },
     ],
   },

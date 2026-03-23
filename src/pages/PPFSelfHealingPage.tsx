@@ -9,22 +9,22 @@ import PageMeta from '../components/PageMeta';
 
 
 const benefits = [
-  { icon: Zap, title: 'Light Swirls Vanish Under Heat', desc: 'SunTek Ultra\'s topcoat reflows under warmth — solar heat, warm water, or a heat gun. Light swirl marks from automatic washes or incorrect hand washing disappear without any product or polishing.' },
+  { icon: Zap, title: 'Light Swirls Vanish Under Heat', desc: 'SunTek Reaction\'s ceramic-infused topcoat reflows under warmth — solar heat, warm water, or a heat gun. Light swirl marks from automatic washes or incorrect hand washing disappear without any product or polishing.' },
   { icon: Thermometer, title: 'Brisbane Heat Activates It', desc: 'Brisbane\'s ambient temperature and direct sun are sufficient to trigger the self-healing process in normal parking conditions. You don\'t need to actively apply heat — the climate does the work.' },
   { icon: Shield, title: 'Swirls vs Chips — Different Mechanisms', desc: 'Self-healing addresses surface-level scratches in the film\'s topcoat. It does not repair chip damage that penetrates to the adhesive layer — that\'s what the urethane body of the film handles. Both mechanisms work simultaneously on different threat levels.' },
   { icon: Eye, title: 'Optical Clarity Maintained', desc: 'The self-healing topcoat is optically transparent. It does not add visible texture or colour. After healing, the panel surface returns to a clear, swirl-free finish without polishing or product application.' },
-  { icon: Zap, title: 'No Limit on Healing Cycles', desc: 'The topcoat does not "run out" of healing capacity. Light swirls will heal repeatedly across the life of the film — the 10-year SunTek warranty period.' },
-  { icon: Shield, title: 'Available on All Packages', desc: 'Self-healing film is standard on SunTek Ultra PPF — the film used on all Next LVL Protection installs. You do not need to select a special upgrade tier to get self-healing capability.' },
+  { icon: Zap, title: 'No Limit on Healing Cycles', desc: 'The topcoat does not "run out" of healing capacity. Light swirls will heal repeatedly across the life of the film — the 12-year SunTek Reaction warranty period.' },
+  { icon: Shield, title: 'Available on All Packages', desc: 'Self-healing film is standard on SunTek Reaction PPF — the film used on all Next LVL Protection installs. You do not need to select a special upgrade tier to get self-healing capability.' },
 ];
 
 const faqs = [
   { q: 'What is self-healing PPF?', a: 'Self-healing PPF contains a flexible elastomeric topcoat that reflows under heat to close surface-level scratches. Light swirl marks — the kind left by automatic car washes or poor hand-washing technique — disappear when the film surface warms up. The film body beneath still absorbs chip and impact damage separately.' },
   { q: 'Does self-healing PPF actually work?', a: 'Yes, for light surface scratches in the topcoat. It does not work on deep scratches that penetrate below the topcoat, or on chip damage that reaches the adhesive. The distinction matters: "self-healing" refers specifically to the outermost layer. The main film body handles chip and stone impact — those marks are absorbed, not healed.' },
-  { q: 'Does Brisbane weather activate the self-healing?', a: 'Yes. SunTek Ultra\'s healing topcoat activates around 60°C surface temperature, which is reached on a typical Brisbane summer day in direct sun within minutes. Ambient heat during normal parked conditions is sufficient — you do not need to apply external heat deliberately.' },
+  { q: 'Does Brisbane weather activate the self-healing?', a: 'Yes. SunTek Reaction\'s healing topcoat activates around 60°C surface temperature, which is reached on a typical Brisbane summer day in direct sun within minutes. Ambient heat during normal parked conditions is sufficient — you do not need to apply external heat deliberately.' },
   { q: 'Does self-healing PPF remove stone chips?', a: 'No. A stone chip is a physical impact that compresses the film body. The chip is absorbed by the urethane layer — the film takes the damage instead of the paint. The crater left in the film is structural, not a surface scratch, and does not self-heal. It remains visible in the film surface but the paint beneath is undamaged. A chipped panel can be re-filmed.' },
   { q: 'Is self-healing the same as ceramic coating?', a: 'No — they are different products with different functions. Ceramic coating is a hard silica layer applied over paint (or over PPF) that repels water and contamination. Self-healing is a topcoat within the PPF film that closes light surface scratches. They can be combined: PPF provides impact protection and swirl healing, ceramic provides hydrophobic performance over the top.' },
   { q: 'Does self-healing PPF require any special maintenance?', a: 'No. Wash with pH-neutral automotive shampoo and a clean microfibre. Avoid automatic car washes with brushes. If light swirls appear after an imperfect wash, parking in direct sun will typically resolve them within 30–60 minutes. The film does not require any activating product or treatment.' },
-  { q: 'Is self-healing film covered by the warranty?', a: 'Yes. SunTek Ultra\'s 10-year warranty covers the full film including the topcoat. If the topcoat degrades or fails to perform its healing function under normal conditions within the warranty period, it is a warranty claim. Damage to the topcoat from physical abrasion or incorrect maintenance products is not a warranty defect.' },
+  { q: 'Is self-healing film covered by the warranty?', a: 'Yes. SunTek Reaction\'s 12-year warranty covers the full film including the topcoat. If the topcoat degrades or fails to perform its healing function under normal conditions within the warranty period, it is a warranty claim. Damage to the topcoat from physical abrasion or incorrect maintenance products is not a warranty defect.' },
 ];
 
 
@@ -47,17 +47,17 @@ export default function PPFSelfHealingPage() {
   return (
     <>
       <PageMeta
-        title="Self-Healing PPF Brisbane | SunTek Ultra | Next LVL Protection"
-        description="Self-healing paint protection film in Brisbane. SunTek Ultra PPF heals minor scratches with heat. Authorised installer, Acacia Ridge."
+        title="Self-Healing PPF Brisbane | SunTek Reaction | Next LVL Protection"
+        description="Self-healing paint protection film in Brisbane. SunTek Reaction PPF heals minor scratches with heat. Authorised installer, Acacia Ridge."
         canonical="https://www.nextlvlprotection.com.au/ppf-self-healing-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Self-Healing PPF Brisbane — SunTek Ultra Paint Protection Film",
+        "name": "Self-Healing PPF Brisbane — SunTek Reaction Paint Protection Film",
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Self-healing PPF in Brisbane. SunTek Ultra film with elastomeric topcoat — light swirls vanish under heat. Activated by Brisbane ambient temperatures. Acacia Ridge studio.",
+        "description": "Self-healing PPF in Brisbane. SunTek Reaction film with ceramic-infused topcoat — light swirls vanish under heat. Activated by Brisbane ambient temperatures. Acacia Ridge studio.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -70,7 +70,7 @@ export default function PPFSelfHealingPage() {
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'var(--size-hero)', color: 'var(--color-accent)', lineHeight: 0.95, marginTop: 4 }}>Swirls Gone. In the Sun.</span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
-            SunTek Ultra's elastomeric topcoat closes light surface scratches under heat. Brisbane's climate activates it automatically. Standard on every Next LVL Protection install.
+            SunTek Reaction's ceramic-infused topcoat closes light surface scratches under heat. Brisbane's climate activates it automatically. Standard on every Next LVL Protection install.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>

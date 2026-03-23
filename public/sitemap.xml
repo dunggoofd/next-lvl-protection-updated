@@ -47,6 +47,9 @@
   <url><loc>https://www.nextlvlprotection.com.au/residential-tinting-questions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.nextlvlprotection.com.au/commercial-tinting-questions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Warranties -->
+  <url><loc>https://www.nextlvlprotection.com.au/warranties</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Legal -->
   <url><loc>https://www.nextlvlprotection.com.au/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 

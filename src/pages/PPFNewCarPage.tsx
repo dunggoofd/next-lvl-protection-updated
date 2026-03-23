@@ -12,8 +12,8 @@ const benefits = [
   { icon: Shield, title: 'Protect it before the first chip', desc: 'The first stone chip happens before you expect it. PPF applied on delivery means the paint never takes a hit — not at the dealership, not on the drive home.' },
   { icon: Star, title: 'Factory paint condition, preserved', desc: 'New car paint is as good as it will ever be. PPF locks in that condition. Without it, Brisbane highway driving starts degrading your clear coat within months.' },
   { icon: TrendingUp, title: 'Maximum resale protection', desc: 'A car with verified PPF on factory paint commands significantly more at trade-in. The film is visible proof the paint has never been touched.' },
-  { icon: Zap, title: 'Self-healing film on a new surface', desc: 'SunTek Ultra PPF heals minor scratches with heat. On new factory paint, the film and the surface work together — the result holds for the life of the film.' },
-  { icon: Award, title: 'SunTek Authorised warranty — 10 years', desc: 'Our front end, track, and full wrap packages on new cars carry the full 10-year SunTek authorised installer warranty. That\'s manufacturer-backed, not self-issued.' },
+  { icon: Zap, title: 'Self-healing film on a new surface', desc: 'SunTek Reaction PPF heals minor scratches with heat. On new factory paint, the film and the surface work together — the result holds for the life of the film.' },
+  { icon: Award, title: 'SunTek Authorised warranty — 12 years', desc: 'Our front end, track, and full wrap packages on new cars carry the full 12-year SunTek Reaction authorised installer warranty. That\'s manufacturer-backed, not self-issued.' },
   { icon: Clock, title: 'Apply within the first 30 days', desc: 'The sooner after delivery, the better. New paint is contaminant-free and has no prior damage to trap under film. The window for a perfect install is short.' },
 ];
 
@@ -23,7 +23,7 @@ const faqs = [
   { q: 'Should I get PPF before or after ceramic coating on a new car?', a: 'PPF goes on first, then ceramic coating over the top if you want both. PPF protects the paint physically; ceramic coating is applied over the film (and unprotected paint) to add hydrophobic and chemical resistance. At Next LVL Protection, we often combine PPF on the high-impact zones with ceramic coating over the full car for a new car delivery package.' },
   { q: 'Is full body PPF worth it on a new car?', a: 'It depends on how you use the car and what you paid for it. For prestige or performance cars, full body PPF is a sound investment — the cost of full wrap is a fraction of a future respray. For everyday cars, a full front end package (bonnet, bumper, guards, headlights, mirrors) covers the areas that get hit 90% of the time and is the most popular choice.' },
   { q: 'How much does PPF for a new car cost in Brisbane?', a: 'PPF pricing for new cars depends on coverage and vehicle size. Contact us for a quote.' },
-  { q: 'Will PPF affect how my new car looks?', a: 'Properly installed SunTek Ultra PPF is virtually invisible. Gloss PPF on a gloss paint car adds subtle depth without changing colour or sheen. Matte PPF converts gloss paint to a satin finish — a popular choice for customers wanting a factory matte look. We\'ll walk you through options before we start.' },
+  { q: 'Will PPF affect how my new car looks?', a: 'Properly installed SunTek Reaction PPF is virtually invisible. Gloss PPF on a gloss paint car adds subtle depth without changing colour or sheen. Matte PPF converts gloss paint to a satin finish — a popular choice for customers wanting a factory matte look. We\'ll walk you through options before we start.' },
   { q: 'Can new car PPF be removed later?', a: 'Yes — PPF is designed to be removable. After several years if you want to sell the car, the film can be removed by a professional installer. Underneath, the paint will be in the same condition as the day the film was applied. That is one of the core value propositions of quality PPF.' },
 ];
 
@@ -79,7 +79,12 @@ export default function PPFNewCarPage() {
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>
-            <Link to="/ppf-brisbane" className="btn-ghost">View All PPF Packages</Link>
+            <Link to="/warranties" className="btn-ghost">View Warranties</Link>
+          </div>
+          <div className="hero-anim" style={{ display: 'flex', gap: 12, marginTop: 16, flexWrap: 'wrap' }}>
+            <Link to="/ceramic-coating-brisbane" className="btn-ghost" style={{ padding: '10px 20px', fontSize: 13 }}>Ceramic Coating</Link>
+            <Link to="/ppf-brisbane" className="btn-ghost" style={{ padding: '10px 20px', fontSize: 13 }}>PPF Packages</Link>
+            <Link to="/ppf-questions" className="btn-ghost" style={{ padding: '10px 20px', fontSize: 13 }}>PPF FAQ</Link>
           </div>
         </div>
       </section>
@@ -154,9 +159,9 @@ export default function PPFNewCarPage() {
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 48 }}>What We Recommend for New Cars</h2>
           <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
-              { name: 'Front End Package', price: 'Contact us for a quote', recommended: false, desc: 'The most popular choice for new car owners. Covers the zones that get hit 90% of the time.', includes: ['Full bonnet', 'Front bumper (full)', 'Front guards', 'Headlights', 'Mirrors', '10-year SunTek warranty'] },
-              { name: 'Track Package', price: 'Contact us for a quote', recommended: true, desc: 'Front end plus roof and A-pillars. Best for highway drivers and open road use in QLD.', includes: ['Everything in Front End', 'Roof', 'A-pillars', '10-year SunTek warranty'] },
-              { name: 'Full Wrap', price: 'Contact us for a quote', recommended: false, desc: 'Complete vehicle coverage. Every painted panel. The definitive option for prestige or performance cars.', includes: ['Entire exterior surface', 'Edge-tucked installation', '10-year SunTek warranty'] },
+              { name: 'Front End Package', price: 'Contact us for a quote', recommended: false, desc: 'The most popular choice for new car owners. Covers the zones that get hit 90% of the time.', includes: ['Full bonnet', 'Front bumper (full)', 'Front guards', 'Headlights', 'Mirrors', '12-year SunTek warranty'] },
+              { name: 'Track Package', price: 'Contact us for a quote', recommended: true, desc: 'Front end plus roof and A-pillars. Best for highway drivers and open road use in QLD.', includes: ['Everything in Front End', 'Roof', 'A-pillars', '12-year SunTek warranty'] },
+              { name: 'Full Wrap', price: 'Contact us for a quote', recommended: false, desc: 'Complete vehicle coverage. Every painted panel. The definitive option for prestige or performance cars.', includes: ['Entire exterior surface', 'Edge-tucked installation', '12-year SunTek warranty'] },
             ].map((pkg, i) => (
               <div key={i} className="card" style={{ padding: '32px 24px', position: 'relative', border: pkg.recommended ? '1.5px solid var(--color-accent)' : undefined }}>
                 {pkg.recommended && (

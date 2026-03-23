@@ -11,10 +11,10 @@ import PageMeta from '../components/PageMeta';
 const comparisons = [
   { attribute: 'Appearance', gloss: 'Optically clear — indistinguishable from unprotected paint at distance', matte: 'Satin-flat finish — transforms gloss paint to a factory matte look' },
   { attribute: 'Paint Compatibility', gloss: 'Suitable over all factory finishes — gloss, satin, metallic', matte: 'Best over gloss factory paint — the film creates the matte look' },
-  { attribute: 'Self-Healing', gloss: 'Yes — SunTek Ultra self-healing topcoat standard', matte: 'Yes — SunTek Ultra Matte also carries self-healing topcoat' },
+  { attribute: 'Self-Healing', gloss: 'Yes — SunTek Reaction self-healing topcoat standard', matte: 'Yes — SunTek Ultra Matte also carries self-healing topcoat' },
   { attribute: 'Maintenance', gloss: 'pH-neutral wash, standard ceramic if desired', matte: 'pH-neutral wash only — no machine polishing or gloss products on matte film' },
   { attribute: 'Ceramic Coating Compatibility', gloss: 'Yes — ceramic over gloss PPF is standard practice', matte: 'Matte-specific ceramic only — gloss ceramics will alter the matte finish' },
-  { attribute: 'Warranty', gloss: '10-year SunTek manufacturer warranty', matte: '10-year SunTek manufacturer warranty' },
+  { attribute: 'Warranty', gloss: '12-year SunTek manufacturer warranty', matte: '10-year SunTek manufacturer warranty' },
   { attribute: 'Typical Use Case', gloss: 'All cars where original paint appearance is to be preserved', matte: 'Gloss cars getting a stealth appearance change without wrap' },
 ];
 
@@ -58,7 +58,7 @@ export default function PPFGlossMattePage() {
         "name": "Gloss vs Matte PPF Brisbane — SunTek Paint Protection Film",
         "provider": { "@type": "LocalBusiness", "name": "Next LVL Protection", "telephone": "0468810666", "address": { "@type": "PostalAddress", "streetAddress": "Unit 16, 18-24 Loam St", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "postalCode": "4110" }},
         "areaServed": "Brisbane",
-        "description": "Gloss and matte PPF available in Brisbane. SunTek Ultra gloss PPF is optically clear. SunTek Ultra Matte transforms gloss paint to satin finish. Acacia Ridge studio.",
+        "description": "Gloss and matte PPF available in Brisbane. SunTek Reaction gloss PPF is optically clear. SunTek Ultra Matte transforms gloss paint to satin finish. Acacia Ridge studio.",
       })}} />
 
       <section ref={heroRef} style={{ position: 'relative', height: '100dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
@@ -119,7 +119,7 @@ export default function PPFGlossMattePage() {
               { icon: Shield, label: 'Same urethane body — identical chip protection' },
               { icon: Eye, label: 'Both optically clear at adhesive layer' },
               { icon: Layers, label: 'Both carry SunTek self-healing topcoat' },
-              { icon: Sun, label: 'Both 10-year manufacturer warranty' },
+              { icon: Sun, label: 'SunTek Reaction 12-year, Ultra Matte 10-year warranty' },
             ].map((item, i) => (
               <div key={i} className="card" style={{ padding: 24, textAlign: 'center' }}>
                 <item.icon size={28} color="var(--color-accent)" style={{ margin: '0 auto 12px' }} />

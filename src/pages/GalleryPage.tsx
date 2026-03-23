@@ -6,7 +6,7 @@ import PageMeta from '../components/PageMeta';
 type Category = 'All' | 'PPF' | 'Ceramic' | 'Automotive Tint' | 'Residential Tint' | 'Commercial Tint';
 
 const gallery = [
-  { category: 'PPF', label: 'BMW M3 — Full Front PPF (SunTek UltraBarrier Pro)', before: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', after: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80' },
+  { category: 'PPF', label: 'BMW M3 — Full Front PPF (SunTek Reaction)', before: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', after: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80' },
   { category: 'PPF', label: 'Porsche 911 — Front End Package', before: 'https://i.pinimg.com/736x/d4/fd/9c/d4fd9c6f8f13cd8d13281b52b85b0fdd.jpg', after: 'https://i.pinimg.com/736x/65/f4/a3/65f4a365e40237e5bacbe86813d3de0c.jpg' },
   { category: 'PPF', label: 'Tesla Model 3 — Track Package', before: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&q=80', after: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80' },
   { category: 'Ceramic', label: 'Range Rover — Ceramic Elite (Paint Correction + 2-Layer Coat)', before: 'https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80', after: 'https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=800&q=80' },

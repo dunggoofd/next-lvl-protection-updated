@@ -10,11 +10,11 @@ import PageMeta from '../components/PageMeta';
 
 const benefits = [
   { icon: Shield, title: 'The chip never reaches your paint', desc: 'Stone chips, gravel, and road debris hit the film first. The urethane absorbs the impact. The paint underneath is undisturbed. No filler, no touch-up, no respray.' },
-  { icon: Zap, title: 'Self-healing surface resets the film', desc: 'Light abrasion that would become surface scratches on bare paint? SunTek Ultra PPF heals them with heat. Direct sunlight or a warm water pour resets the topcoat.' },
+  { icon: Zap, title: 'Self-healing surface resets the film', desc: 'Light abrasion that would become surface scratches on bare paint? SunTek Reaction PPF heals them with heat. Direct sunlight or a warm water pour resets the topcoat.' },
   { icon: TrendingUp, title: 'Maintained paint = maintained value', desc: 'Paint condition is one of the most visible factors at trade-in or private sale. PPF-protected cars arrive with factory-condition paint. That is a provable point of difference.' },
   { icon: Award, title: 'Brisbane conditions are unusually harsh', desc: 'Gravel roads heading south-west of Brisbane, dusty highway conditions, and UV intensity that accelerates chip oxidation. PPF is not a luxury item here — it is appropriate protection for real-world use.' },
   { icon: Clock, title: 'Cost of chips vs cost of PPF', desc: 'The cost of paint correction or a respray after significant chip damage is substantial. A full front PPF package covers hundreds of impact events over 10 years. The economics are clear over time.' },
-  { icon: Shield, title: '10-year SunTek Authorised warranty', desc: 'SunTek\'s film warranty covers yellowing, peeling, and adhesive failure. Installed by a SunTek Authorised installer, every front end and full wrap package is manufacturer-backed.' },
+  { icon: Shield, title: '12-year SunTek Authorised warranty', desc: 'SunTek Reaction\'s film warranty covers yellowing, peeling, and adhesive failure. Installed by a SunTek Authorised installer, every front end and full wrap package is manufacturer-backed.' },
 ];
 
 const faqs = [
@@ -75,7 +75,7 @@ export default function PPFStoneChipPage() {
             </span>
           </h1>
           <p className="hero-anim" style={{ color: 'var(--color-text-secondary)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 520 }}>
-            SunTek Ultra PPF absorbs stone chips, gravel impacts, and road debris before they reach your paint. A physical urethane barrier — not a coating, not a sealant. SunTek Authorised installer in Acacia Ridge.
+            SunTek Reaction PPF absorbs stone chips, gravel impacts, and road debris before they reach your paint. A physical urethane barrier — not a coating, not a sealant. SunTek Authorised installer in Acacia Ridge.
           </p>
           <div className="hero-anim" style={{ display: 'flex', gap: 16, marginTop: 32, flexWrap: 'wrap' }}>
             <Link to="/get-a-quote" className="btn-primary"><span className="btn-slide" /><span>Get a Quote</span></Link>

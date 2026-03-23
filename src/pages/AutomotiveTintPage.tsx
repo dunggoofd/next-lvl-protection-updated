@@ -127,6 +127,7 @@ export default function AutomotiveTintPage() {
         {/* FAQ moved below hero */}
         <section className="section" style={{ background: 'var(--color-bg-secondary)', paddingTop: 48, paddingBottom: 48 }}>
           <div className="container" style={{ maxWidth: 900 }}>
+            <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 24 }}>Common Tinting Questions</h2>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
             <FAQAccordion items={faqs} />
             <div style={{ marginTop: 40, padding: '20px 24px', background: 'var(--color-surface)', borderRadius: 4, border: '1px solid var(--color-border)' }}>
@@ -243,12 +244,6 @@ export default function AutomotiveTintPage() {
             <BeforeAfterSlider before="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" after="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Car tint before and after" height={300} />
           </div>
           <Link to="/gallery" style={{ color: 'var(--color-accent)', fontSize: 14 }}>See More Work →</Link>
-        </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
-        <div className="container" style={{ maxWidth: 780 }}>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Common Tinting Questions</h2>
         </div>
       </section>
 

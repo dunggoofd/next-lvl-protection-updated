@@ -19,7 +19,7 @@ export default function TrustBadges({ services = ['ppf', 'tint', 'window'] }: Tr
     },
     {
       id: 'ceramic',
-      label: 'Ceramic Pro Certified',
+      label: 'NXTZEN Certified',
     },
     {
       id: 'tint',

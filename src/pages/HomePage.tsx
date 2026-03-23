@@ -27,7 +27,7 @@ const services = [
     icon: Shield,
     title: 'Paint Protection Film',
     sub: 'SunTek Authorised',
-    desc: 'Self-healing urethane film that takes the hit so your paint doesn\'t. Invisible protection with a 10-year warranty.',
+    desc: 'Self-healing urethane film that takes the hit so your paint doesn\'t. Invisible protection with a 12-year warranty.',
     href: '/ppf-brisbane',
     img: mustangPpf,
   },

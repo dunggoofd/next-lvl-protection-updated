@@ -9,25 +9,12 @@ interface Review {
 
 interface ReviewsProps {
   reviews: Review[];
-  aggregate?: { score: number; count: number };
 }
 
-export default function Reviews({ reviews, aggregate }: ReviewsProps) {
+export default function Reviews({ reviews }: ReviewsProps) {
   return (
     <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
       <div className="container">
-        {aggregate && (
-          <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginBottom: 8 }}>
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={20} fill="var(--color-accent)" color="var(--color-accent)" />
-              ))}
-            </div>
-            <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(28px, 4vw, 40px)', letterSpacing: '0.02em' }}>
-              {aggregate.score} ★ from {aggregate.count} verified reviews
-            </p>
-          </div>
-        )}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',

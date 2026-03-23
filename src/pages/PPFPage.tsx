@@ -28,22 +28,22 @@ const tiers: PackageTier[] = [
 ];
 
 const benefits = [
-  { icon: Shield, title: 'Self-healing surface', desc: 'SunTek Ultra PPF heals minor scratches and swirl marks with heat. Leave it in the sun — the film resets.' },
+  { icon: Shield, title: 'Self-healing surface', desc: 'SunTek Reaction PPF heals minor scratches and swirl marks with heat. Leave it in the sun — the film resets.' },
   { icon: Droplets, title: 'Hydrophobic topcoat', desc: 'Water, mud, and road grime bead off the surface. Less washing, cleaner paint between cleans.' },
   { icon: Zap, title: 'Impact absorption', desc: 'Urethane film absorbs rock chips, stone impacts, and road debris before they reach your clear coat.' },
   { icon: TrendingUp, title: 'Preserves resale value', desc: 'A PPF-protected car in Queensland\'s conditions will retain paint integrity that non-protected cars lose within years.' },
-  { icon: Award, title: 'SunTek Authorised warranty', desc: 'Our Front End, Track, and Full Wrap packages carry a 10-year SunTek authorised installer warranty — not a generic dealer warranty.' },
+  { icon: Award, title: 'SunTek Authorised warranty', desc: 'Our Front End, Track, and Full Wrap packages carry a 12-year SunTek authorised installer warranty — not a generic dealer warranty.' },
   { icon: Clock, title: 'Long-term economics', desc: 'A paint correction or respray costs more than PPF. Protect it once, correctly, from the start.' },
 ];
 
 const faqs = [
   { q: 'What are the different types of PPF?', a: 'There are two main types: gloss and matte. Gloss PPF is virtually invisible and enhances paint depth, while matte PPF gives a satin finish and can convert gloss paint to matte. Some films also offer hydrophobic or self-healing topcoats for added protection.' },
-  { q: 'Is the PPF protection self-healing?', a: 'Yes, SunTek Ultra PPF features a self-healing topcoat. Minor scratches and swirl marks disappear with heat—either from the sun or warm water—restoring the film’s smooth finish.' },
+  { q: 'Is the PPF protection self-healing?', a: 'Yes, SunTek Reaction PPF features a ceramic-infused self-healing topcoat using Eastman Tetrashield\u2122 technology. Minor scratches and swirl marks disappear with heat — either from the sun or warm water — restoring the film\u2019s smooth finish.' },
   { q: 'Can you use Ceramic Coating over PPF?', a: 'Yes, ceramic coating can be applied over PPF. This adds extra hydrophobicity and makes cleaning even easier, but is not a substitute for the impact protection of PPF itself.' },
   { q: 'How much does PPF cost in Brisbane?', a: 'Pricing depends on coverage zone, vehicle size, and film specification. Contact us for a quote.' },
   { q: 'Is PPF worth it for a new car in Brisbane?', a: 'Yes — particularly in Queensland, where UV exposure and dusty highway conditions accelerate paint damage. Applying PPF within the first few months keeps the paint in showroom condition and protects the investment before any chips occur. The cost of quality PPF is significantly less than a future paint correction or respray.' },
-  { q: 'How long does PPF last?', a: 'SunTek Ultra PPF is warranted for up to 10 years when installed by an authorised installer. In Queensland conditions, film performs well across this period. Yellowing and adhesive failure are common with lower-grade film — SunTek\'s clarity warranty covers discolouration specifically.' },
-  { q: 'Does PPF change how my car looks?', a: 'High-quality PPF should be virtually invisible once installed. SunTek Ultra has optically clear top coat and no visible edges when properly tucked. Gloss PPF enhances depth; matte PPF converts gloss paint to a satin finish. We\'ll walk you through finish options before installation.' },
+  { q: 'How long does PPF last?', a: 'SunTek Reaction PPF is warranted for up to 12 years when installed by an authorised installer. SunTek Ultra Matte PPF carries a 10-year warranty. In Queensland conditions, film performs well across this period. Yellowing and adhesive failure are common with lower-grade film — SunTek\'s clarity warranty covers discolouration specifically.' },
+  { q: 'Does PPF change how my car looks?', a: 'High-quality PPF should be virtually invisible once installed. SunTek Reaction has an optically clear finish with intense gloss and no orange peel appearance. No visible edges when properly tucked. Gloss PPF enhances depth; matte PPF converts gloss paint to a satin finish. We\'ll walk you through finish options before installation.' },
   { q: 'Can PPF be applied over existing paint correction?', a: 'Yes — and we recommend it. Film applied over imperfect paint traps existing defects under it. At Next LVL Protection, we inspect paint condition before every PPF job. If correction is needed, we\'ll advise before installation.' },
   { q: 'How long does PPF installation take at Acacia Ridge?', a: 'A front bumper kit takes 1–2 hours. A full front end package is typically 1 day. Full wraps require 2–4 days depending on vehicle complexity. We\'ll provide an accurate timeline at quote stage.' },
   { q: 'What is SunTek Authorised status?', a: 'SunTek Authorised Installer is a certification that confirms training, installation standards, and access to SunTek\'s full product range. Only authorised installers can provide SunTek\'s full manufacturer warranty. Next LVL Protection is one of a select group of SunTek Authorised installers in Queensland.' },
@@ -71,7 +71,7 @@ export default function PPFPage() {
     <>
       <PageMeta
         title="Paint Protection Film Brisbane | SunTek Authorised Installer | Next LVL Protection"
-        description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 10-year warranty. Acacia Ridge studio."
+        description="SunTek Authorised PPF installer in Brisbane. Self-healing urethane film with a 12-year warranty. Acacia Ridge studio."
         canonical="https://www.nextlvlprotection.com.au/ppf-brisbane"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -127,7 +127,7 @@ export default function PPFPage() {
 
 
       {/* FAQ — moved directly below hero */}
-      <section className="section" style={{ background: 'var(--color-bg-primary)' }}>
+      <section id="faq" className="section" style={{ background: 'var(--color-bg-primary)' }}>
         <div className="container" style={{ maxWidth: 780 }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: 12, marginBottom: 24, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Last reviewed March 2026</p>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>FAQ</p>
@@ -190,7 +190,7 @@ export default function PPFPage() {
           <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {[
               { step: '01', title: 'Preparation', desc: 'Full decontamination wash, iron fallout removal, and clay bar treatment. Every panel is chemically clean before film touches it. Preparation is where precision installs are won or lost.' },
-              { step: '02', title: 'Application', desc: 'SunTek Ultra PPF cut and installed panel by panel. We use bulk film or pre-cut kits depending on the vehicle. All edges are tucked — no exposed edges, no lifting risk. SunTek Authorised technique throughout.' },
+              { step: '02', title: 'Application', desc: 'SunTek Reaction PPF cut and installed panel by panel. We use bulk film or pre-cut kits depending on the vehicle. All edges are tucked — no exposed edges, no lifting risk. SunTek Authorised technique throughout.' },
               { step: '03', title: 'QC + Handover', desc: 'Full inspection under workshop lighting — every edge, every corner, every seam. You receive a care guide, warranty documentation, and a walkthrough of the installation before you leave.' },
             ].map(c => (
               <div key={c.step} className="card" style={{ padding: '36px 28px' }}>
@@ -214,7 +214,7 @@ export default function PPFPage() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>
               {[
-                'SunTek Ultra PPF — not a generic substitute',
+                'SunTek Reaction PPF — not a generic substitute',
                 'Full decontamination wash prior to installation',
                 'Panel inspection before film application',
                 'Edge-tucked installation on all covered panels',
@@ -239,7 +239,7 @@ export default function PPFPage() {
           <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
             <div className="card" style={{ padding: '36px 28px' }}>
               <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 26, letterSpacing: '0.02em', marginBottom: 8 }}>Protection Backed by SunTek</h3>
-              <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Up to 10-year manufacturer warranty</p>
+              <p style={{ color: 'var(--color-accent)', fontWeight: 500, fontSize: 14, marginBottom: 16 }}>Up to 12-year manufacturer warranty</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {['Yellowing and discolouration', 'Film peeling or lifting', 'Adhesive failure under normal conditions', 'Cracking or hazing', 'Coverage: all packages installed by Next LVL Protection as SunTek Authorised Installer'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
