@@ -185,7 +185,7 @@ export default function HomePage() {
               <span className="btn-slide" />
               <span>Contact Us</span>
             </Link>
-            <Link to="/gallery" className="btn-ghost" style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff', padding: '14px 32px', fontSize: 15 }}>View Our Work</Link>
+            <Link to="/warranties" className="btn-ghost" style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff', padding: '14px 32px', fontSize: 15 }}>Warranties</Link>
           </div>
         </div>
       </section>
