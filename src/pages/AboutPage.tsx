@@ -21,7 +21,6 @@ const values = [
 
 const team = [
   { name: 'Loki', role: 'Founder & Lead Installer', note: 'NXTZEN Certified | SunTek Certified | Solar Gard Certified | 3M Authorised' },
-  { name: 'Lina Dai', role: 'Director', note: 'The driving force behind Next LVL Protection\'s vision and growth. Lina oversees strategy, partnerships, and business direction — ensuring the studio delivers excellence at every level.' },
   { name: 'Cynthia', role: 'General Manager', note: 'The engine behind every client interaction. Cynthia runs sales, scheduling, and studio operations — making sure every enquiry is handled with precision and every job is delivered on time.' },
 ];
 
@@ -154,7 +153,7 @@ export default function AboutPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container">
           <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>Team</h2>
-          <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24, maxWidth: 800 }}>
             {team.map((t, i) => (
               <div key={i} className="card" style={{ padding: '36px 28px' }}>
                 <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--color-surface)', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
