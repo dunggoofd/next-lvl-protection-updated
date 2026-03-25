@@ -32,21 +32,23 @@ const brands = [
 
 const warrantyTable = [
   { category: 'PAINT PROTECTION FILM', items: [
-    { product: 'SunTek Reaction PPF', warranty: '12 Years', covers: 'Cracking, bubbling, yellowing, discolouration', backedBy: 'Eastman Performance Films' },
+    { product: 'SunTek Reaction PPF', warranty: '10-12 Years', covers: 'Cracking, bubbling, yellowing, discolouration, wear and tear', backedBy: 'Eastman Performance Films' },
+    { product: 'SunTek Ultra Matte PPF', warranty: '10 Years', covers: 'Cracking, bubbling, yellowing, discolouration, wear and tear', backedBy: 'Eastman Performance Films' },
   ]},
   { category: 'CERAMIC COATING', items: [
     { product: 'NXTZEN Ceramic Professional', warranty: '5 Years', covers: 'UV damage, permanent stains (bird/bat droppings, bug splatter)', backedBy: 'NXTZEN (Sydney, AU)' },
     { product: 'NXTZEN Graphene Serum', warranty: '7 Years', covers: 'UV damage, permanent stains', backedBy: 'NXTZEN (Sydney, AU)' },
-    { product: 'NXTZEN Elite', warranty: '9 Years', covers: 'UV damage, permanent stains', backedBy: 'NXTZEN (Sydney, AU)' },
+    { product: 'NXTZEN Elite', warranty: '9 Years', covers: 'UV damage, permanent stains, Self Healing Technology', backedBy: 'NXTZEN (Sydney, AU)' },
+    { product: 'NXTZEN Elite GS02 (Graphene + Ceramic)', warranty: '9 Years', covers: 'UV damage, permanent stains, Self Healing Technology', backedBy: 'NXTZEN (Sydney, AU)' },
   ]},
   { category: 'AUTOMOTIVE WINDOW TINTING', items: [
     { product: 'Solar Gard VTX PRO', warranty: 'Lifetime', covers: 'Bubbling, peeling, discolouration, edge lifting', backedBy: 'Solar Gard (Saint-Gobain)' },
   ]},
   { category: 'RESIDENTIAL WINDOW TINTING', items: [
-    { product: '3M Prestige / Solar / Safety', warranty: 'Lifetime', covers: 'Delamination, adhesive failure, discolouration, bubbling, cracking', backedBy: '3M Corporation' },
+    { product: '3M Night Vision/Frosted', warranty: 'Lifetime', covers: 'Delamination, adhesive failure, discolouration, bubbling, cracking', backedBy: '3M Corporation' },
   ]},
   { category: 'COMMERCIAL WINDOW TINTING', items: [
-    { product: '3M Commercial Films', warranty: '10-15 Years', covers: 'Delamination, adhesive failure, discolouration', backedBy: '3M Corporation' },
+    { product: '3M Commercial Films', warranty: 'Lifetime', covers: 'Delamination, adhesive failure, discolouration', backedBy: '3M Corporation' },
   ]},
   { category: 'BONUS COATINGS', items: [
     { product: 'NXTZEN L-Coat (Leather/Fabric)', warranty: '5 Years', covers: 'Interior surface protection', backedBy: 'NXTZEN' },
@@ -55,7 +57,7 @@ const warrantyTable = [
 ];
 
 const comparisonData = [
-  { nlp: 'Manufacturer warranty: 5-12 years', other: 'No warranty or 1-2yr installer-only' },
+  { nlp: 'Manufacturer warranty: 5-12+ years', other: 'No warranty or 1-2yr installer-only' },
   { nlp: 'Backed by Eastman, NXTZEN, 3M, Solar Gard', other: 'Backed by a local ABN' },
   { nlp: 'Genuine manufacturer products — full range', other: 'Generic, unbranded, grey-market film' },
   { nlp: 'Trained, vetted, certified by each manufacturer', other: 'Self-taught, no oversight' },
@@ -150,7 +152,7 @@ export default function WarrantyPage() {
           <div className="hero-anim"><TrustBadges services={['ppf', 'ceramic', 'window']} /></div>
           <h1 style={{ marginTop: 28 }}>
             <span className="hero-anim font-display" style={{ fontSize: 'var(--size-h1)', color: '#fff', lineHeight: 1, textShadow: '0 1px 6px rgba(0,0,0,0.15)' }}>
-              Lifetime Protection — Up to 12 Years Warranty.
+              Lifetime Protection — Up to 12 Years Warranty on PPF.
             </span>
             <span className="hero-anim font-display" style={{ display: 'block', fontSize: 'clamp(20px,3vw,36px)', color: 'var(--color-accent)', lineHeight: 1.1, marginTop: 12 }}>
               Not a promise from us — a guarantee from them.
@@ -226,14 +228,14 @@ export default function WarrantyPage() {
       <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="container" style={{ maxWidth: 900 }}>
           <p style={{ fontSize: 'var(--size-label)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-muted)', marginBottom: 12 }}>Paint Protection Film</p>
-          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>SunTek Reaction PPF — 12-Year Limited Warranty</h2>
+          <h2 className="font-display" style={{ fontSize: 'var(--size-h2)', marginBottom: 40 }}>SunTek Reaction & Ultra Matte PPF</h2>
 
           <div style={{ background: '#1A1F2E', borderRadius: 8, padding: '40px 36px', marginBottom: 32, position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 20, right: 24, opacity: 0.06 }}>
               <Shield size={120} />
             </div>
             <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>SunTek by Eastman</p>
-            <p style={{ color: 'var(--color-accent)', fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(40px, 6vw, 56px)', letterSpacing: '0.02em', lineHeight: 1 }}>12-Year Limited Warranty</p>
+            <p style={{ color: '#C7A74C', fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(40px, 6vw, 56px)', letterSpacing: '0.02em', lineHeight: 1 }}>10-12 Year Limited Warranty</p>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, marginTop: 12 }}>Reaction PPF with Tetrashield Resin Technology</p>
           </div>
 
@@ -243,7 +245,7 @@ export default function WarrantyPage() {
                 <Check size={16} color="var(--color-accent)" /> Covered
               </h3>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['Cracking', 'Bubbling', 'Yellowing', 'Discolouration'].map((item, i) => (
+                {['Cracking', 'Bubbling', 'Yellowing', 'Discolouration', 'Wear and tear'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
                     <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0 }} />
                     <span style={{ color: 'var(--color-text-secondary)', fontSize: 14 }}>{item}</span>
@@ -325,11 +327,26 @@ export default function WarrantyPage() {
               <div style={{ display: 'grid', gap: 16 }}>
                 <div>
                   <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
-                    <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> UV damage, permanent stains from bird/bat droppings, bug splatter. Extended to 9 years.
+                    <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> UV damage, permanent stains, Self Healing Technology. Extended to 9 years.
                   </p>
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {['Multi-Cure layer technology', 'Self-healing memory polymer', 'CSIRO-tested', 'Best UV/bird-dropping resistance'].map((f, i) => (
+                    <span key={i} style={{ padding: '4px 12px', background: 'rgba(199,167,76,0.08)', borderRadius: 4, fontSize: 12, color: 'var(--color-accent)' }}>{f}</span>
+                  ))}
+                </div>
+              </div>
+            </ExpandableSection>
+
+            <ExpandableSection title="NXTZEN Elite GS02 (Graphene + Ceramic) — 9-Year Protection Guarantee">
+              <div style={{ display: 'grid', gap: 16 }}>
+                <div>
+                  <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
+                    <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> UV damage, permanent stains, Self Healing Technology. 9-year warranty.
+                  </p>
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {['Graphene + Ceramic hybrid', 'Self Healing Technology', 'CSIRO-tested', 'Made in Sydney'].map((f, i) => (
                     <span key={i} style={{ padding: '4px 12px', background: 'rgba(199,167,76,0.08)', borderRadius: 4, fontSize: 12, color: 'var(--color-accent)' }}>{f}</span>
                   ))}
                 </div>
@@ -389,14 +406,14 @@ export default function WarrantyPage() {
             <div className="card" style={{ padding: '32px 28px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
                 <div>
-                  <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, letterSpacing: '0.02em' }}>3M Prestige / Solar / Safety</h3>
+                  <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, letterSpacing: '0.02em' }}>3M Night Vision/Frosted</h3>
                   <p style={{ color: 'var(--color-text-muted)', fontSize: 13 }}>Residential Window Tinting</p>
                 </div>
                 <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 28, color: 'var(--color-accent)' }}>Lifetime Warranty</span>
               </div>
               <div style={{ marginBottom: 16 }}>
                 <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
-                  <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> Delamination, peeling, adhesive failure, discolouration, bubbling, cracking, crazing. Lifetime of property ownership.
+                  <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> Delamination, adhesive failure, discolouration, bubbling, cracking. Lifetime of property ownership.
                 </p>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -413,11 +430,11 @@ export default function WarrantyPage() {
                   <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 24, letterSpacing: '0.02em' }}>3M Commercial Films</h3>
                   <p style={{ color: 'var(--color-text-muted)', fontSize: 13 }}>Commercial Window Tinting</p>
                 </div>
-                <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 28, color: 'var(--color-accent)' }}>10-15 Year Warranty</span>
+                <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 28, color: 'var(--color-accent)' }}>Lifetime Warranty</span>
               </div>
               <div>
                 <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
-                  <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> Delamination, adhesive failure, discolouration. Warranty duration varies by film series.
+                  <strong style={{ color: 'var(--color-text-primary)' }}>Covers:</strong> Delamination, adhesive failure, discolouration. Lifetime warranty.
                 </p>
               </div>
             </div>
@@ -433,11 +450,11 @@ export default function WarrantyPage() {
 
           <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, borderRadius: 8, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
             <div style={{ background: '#1A1F2E', padding: '24px 20px' }}>
-              <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, color: 'var(--color-accent)', letterSpacing: '0.03em', marginBottom: 20 }}>Next LVL Protection (Authorised)</p>
+              <p style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 18, color: '#C7A74C', letterSpacing: '0.03em', marginBottom: 20 }}>Next LVL Protection (Authorised)</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14 }}>
                 {comparisonData.map((row, i) => (
                   <li key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                    <Check size={14} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: 2 }} />
+                    <Check size={14} color="#C7A74C" style={{ flexShrink: 0, marginTop: 2 }} />
                     <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: 13, lineHeight: 1.5 }}>{row.nlp}</span>
                   </li>
                 ))}

@@ -147,7 +147,7 @@ export default function ResidentialTintPage() {
               Residential Tinting Services
             </span>
             <span className="hero-anim font-display hero-3m-text" style={{ display: 'block', fontSize: 'calc(var(--size-hero) * 0.75)', lineHeight: 0.95, marginTop: 4 }}>
-              3M Authorised.
+              Brisbane Wide Services
             </span>
           </h1>
           <p className="hero-anim" style={{ color: 'rgba(255,255,255,0.8)', fontSize: 'clamp(15px, 2vw, 18px)', marginTop: 20, maxWidth: 560 }}>
