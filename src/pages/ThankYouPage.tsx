@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import { CheckCircle, Phone } from 'lucide-react';
 import PageMeta from '../components/PageMeta';
@@ -5,6 +6,16 @@ import PageMeta from '../components/PageMeta';
 export default function ThankYouPage() {
   const location = useLocation();
   const fromSubmit = (location.state as { fromSubmit?: boolean })?.fromSubmit;
+
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17891058826/66_JCN_L9YAbEOr-6Psc',
+        value: 1.0,
+        currency: 'AUD',
+      });
+    }
+  }, []);
 
   if (!fromSubmit) return <Navigate to="/get-a-quote" replace />;
 
