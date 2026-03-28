@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Loader2 } from 'lucide-react';
-import { pushGtmEvent, fireGadsConversion } from '../lib/gtm';
+import { pushGtmEvent } from '../lib/gtm';
 
 const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/zM2njfm3k4rchqX8UD3u/webhook-trigger/92c7737c-f2ed-45c7-be3c-db69f9343157';
 
@@ -73,10 +73,7 @@ export default function QuoteForm({ defaultService }: QuoteFormProps) {
         page_title: document.title,
       });
       pushGtmEvent('generate_lead', { currency: 'AUD', value: 0 });
-      fireGadsConversion('AW-17891058826/XXuyCKLXpIYcEIrJj9NC');
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'ads_conversion_Request_quote_1');
-      }
+      pushGtmEvent('quote_form_click', { page_path: window.location.pathname });
 
       navigate('/thank-you', { state: { fromSubmit: true } });
     } catch {
