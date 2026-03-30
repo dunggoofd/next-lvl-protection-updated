@@ -10,7 +10,7 @@ export default function ThankYouPage() {
   useEffect(() => {
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'conversion', {
-        send_to: 'AW-17891058826/66_JCN_L9YAbEOr-6Psc',
+        send_to: 'AW-17891058826/gPvpCMe2hZIcEIrJj9NC',
         value: 1.0,
         currency: 'AUD',
       });
