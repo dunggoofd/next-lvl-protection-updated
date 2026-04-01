@@ -61,7 +61,7 @@ export default function AboutPage() {
         ],
       })}} />
       <section ref={heroRef} style={{ position: 'relative', height: '70dvh', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 8vw 10vh' }}>
-        <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
+        <div ref={heroBgRef} style={{ position: 'absolute', inset: '-20% 0 0 0', zIndex: 0, backgroundImage: `url('/NLP-Shop.jpeg')`, backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to top, var(--color-bg-primary) 0%, rgba(248,249,251,0.75) 50%, transparent 100%)' }} aria-hidden="true" />
         <div style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ marginTop: 28 }}>
