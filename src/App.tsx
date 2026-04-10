@@ -53,6 +53,7 @@ const SitemapPage                = lazy(() => import('./pages/SitemapPage'));
 const NotFoundPage               = lazy(() => import('./pages/NotFoundPage'));
 const PrivacyPolicyPage          = lazy(() => import('./pages/PrivacyPolicyPage'));
 const ThankYouPage               = lazy(() => import('./pages/ThankYouPage'));
+const ThreeMCommercialFilmPage   = lazy(() => import('./pages/3MCommercialWindowFilmPage'));
 
 function PageLoader() {
   return (
@@ -163,6 +164,7 @@ export default function App() {
             <Route path="/ceramic-coating-maintenance-brisbane" element={<CeramicMaintenancePage />} />
             <Route path="/ceramic-coating-resale-brisbane" element={<CeramicResalePage />} />
             <Route path="/ceramic-coating-near-me-brisbane" element={<CeramicNearMePage />} />
+            <Route path="/3m-commercial-window-film-brisbane" element={<ThreeMCommercialFilmPage />} />
             <Route path="/warranties" element={<WarrantyPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

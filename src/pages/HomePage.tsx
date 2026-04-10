@@ -14,7 +14,7 @@ import mustangPpf from '../assets/mustang-ppf1.png';
 import autoTintHero from '../assets/tesla-model-matte.png';
 import ig0 from '../assets/Website-photos/Screenshot 2026-03-16 181728.jpg';
 import ig1 from '../assets/Website-photos/Screenshot 2026-03-16 181319.jpg';
-import ig2 from '../assets/Website-photos/Screenshot 2026-03-16 181459.jpg';
+import ig2 from '../assets/SnapInsta.to_656818934_17862392619672016_2311424116824045504_n.jpg';
 import ig3 from '../assets/Website-photos/Screenshot 2026-03-16 181519.jpg';
 import ig4 from '../assets/Website-photos/Screenshot 2026-03-16 181532.jpg';
 import ig5 from '../assets/Website-photos/Screenshot 2026-03-16 181609.jpg';
