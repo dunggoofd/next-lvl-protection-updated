@@ -13,6 +13,7 @@ const DIST = path.resolve(__dirname, '..', 'dist');
 
 const ROUTES = [
   '/',
+  '/next-level-protection-brisbane',
   '/ppf-brisbane',
   '/ceramic-coating-brisbane',
   '/automotive-window-tinting-brisbane',

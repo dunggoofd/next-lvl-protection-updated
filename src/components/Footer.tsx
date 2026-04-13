@@ -15,6 +15,7 @@ const quickLinks = [
 ];
 
 const popularLinks = [
+  { label: 'Next Level Protection', href: '/next-level-protection-brisbane' },
   { label: 'SunTek PPF', href: '/suntek-ppf-brisbane' },
   { label: 'Ceramic Coating Questions', href: '/ceramic-coating-questions' },
   { label: 'PPF Questions', href: '/ppf-questions' },

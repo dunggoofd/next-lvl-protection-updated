@@ -6,6 +6,7 @@ const sections = [
     heading: 'Main Pages',
     links: [
       { label: 'Home', href: '/' },
+      { label: 'Next Level Protection Brisbane', href: '/next-level-protection-brisbane' },
       { label: 'Gallery', href: '/gallery' },
       { label: 'About', href: '/about' },
       { label: 'Get a Quote', href: '/get-a-quote' },

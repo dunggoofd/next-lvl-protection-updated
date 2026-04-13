@@ -49,6 +49,7 @@ import CeramicResalePage from './pages/CeramicResalePage';
 import CeramicNearMePage from './pages/CeramicNearMePage';
 import SitemapPage from './pages/SitemapPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import NextLevelProtectionPage from './pages/NextLevelProtectionPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function Layout() {
@@ -106,6 +107,7 @@ export function render(url: string): string {
           <Route path="/ceramic-coating-maintenance-brisbane" element={<CeramicMaintenancePage />} />
           <Route path="/ceramic-coating-resale-brisbane" element={<CeramicResalePage />} />
           <Route path="/ceramic-coating-near-me-brisbane" element={<CeramicNearMePage />} />
+          <Route path="/next-level-protection-brisbane" element={<NextLevelProtectionPage />} />
           <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="*" element={<NotFoundPage />} />
